@@ -131,60 +131,59 @@ $(function(){initNavTree('_pile_file_8h_source.html',''); initResizable(true); }
 <div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span>    <span class="keywordtype">void</span> append(<span class="keywordtype">int</span> pile, <span class="keyword">const</span> uint8_t* data, uint32_t len);</div>
 <div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span>    <span class="keywordtype">void</span> load(<span class="keywordtype">int</span> pile, ReusableBlock&amp; block);</div>
 <div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span>    <span class="keywordtype">void</span> close() { file_.close(); }</div>
-<div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span>    <span class="keywordtype">void</span> clear();</div>
-<div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span> </div>
-<div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span>    <span class="keyword">static</span> <span class="keyword">const</span> <span class="keywordtype">int</span> MAX_PILE_COUNT = (1 &lt;&lt; 26) - 1;</div>
-<div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span>        </div>
-<div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span> </div>
-<div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span><span class="keyword">private</span>:</div>
-<div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span>    <span class="keyword">static</span> <span class="keyword">const</span> uint32_t MAGIC = 0x454C4950;</div>
-<div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span> </div>
-<div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span>    <span class="keyword">struct </span>IndexEntry</div>
-<div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span>    {</div>
-<div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span>        uint32_t firstPage;</div>
-<div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span>        uint32_t lastPage;</div>
-<div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span>        uint64_t totalPayloadSize;</div>
-<div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span>    };</div>
-<div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span> </div>
-<div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span>    <span class="keyword">struct </span>Metadata</div>
-<div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span>    {</div>
-<div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span>        uint32_t magic;</div>
-<div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span>        uint32_t pageCount;</div>
-<div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span>        uint32_t pileCount;</div>
-<div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span>        uint32_t pageSizeShift;     <span class="comment">// only lowest 5 bits used</span></div>
-<div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span>        IndexEntry index[1];        <span class="comment">// variable size</span></div>
-<div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span>    };</div>
-<div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span> </div>
-<div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span>    <span class="keyword">struct </span>Chunk</div>
-<div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span>    {</div>
-<div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span>        uint32_t payloadSize;</div>
-<div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span>        <span class="keyword">union</span></div>
-<div class="line"><a id="l00057" name="l00057"></a><span class="lineno">   57</span>        {</div>
-<div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span>            uint32_t remainingSize;</div>
-<div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span>            uint32_t nextPage;</div>
-<div class="line"><a id="l00060" name="l00060"></a><span class="lineno">   60</span>        };</div>
-<div class="line"><a id="l00061" name="l00061"></a><span class="lineno">   61</span>        uint8_t data[1];            <span class="comment">// variable size</span></div>
-<div class="line"><a id="l00062" name="l00062"></a><span class="lineno">   62</span>    };</div>
-<div class="line"><a id="l00063" name="l00063"></a><span class="lineno">   63</span> </div>
-<div class="line"><a id="l00064" name="l00064"></a><span class="lineno">   64</span>    <span class="keyword">struct </span>ChunkAllocation</div>
-<div class="line"><a id="l00065" name="l00065"></a><span class="lineno">   65</span>    {</div>
-<div class="line"><a id="l00066" name="l00066"></a><span class="lineno">   66</span>        Chunk* chunk;</div>
-<div class="line"><a id="l00067" name="l00067"></a><span class="lineno">   67</span>        uint32_t firstPage;</div>
-<div class="line"><a id="l00068" name="l00068"></a><span class="lineno">   68</span>    };</div>
-<div class="line"><a id="l00069" name="l00069"></a><span class="lineno">   69</span> </div>
-<div class="line"><a id="l00070" name="l00070"></a><span class="lineno">   70</span>    <span class="keyword">static</span> <span class="keyword">const</span> <span class="keywordtype">size_t</span> CHUNK_HEADER_SIZE = 8;</div>
-<div class="line"><a id="l00071" name="l00071"></a><span class="lineno">   71</span>        <span class="comment">// Don&#39;t use sizeof() because it will include alignments</span></div>
-<div class="line"><a id="l00072" name="l00072"></a><span class="lineno">   72</span> </div>
-<div class="line"><a id="l00073" name="l00073"></a><span class="lineno">   73</span>    Metadata* metadata()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> <span class="keyword">reinterpret_cast&lt;</span>Metadata*<span class="keyword">&gt;</span>(file_.mainMapping()); }</div>
-<div class="line"><a id="l00074" name="l00074"></a><span class="lineno">   74</span>    ChunkAllocation allocChunk(uint32_t minPayload);</div>
-<div class="line"><a id="l00075" name="l00075"></a><span class="lineno">   75</span>    Chunk* getChunk(uint32_t page);</div>
-<div class="line"><a id="l00076" name="l00076"></a><span class="lineno">   76</span> </div>
-<div class="line"><a id="l00077" name="l00077"></a><span class="lineno">   77</span>    ExpandableMappedFile file_;</div>
-<div class="line"><a id="l00078" name="l00078"></a><span class="lineno">   78</span>    uint32_t pageSize_;</div>
-<div class="line"><a id="l00079" name="l00079"></a><span class="lineno">   79</span>    <span class="keywordtype">int</span> pageSizeShift_;</div>
-<div class="line"><a id="l00080" name="l00080"></a><span class="lineno">   80</span>};</div>
-<div class="line"><a id="l00081" name="l00081"></a><span class="lineno">   81</span> </div>
-<div class="line"><a id="l00082" name="l00082"></a><span class="lineno">   82</span>} <span class="comment">// namespace clarisma</span></div>
+<div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span> </div>
+<div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span>    <span class="keyword">static</span> <span class="keyword">const</span> <span class="keywordtype">int</span> MAX_PILE_COUNT = (1 &lt;&lt; 26) - 1;</div>
+<div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span>        </div>
+<div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span> </div>
+<div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span><span class="keyword">private</span>:</div>
+<div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span>    <span class="keyword">static</span> <span class="keyword">const</span> uint32_t MAGIC = 0x454C4950;</div>
+<div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span> </div>
+<div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span>    <span class="keyword">struct </span>IndexEntry</div>
+<div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span>    {</div>
+<div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span>        uint32_t firstPage;</div>
+<div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span>        uint32_t lastPage;</div>
+<div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span>        uint64_t totalPayloadSize;</div>
+<div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span>    };</div>
+<div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span> </div>
+<div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span>    <span class="keyword">struct </span>Metadata</div>
+<div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span>    {</div>
+<div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span>        uint32_t magic;</div>
+<div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span>        uint32_t pageCount;</div>
+<div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span>        uint32_t pileCount;</div>
+<div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span>        uint32_t pageSizeShift;     <span class="comment">// only lowest 5 bits used</span></div>
+<div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span>        IndexEntry index[1];        <span class="comment">// variable size</span></div>
+<div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span>    };</div>
+<div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span> </div>
+<div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span>    <span class="keyword">struct </span>Chunk</div>
+<div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span>    {</div>
+<div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span>        uint32_t payloadSize;</div>
+<div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span>        <span class="keyword">union</span></div>
+<div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span>        {</div>
+<div class="line"><a id="l00057" name="l00057"></a><span class="lineno">   57</span>            uint32_t remainingSize;</div>
+<div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span>            uint32_t nextPage;</div>
+<div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span>        };</div>
+<div class="line"><a id="l00060" name="l00060"></a><span class="lineno">   60</span>        uint8_t data[1];            <span class="comment">// variable size</span></div>
+<div class="line"><a id="l00061" name="l00061"></a><span class="lineno">   61</span>    };</div>
+<div class="line"><a id="l00062" name="l00062"></a><span class="lineno">   62</span> </div>
+<div class="line"><a id="l00063" name="l00063"></a><span class="lineno">   63</span>    <span class="keyword">struct </span>ChunkAllocation</div>
+<div class="line"><a id="l00064" name="l00064"></a><span class="lineno">   64</span>    {</div>
+<div class="line"><a id="l00065" name="l00065"></a><span class="lineno">   65</span>        Chunk* chunk;</div>
+<div class="line"><a id="l00066" name="l00066"></a><span class="lineno">   66</span>        uint32_t firstPage;</div>
+<div class="line"><a id="l00067" name="l00067"></a><span class="lineno">   67</span>    };</div>
+<div class="line"><a id="l00068" name="l00068"></a><span class="lineno">   68</span> </div>
+<div class="line"><a id="l00069" name="l00069"></a><span class="lineno">   69</span>    <span class="keyword">static</span> <span class="keyword">const</span> <span class="keywordtype">size_t</span> CHUNK_HEADER_SIZE = 8;</div>
+<div class="line"><a id="l00070" name="l00070"></a><span class="lineno">   70</span>        <span class="comment">// Don&#39;t use sizeof() because it will include alignments</span></div>
+<div class="line"><a id="l00071" name="l00071"></a><span class="lineno">   71</span> </div>
+<div class="line"><a id="l00072" name="l00072"></a><span class="lineno">   72</span>    Metadata* metadata()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> <span class="keyword">reinterpret_cast&lt;</span>Metadata*<span class="keyword">&gt;</span>(file_.mainMapping()); }</div>
+<div class="line"><a id="l00073" name="l00073"></a><span class="lineno">   73</span>    ChunkAllocation allocChunk(uint32_t minPayload);</div>
+<div class="line"><a id="l00074" name="l00074"></a><span class="lineno">   74</span>    Chunk* getChunk(uint32_t page);</div>
+<div class="line"><a id="l00075" name="l00075"></a><span class="lineno">   75</span> </div>
+<div class="line"><a id="l00076" name="l00076"></a><span class="lineno">   76</span>    ExpandableMappedFile file_;</div>
+<div class="line"><a id="l00077" name="l00077"></a><span class="lineno">   77</span>    uint32_t pageSize_;</div>
+<div class="line"><a id="l00078" name="l00078"></a><span class="lineno">   78</span>    <span class="keywordtype">int</span> pageSizeShift_;</div>
+<div class="line"><a id="l00079" name="l00079"></a><span class="lineno">   79</span>};</div>
+<div class="line"><a id="l00080" name="l00080"></a><span class="lineno">   80</span> </div>
+<div class="line"><a id="l00081" name="l00081"></a><span class="lineno">   81</span>} <span class="comment">// namespace clarisma</span></div>
 <div class="ttc" id="a_expandable_mapped_file_8h_html"><div class="ttname"><a href="_expandable_mapped_file_8h.html">ExpandableMappedFile.h</a></div></div>
 <div class="ttc" id="a_reusable_block_8h_html"><div class="ttname"><a href="_reusable_block_8h.html">ReusableBlock.h</a></div></div>
 <div class="ttc" id="anamespaceclarisma_html"><div class="ttname"><a href="namespaceclarisma.html">clarisma</a></div><div class="ttdef"><b>Definition</b> Arena.h:17</div></div>

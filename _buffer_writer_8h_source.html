@@ -359,68 +359,87 @@ $(function(){initNavTree('_buffer_writer_8h_source.html',''); initResizable(true
 <div class="line"><a id="l00254" name="l00254"></a><span class="lineno">  254</span>        <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i = 0; i &lt; times; i++) writeByte(ch);</div>
 <div class="line"><a id="l00255" name="l00255"></a><span class="lineno">  255</span>    }</div>
 <div class="line"><a id="l00256" name="l00256"></a><span class="lineno">  256</span> </div>
-<div class="line"><a id="l00257" name="l00257"></a><span class="lineno">  257</span><span class="keyword">protected</span>:</div>
-<div class="line"><a id="l00258" name="l00258"></a><span class="lineno">  258</span>    <span class="keyword">static</span> <span class="keywordtype">char</span>* formatUnsignedLongReverse(<span class="keywordtype">unsigned</span> <span class="keywordtype">long</span> <span class="keywordtype">long</span> d, <span class="keywordtype">char</span>* end)</div>
-<div class="line"><a id="l00259" name="l00259"></a><span class="lineno">  259</span>    {</div>
-<div class="line"><a id="l00260" name="l00260"></a><span class="lineno">  260</span>        <span class="keywordflow">do</span></div>
-<div class="line"><a id="l00261" name="l00261"></a><span class="lineno">  261</span>        {</div>
-<div class="line"><a id="l00262" name="l00262"></a><span class="lineno">  262</span>            lldiv_t result = lldiv(d, 10);</div>
-<div class="line"><a id="l00263" name="l00263"></a><span class="lineno">  263</span>            *(--end) = <span class="keyword">static_cast&lt;</span><span class="keywordtype">char</span><span class="keyword">&gt;</span>(<span class="charliteral">&#39;0&#39;</span> + result.rem);</div>
-<div class="line"><a id="l00264" name="l00264"></a><span class="lineno">  264</span>            d = result.quot;</div>
-<div class="line"><a id="l00265" name="l00265"></a><span class="lineno">  265</span>        } </div>
-<div class="line"><a id="l00266" name="l00266"></a><span class="lineno">  266</span>        <span class="keywordflow">while</span> (d != 0);</div>
-<div class="line"><a id="l00267" name="l00267"></a><span class="lineno">  267</span>        <span class="keywordflow">return</span> end;</div>
-<div class="line"><a id="l00268" name="l00268"></a><span class="lineno">  268</span>    }</div>
-<div class="line"><a id="l00269" name="l00269"></a><span class="lineno">  269</span> </div>
-<div class="line"><a id="l00270" name="l00270"></a><span class="lineno">  270</span>    <span class="keyword">static</span> <span class="keywordtype">char</span>* formatFractionalReverse(<span class="keywordtype">unsigned</span> <span class="keywordtype">long</span> <span class="keywordtype">long</span> d, <span class="keywordtype">char</span>** pEnd, <span class="keywordtype">int</span> precision, <span class="keywordtype">bool</span> zeroFill)</div>
-<div class="line"><a id="l00271" name="l00271"></a><span class="lineno">  271</span>    {</div>
-<div class="line"><a id="l00272" name="l00272"></a><span class="lineno">  272</span>        <span class="keywordtype">char</span>* end = *pEnd;</div>
-<div class="line"><a id="l00273" name="l00273"></a><span class="lineno">  273</span>        <span class="keywordtype">char</span>* start = end - precision;</div>
-<div class="line"><a id="l00274" name="l00274"></a><span class="lineno">  274</span>        <span class="keywordtype">char</span>* p = end;</div>
-<div class="line"><a id="l00275" name="l00275"></a><span class="lineno">  275</span>        <span class="keywordflow">while</span>(p &gt; start)</div>
-<div class="line"><a id="l00276" name="l00276"></a><span class="lineno">  276</span>        {</div>
-<div class="line"><a id="l00277" name="l00277"></a><span class="lineno">  277</span>            lldiv_t result = lldiv(d, 10);</div>
-<div class="line"><a id="l00278" name="l00278"></a><span class="lineno">  278</span>            <span class="keywordflow">if</span> (p == end &amp;&amp; result.rem == 0 &amp;&amp; !zeroFill)</div>
-<div class="line"><a id="l00279" name="l00279"></a><span class="lineno">  279</span>            {</div>
-<div class="line"><a id="l00280" name="l00280"></a><span class="lineno">  280</span>                end--;      <span class="comment">// skip trailing zeroes</span></div>
-<div class="line"><a id="l00281" name="l00281"></a><span class="lineno">  281</span>                p--;</div>
-<div class="line"><a id="l00282" name="l00282"></a><span class="lineno">  282</span>            }</div>
-<div class="line"><a id="l00283" name="l00283"></a><span class="lineno">  283</span>            <span class="keywordflow">else</span></div>
-<div class="line"><a id="l00284" name="l00284"></a><span class="lineno">  284</span>            {</div>
-<div class="line"><a id="l00285" name="l00285"></a><span class="lineno">  285</span>                *(--p) = <span class="keyword">static_cast&lt;</span><span class="keywordtype">char</span><span class="keyword">&gt;</span>(<span class="charliteral">&#39;0&#39;</span> + result.rem);</div>
-<div class="line"><a id="l00286" name="l00286"></a><span class="lineno">  286</span>            }</div>
-<div class="line"><a id="l00287" name="l00287"></a><span class="lineno">  287</span>            d = result.quot;</div>
-<div class="line"><a id="l00288" name="l00288"></a><span class="lineno">  288</span>        } </div>
-<div class="line"><a id="l00289" name="l00289"></a><span class="lineno">  289</span>        *pEnd = end;</div>
-<div class="line"><a id="l00290" name="l00290"></a><span class="lineno">  290</span>        <span class="keywordflow">return</span> p;</div>
-<div class="line"><a id="l00291" name="l00291"></a><span class="lineno">  291</span>    }</div>
-<div class="line"><a id="l00292" name="l00292"></a><span class="lineno">  292</span> </div>
-<div class="line"><a id="l00293" name="l00293"></a><span class="lineno">  293</span>    <span class="keyword">static</span> <span class="keywordtype">char</span>* formatLongReverse(<span class="keywordtype">long</span> <span class="keywordtype">long</span> d, <span class="keywordtype">char</span>* end, <span class="keywordtype">bool</span> negative)</div>
-<div class="line"><a id="l00294" name="l00294"></a><span class="lineno">  294</span>    {</div>
-<div class="line"><a id="l00295" name="l00295"></a><span class="lineno">  295</span>        d = (d &lt; 0) ? -d : d;</div>
-<div class="line"><a id="l00296" name="l00296"></a><span class="lineno">  296</span>        end = formatUnsignedLongReverse(d, end);</div>
-<div class="line"><a id="l00297" name="l00297"></a><span class="lineno">  297</span>        *(end - 1) = <span class="charliteral">&#39;-&#39;</span>;</div>
-<div class="line"><a id="l00298" name="l00298"></a><span class="lineno">  298</span>        <span class="keywordflow">return</span> end - negative;</div>
-<div class="line"><a id="l00299" name="l00299"></a><span class="lineno">  299</span>    }</div>
-<div class="line"><a id="l00300" name="l00300"></a><span class="lineno">  300</span> </div>
-<div class="line"><a id="l00301" name="l00301"></a><span class="lineno">  301</span>    <span class="keywordtype">void</span> filled()</div>
-<div class="line"><a id="l00302" name="l00302"></a><span class="lineno">  302</span>    {</div>
-<div class="line"><a id="l00303" name="l00303"></a><span class="lineno">  303</span>        buf_-&gt;filled(p_);</div>
-<div class="line"><a id="l00304" name="l00304"></a><span class="lineno">  304</span>        p_ = buf_-&gt;pos();</div>
-<div class="line"><a id="l00305" name="l00305"></a><span class="lineno">  305</span>        end_ = buf_-&gt;end();</div>
-<div class="line"><a id="l00306" name="l00306"></a><span class="lineno">  306</span>    }</div>
-<div class="line"><a id="l00307" name="l00307"></a><span class="lineno">  307</span> </div>
-<div class="line"><a id="l00308" name="l00308"></a><span class="lineno">  308</span>    Buffer* buf_;</div>
-<div class="line"><a id="l00309" name="l00309"></a><span class="lineno">  309</span>    <span class="keywordtype">char</span>* p_;</div>
-<div class="line"><a id="l00310" name="l00310"></a><span class="lineno">  310</span>    <span class="keywordtype">char</span>* end_;</div>
-<div class="line"><a id="l00311" name="l00311"></a><span class="lineno">  311</span>};</div>
-<div class="line"><a id="l00312" name="l00312"></a><span class="lineno">  312</span> </div>
-<div class="line"><a id="l00313" name="l00313"></a><span class="lineno">  313</span>} <span class="comment">// namespace clarisma</span></div>
+<div class="line"><a id="l00257" name="l00257"></a><span class="lineno">  257</span>    BufferWriter&amp; <a class="code hl_function" href="namespaceclarisma.html#af4033fcb0537ab6a0d9ff127b0196199">operator&lt;&lt;</a>(<span class="keywordtype">char</span> ch)</div>
+<div class="line"><a id="l00258" name="l00258"></a><span class="lineno">  258</span>    {</div>
+<div class="line"><a id="l00259" name="l00259"></a><span class="lineno">  259</span>        writeByte(ch);</div>
+<div class="line"><a id="l00260" name="l00260"></a><span class="lineno">  260</span>        <span class="keywordflow">return</span> *<span class="keyword">this</span>;</div>
+<div class="line"><a id="l00261" name="l00261"></a><span class="lineno">  261</span>    }</div>
+<div class="line"><a id="l00262" name="l00262"></a><span class="lineno">  262</span> </div>
+<div class="line"><a id="l00263" name="l00263"></a><span class="lineno">  263</span>    BufferWriter&amp; <a class="code hl_function" href="namespaceclarisma.html#af4033fcb0537ab6a0d9ff127b0196199">operator&lt;&lt;</a>(uint32_t value)</div>
+<div class="line"><a id="l00264" name="l00264"></a><span class="lineno">  264</span>    {</div>
+<div class="line"><a id="l00265" name="l00265"></a><span class="lineno">  265</span>        formatUnsignedInt(value);</div>
+<div class="line"><a id="l00266" name="l00266"></a><span class="lineno">  266</span>        <span class="keywordflow">return</span> *<span class="keyword">this</span>;</div>
+<div class="line"><a id="l00267" name="l00267"></a><span class="lineno">  267</span>    }</div>
+<div class="line"><a id="l00268" name="l00268"></a><span class="lineno">  268</span> </div>
+<div class="line"><a id="l00269" name="l00269"></a><span class="lineno">  269</span>    BufferWriter&amp; <a class="code hl_function" href="namespaceclarisma.html#af4033fcb0537ab6a0d9ff127b0196199">operator&lt;&lt;</a>(uint64_t value)</div>
+<div class="line"><a id="l00270" name="l00270"></a><span class="lineno">  270</span>    {</div>
+<div class="line"><a id="l00271" name="l00271"></a><span class="lineno">  271</span>        formatUnsignedInt(value);</div>
+<div class="line"><a id="l00272" name="l00272"></a><span class="lineno">  272</span>        <span class="keywordflow">return</span> *<span class="keyword">this</span>;</div>
+<div class="line"><a id="l00273" name="l00273"></a><span class="lineno">  273</span>    }</div>
+<div class="line"><a id="l00274" name="l00274"></a><span class="lineno">  274</span> </div>
+<div class="line"><a id="l00275" name="l00275"></a><span class="lineno">  275</span><span class="keyword">protected</span>:</div>
+<div class="line"><a id="l00276" name="l00276"></a><span class="lineno">  276</span>    <span class="keyword">static</span> <span class="keywordtype">char</span>* formatUnsignedLongReverse(<span class="keywordtype">unsigned</span> <span class="keywordtype">long</span> <span class="keywordtype">long</span> d, <span class="keywordtype">char</span>* end)</div>
+<div class="line"><a id="l00277" name="l00277"></a><span class="lineno">  277</span>    {</div>
+<div class="line"><a id="l00278" name="l00278"></a><span class="lineno">  278</span>        <span class="keywordflow">do</span></div>
+<div class="line"><a id="l00279" name="l00279"></a><span class="lineno">  279</span>        {</div>
+<div class="line"><a id="l00280" name="l00280"></a><span class="lineno">  280</span>            lldiv_t result = lldiv(d, 10);</div>
+<div class="line"><a id="l00281" name="l00281"></a><span class="lineno">  281</span>            *(--end) = <span class="keyword">static_cast&lt;</span><span class="keywordtype">char</span><span class="keyword">&gt;</span>(<span class="charliteral">&#39;0&#39;</span> + result.rem);</div>
+<div class="line"><a id="l00282" name="l00282"></a><span class="lineno">  282</span>            d = result.quot;</div>
+<div class="line"><a id="l00283" name="l00283"></a><span class="lineno">  283</span>        } </div>
+<div class="line"><a id="l00284" name="l00284"></a><span class="lineno">  284</span>        <span class="keywordflow">while</span> (d != 0);</div>
+<div class="line"><a id="l00285" name="l00285"></a><span class="lineno">  285</span>        <span class="keywordflow">return</span> end;</div>
+<div class="line"><a id="l00286" name="l00286"></a><span class="lineno">  286</span>    }</div>
+<div class="line"><a id="l00287" name="l00287"></a><span class="lineno">  287</span> </div>
+<div class="line"><a id="l00288" name="l00288"></a><span class="lineno">  288</span>    <span class="keyword">static</span> <span class="keywordtype">char</span>* formatFractionalReverse(<span class="keywordtype">unsigned</span> <span class="keywordtype">long</span> <span class="keywordtype">long</span> d, <span class="keywordtype">char</span>** pEnd, <span class="keywordtype">int</span> precision, <span class="keywordtype">bool</span> zeroFill)</div>
+<div class="line"><a id="l00289" name="l00289"></a><span class="lineno">  289</span>    {</div>
+<div class="line"><a id="l00290" name="l00290"></a><span class="lineno">  290</span>        <span class="keywordtype">char</span>* end = *pEnd;</div>
+<div class="line"><a id="l00291" name="l00291"></a><span class="lineno">  291</span>        <span class="keywordtype">char</span>* start = end - precision;</div>
+<div class="line"><a id="l00292" name="l00292"></a><span class="lineno">  292</span>        <span class="keywordtype">char</span>* p = end;</div>
+<div class="line"><a id="l00293" name="l00293"></a><span class="lineno">  293</span>        <span class="keywordflow">while</span>(p &gt; start)</div>
+<div class="line"><a id="l00294" name="l00294"></a><span class="lineno">  294</span>        {</div>
+<div class="line"><a id="l00295" name="l00295"></a><span class="lineno">  295</span>            lldiv_t result = lldiv(d, 10);</div>
+<div class="line"><a id="l00296" name="l00296"></a><span class="lineno">  296</span>            <span class="keywordflow">if</span> (p == end &amp;&amp; result.rem == 0 &amp;&amp; !zeroFill)</div>
+<div class="line"><a id="l00297" name="l00297"></a><span class="lineno">  297</span>            {</div>
+<div class="line"><a id="l00298" name="l00298"></a><span class="lineno">  298</span>                end--;      <span class="comment">// skip trailing zeroes</span></div>
+<div class="line"><a id="l00299" name="l00299"></a><span class="lineno">  299</span>                p--;</div>
+<div class="line"><a id="l00300" name="l00300"></a><span class="lineno">  300</span>            }</div>
+<div class="line"><a id="l00301" name="l00301"></a><span class="lineno">  301</span>            <span class="keywordflow">else</span></div>
+<div class="line"><a id="l00302" name="l00302"></a><span class="lineno">  302</span>            {</div>
+<div class="line"><a id="l00303" name="l00303"></a><span class="lineno">  303</span>                *(--p) = <span class="keyword">static_cast&lt;</span><span class="keywordtype">char</span><span class="keyword">&gt;</span>(<span class="charliteral">&#39;0&#39;</span> + result.rem);</div>
+<div class="line"><a id="l00304" name="l00304"></a><span class="lineno">  304</span>            }</div>
+<div class="line"><a id="l00305" name="l00305"></a><span class="lineno">  305</span>            d = result.quot;</div>
+<div class="line"><a id="l00306" name="l00306"></a><span class="lineno">  306</span>        } </div>
+<div class="line"><a id="l00307" name="l00307"></a><span class="lineno">  307</span>        *pEnd = end;</div>
+<div class="line"><a id="l00308" name="l00308"></a><span class="lineno">  308</span>        <span class="keywordflow">return</span> p;</div>
+<div class="line"><a id="l00309" name="l00309"></a><span class="lineno">  309</span>    }</div>
+<div class="line"><a id="l00310" name="l00310"></a><span class="lineno">  310</span> </div>
+<div class="line"><a id="l00311" name="l00311"></a><span class="lineno">  311</span>    <span class="keyword">static</span> <span class="keywordtype">char</span>* formatLongReverse(<span class="keywordtype">long</span> <span class="keywordtype">long</span> d, <span class="keywordtype">char</span>* end, <span class="keywordtype">bool</span> negative)</div>
+<div class="line"><a id="l00312" name="l00312"></a><span class="lineno">  312</span>    {</div>
+<div class="line"><a id="l00313" name="l00313"></a><span class="lineno">  313</span>        d = (d &lt; 0) ? -d : d;</div>
+<div class="line"><a id="l00314" name="l00314"></a><span class="lineno">  314</span>        end = formatUnsignedLongReverse(d, end);</div>
+<div class="line"><a id="l00315" name="l00315"></a><span class="lineno">  315</span>        *(end - 1) = <span class="charliteral">&#39;-&#39;</span>;</div>
+<div class="line"><a id="l00316" name="l00316"></a><span class="lineno">  316</span>        <span class="keywordflow">return</span> end - negative;</div>
+<div class="line"><a id="l00317" name="l00317"></a><span class="lineno">  317</span>    }</div>
+<div class="line"><a id="l00318" name="l00318"></a><span class="lineno">  318</span> </div>
+<div class="line"><a id="l00319" name="l00319"></a><span class="lineno">  319</span>    <span class="keywordtype">void</span> filled()</div>
+<div class="line"><a id="l00320" name="l00320"></a><span class="lineno">  320</span>    {</div>
+<div class="line"><a id="l00321" name="l00321"></a><span class="lineno">  321</span>        buf_-&gt;filled(p_);</div>
+<div class="line"><a id="l00322" name="l00322"></a><span class="lineno">  322</span>        p_ = buf_-&gt;pos();</div>
+<div class="line"><a id="l00323" name="l00323"></a><span class="lineno">  323</span>        end_ = buf_-&gt;end();</div>
+<div class="line"><a id="l00324" name="l00324"></a><span class="lineno">  324</span>    }</div>
+<div class="line"><a id="l00325" name="l00325"></a><span class="lineno">  325</span> </div>
+<div class="line"><a id="l00326" name="l00326"></a><span class="lineno">  326</span>    Buffer* buf_;</div>
+<div class="line"><a id="l00327" name="l00327"></a><span class="lineno">  327</span>    <span class="keywordtype">char</span>* p_;</div>
+<div class="line"><a id="l00328" name="l00328"></a><span class="lineno">  328</span>    <span class="keywordtype">char</span>* end_;</div>
+<div class="line"><a id="l00329" name="l00329"></a><span class="lineno">  329</span>};</div>
+<div class="line"><a id="l00330" name="l00330"></a><span class="lineno">  330</span> </div>
+<div class="line"><a id="l00331" name="l00331"></a><span class="lineno">  331</span>} <span class="comment">// namespace clarisma</span></div>
 <div class="ttc" id="a_buffer_8h_html"><div class="ttname"><a href="_buffer_8h.html">Buffer.h</a></div></div>
 <div class="ttc" id="a_span_8h_html"><div class="ttname"><a href="_span_8h.html">Span.h</a></div></div>
 <div class="ttc" id="anamespaceclarisma_html"><div class="ttname"><a href="namespaceclarisma.html">clarisma</a></div><div class="ttdef"><b>Definition</b> Arena.h:17</div></div>
 <div class="ttc" id="anamespaceclarisma_html_a6a40e6a90774b6309c71ad0c7563299b"><div class="ttname"><a href="namespaceclarisma.html#a6a40e6a90774b6309c71ad0c7563299b">clarisma::writeSignedVarint</a></div><div class="ttdeci">void writeSignedVarint(uint8_t *&amp;p, int64_t val)</div><div class="ttdef"><b>Definition</b> varint.h:150</div></div>
 <div class="ttc" id="anamespaceclarisma_html_abca763c0c7903a5352159c120d957a5b"><div class="ttname"><a href="namespaceclarisma.html#abca763c0c7903a5352159c120d957a5b">clarisma::ByteSpan</a></div><div class="ttdeci">Span&lt; const uint8_t &gt; ByteSpan</div><div class="ttdef"><b>Definition</b> Span.h:60</div></div>
+<div class="ttc" id="anamespaceclarisma_html_af4033fcb0537ab6a0d9ff127b0196199"><div class="ttname"><a href="namespaceclarisma.html#af4033fcb0537ab6a0d9ff127b0196199">clarisma::operator&lt;&lt;</a></div><div class="ttdeci">Stream &amp; operator&lt;&lt;(Stream &amp;out, const Decimal &amp;d)</div><div class="ttdef"><b>Definition</b> Decimal.h:175</div></div>
 <div class="ttc" id="anamespaceclarisma_html_afb67f46f0d6308649ea79de9d6e998ac"><div class="ttname"><a href="namespaceclarisma.html#afb67f46f0d6308649ea79de9d6e998ac">clarisma::writeVarint</a></div><div class="ttdeci">void writeVarint(uint8_t *&amp;p, uint64_t val)</div><div class="ttdef"><b>Definition</b> varint.h:139</div></div>
 <div class="ttc" id="avarint_8h_html"><div class="ttname"><a href="varint_8h.html">varint.h</a></div></div>
 </div><!-- fragment --></div><!-- contents -->

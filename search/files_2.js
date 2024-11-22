@@ -12,6 +12,5 @@ var searchData=
   ['console_2eh_9',['Console.h',['../_console_8h.html',1,'']]],
   ['consolewriter_2eh_10',['ConsoleWriter.h',['../_console_writer_8h.html',1,'']]],
   ['coordinate_2eh_11',['Coordinate.h',['../_coordinate_8h.html',1,'']]],
-  ['coordinatespaniterator_2eh_12',['CoordinateSpanIterator.h',['../_coordinate_span_iterator_8h.html',1,'']]],
-  ['crc32_2eh_13',['Crc32.h',['../_crc32_8h.html',1,'']]]
+  ['crc32_2eh_12',['Crc32.h',['../_crc32_8h.html',1,'']]]
 ];

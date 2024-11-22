@@ -107,13 +107,13 @@ $(function(){initNavTree('_file_writer_8h_source.html',''); initResizable(true);
 <div class="line"><a id="l00002" name="l00002"></a><span class="lineno">    2</span><span class="comment">// SPDX-License-Identifier: LGPL-3.0-only</span></div>
 <div class="line"><a id="l00003" name="l00003"></a><span class="lineno">    3</span> </div>
 <div class="line"><a id="l00004" name="l00004"></a><span class="lineno">    4</span><span class="preprocessor">#pragma once</span></div>
-<div class="line"><a id="l00005" name="l00005"></a><span class="lineno">    5</span><span class="preprocessor">#include &lt;<a class="code" href="_stream_writer_8h.html">clarisma/util/StreamWriter.h</a>&gt;</span></div>
+<div class="line"><a id="l00005" name="l00005"></a><span class="lineno">    5</span><span class="preprocessor">#include &lt;<a class="code" href="_buffer_writer_8h.html">clarisma/util/BufferWriter.h</a>&gt;</span></div>
 <div class="line"><a id="l00006" name="l00006"></a><span class="lineno">    6</span><span class="preprocessor">#include &lt;filesystem&gt;</span></div>
 <div class="line"><a id="l00007" name="l00007"></a><span class="lineno">    7</span><span class="preprocessor">#include &lt;<a class="code" href="_file_buffer2_8h.html">clarisma/io/FileBuffer2.h</a>&gt;</span></div>
 <div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span> </div>
 <div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span><span class="keyword">namespace </span><a class="code hl_namespace" href="namespaceclarisma.html">clarisma</a> {</div>
 <div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span> </div>
-<div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span><span class="keyword">class </span>FileWriter : <span class="keyword">public</span> AbstractStreamWriter&lt;FileWriter&gt;</div>
+<div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span><span class="keyword">class </span>FileWriter : <span class="keyword">public</span> BufferWriter</div>
 <div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span>{</div>
 <div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span><span class="keyword">public</span>:</div>
 <div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span>    FileWriter()</div>
@@ -121,14 +121,14 @@ $(function(){initNavTree('_file_writer_8h_source.html',''); initResizable(true);
 <div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span>        setBuffer(&amp;buf_);</div>
 <div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span>    }</div>
 <div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span> </div>
-<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span>    <span class="keyword">explicit</span> FileWriter(<span class="keyword">const</span> <span class="keywordtype">char</span>* filename, <span class="keywordtype">size_t</span> capacity = 64 * 1024) :</div>
+<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span>    FileWriter(<span class="keyword">const</span> <span class="keywordtype">char</span>* filename, <span class="keywordtype">size_t</span> capacity = 64 * 1024) :</div>
 <div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span>        buf_(capacity)</div>
 <div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span>    {</div>
 <div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span>        setBuffer(&amp;buf_);</div>
 <div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span>        open(filename);</div>
 <div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span>    }</div>
 <div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span> </div>
-<div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span>    <span class="keyword">explicit</span> FileWriter(std::filesystem::path path, <span class="keywordtype">size_t</span> capacity = 64 * 1024) :</div>
+<div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span>    FileWriter(std::filesystem::path path, <span class="keywordtype">size_t</span> capacity = 64 * 1024) :</div>
 <div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span>        buf_(capacity)</div>
 <div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span>    {</div>
 <div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span>        setBuffer(&amp;buf_);</div>
@@ -156,8 +156,8 @@ $(function(){initNavTree('_file_writer_8h_source.html',''); initResizable(true);
 <div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span>};</div>
 <div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span> </div>
 <div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span>} <span class="comment">// namespace clarisma</span></div>
+<div class="ttc" id="a_buffer_writer_8h_html"><div class="ttname"><a href="_buffer_writer_8h.html">BufferWriter.h</a></div></div>
 <div class="ttc" id="a_file_buffer2_8h_html"><div class="ttname"><a href="_file_buffer2_8h.html">FileBuffer2.h</a></div></div>
-<div class="ttc" id="a_stream_writer_8h_html"><div class="ttname"><a href="_stream_writer_8h.html">StreamWriter.h</a></div></div>
 <div class="ttc" id="anamespaceclarisma_html"><div class="ttname"><a href="namespaceclarisma.html">clarisma</a></div><div class="ttdef"><b>Definition</b> Arena.h:17</div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->

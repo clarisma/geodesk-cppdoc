@@ -102,7 +102,6 @@ $(function(){initNavTree('classgeodesk_1_1_tag_value.html',''); initResizable(tr
 <div class="header">
   <div class="summary">
 <a href="#pub-methods">Public Member Functions</a> &#124;
-<a href="#friends">Friends</a> &#124;
 <a href="classgeodesk_1_1_tag_value-members.html">List of all members</a>  </div>
   <div class="headertitle"><div class="title">geodesk::TagValue Class Reference</div></div>
 </div><!--header-->
@@ -173,12 +172,6 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a9b224215c0de1f7592722d062bc2e33b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a072833b768525986d24a06464bf09993" id="r_a072833b768525986d24a06464bf09993"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a072833b768525986d24a06464bf09993">operator&gt;=</a> (int val) const noexcept</td></tr>
 <tr class="separator:a072833b768525986d24a06464bf09993"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="friends" name="friends"></a>
-Friends</h2></td></tr>
-<tr class="memitem:a7b38d9f7b20bb91224e513890466b743" id="r_a7b38d9f7b20bb91224e513890466b743"><td class="memTemplParams" colspan="2">template&lt;typename Stream &gt; </td></tr>
-<tr class="memitem:a7b38d9f7b20bb91224e513890466b743"><td class="memTemplItemLeft" align="right" valign="top">Stream &amp;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="#a7b38d9f7b20bb91224e513890466b743">operator&lt;&lt;</a> (Stream &amp;out, const <a class="el" href="classgeodesk_1_1_tag_value.html">TagValue</a> &amp;v)</td></tr>
-<tr class="separator:a7b38d9f7b20bb91224e513890466b743"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>The value of a <a class="el" href="classgeodesk_1_1_tag.html" title="A key/value pair that describes an attribute of a Feature.">Tag</a>. </p>
@@ -188,7 +181,7 @@ Friends</h2></td></tr>
 <li><code>int</code>: <code>0</code> if the string value does not start with a valid number</li>
 <li><code>bool</code>: <code>true</code> unless empty string, <code>"no"</code>, or a numerical value of <code>0</code></li>
 </ul>
-<p><b>Warning</b>: A <a class="el" href="classgeodesk_1_1_tag_value.html" title="The value of a Tag.">TagValue</a> object is a lightweight wrapper around a pointer to a Feature's tag data, contained in a FeatureStore. It becomes invalid once that FeatureStore is closed. To use its value beyond the lifetime of the FeatureStore, convert it to a <code>std::string</code> (which allocates a copy of the tag data), or one of the supported scalar types.</p>
+<p><b>Warning</b>: A <a class="el" href="classgeodesk_1_1_tag_value.html" title="The value of a Tag.">TagValue</a> object is a lightweight wrapper around a pointer to a <a class="el" href="classgeodesk_1_1_feature.html" title="A geographic feature.">Feature</a>'s tag data, contained in a <a class="el" href="classgeodesk_1_1_feature_store.html" title="A Geographic Object Library.">FeatureStore</a>. It becomes invalid once that <a class="el" href="classgeodesk_1_1_feature_store.html" title="A Geographic Object Library.">FeatureStore</a> is closed. To use its value beyond the lifetime of the <a class="el" href="classgeodesk_1_1_feature_store.html" title="A Geographic Object Library.">FeatureStore</a>, convert it to a <code>std::string</code> (which allocates a copy of the tag data), or one of the supported scalar types.</p>
 <dl class="section see"><dt>See also</dt><dd><a class="el" href="classgeodesk_1_1_tag.html" title="A key/value pair that describes an attribute of a Feature.">Tag</a>, <a class="el" href="classgeodesk_1_1_tags.html" title="An object describing the key/value attributes of a Feature.">Tags</a> </dd></dl>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="a3b65cf48d09dd77f04668b23c8113f8f" name="a3b65cf48d09dd77f04668b23c8113f8f"></a>
@@ -915,38 +908,6 @@ Friends</h2></td></tr>
   </td>
   <td class="mlabels-right">
 <span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">noexcept</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<h2 class="groupheader">Friends And Related Symbol Documentation</h2>
-<a id="a7b38d9f7b20bb91224e513890466b743" name="a7b38d9f7b20bb91224e513890466b743"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a7b38d9f7b20bb91224e513890466b743">&#9670;&#160;</a></span>operator&lt;&lt;</h2>
-
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;typename Stream &gt; </div>
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">Stream &amp; operator&lt;&lt; </td>
-          <td>(</td>
-          <td class="paramtype">Stream &amp;</td>          <td class="paramname"><span class="paramname"><em>out</em></span>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">const <a class="el" href="classgeodesk_1_1_tag_value.html">TagValue</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>v</em></span>&#160;)</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">friend</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">

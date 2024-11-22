@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['y_0',['y',['../classgeodesk_1_1_coordinate.html#add16f1263254018d2ba1205ec1c09927',1,'geodesk::Coordinate']]]
+  ['x_0',['x',['../classgeodesk_1_1_coordinate.html#aab218d584a3f3d77643dbcf9192419d7',1,'geodesk::Coordinate']]]
 ];

@@ -112,111 +112,156 @@ $(function(){initNavTree('_feature_8h_source.html',''); initResizable(true); });
 <div class="line"><a id="l00007" name="l00007"></a><span class="lineno">    7</span><span class="preprocessor">#include &lt;<a class="code" href="_feature_store_8h.html">geodesk/feature/FeatureStore.h</a>&gt;</span></div>
 <div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span><span class="preprocessor">#include &lt;<a class="code" href="_box_8h.html">geodesk/geom/Box.h</a>&gt;</span></div>
 <div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span> </div>
-<div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span><span class="keyword">namespace </span><a class="code hl_namespace" href="namespacegeodesk.html">geodesk</a></div>
+<div class="foldopen" id="foldopen00010" data-start="{" data-end="}">
+<div class="line"><a id="l00010" name="l00010"></a><span class="lineno"><a class="line" href="namespacegeodesk.html">   10</a></span><span class="keyword">namespace </span><a class="code hl_namespace" href="namespacegeodesk.html">geodesk</a></div>
 <div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span>{</div>
-<div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span><span class="keyword">class </span>Features;</div>
-<div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span><span class="keyword">class </span>Nodes;</div>
-<div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span><span class="keyword">class </span>Tags;</div>
-<div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span><span class="keyword">class </span>TagValue;</div>
+<div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span><span class="keyword">class </span><a class="code hl_class" href="classgeodesk_1_1_features.html">Features</a>;</div>
+<div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span><span class="keyword">class </span><a class="code hl_class" href="classgeodesk_1_1_nodes.html">Nodes</a>;</div>
+<div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span><span class="keyword">class </span><a class="code hl_class" href="classgeodesk_1_1_tags.html">Tags</a>;</div>
+<div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span><span class="keyword">class </span><a class="code hl_class" href="classgeodesk_1_1_tag_value.html">TagValue</a>;</div>
 <div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span>}</div>
+</div>
 <div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span> </div>
 <div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span><span class="keyword">class </span>GEOSGeometry;</div>
-<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span> </div>
-<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span><span class="keyword">namespace </span><a class="code hl_namespace" href="namespacegeodesk.html">geodesk</a> {</div>
-<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span> </div>
-<div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span><span class="keyword">class </span>Feature</div>
-<div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span>{</div>
-<div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span><span class="keyword">public</span>:</div>
-<div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span>    Feature(FeatureStore* store, FeaturePtr ptr);</div>
-<div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span> </div>
-<div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span> </div>
-<div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span>    <a class="code hl_enumeration" href="namespacegeodesk.html#ab4c15802927accc42f5c68cd19e7c828">FeatureType</a> type() const noexcept;</div>
-<div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span> </div>
-<div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span>    int64_t <span class="keywordtype">id</span>() const noexcept;</div>
-<div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span> </div>
-<div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span>    <span class="keywordtype">bool</span> isNode() const noexcept;</div>
-<div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span> </div>
-<div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span>    <span class="keywordtype">bool</span> isAnonymousNode() const noexcept;</div>
-<div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span> </div>
-<div class="line"><a id="l00057" name="l00057"></a><span class="lineno">   57</span>    <span class="keywordtype">bool</span> isWay() const noexcept;</div>
-<div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span> </div>
-<div class="line"><a id="l00061" name="l00061"></a><span class="lineno">   61</span>    <span class="keywordtype">bool</span> isRelation() const noexcept;</div>
-<div class="line"><a id="l00062" name="l00062"></a><span class="lineno">   62</span> </div>
-<div class="line"><a id="l00066" name="l00066"></a><span class="lineno">   66</span>    <span class="keywordtype">bool</span> isArea() const noexcept;</div>
-<div class="line"><a id="l00067" name="l00067"></a><span class="lineno">   67</span> </div>
-<div class="line"><a id="l00069" name="l00069"></a><span class="lineno">   69</span>    <span class="keywordtype">bool</span> belongsToRelation() const noexcept;</div>
-<div class="line"><a id="l00070" name="l00070"></a><span class="lineno">   70</span> </div>
-<div class="line"><a id="l00076" name="l00076"></a><span class="lineno">   76</span>    StringValue role() const noexcept;</div>
-<div class="line"><a id="l00077" name="l00077"></a><span class="lineno">   77</span> </div>
-<div class="line"><a id="l00081" name="l00081"></a><span class="lineno">   81</span> </div>
-<div class="line"><a id="l00086" name="l00086"></a><span class="lineno">   86</span>    const <span class="keywordtype">char</span>* typeName() const noexcept;</div>
-<div class="line"><a id="l00087" name="l00087"></a><span class="lineno">   87</span> </div>
-<div class="line"><a id="l00098" name="l00098"></a><span class="lineno">   98</span>    <span class="keywordtype">char</span>* format(<span class="keywordtype">char</span>* buf) const noexcept;</div>
-<div class="line"><a id="l00099" name="l00099"></a><span class="lineno">   99</span> </div>
-<div class="line"><a id="l00104" name="l00104"></a><span class="lineno">  104</span>    <a class="code hl_namespace" href="namespacestd.html">std</a>::<span class="keywordtype">string</span> toString() const;</div>
-<div class="line"><a id="l00105" name="l00105"></a><span class="lineno">  105</span> </div>
-<div class="line"><a id="l00111" name="l00111"></a><span class="lineno">  111</span>    <a class="code hl_namespace" href="namespacestd.html">std</a>::<span class="keywordtype">string</span> label() const;</div>
-<div class="line"><a id="l00112" name="l00112"></a><span class="lineno">  112</span> </div>
-<div class="line"><a id="l00116" name="l00116"></a><span class="lineno">  116</span> </div>
-<div class="line"><a id="l00121" name="l00121"></a><span class="lineno">  121</span>    TagValue operator[](<a class="code hl_namespace" href="namespacestd.html">std</a>::string_view key) const noexcept;</div>
-<div class="line"><a id="l00122" name="l00122"></a><span class="lineno">  122</span> </div>
-<div class="line"><a id="l00125" name="l00125"></a><span class="lineno">  125</span>    Tags tags() const noexcept;</div>
-<div class="line"><a id="l00126" name="l00126"></a><span class="lineno">  126</span> </div>
-<div class="line"><a id="l00129" name="l00129"></a><span class="lineno">  129</span>    <span class="keywordtype">bool</span> hasTag(<a class="code hl_namespace" href="namespacestd.html">std</a>::string_view k) const noexcept;</div>
-<div class="line"><a id="l00130" name="l00130"></a><span class="lineno">  130</span> </div>
-<div class="line"><a id="l00134" name="l00134"></a><span class="lineno">  134</span>    <span class="keywordtype">bool</span> hasTag(<a class="code hl_namespace" href="namespacestd.html">std</a>::string_view k, <a class="code hl_namespace" href="namespacestd.html">std</a>::string_view v) const noexcept;</div>
-<div class="line"><a id="l00135" name="l00135"></a><span class="lineno">  135</span> </div>
-<div class="line"><a id="l00139" name="l00139"></a><span class="lineno">  139</span> </div>
-<div class="line"><a id="l00144" name="l00144"></a><span class="lineno">  144</span>    Box bounds() const noexcept;</div>
-<div class="line"><a id="l00145" name="l00145"></a><span class="lineno">  145</span> </div>
-<div class="line"><a id="l00149" name="l00149"></a><span class="lineno">  149</span>    Coordinate xy() const noexcept;</div>
-<div class="line"><a id="l00150" name="l00150"></a><span class="lineno">  150</span> </div>
-<div class="line"><a id="l00154" name="l00154"></a><span class="lineno">  154</span>    int32_t x() const noexcept;</div>
-<div class="line"><a id="l00155" name="l00155"></a><span class="lineno">  155</span> </div>
-<div class="line"><a id="l00159" name="l00159"></a><span class="lineno">  159</span>    int32_t y() const noexcept;</div>
-<div class="line"><a id="l00160" name="l00160"></a><span class="lineno">  160</span> </div>
-<div class="line"><a id="l00166" name="l00166"></a><span class="lineno">  166</span>    <span class="keywordtype">double</span> lon() const noexcept;</div>
-<div class="line"><a id="l00167" name="l00167"></a><span class="lineno">  167</span> </div>
-<div class="line"><a id="l00173" name="l00173"></a><span class="lineno">  173</span>    <span class="keywordtype">double</span> lat() const noexcept;</div>
-<div class="line"><a id="l00174" name="l00174"></a><span class="lineno">  174</span> </div>
-<div class="line"><a id="l00181" name="l00181"></a><span class="lineno">  181</span>    Coordinate centroid() const;</div>
-<div class="line"><a id="l00182" name="l00182"></a><span class="lineno">  182</span> </div>
-<div class="line"><a id="l00189" name="l00189"></a><span class="lineno">  189</span>    <span class="keywordtype">double</span> area() const;</div>
-<div class="line"><a id="l00190" name="l00190"></a><span class="lineno">  190</span> </div>
-<div class="line"><a id="l00197" name="l00197"></a><span class="lineno">  197</span>    <span class="keywordtype">double</span> length() const;</div>
-<div class="line"><a id="l00198" name="l00198"></a><span class="lineno">  198</span> </div>
+<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span><span class="keyword">class </span>GEOSContextHandle_t;</div>
+<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span> </div>
+<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span><span class="keyword">namespace </span><a class="code hl_namespace" href="namespacegeodesk.html">geodesk</a> {</div>
+<div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span> </div>
+<div class="foldopen" id="foldopen00026" data-start="{" data-end="};">
+<div class="line"><a id="l00026" name="l00026"></a><span class="lineno"><a class="line" href="classgeodesk_1_1_feature.html">   26</a></span><span class="keyword">class </span><a class="code hl_class" href="classgeodesk_1_1_feature.html">Feature</a></div>
+<div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span>{</div>
+<div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span><span class="keyword">public</span>:</div>
+<div class="line"><a id="l00029" name="l00029"></a><span class="lineno"><a class="line" href="classgeodesk_1_1_feature.html#ad5846c0a072500e6d0f157e40a23d24b">   29</a></span>    <a class="code hl_function" href="classgeodesk_1_1_feature.html#ad5846c0a072500e6d0f157e40a23d24b">Feature</a>(<a class="code hl_class" href="classgeodesk_1_1_feature_store.html">FeatureStore</a>* <a class="code hl_function" href="classgeodesk_1_1_feature.html#a35f507247170b18ea03ff3e20be0aadd">store</a>, <a class="code hl_class" href="classgeodesk_1_1_feature_ptr.html">FeaturePtr</a> <a class="code hl_function" href="classgeodesk_1_1_feature.html#aa3b94de4d53b36dd36652214558dc189">ptr</a>);</div>
+<div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span> </div>
+<div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span> </div>
+<div class="line"><a id="l00037" name="l00037"></a><span class="lineno"><a class="line" href="classgeodesk_1_1_feature.html#a949ff89a5224a5425ab042e5ea914141">   37</a></span>    <a class="code hl_enumeration" href="namespacegeodesk.html#ab4c15802927accc42f5c68cd19e7c828">FeatureType</a> <a class="code hl_function" href="classgeodesk_1_1_feature.html#a949ff89a5224a5425ab042e5ea914141">type</a>() const noexcept;</div>
+<div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span> </div>
+<div class="line"><a id="l00042" name="l00042"></a><span class="lineno"><a class="line" href="classgeodesk_1_1_feature.html#a8340c0795b3f29c48b8ed76e77b6fd42">   42</a></span>    int64_t <span class="keywordtype">id</span>() const noexcept;</div>
+<div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span> </div>
+<div class="line"><a id="l00046" name="l00046"></a><span class="lineno"><a class="line" href="classgeodesk_1_1_feature.html#ada8e17f45420373b827528ac2ba5fc42">   46</a></span>    <span class="keywordtype">bool</span> <a class="code hl_function" href="classgeodesk_1_1_feature.html#ada8e17f45420373b827528ac2ba5fc42">isNode</a>() const noexcept;</div>
+<div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span> </div>
+<div class="line"><a id="l00054" name="l00054"></a><span class="lineno"><a class="line" href="classgeodesk_1_1_feature.html#ac429bb58919fac6db864d194ba5d2f11">   54</a></span>    <span class="keywordtype">bool</span> <a class="code hl_function" href="classgeodesk_1_1_feature.html#ac429bb58919fac6db864d194ba5d2f11">isAnonymousNode</a>() const noexcept;</div>
+<div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span> </div>
+<div class="line"><a id="l00058" name="l00058"></a><span class="lineno"><a class="line" href="classgeodesk_1_1_feature.html#af190e92d211e75cf0be57f45b8f6516a">   58</a></span>    <span class="keywordtype">bool</span> <a class="code hl_function" href="classgeodesk_1_1_feature.html#af190e92d211e75cf0be57f45b8f6516a">isWay</a>() const noexcept;</div>
+<div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span> </div>
+<div class="line"><a id="l00062" name="l00062"></a><span class="lineno"><a class="line" href="classgeodesk_1_1_feature.html#a7043d571cdd84cef206d22b4a82f8a8a">   62</a></span>    <span class="keywordtype">bool</span> <a class="code hl_function" href="classgeodesk_1_1_feature.html#a7043d571cdd84cef206d22b4a82f8a8a">isRelation</a>() const noexcept;</div>
+<div class="line"><a id="l00063" name="l00063"></a><span class="lineno">   63</span> </div>
+<div class="line"><a id="l00067" name="l00067"></a><span class="lineno"><a class="line" href="classgeodesk_1_1_feature.html#ace94c0e197e1d3ab3cbe78c6616686b1">   67</a></span>    <span class="keywordtype">bool</span> <a class="code hl_function" href="classgeodesk_1_1_feature.html#ace94c0e197e1d3ab3cbe78c6616686b1">isArea</a>() const noexcept;</div>
+<div class="line"><a id="l00068" name="l00068"></a><span class="lineno">   68</span> </div>
+<div class="line"><a id="l00070" name="l00070"></a><span class="lineno"><a class="line" href="classgeodesk_1_1_feature.html#a4c47ee60cd18760a4b318a370bc0a5b1">   70</a></span>    <span class="keywordtype">bool</span> <a class="code hl_function" href="classgeodesk_1_1_feature.html#a4c47ee60cd18760a4b318a370bc0a5b1">belongsToRelation</a>() const noexcept;</div>
+<div class="line"><a id="l00071" name="l00071"></a><span class="lineno">   71</span> </div>
+<div class="line"><a id="l00077" name="l00077"></a><span class="lineno"><a class="line" href="classgeodesk_1_1_feature.html#a0d0542770da5289588deae1760173867">   77</a></span>    <a class="code hl_class" href="classgeodesk_1_1_string_value.html">StringValue</a> <a class="code hl_function" href="classgeodesk_1_1_feature.html#a0d0542770da5289588deae1760173867">role</a>() const noexcept;</div>
+<div class="line"><a id="l00078" name="l00078"></a><span class="lineno">   78</span> </div>
+<div class="line"><a id="l00082" name="l00082"></a><span class="lineno">   82</span> </div>
+<div class="line"><a id="l00087" name="l00087"></a><span class="lineno"><a class="line" href="classgeodesk_1_1_feature.html#a1a721e45d3805aefb5a98e07057c7b3f">   87</a></span>    const <span class="keywordtype">char</span>* <a class="code hl_function" href="classgeodesk_1_1_feature.html#a1a721e45d3805aefb5a98e07057c7b3f">typeName</a>() const noexcept;</div>
+<div class="line"><a id="l00088" name="l00088"></a><span class="lineno">   88</span> </div>
+<div class="line"><a id="l00099" name="l00099"></a><span class="lineno"><a class="line" href="classgeodesk_1_1_feature.html#a28d7fe21cf388b6a2d4a9741889f5fa8">   99</a></span>    <span class="keywordtype">char</span>* <a class="code hl_function" href="classgeodesk_1_1_feature.html#a28d7fe21cf388b6a2d4a9741889f5fa8">format</a>(<span class="keywordtype">char</span>* buf) const noexcept;</div>
+<div class="line"><a id="l00100" name="l00100"></a><span class="lineno">  100</span> </div>
+<div class="line"><a id="l00105" name="l00105"></a><span class="lineno"><a class="line" href="classgeodesk_1_1_feature.html#ae18824c13ad34fee7e996ef05aa345d7">  105</a></span>    <a class="code hl_namespace" href="namespacestd.html">std</a>::<span class="keywordtype">string</span> <a class="code hl_function" href="classgeodesk_1_1_feature.html#ae18824c13ad34fee7e996ef05aa345d7">toString</a>() const;</div>
+<div class="line"><a id="l00106" name="l00106"></a><span class="lineno">  106</span> </div>
+<div class="line"><a id="l00112" name="l00112"></a><span class="lineno"><a class="line" href="classgeodesk_1_1_feature.html#a13e196962da17be1b500554614192137">  112</a></span>    <a class="code hl_namespace" href="namespacestd.html">std</a>::<span class="keywordtype">string</span> <a class="code hl_function" href="classgeodesk_1_1_feature.html#a13e196962da17be1b500554614192137">label</a>() const;</div>
+<div class="line"><a id="l00113" name="l00113"></a><span class="lineno">  113</span> </div>
+<div class="line"><a id="l00117" name="l00117"></a><span class="lineno">  117</span> </div>
+<div class="line"><a id="l00122" name="l00122"></a><span class="lineno"><a class="line" href="classgeodesk_1_1_feature.html#a8350ba55c2bac5035fd0e59a84e4ee36">  122</a></span>    <a class="code hl_class" href="classgeodesk_1_1_tag_value.html">TagValue</a> operator[](<a class="code hl_namespace" href="namespacestd.html">std</a>::string_view key) const noexcept;</div>
+<div class="line"><a id="l00123" name="l00123"></a><span class="lineno">  123</span> </div>
+<div class="line"><a id="l00126" name="l00126"></a><span class="lineno"><a class="line" href="classgeodesk_1_1_feature.html#aa76bfe7e61318c06d24d8a3e2a0fef67">  126</a></span>    <a class="code hl_class" href="classgeodesk_1_1_tags.html">Tags</a> <a class="code hl_function" href="classgeodesk_1_1_feature.html#aa76bfe7e61318c06d24d8a3e2a0fef67">tags</a>() const noexcept;</div>
+<div class="line"><a id="l00127" name="l00127"></a><span class="lineno">  127</span> </div>
+<div class="line"><a id="l00130" name="l00130"></a><span class="lineno"><a class="line" href="classgeodesk_1_1_feature.html#ae9a75e6415928564cb60edf09ebd2dd8">  130</a></span>    <span class="keywordtype">bool</span> <a class="code hl_function" href="classgeodesk_1_1_feature.html#ae9a75e6415928564cb60edf09ebd2dd8">hasTag</a>(<a class="code hl_namespace" href="namespacestd.html">std</a>::string_view k) const noexcept;</div>
+<div class="line"><a id="l00131" name="l00131"></a><span class="lineno">  131</span> </div>
+<div class="line"><a id="l00135" name="l00135"></a><span class="lineno"><a class="line" href="classgeodesk_1_1_feature.html#a23f8b4a52d9261af02dd7f23c5df4289">  135</a></span>    <span class="keywordtype">bool</span> <a class="code hl_function" href="classgeodesk_1_1_feature.html#ae9a75e6415928564cb60edf09ebd2dd8">hasTag</a>(<a class="code hl_namespace" href="namespacestd.html">std</a>::string_view k, <a class="code hl_namespace" href="namespacestd.html">std</a>::string_view v) const noexcept;</div>
+<div class="line"><a id="l00136" name="l00136"></a><span class="lineno">  136</span> </div>
+<div class="line"><a id="l00140" name="l00140"></a><span class="lineno">  140</span> </div>
+<div class="line"><a id="l00145" name="l00145"></a><span class="lineno"><a class="line" href="classgeodesk_1_1_feature.html#a3dc8dd565c1fbd672f5045e848f9e251">  145</a></span>    <a class="code hl_class" href="classgeodesk_1_1_box.html">Box</a> <a class="code hl_function" href="classgeodesk_1_1_feature.html#a3dc8dd565c1fbd672f5045e848f9e251">bounds</a>() const noexcept;</div>
+<div class="line"><a id="l00146" name="l00146"></a><span class="lineno">  146</span> </div>
+<div class="line"><a id="l00150" name="l00150"></a><span class="lineno"><a class="line" href="classgeodesk_1_1_feature.html#ae9de606068d0b59950ac7c0ccd721f99">  150</a></span>    <a class="code hl_class" href="classgeodesk_1_1_coordinate.html">Coordinate</a> <a class="code hl_function" href="classgeodesk_1_1_feature.html#ae9de606068d0b59950ac7c0ccd721f99">xy</a>() const noexcept;</div>
+<div class="line"><a id="l00151" name="l00151"></a><span class="lineno">  151</span> </div>
+<div class="line"><a id="l00155" name="l00155"></a><span class="lineno"><a class="line" href="classgeodesk_1_1_feature.html#afdd708fc22a8b746303d6f659c064127">  155</a></span>    int32_t <a class="code hl_function" href="classgeodesk_1_1_feature.html#afdd708fc22a8b746303d6f659c064127">x</a>() const noexcept;</div>
+<div class="line"><a id="l00156" name="l00156"></a><span class="lineno">  156</span> </div>
+<div class="line"><a id="l00160" name="l00160"></a><span class="lineno"><a class="line" href="classgeodesk_1_1_feature.html#a99a68187774b2bd27dfa0bd6b751e6b3">  160</a></span>    int32_t <a class="code hl_function" href="classgeodesk_1_1_feature.html#a99a68187774b2bd27dfa0bd6b751e6b3">y</a>() const noexcept;</div>
+<div class="line"><a id="l00161" name="l00161"></a><span class="lineno">  161</span> </div>
+<div class="line"><a id="l00167" name="l00167"></a><span class="lineno"><a class="line" href="classgeodesk_1_1_feature.html#a6f0474e59088cec18c3f8ce12e116128">  167</a></span>    <span class="keywordtype">double</span> <a class="code hl_function" href="classgeodesk_1_1_feature.html#a6f0474e59088cec18c3f8ce12e116128">lon</a>() const noexcept;</div>
+<div class="line"><a id="l00168" name="l00168"></a><span class="lineno">  168</span> </div>
+<div class="line"><a id="l00174" name="l00174"></a><span class="lineno"><a class="line" href="classgeodesk_1_1_feature.html#a634de2ba61ba9b87fb16f469b3e4ddc2">  174</a></span>    <span class="keywordtype">double</span> <a class="code hl_function" href="classgeodesk_1_1_feature.html#a634de2ba61ba9b87fb16f469b3e4ddc2">lat</a>() const noexcept;</div>
+<div class="line"><a id="l00175" name="l00175"></a><span class="lineno">  175</span> </div>
+<div class="line"><a id="l00182" name="l00182"></a><span class="lineno"><a class="line" href="classgeodesk_1_1_feature.html#a576edd48d1a4d0f29ea09e60388d2e59">  182</a></span>    <a class="code hl_class" href="classgeodesk_1_1_coordinate.html">Coordinate</a> <a class="code hl_function" href="classgeodesk_1_1_feature.html#a576edd48d1a4d0f29ea09e60388d2e59">centroid</a>() const;</div>
+<div class="line"><a id="l00183" name="l00183"></a><span class="lineno">  183</span> </div>
+<div class="line"><a id="l00190" name="l00190"></a><span class="lineno"><a class="line" href="classgeodesk_1_1_feature.html#aafcfafe2c11e0678f514eb4b1a2ad41d">  190</a></span>    <span class="keywordtype">double</span> <a class="code hl_function" href="classgeodesk_1_1_feature.html#aafcfafe2c11e0678f514eb4b1a2ad41d">area</a>() const;</div>
+<div class="line"><a id="l00191" name="l00191"></a><span class="lineno">  191</span> </div>
+<div class="line"><a id="l00198" name="l00198"></a><span class="lineno"><a class="line" href="classgeodesk_1_1_feature.html#ac5beed8943adb7d5735f2dccda111e89">  198</a></span>    <span class="keywordtype">double</span> <a class="code hl_function" href="classgeodesk_1_1_feature.html#ac5beed8943adb7d5735f2dccda111e89">length</a>() const;</div>
 <div class="line"><a id="l00199" name="l00199"></a><span class="lineno">  199</span> </div>
-<div class="line"><a id="l00212" name="l00212"></a><span class="lineno">  212</span>    GEOSGeometry* toGeometry(GEOSContextHandle_t geosContext) const;</div>
-<div class="line"><a id="l00213" name="l00213"></a><span class="lineno">  213</span> </div>
+<div class="line"><a id="l00200" name="l00200"></a><span class="lineno">  200</span> </div>
+<div class="line"><a id="l00213" name="l00213"></a><span class="lineno"><a class="line" href="classgeodesk_1_1_feature.html#a9ea1666a8f01ab0c48ca632134ef4c28">  213</a></span>    GEOSGeometry* <a class="code hl_function" href="classgeodesk_1_1_feature.html#a9ea1666a8f01ab0c48ca632134ef4c28">toGeometry</a>(GEOSContextHandle_t geosContext) const;</div>
 <div class="line"><a id="l00214" name="l00214"></a><span class="lineno">  214</span> </div>
-<div class="line"><a id="l00218" name="l00218"></a><span class="lineno">  218</span> </div>
-<div class="line"><a id="l00223" name="l00223"></a><span class="lineno">  223</span>    Nodes nodes() const;</div>
-<div class="line"><a id="l00224" name="l00224"></a><span class="lineno">  224</span> </div>
-<div class="line"><a id="l00231" name="l00231"></a><span class="lineno">  231</span>    Nodes nodes(const <span class="keywordtype">char</span>* query) const;</div>
-<div class="line"><a id="l00232" name="l00232"></a><span class="lineno">  232</span> </div>
-<div class="line"><a id="l00237" name="l00237"></a><span class="lineno">  237</span>    Features members() const;</div>
-<div class="line"><a id="l00238" name="l00238"></a><span class="lineno">  238</span> </div>
-<div class="line"><a id="l00245" name="l00245"></a><span class="lineno">  245</span>    Features members(const <span class="keywordtype">char</span>* query) const;</div>
-<div class="line"><a id="l00246" name="l00246"></a><span class="lineno">  246</span> </div>
-<div class="line"><a id="l00252" name="l00252"></a><span class="lineno">  252</span>    Features parents() const;</div>
-<div class="line"><a id="l00253" name="l00253"></a><span class="lineno">  253</span> </div>
-<div class="line"><a id="l00261" name="l00261"></a><span class="lineno">  261</span>    Features parents(const <span class="keywordtype">char</span>* query) const;</div>
-<div class="line"><a id="l00262" name="l00262"></a><span class="lineno">  262</span> </div>
-<div class="line"><a id="l00266" name="l00266"></a><span class="lineno">  266</span> </div>
-<div class="line"><a id="l00271" name="l00271"></a><span class="lineno">  271</span>    FeaturePtr ptr() const noexcept;</div>
-<div class="line"><a id="l00272" name="l00272"></a><span class="lineno">  272</span> </div>
-<div class="line"><a id="l00276" name="l00276"></a><span class="lineno">  276</span>    FeatureStore* store() const noexcept;</div>
-<div class="line"><a id="l00277" name="l00277"></a><span class="lineno">  277</span> </div>
-<div class="line"><a id="l00279" name="l00279"></a><span class="lineno">  279</span>};</div>
-<div class="line"><a id="l00280" name="l00280"></a><span class="lineno">  280</span> </div>
-<div class="line"><a id="l00281" name="l00281"></a><span class="lineno">  281</span>} <span class="comment">// namespace geodesk</span></div>
-<div class="line"><a id="l00282" name="l00282"></a><span class="lineno">  282</span> </div>
+<div class="line"><a id="l00215" name="l00215"></a><span class="lineno">  215</span> </div>
+<div class="line"><a id="l00219" name="l00219"></a><span class="lineno">  219</span> </div>
+<div class="line"><a id="l00224" name="l00224"></a><span class="lineno"><a class="line" href="classgeodesk_1_1_feature.html#ac51004a426e59072a185cff1bc0e75fc">  224</a></span>    <a class="code hl_class" href="classgeodesk_1_1_nodes.html">Nodes</a> <a class="code hl_function" href="classgeodesk_1_1_feature.html#ac51004a426e59072a185cff1bc0e75fc">nodes</a>() const;</div>
+<div class="line"><a id="l00225" name="l00225"></a><span class="lineno">  225</span> </div>
+<div class="line"><a id="l00232" name="l00232"></a><span class="lineno"><a class="line" href="classgeodesk_1_1_feature.html#a5e627d84c9284fbd658ca34a2b32cee7">  232</a></span>    <a class="code hl_class" href="classgeodesk_1_1_nodes.html">Nodes</a> <a class="code hl_function" href="classgeodesk_1_1_feature.html#ac51004a426e59072a185cff1bc0e75fc">nodes</a>(const <span class="keywordtype">char</span>* query) const;</div>
+<div class="line"><a id="l00233" name="l00233"></a><span class="lineno">  233</span> </div>
+<div class="line"><a id="l00238" name="l00238"></a><span class="lineno"><a class="line" href="classgeodesk_1_1_feature.html#a4ce23a5c77ddb55ddb398abff21becb8">  238</a></span>    <a class="code hl_class" href="classgeodesk_1_1_features.html">Features</a> <a class="code hl_function" href="classgeodesk_1_1_feature.html#a4ce23a5c77ddb55ddb398abff21becb8">members</a>() const;</div>
+<div class="line"><a id="l00239" name="l00239"></a><span class="lineno">  239</span> </div>
+<div class="line"><a id="l00246" name="l00246"></a><span class="lineno"><a class="line" href="classgeodesk_1_1_feature.html#a880f3cb78eb65f1da7c2074777bf7cb4">  246</a></span>    <a class="code hl_class" href="classgeodesk_1_1_features.html">Features</a> <a class="code hl_function" href="classgeodesk_1_1_feature.html#a4ce23a5c77ddb55ddb398abff21becb8">members</a>(const <span class="keywordtype">char</span>* query) const;</div>
+<div class="line"><a id="l00247" name="l00247"></a><span class="lineno">  247</span> </div>
+<div class="line"><a id="l00253" name="l00253"></a><span class="lineno"><a class="line" href="classgeodesk_1_1_feature.html#a67728a78d046da731b1663f536656ffa">  253</a></span>    <a class="code hl_class" href="classgeodesk_1_1_features.html">Features</a> <a class="code hl_function" href="classgeodesk_1_1_feature.html#a67728a78d046da731b1663f536656ffa">parents</a>() const;</div>
+<div class="line"><a id="l00254" name="l00254"></a><span class="lineno">  254</span> </div>
+<div class="line"><a id="l00262" name="l00262"></a><span class="lineno"><a class="line" href="classgeodesk_1_1_feature.html#a9aafb703dc18265b2aaa239472da2474">  262</a></span>    <a class="code hl_class" href="classgeodesk_1_1_features.html">Features</a> <a class="code hl_function" href="classgeodesk_1_1_feature.html#a67728a78d046da731b1663f536656ffa">parents</a>(const <span class="keywordtype">char</span>* query) const;</div>
+<div class="line"><a id="l00263" name="l00263"></a><span class="lineno">  263</span> </div>
+<div class="line"><a id="l00267" name="l00267"></a><span class="lineno">  267</span> </div>
+<div class="line"><a id="l00272" name="l00272"></a><span class="lineno"><a class="line" href="classgeodesk_1_1_feature.html#aa3b94de4d53b36dd36652214558dc189">  272</a></span>    <a class="code hl_class" href="classgeodesk_1_1_feature_ptr.html">FeaturePtr</a> <a class="code hl_function" href="classgeodesk_1_1_feature.html#aa3b94de4d53b36dd36652214558dc189">ptr</a>() const noexcept;</div>
+<div class="line"><a id="l00273" name="l00273"></a><span class="lineno">  273</span> </div>
+<div class="line"><a id="l00277" name="l00277"></a><span class="lineno"><a class="line" href="classgeodesk_1_1_feature.html#a35f507247170b18ea03ff3e20be0aadd">  277</a></span>    <a class="code hl_class" href="classgeodesk_1_1_feature_store.html">FeatureStore</a>* <a class="code hl_function" href="classgeodesk_1_1_feature.html#a35f507247170b18ea03ff3e20be0aadd">store</a>() const noexcept;</div>
+<div class="line"><a id="l00278" name="l00278"></a><span class="lineno">  278</span> </div>
+<div class="line"><a id="l00280" name="l00280"></a><span class="lineno">  280</span>};</div>
+</div>
+<div class="line"><a id="l00281" name="l00281"></a><span class="lineno">  281</span> </div>
+<div class="line"><a id="l00282" name="l00282"></a><span class="lineno">  282</span>} <span class="comment">// namespace geodesk</span></div>
 <div class="line"><a id="l00283" name="l00283"></a><span class="lineno">  283</span> </div>
 <div class="line"><a id="l00284" name="l00284"></a><span class="lineno">  284</span> </div>
+<div class="line"><a id="l00285" name="l00285"></a><span class="lineno">  285</span> </div>
 <div class="ttc" id="a_box_8h_html"><div class="ttname"><a href="_box_8h.html">Box.h</a></div></div>
 <div class="ttc" id="a_feature_ptr_8h_html"><div class="ttname"><a href="_feature_ptr_8h.html">FeaturePtr.h</a></div></div>
 <div class="ttc" id="a_feature_store_8h_html"><div class="ttname"><a href="_feature_store_8h.html">FeatureStore.h</a></div></div>
-<div class="ttc" id="anamespacegeodesk_html"><div class="ttname"><a href="namespacegeodesk.html">geodesk</a></div><div class="ttdef"><b>Definition</b> Features.h:12</div></div>
+<div class="ttc" id="aclassgeodesk_1_1_box_html"><div class="ttname"><a href="classgeodesk_1_1_box.html">geodesk::Box</a></div><div class="ttdoc">An axis-aligned bounding box.</div><div class="ttdef"><b>Definition</b> Box.h:34</div></div>
+<div class="ttc" id="aclassgeodesk_1_1_coordinate_html"><div class="ttname"><a href="classgeodesk_1_1_coordinate.html">geodesk::Coordinate</a></div><div class="ttdoc">A pair of Cartesian coordinate values.</div><div class="ttdef"><b>Definition</b> Coordinate.h:17</div></div>
+<div class="ttc" id="aclassgeodesk_1_1_feature_html"><div class="ttname"><a href="classgeodesk_1_1_feature.html">geodesk::Feature</a></div><div class="ttdoc">A geographic feature.</div><div class="ttdef"><b>Definition</b> Feature.h:27</div></div>
+<div class="ttc" id="aclassgeodesk_1_1_feature_html_a0d0542770da5289588deae1760173867"><div class="ttname"><a href="classgeodesk_1_1_feature.html#a0d0542770da5289588deae1760173867">geodesk::Feature::role</a></div><div class="ttdeci">StringValue role() const noexcept</div><div class="ttdoc">The Feature's role in its Relation, if it was returned via members() or Features::membersOf(),...</div></div>
+<div class="ttc" id="aclassgeodesk_1_1_feature_html_a13e196962da17be1b500554614192137"><div class="ttname"><a href="classgeodesk_1_1_feature.html#a13e196962da17be1b500554614192137">geodesk::Feature::label</a></div><div class="ttdeci">std::string label() const</div><div class="ttdoc">Creates a short descriptive label.</div></div>
+<div class="ttc" id="aclassgeodesk_1_1_feature_html_a1a721e45d3805aefb5a98e07057c7b3f"><div class="ttname"><a href="classgeodesk_1_1_feature.html#a1a721e45d3805aefb5a98e07057c7b3f">geodesk::Feature::typeName</a></div><div class="ttdeci">const char * typeName() const noexcept</div><div class="ttdoc">&quot;node&quot;, &quot;way&quot; or &quot;relation&quot;</div></div>
+<div class="ttc" id="aclassgeodesk_1_1_feature_html_a28d7fe21cf388b6a2d4a9741889f5fa8"><div class="ttname"><a href="classgeodesk_1_1_feature.html#a28d7fe21cf388b6a2d4a9741889f5fa8">geodesk::Feature::format</a></div><div class="ttdeci">char * format(char *buf) const noexcept</div><div class="ttdoc">Formats the string representation (e.g. &quot;node/123456&quot;) of this Feature into the provided buffer.</div></div>
+<div class="ttc" id="aclassgeodesk_1_1_feature_html_a35f507247170b18ea03ff3e20be0aadd"><div class="ttname"><a href="classgeodesk_1_1_feature.html#a35f507247170b18ea03ff3e20be0aadd">geodesk::Feature::store</a></div><div class="ttdeci">FeatureStore * store() const noexcept</div><div class="ttdoc">Pointer to the FeatureStore which contains this Feature.</div></div>
+<div class="ttc" id="aclassgeodesk_1_1_feature_html_a3dc8dd565c1fbd672f5045e848f9e251"><div class="ttname"><a href="classgeodesk_1_1_feature.html#a3dc8dd565c1fbd672f5045e848f9e251">geodesk::Feature::bounds</a></div><div class="ttdeci">Box bounds() const noexcept</div><div class="ttdoc">The bounding box of this Feature.</div></div>
+<div class="ttc" id="aclassgeodesk_1_1_feature_html_a4c47ee60cd18760a4b318a370bc0a5b1"><div class="ttname"><a href="classgeodesk_1_1_feature.html#a4c47ee60cd18760a4b318a370bc0a5b1">geodesk::Feature::belongsToRelation</a></div><div class="ttdeci">bool belongsToRelation() const noexcept</div><div class="ttdoc">true if this Feature belongs to at least one Relation.</div></div>
+<div class="ttc" id="aclassgeodesk_1_1_feature_html_a4ce23a5c77ddb55ddb398abff21becb8"><div class="ttname"><a href="classgeodesk_1_1_feature.html#a4ce23a5c77ddb55ddb398abff21becb8">geodesk::Feature::members</a></div><div class="ttdeci">Features members() const</div><div class="ttdoc">The members of this Relation.</div></div>
+<div class="ttc" id="aclassgeodesk_1_1_feature_html_a576edd48d1a4d0f29ea09e60388d2e59"><div class="ttname"><a href="classgeodesk_1_1_feature.html#a576edd48d1a4d0f29ea09e60388d2e59">geodesk::Feature::centroid</a></div><div class="ttdeci">Coordinate centroid() const</div><div class="ttdoc">Computes the centroid of this Feature.</div></div>
+<div class="ttc" id="aclassgeodesk_1_1_feature_html_a634de2ba61ba9b87fb16f469b3e4ddc2"><div class="ttname"><a href="classgeodesk_1_1_feature.html#a634de2ba61ba9b87fb16f469b3e4ddc2">geodesk::Feature::lat</a></div><div class="ttdeci">double lat() const noexcept</div><div class="ttdoc">The latitude of this feature (in WGS-84 degrees).</div></div>
+<div class="ttc" id="aclassgeodesk_1_1_feature_html_a67728a78d046da731b1663f536656ffa"><div class="ttname"><a href="classgeodesk_1_1_feature.html#a67728a78d046da731b1663f536656ffa">geodesk::Feature::parents</a></div><div class="ttdeci">Features parents() const</div><div class="ttdoc">The parent relations of this Feature (and the parent ways for a Node).</div></div>
+<div class="ttc" id="aclassgeodesk_1_1_feature_html_a6f0474e59088cec18c3f8ce12e116128"><div class="ttname"><a href="classgeodesk_1_1_feature.html#a6f0474e59088cec18c3f8ce12e116128">geodesk::Feature::lon</a></div><div class="ttdeci">double lon() const noexcept</div><div class="ttdoc">The longitude of this feature (in WGS-84 degrees).</div></div>
+<div class="ttc" id="aclassgeodesk_1_1_feature_html_a7043d571cdd84cef206d22b4a82f8a8a"><div class="ttname"><a href="classgeodesk_1_1_feature.html#a7043d571cdd84cef206d22b4a82f8a8a">geodesk::Feature::isRelation</a></div><div class="ttdeci">bool isRelation() const noexcept</div><div class="ttdoc">true if this Feature is a Relation.</div></div>
+<div class="ttc" id="aclassgeodesk_1_1_feature_html_a949ff89a5224a5425ab042e5ea914141"><div class="ttname"><a href="classgeodesk_1_1_feature.html#a949ff89a5224a5425ab042e5ea914141">geodesk::Feature::type</a></div><div class="ttdeci">FeatureType type() const noexcept</div><div class="ttdoc">The Feature's type.</div></div>
+<div class="ttc" id="aclassgeodesk_1_1_feature_html_a99a68187774b2bd27dfa0bd6b751e6b3"><div class="ttname"><a href="classgeodesk_1_1_feature.html#a99a68187774b2bd27dfa0bd6b751e6b3">geodesk::Feature::y</a></div><div class="ttdeci">int32_t y() const noexcept</div><div class="ttdoc">The Mercator-projected y-coordinate of a Node, or the vertical midpoint of the bounding box for a Way...</div></div>
+<div class="ttc" id="aclassgeodesk_1_1_feature_html_a9ea1666a8f01ab0c48ca632134ef4c28"><div class="ttname"><a href="classgeodesk_1_1_feature.html#a9ea1666a8f01ab0c48ca632134ef4c28">geodesk::Feature::toGeometry</a></div><div class="ttdeci">GEOSGeometry * toGeometry(GEOSContextHandle_t geosContext) const</div><div class="ttdoc">Creates a GEOSGeometry based on this Feature's geometry.</div></div>
+<div class="ttc" id="aclassgeodesk_1_1_feature_html_aa3b94de4d53b36dd36652214558dc189"><div class="ttname"><a href="classgeodesk_1_1_feature.html#aa3b94de4d53b36dd36652214558dc189">geodesk::Feature::ptr</a></div><div class="ttdeci">FeaturePtr ptr() const noexcept</div><div class="ttdoc">Pointer to the stored data of this Feature.</div></div>
+<div class="ttc" id="aclassgeodesk_1_1_feature_html_aa76bfe7e61318c06d24d8a3e2a0fef67"><div class="ttname"><a href="classgeodesk_1_1_feature.html#aa76bfe7e61318c06d24d8a3e2a0fef67">geodesk::Feature::tags</a></div><div class="ttdeci">Tags tags() const noexcept</div><div class="ttdoc">A collection of the Feature's tags.</div></div>
+<div class="ttc" id="aclassgeodesk_1_1_feature_html_aafcfafe2c11e0678f514eb4b1a2ad41d"><div class="ttname"><a href="classgeodesk_1_1_feature.html#aafcfafe2c11e0678f514eb4b1a2ad41d">geodesk::Feature::area</a></div><div class="ttdeci">double area() const</div><div class="ttdoc">Measures the area of this Feature.</div></div>
+<div class="ttc" id="aclassgeodesk_1_1_feature_html_ac429bb58919fac6db864d194ba5d2f11"><div class="ttname"><a href="classgeodesk_1_1_feature.html#ac429bb58919fac6db864d194ba5d2f11">geodesk::Feature::isAnonymousNode</a></div><div class="ttdeci">bool isAnonymousNode() const noexcept</div><div class="ttdoc">true if this Feature is an anonymous node.</div></div>
+<div class="ttc" id="aclassgeodesk_1_1_feature_html_ac51004a426e59072a185cff1bc0e75fc"><div class="ttname"><a href="classgeodesk_1_1_feature.html#ac51004a426e59072a185cff1bc0e75fc">geodesk::Feature::nodes</a></div><div class="ttdeci">Nodes nodes() const</div><div class="ttdoc">The nodes of this Way.</div></div>
+<div class="ttc" id="aclassgeodesk_1_1_feature_html_ac5beed8943adb7d5735f2dccda111e89"><div class="ttname"><a href="classgeodesk_1_1_feature.html#ac5beed8943adb7d5735f2dccda111e89">geodesk::Feature::length</a></div><div class="ttdeci">double length() const</div><div class="ttdoc">Measures the length of this Feature.</div></div>
+<div class="ttc" id="aclassgeodesk_1_1_feature_html_ace94c0e197e1d3ab3cbe78c6616686b1"><div class="ttname"><a href="classgeodesk_1_1_feature.html#ace94c0e197e1d3ab3cbe78c6616686b1">geodesk::Feature::isArea</a></div><div class="ttdeci">bool isArea() const noexcept</div><div class="ttdoc">true if this Feature is an area (represented by either a Way or Relation).</div></div>
+<div class="ttc" id="aclassgeodesk_1_1_feature_html_ad5846c0a072500e6d0f157e40a23d24b"><div class="ttname"><a href="classgeodesk_1_1_feature.html#ad5846c0a072500e6d0f157e40a23d24b">geodesk::Feature::Feature</a></div><div class="ttdeci">Feature(FeatureStore *store, FeaturePtr ptr)</div></div>
+<div class="ttc" id="aclassgeodesk_1_1_feature_html_ada8e17f45420373b827528ac2ba5fc42"><div class="ttname"><a href="classgeodesk_1_1_feature.html#ada8e17f45420373b827528ac2ba5fc42">geodesk::Feature::isNode</a></div><div class="ttdeci">bool isNode() const noexcept</div><div class="ttdoc">true if this Feature is a Node.</div></div>
+<div class="ttc" id="aclassgeodesk_1_1_feature_html_ae18824c13ad34fee7e996ef05aa345d7"><div class="ttname"><a href="classgeodesk_1_1_feature.html#ae18824c13ad34fee7e996ef05aa345d7">geodesk::Feature::toString</a></div><div class="ttdeci">std::string toString() const</div><div class="ttdoc">Creates a std::string with the Feature's type and ID.</div></div>
+<div class="ttc" id="aclassgeodesk_1_1_feature_html_ae9a75e6415928564cb60edf09ebd2dd8"><div class="ttname"><a href="classgeodesk_1_1_feature.html#ae9a75e6415928564cb60edf09ebd2dd8">geodesk::Feature::hasTag</a></div><div class="ttdeci">bool hasTag(std::string_view k) const noexcept</div><div class="ttdoc">Checks if this Feature has a tag with the given key.</div></div>
+<div class="ttc" id="aclassgeodesk_1_1_feature_html_ae9de606068d0b59950ac7c0ccd721f99"><div class="ttname"><a href="classgeodesk_1_1_feature.html#ae9de606068d0b59950ac7c0ccd721f99">geodesk::Feature::xy</a></div><div class="ttdeci">Coordinate xy() const noexcept</div><div class="ttdoc">The Mercator-projected x/y coordinate of a Node, or the center point of the bounding box for a Way or...</div></div>
+<div class="ttc" id="aclassgeodesk_1_1_feature_html_af190e92d211e75cf0be57f45b8f6516a"><div class="ttname"><a href="classgeodesk_1_1_feature.html#af190e92d211e75cf0be57f45b8f6516a">geodesk::Feature::isWay</a></div><div class="ttdeci">bool isWay() const noexcept</div><div class="ttdoc">true if this Feature is a Way.</div></div>
+<div class="ttc" id="aclassgeodesk_1_1_feature_html_afdd708fc22a8b746303d6f659c064127"><div class="ttname"><a href="classgeodesk_1_1_feature.html#afdd708fc22a8b746303d6f659c064127">geodesk::Feature::x</a></div><div class="ttdeci">int32_t x() const noexcept</div><div class="ttdoc">The Mercator-projected x-coordinate of a Node, or the horizontal midpoint of the bounding box for a W...</div></div>
+<div class="ttc" id="aclassgeodesk_1_1_feature_ptr_html"><div class="ttname"><a href="classgeodesk_1_1_feature_ptr.html">geodesk::FeaturePtr</a></div><div class="ttdoc">Pointer to a Feature's data.</div><div class="ttdef"><b>Definition</b> FeaturePtr.h:26</div></div>
+<div class="ttc" id="aclassgeodesk_1_1_feature_store_html"><div class="ttname"><a href="classgeodesk_1_1_feature_store.html">geodesk::FeatureStore</a></div><div class="ttdoc">A Geographic Object Library.</div><div class="ttdef"><b>Definition</b> FeatureStore.h:35</div></div>
+<div class="ttc" id="aclassgeodesk_1_1_features_html"><div class="ttname"><a href="classgeodesk_1_1_features.html">geodesk::Features</a></div><div class="ttdoc">A collection of geographic features.</div><div class="ttdef"><b>Definition</b> Features.h:112</div></div>
+<div class="ttc" id="aclassgeodesk_1_1_nodes_html"><div class="ttname"><a href="classgeodesk_1_1_nodes.html">geodesk::Nodes</a></div><div class="ttdoc">A collection containing only Node features.</div><div class="ttdef"><b>Definition</b> Features.h:407</div></div>
+<div class="ttc" id="aclassgeodesk_1_1_string_value_html"><div class="ttname"><a href="classgeodesk_1_1_string_value.html">geodesk::StringValue</a></div><div class="ttdoc">A string pointer (used for keys, values and roles).</div><div class="ttdef"><b>Definition</b> StringValue.h:24</div></div>
+<div class="ttc" id="aclassgeodesk_1_1_tag_value_html"><div class="ttname"><a href="classgeodesk_1_1_tag_value.html">geodesk::TagValue</a></div><div class="ttdoc">The value of a Tag.</div><div class="ttdef"><b>Definition</b> TagValue.h:33</div></div>
+<div class="ttc" id="aclassgeodesk_1_1_tags_html"><div class="ttname"><a href="classgeodesk_1_1_tags.html">geodesk::Tags</a></div><div class="ttdoc">An object describing the key/value attributes of a Feature.</div><div class="ttdef"><b>Definition</b> Tags.h:49</div></div>
+<div class="ttc" id="anamespacegeodesk_html"><div class="ttname"><a href="namespacegeodesk.html">geodesk</a></div><div class="ttdef"><b>Definition</b> Feature.h:11</div></div>
 <div class="ttc" id="anamespacegeodesk_html_ab4c15802927accc42f5c68cd19e7c828"><div class="ttname"><a href="namespacegeodesk.html#ab4c15802927accc42f5c68cd19e7c828">geodesk::FeatureType</a></div><div class="ttdeci">FeatureType</div><div class="ttdoc">The OSM type of a feature: NODE, WAY or RELATION.</div><div class="ttdef"><b>Definition</b> FeatureType.h:12</div></div>
 <div class="ttc" id="anamespacestd_html"><div class="ttname"><a href="namespacestd.html">std</a></div><div class="ttdef"><b>Definition</b> LineSegment.h:61</div></div>
 </div><!-- fragment --></div><!-- contents -->

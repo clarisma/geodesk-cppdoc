@@ -31,6 +31,7 @@ var NAVTREE =
       [ "Namespace Members", "namespacemembers.html", [
         [ "All", "namespacemembers.html", null ],
         [ "Functions", "namespacemembers_func.html", null ],
+        [ "Variables", "namespacemembers_vars.html", null ],
         [ "Typedefs", "namespacemembers_type.html", null ],
         [ "Enumerations", "namespacemembers_enum.html", null ]
       ] ]
@@ -43,6 +44,7 @@ var NAVTREE =
         [ "All", "functions.html", "functions_dup" ],
         [ "Functions", "functions_func.html", "functions_func" ],
         [ "Variables", "functions_vars.html", null ],
+        [ "Typedefs", "functions_type.html", null ],
         [ "Related Symbols", "functions_rela.html", null ]
       ] ]
     ] ],
@@ -59,10 +61,12 @@ var NAVTREE =
 var NAVTREEINDEX =
 [
 "_abstract_feature_table_iterator_8h.html",
-"_relations_8h.html",
-"classgeodesk_1_1_feature_ptr.html#a3fb5081346cef92f77861c6805668fe9",
-"classgeodesk_1_1_string_value.html#a226a485fd1a8800f6463440d0c504872",
-"globals.html"
+"_store_8h.html",
+"classgeodesk_1_1_feature.html#a9ea1666a8f01ab0c48ca632134ef4c28",
+"classgeodesk_1_1_mercator.html#a6ab41e84512b1471f9e793ce9a2be4e5",
+"classgeodesk_1_1_relation.html#ae9de606068d0b59950ac7c0ccd721f99",
+"classgeodesk_1_1_way.html#a8350ba55c2bac5035fd0e59a84e4ee36",
+"namespacestd.html"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';

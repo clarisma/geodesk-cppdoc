@@ -108,6 +108,9 @@ $(function(){initNavTree('classgeodesk_1_1_feature_ptr.html',''); initResizable(
 </div><!--header-->
 <div class="contents">
 
+<p>Pointer to a <a class="el" href="classgeodesk_1_1_feature.html" title="A geographic feature.">Feature</a>'s data.  
+ <a href="#details">More...</a></p>
+
 <p><code>#include &lt;<a class="el" href="_feature_ptr_8h_source.html">FeaturePtr.h</a>&gt;</code></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
@@ -124,8 +127,8 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:ac5b8e31db921c5cf303c4dd5eff0e870"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aae6f06dc5acd15a0b07fc514ab656ba0" id="r_aae6f06dc5acd15a0b07fc514ab656ba0"><td class="memItemLeft" align="right" valign="top">uint64_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aae6f06dc5acd15a0b07fc514ab656ba0">typedId</a> () const noexcept</td></tr>
 <tr class="separator:aae6f06dc5acd15a0b07fc514ab656ba0"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5974c2a0de753bd8136f4b21c99194b6" id="r_a5974c2a0de753bd8136f4b21c99194b6"><td class="memItemLeft" align="right" valign="top">FeatureHeader&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a5974c2a0de753bd8136f4b21c99194b6">header</a> ()</td></tr>
-<tr class="separator:a5974c2a0de753bd8136f4b21c99194b6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a89b82de25619f7f841a2af289c68f83b" id="r_a89b82de25619f7f841a2af289c68f83b"><td class="memItemLeft" align="right" valign="top">FeatureHeader&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a89b82de25619f7f841a2af289c68f83b">header</a> () const noexcept</td></tr>
+<tr class="separator:a89b82de25619f7f841a2af289c68f83b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0d293df45682fb84680b0ecd9ad2c640" id="r_a0d293df45682fb84680b0ecd9ad2c640"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classgeodesk_1_1_box.html">Box</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a0d293df45682fb84680b0ecd9ad2c640">bounds</a> () const noexcept</td></tr>
 <tr class="separator:a0d293df45682fb84680b0ecd9ad2c640"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a182ee29aa2f120a87f81b325970d50e9" id="r_a182ee29aa2f120a87f81b325970d50e9"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a182ee29aa2f120a87f81b325970d50e9">isNull</a> () const noexcept</td></tr>
@@ -186,7 +189,10 @@ Protected Attributes</h2></td></tr>
 <tr class="memitem:abeb4e3f69e0101c4d9c37d6c2a1ad6fa" id="r_abeb4e3f69e0101c4d9c37d6c2a1ad6fa"><td class="memItemLeft" align="right" valign="top">DataPtr&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#abeb4e3f69e0101c4d9c37d6c2a1ad6fa">p_</a></td></tr>
 <tr class="separator:abeb4e3f69e0101c4d9c37d6c2a1ad6fa"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><p>Pointer to a <a class="el" href="classgeodesk_1_1_feature.html" title="A geographic feature.">Feature</a>'s data. </p>
+<p>This class if part of the <b>Low-Level API</b>. It is not intended to be used directly by applications. </p>
+</div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="a46919d7597ff6930b4bb451d5be97706" name="a46919d7597ff6930b4bb451d5be97706"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a46919d7597ff6930b4bb451d5be97706">&#9670;&#160;</a></span>FeaturePtr() <span class="overload">[1/3]</span></h2>
 
@@ -363,8 +369,8 @@ Protected Attributes</h2></td></tr>
 
 </div>
 </div>
-<a id="a5974c2a0de753bd8136f4b21c99194b6" name="a5974c2a0de753bd8136f4b21c99194b6"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a5974c2a0de753bd8136f4b21c99194b6">&#9670;&#160;</a></span>header()</h2>
+<a id="a89b82de25619f7f841a2af289c68f83b" name="a89b82de25619f7f841a2af289c68f83b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a89b82de25619f7f841a2af289c68f83b">&#9670;&#160;</a></span>header()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -376,12 +382,12 @@ Protected Attributes</h2></td></tr>
           <td class="memname">FeatureHeader geodesk::FeaturePtr::header </td>
           <td>(</td>
           <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
-          <td></td>
+          <td> const</td>
         </tr>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">noexcept</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">

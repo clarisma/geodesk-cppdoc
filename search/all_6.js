@@ -9,6 +9,9 @@ var searchData=
   ['geometrywriter_2eh_6',['GeometryWriter.h',['../_geometry_writer_8h.html',1,'']]],
   ['geos_2eh_7',['Geos.h',['../_geos_8h.html',1,'']]],
   ['geoscoordinateiterator_2eh_8',['GeosCoordinateIterator.h',['../_geos_coordinate_iterator_8h.html',1,'']]],
-  ['globalstrings_2eh_9',['GlobalStrings.h',['../_global_strings_8h.html',1,'']]],
-  ['globaltagiterator_2eh_10',['GlobalTagIterator.h',['../_global_tag_iterator_8h.html',1,'']]]
+  ['getallmatcher_9',['getAllMatcher',['../classgeodesk_1_1_feature_store.html#a33d0250441b38941a2163d137c33aa0e',1,'geodesk::FeatureStore']]],
+  ['getindexcategory_10',['getIndexCategory',['../classgeodesk_1_1_feature_store.html#a8b9d6c1cbe281e26de22eff381ff8411',1,'geodesk::FeatureStore']]],
+  ['getmatcher_11',['getMatcher',['../classgeodesk_1_1_feature_store.html#a894dc2335757edd0aa03d98d64a6fde5',1,'geodesk::FeatureStore']]],
+  ['getpointer_12',['getPointer',['../classgeodesk_1_1_feature_store.html#a39a6846c3bf02b2e91d6f6127f99ffde',1,'geodesk::FeatureStore']]],
+  ['globaltagiterator_2eh_13',['GlobalTagIterator.h',['../_global_tag_iterator_8h.html',1,'']]]
 ];

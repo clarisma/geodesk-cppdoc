@@ -7,7 +7,7 @@ var classgeodesk_1_1_feature_ptr =
     [ "bounds", "classgeodesk_1_1_feature_ptr.html#a0d293df45682fb84680b0ecd9ad2c640", null ],
     [ "flags", "classgeodesk_1_1_feature_ptr.html#a0e08ff650ac474af624a3b385f6cad00", null ],
     [ "hash", "classgeodesk_1_1_feature_ptr.html#ab7c112eb02bd24fcc0b35c66e2a06eb8", null ],
-    [ "header", "classgeodesk_1_1_feature_ptr.html#a5974c2a0de753bd8136f4b21c99194b6", null ],
+    [ "header", "classgeodesk_1_1_feature_ptr.html#a89b82de25619f7f841a2af289c68f83b", null ],
     [ "id", "classgeodesk_1_1_feature_ptr.html#ac5b8e31db921c5cf303c4dd5eff0e870", null ],
     [ "idBits", "classgeodesk_1_1_feature_ptr.html#a7fa9021b729e0fd24df0c4a8526876e1", null ],
     [ "intersects", "classgeodesk_1_1_feature_ptr.html#aa3f8eeee5bb8675cd286c1b8a91de01b", null ],

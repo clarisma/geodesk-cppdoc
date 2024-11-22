@@ -101,37 +101,144 @@ $(function(){initNavTree('classgeodesk_1_1_ways.html',''); initResizable(true); 
 
 <div class="header">
   <div class="summary">
-<a href="#pub-methods">Public Member Functions</a> &#124;
 <a href="classgeodesk_1_1_ways-members.html">List of all members</a>  </div>
   <div class="headertitle"><div class="title">geodesk::Ways Class Reference</div></div>
 </div><!--header-->
 <div class="contents">
 
-<p><code>#include &lt;<a class="el" href="_ways_8h_source.html">Ways.h</a>&gt;</code></p>
+<p>A collection containing only <a class="el" href="classgeodesk_1_1_way.html" title="A Feature that represents a linestring, linear ring, or a simple polygon.">Way</a> features.  
+ <a href="#details">More...</a></p>
+
+<p><code>#include &lt;<a class="el" href="api_2_features_8h_source.html">Features.h</a>&gt;</code></p>
 <div class="dynheader">
 Inheritance diagram for geodesk::Ways:</div>
 <div class="dyncontent">
  <div class="center">
-  <img src="classgeodesk_1_1_ways.png" alt=""/>
- </div></div>
+  <img src="classgeodesk_1_1_ways.png" usemap="#geodesk::Ways_map" alt=""/>
+  <map id="geodesk::Ways_map" name="geodesk::Ways_map">
+<area href="classgeodesk_1_1_features.html" title="A collection of geographic features." alt="geodesk::Features" shape="rect" coords="0,0,115,24"/>
+  </map>
+</div></div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a0775acfc3d31cdd734ce2bc9a6b90d58" id="r_a0775acfc3d31cdd734ce2bc9a6b90d58"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a0775acfc3d31cdd734ce2bc9a6b90d58">Ways</a> (const FeaturesBase&lt; Feature &gt; &amp;other)</td></tr>
-<tr class="separator:a0775acfc3d31cdd734ce2bc9a6b90d58"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a69b4ab564c2bc89759aefa0618344f9f" id="r_a69b4ab564c2bc89759aefa0618344f9f"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a69b4ab564c2bc89759aefa0618344f9f">Ways</a> (const FeaturesBase&lt; <a class="el" href="classgeodesk_1_1_node.html">Node</a> &gt; &amp;other)</td></tr>
-<tr class="separator:a69b4ab564c2bc89759aefa0618344f9f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab8b56896e923bc6251b621f17084a2b4" id="r_ab8b56896e923bc6251b621f17084a2b4"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ab8b56896e923bc6251b621f17084a2b4">Ways</a> (const FeaturesBase&lt; <a class="el" href="classgeodesk_1_1_way.html">Way</a> &gt; &amp;other)</td></tr>
-<tr class="separator:ab8b56896e923bc6251b621f17084a2b4"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a28de4b8a1ef7f164ccd65e17f38c8948" id="r_a28de4b8a1ef7f164ccd65e17f38c8948"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a28de4b8a1ef7f164ccd65e17f38c8948">Ways</a> (const FeaturesBase&lt; <a class="el" href="classgeodesk_1_1_relation.html">Relation</a> &gt; &amp;other)</td></tr>
-<tr class="separator:a28de4b8a1ef7f164ccd65e17f38c8948"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0a1bf2fe5531fead917e2bae94dc72dc" id="r_a0a1bf2fe5531fead917e2bae94dc72dc"><td class="memTemplParams" colspan="2">template&lt;typename P &gt; </td></tr>
-<tr class="memitem:a0a1bf2fe5531fead917e2bae94dc72dc"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="classgeodesk_1_1_ways.html">Ways</a>&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="#a0a1bf2fe5531fead917e2bae94dc72dc">parentsOf</a> (FeatureBase&lt; P &gt; feature) const</td></tr>
-<tr class="separator:a0a1bf2fe5531fead917e2bae94dc72dc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr><td colspan="2"><div class="groupHeader">State and Membership</div></td></tr>
+<tr class="memitem:ac1952aafaa056f414b6709ceec591774" id="r_ac1952aafaa056f414b6709ceec591774"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgeodesk_1_1_features.html#ac1952aafaa056f414b6709ceec591774">operator bool</a> () const</td></tr>
+<tr class="memdesc:ac1952aafaa056f414b6709ceec591774"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns <code>true</code> if this collection contains at least one <a class="el" href="classgeodesk_1_1_feature.html" title="A geographic feature.">Feature</a>.  <br /></td></tr>
+<tr class="separator:ac1952aafaa056f414b6709ceec591774"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad27ee44eaf044f777cd937a8b31ed1ec" id="r_ad27ee44eaf044f777cd937a8b31ed1ec"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgeodesk_1_1_features.html#ad27ee44eaf044f777cd937a8b31ed1ec">operator!</a> () const</td></tr>
+<tr class="memdesc:ad27ee44eaf044f777cd937a8b31ed1ec"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns <code>true</code> if this collection is empty.  <br /></td></tr>
+<tr class="separator:ad27ee44eaf044f777cd937a8b31ed1ec"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a268ee9e41812c01dcbf0fd0700ae67c1" id="r_a268ee9e41812c01dcbf0fd0700ae67c1"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgeodesk_1_1_features.html#a268ee9e41812c01dcbf0fd0700ae67c1">contains</a> (const <a class="el" href="classgeodesk_1_1_feature.html">Feature</a> &amp;feature) const</td></tr>
+<tr class="memdesc:a268ee9e41812c01dcbf0fd0700ae67c1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Checks if the specified <a class="el" href="classgeodesk_1_1_feature.html" title="A geographic feature.">Feature</a> exists in this collection.  <br /></td></tr>
+<tr class="separator:a268ee9e41812c01dcbf0fd0700ae67c1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr><td colspan="2"><div class="groupHeader">Filtering by type and tags</div></td></tr>
+<tr class="memitem:a8cce16eb17c1cd05f4b694754c9c184e" id="r_a8cce16eb17c1cd05f4b694754c9c184e"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classgeodesk_1_1_features.html">Features</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgeodesk_1_1_features.html#a8cce16eb17c1cd05f4b694754c9c184e">operator()</a> (const char *query) const</td></tr>
+<tr class="memdesc:a8cce16eb17c1cd05f4b694754c9c184e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Only features that match the given query.  <br /></td></tr>
+<tr class="separator:a8cce16eb17c1cd05f4b694754c9c184e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a96933909e58e610afe8f820e3f839ea0" id="r_a96933909e58e610afe8f820e3f839ea0"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classgeodesk_1_1_nodes.html">Nodes</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgeodesk_1_1_features.html#a96933909e58e610afe8f820e3f839ea0">nodes</a> () const</td></tr>
+<tr class="memdesc:a96933909e58e610afe8f820e3f839ea0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Only nodes.  <br /></td></tr>
+<tr class="separator:a96933909e58e610afe8f820e3f839ea0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af4ef61a2dd16b28051fadf05e76b995a" id="r_af4ef61a2dd16b28051fadf05e76b995a"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classgeodesk_1_1_nodes.html">Nodes</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgeodesk_1_1_features.html#af4ef61a2dd16b28051fadf05e76b995a">nodes</a> (const char *query) const</td></tr>
+<tr class="memdesc:af4ef61a2dd16b28051fadf05e76b995a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Only nodes that match the given query.  <br /></td></tr>
+<tr class="separator:af4ef61a2dd16b28051fadf05e76b995a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0af5163b7cd07b678b6b2ba35be638d4" id="r_a0af5163b7cd07b678b6b2ba35be638d4"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classgeodesk_1_1_ways.html">Ways</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgeodesk_1_1_features.html#a0af5163b7cd07b678b6b2ba35be638d4">ways</a> () const</td></tr>
+<tr class="memdesc:a0af5163b7cd07b678b6b2ba35be638d4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Only ways.  <br /></td></tr>
+<tr class="separator:a0af5163b7cd07b678b6b2ba35be638d4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a10276c009db48ffb529339a095520587" id="r_a10276c009db48ffb529339a095520587"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classgeodesk_1_1_ways.html">Ways</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgeodesk_1_1_features.html#a10276c009db48ffb529339a095520587">ways</a> (const char *query) const</td></tr>
+<tr class="memdesc:a10276c009db48ffb529339a095520587"><td class="mdescLeft">&#160;</td><td class="mdescRight">Only ways that match the given query.  <br /></td></tr>
+<tr class="separator:a10276c009db48ffb529339a095520587"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a47f8446a81a5e8683b1d9f97fa2a67ed" id="r_a47f8446a81a5e8683b1d9f97fa2a67ed"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classgeodesk_1_1_relations.html">Relations</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgeodesk_1_1_features.html#a47f8446a81a5e8683b1d9f97fa2a67ed">relations</a> () const</td></tr>
+<tr class="memdesc:a47f8446a81a5e8683b1d9f97fa2a67ed"><td class="mdescLeft">&#160;</td><td class="mdescRight">Only relations.  <br /></td></tr>
+<tr class="separator:a47f8446a81a5e8683b1d9f97fa2a67ed"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6643f62735824f64e23b38e06f18f7bd" id="r_a6643f62735824f64e23b38e06f18f7bd"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classgeodesk_1_1_relations.html">Relations</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgeodesk_1_1_features.html#a6643f62735824f64e23b38e06f18f7bd">relations</a> (const char *query) const</td></tr>
+<tr class="memdesc:a6643f62735824f64e23b38e06f18f7bd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Only relations that match the given query.  <br /></td></tr>
+<tr class="separator:a6643f62735824f64e23b38e06f18f7bd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr><td colspan="2"><div class="groupHeader">Spatial Filters</div></td></tr>
+<tr class="memitem:a9b94f926643cc85072d333a8f0807ac3" id="r_a9b94f926643cc85072d333a8f0807ac3"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classgeodesk_1_1_features.html">Features</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgeodesk_1_1_features.html#a9b94f926643cc85072d333a8f0807ac3">operator()</a> (const <a class="el" href="classgeodesk_1_1_box.html">Box</a> &amp;box) const</td></tr>
+<tr class="memdesc:a9b94f926643cc85072d333a8f0807ac3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Only features whose bounding box intersects the given bounding box.  <br /></td></tr>
+<tr class="separator:a9b94f926643cc85072d333a8f0807ac3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad6ad165c16d6bd8749b4db4bb75e1abb" id="r_ad6ad165c16d6bd8749b4db4bb75e1abb"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classgeodesk_1_1_features.html">Features</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgeodesk_1_1_features.html#ad6ad165c16d6bd8749b4db4bb75e1abb">operator()</a> (<a class="el" href="classgeodesk_1_1_coordinate.html">Coordinate</a> xy) const</td></tr>
+<tr class="memdesc:ad6ad165c16d6bd8749b4db4bb75e1abb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Only features whose bounding box contains the given <a class="el" href="classgeodesk_1_1_coordinate.html" title="A pair of Cartesian coordinate values.">Coordinate</a>.  <br /></td></tr>
+<tr class="separator:ad6ad165c16d6bd8749b4db4bb75e1abb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abdd57a918f372b6692ea366ae59b9513" id="r_abdd57a918f372b6692ea366ae59b9513"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classgeodesk_1_1_features.html">Features</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgeodesk_1_1_features.html#abdd57a918f372b6692ea366ae59b9513">operator()</a> (const <a class="el" href="classgeodesk_1_1_feature.html">Feature</a> &amp;feature) const</td></tr>
+<tr class="memdesc:abdd57a918f372b6692ea366ae59b9513"><td class="mdescLeft">&#160;</td><td class="mdescRight">Only features whose geometry intersects with the given <a class="el" href="classgeodesk_1_1_feature.html" title="A geographic feature.">Feature</a> (short form of <a class="el" href="classgeodesk_1_1_features.html#aa317b5bd3be7f24963a9427474ee6d80" title="Only features whose geometry intersects with the given Feature.">intersecting()</a>)  <br /></td></tr>
+<tr class="separator:abdd57a918f372b6692ea366ae59b9513"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa317b5bd3be7f24963a9427474ee6d80" id="r_aa317b5bd3be7f24963a9427474ee6d80"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classgeodesk_1_1_features.html">Features</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgeodesk_1_1_features.html#aa317b5bd3be7f24963a9427474ee6d80">intersecting</a> (const <a class="el" href="classgeodesk_1_1_feature.html">Feature</a> &amp;feature) const</td></tr>
+<tr class="memdesc:aa317b5bd3be7f24963a9427474ee6d80"><td class="mdescLeft">&#160;</td><td class="mdescRight">Only features whose geometry intersects with the given <a class="el" href="classgeodesk_1_1_feature.html" title="A geographic feature.">Feature</a>.  <br /></td></tr>
+<tr class="separator:aa317b5bd3be7f24963a9427474ee6d80"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a64a45b6a444f59c1b4f1f7a1bd01234c" id="r_a64a45b6a444f59c1b4f1f7a1bd01234c"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classgeodesk_1_1_features.html">Features</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgeodesk_1_1_features.html#a64a45b6a444f59c1b4f1f7a1bd01234c">within</a> (const <a class="el" href="classgeodesk_1_1_feature.html">Feature</a> &amp;feature) const</td></tr>
+<tr class="memdesc:a64a45b6a444f59c1b4f1f7a1bd01234c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Only features that lie entirely inside the geometry of the given <a class="el" href="classgeodesk_1_1_feature.html" title="A geographic feature.">Feature</a>.  <br /></td></tr>
+<tr class="separator:a64a45b6a444f59c1b4f1f7a1bd01234c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a20d56f4fc89ca7733b5c2f1b2d05e93d" id="r_a20d56f4fc89ca7733b5c2f1b2d05e93d"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classgeodesk_1_1_features.html">Features</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgeodesk_1_1_features.html#a20d56f4fc89ca7733b5c2f1b2d05e93d">containing</a> (const <a class="el" href="classgeodesk_1_1_feature.html">Feature</a> &amp;feature) const</td></tr>
+<tr class="memdesc:a20d56f4fc89ca7733b5c2f1b2d05e93d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Only features whose geometry contains the given <a class="el" href="classgeodesk_1_1_feature.html" title="A geographic feature.">Feature</a>.  <br /></td></tr>
+<tr class="separator:a20d56f4fc89ca7733b5c2f1b2d05e93d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af75a07d127eb7928fa496991d133272a" id="r_af75a07d127eb7928fa496991d133272a"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classgeodesk_1_1_features.html">Features</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgeodesk_1_1_features.html#af75a07d127eb7928fa496991d133272a">containing</a> (<a class="el" href="classgeodesk_1_1_coordinate.html">Coordinate</a> xy) const</td></tr>
+<tr class="memdesc:af75a07d127eb7928fa496991d133272a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Only features whose geometry contains the given <a class="el" href="classgeodesk_1_1_coordinate.html" title="A pair of Cartesian coordinate values.">Coordinate</a>.  <br /></td></tr>
+<tr class="separator:af75a07d127eb7928fa496991d133272a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1c7ee655d5a0888e5a70fa512233443f" id="r_a1c7ee655d5a0888e5a70fa512233443f"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classgeodesk_1_1_features.html">Features</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgeodesk_1_1_features.html#a1c7ee655d5a0888e5a70fa512233443f">containingLonLat</a> (double lon, double lat) const</td></tr>
+<tr class="memdesc:a1c7ee655d5a0888e5a70fa512233443f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Only features whose geometry contains the given location.  <br /></td></tr>
+<tr class="separator:a1c7ee655d5a0888e5a70fa512233443f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a406cc0dfbea232d658a347c7fab24215" id="r_a406cc0dfbea232d658a347c7fab24215"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classgeodesk_1_1_features.html">Features</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgeodesk_1_1_features.html#a406cc0dfbea232d658a347c7fab24215">crossing</a> (const <a class="el" href="classgeodesk_1_1_feature.html">Feature</a> &amp;feature) const</td></tr>
+<tr class="memdesc:a406cc0dfbea232d658a347c7fab24215"><td class="mdescLeft">&#160;</td><td class="mdescRight">Only features whose geometry crosses the given <a class="el" href="classgeodesk_1_1_feature.html" title="A geographic feature.">Feature</a>.  <br /></td></tr>
+<tr class="separator:a406cc0dfbea232d658a347c7fab24215"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adcca0f639bcb6f43d26d5614134bdc95" id="r_adcca0f639bcb6f43d26d5614134bdc95"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classgeodesk_1_1_features.html">Features</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgeodesk_1_1_features.html#adcca0f639bcb6f43d26d5614134bdc95">maxMetersFrom</a> (double distance, <a class="el" href="classgeodesk_1_1_coordinate.html">Coordinate</a> xy) const</td></tr>
+<tr class="memdesc:adcca0f639bcb6f43d26d5614134bdc95"><td class="mdescLeft">&#160;</td><td class="mdescRight">Only features whose closest point lies within <code>distance</code> meters of <code>xy</code>.  <br /></td></tr>
+<tr class="separator:adcca0f639bcb6f43d26d5614134bdc95"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a22a9d0b75c00e3bed3f4a214e8509ead" id="r_a22a9d0b75c00e3bed3f4a214e8509ead"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classgeodesk_1_1_features.html">Features</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgeodesk_1_1_features.html#a22a9d0b75c00e3bed3f4a214e8509ead">maxMetersFrom</a> (double distance, double lon, double lat) const</td></tr>
+<tr class="memdesc:a22a9d0b75c00e3bed3f4a214e8509ead"><td class="mdescLeft">&#160;</td><td class="mdescRight">Only features whose closest point lies within <code>distance</code> meters of the given location.  <br /></td></tr>
+<tr class="separator:a22a9d0b75c00e3bed3f4a214e8509ead"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr><td colspan="2"><div class="groupHeader">Retrieving Features</div></td></tr>
+<tr class="memitem:a8656395f683733e84c43550a06f9f330" id="r_a8656395f683733e84c43550a06f9f330"><td class="memItemLeft" align="right" valign="top">std::optional&lt; <a class="el" href="classgeodesk_1_1_feature.html">Feature</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgeodesk_1_1_features.html#a8656395f683733e84c43550a06f9f330">first</a> () const</td></tr>
+<tr class="memdesc:a8656395f683733e84c43550a06f9f330"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the first <a class="el" href="classgeodesk_1_1_feature.html" title="A geographic feature.">Feature</a> in this collection, or <code>std::nullopt</code> if the collection is empty.  <br /></td></tr>
+<tr class="separator:a8656395f683733e84c43550a06f9f330"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a55d8be2172af6fdd2905ff92e7c42d52" id="r_a55d8be2172af6fdd2905ff92e7c42d52"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classgeodesk_1_1_feature.html">Feature</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgeodesk_1_1_features.html#a55d8be2172af6fdd2905ff92e7c42d52">one</a> () const</td></tr>
+<tr class="memdesc:a55d8be2172af6fdd2905ff92e7c42d52"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the one and only <a class="el" href="classgeodesk_1_1_feature.html" title="A geographic feature.">Feature</a> in this collection.  <br /></td></tr>
+<tr class="separator:a55d8be2172af6fdd2905ff92e7c42d52"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7188cd581300fd69718d1af7f4a6f770" id="r_a7188cd581300fd69718d1af7f4a6f770"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgeodesk_1_1_features.html#a7188cd581300fd69718d1af7f4a6f770">addTo</a> (std::vector&lt; <a class="el" href="classgeodesk_1_1_feature.html">Feature</a> &gt; &amp;features) const</td></tr>
+<tr class="memdesc:a7188cd581300fd69718d1af7f4a6f770"><td class="mdescLeft">&#160;</td><td class="mdescRight">Appends the <a class="el" href="classgeodesk_1_1_feature.html" title="A geographic feature.">Feature</a> objects in this collection to the given <code>std::vector</code>.  <br /></td></tr>
+<tr class="separator:a7188cd581300fd69718d1af7f4a6f770"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a32c51efe4553b7745feb652906460f4c" id="r_a32c51efe4553b7745feb652906460f4c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgeodesk_1_1_features.html#a32c51efe4553b7745feb652906460f4c">addTo</a> (std::vector&lt; <a class="el" href="classgeodesk_1_1_feature_ptr.html">FeaturePtr</a> &gt; &amp;features) const</td></tr>
+<tr class="memdesc:a32c51efe4553b7745feb652906460f4c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Appends the <a class="el" href="classgeodesk_1_1_feature.html" title="A geographic feature.">Feature</a> objects in this collection to the given <code>std::vector</code> as <a class="el" href="classgeodesk_1_1_feature_ptr.html" title="Pointer to a Feature&#39;s data.">FeaturePtr</a> pointers.  <br /></td></tr>
+<tr class="separator:a32c51efe4553b7745feb652906460f4c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr><td colspan="2"><div class="groupHeader">Scalar Queries</div></td></tr>
+<tr class="memitem:a9e7afddef438b9b30c8639876495bd43" id="r_a9e7afddef438b9b30c8639876495bd43"><td class="memItemLeft" align="right" valign="top">uint64_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgeodesk_1_1_features.html#a9e7afddef438b9b30c8639876495bd43">count</a> () const</td></tr>
+<tr class="memdesc:a9e7afddef438b9b30c8639876495bd43"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the total number of features in this collection.  <br /></td></tr>
+<tr class="separator:a9e7afddef438b9b30c8639876495bd43"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a200cd9550b03e68b7fa3b456fcc0155f" id="r_a200cd9550b03e68b7fa3b456fcc0155f"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgeodesk_1_1_features.html#a200cd9550b03e68b7fa3b456fcc0155f">length</a> () const</td></tr>
+<tr class="memdesc:a200cd9550b03e68b7fa3b456fcc0155f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Computes the total length (in meters) of the features in this collection.  <br /></td></tr>
+<tr class="separator:a200cd9550b03e68b7fa3b456fcc0155f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a980eb56727cdbedcf8e43f891f6aceff" id="r_a980eb56727cdbedcf8e43f891f6aceff"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgeodesk_1_1_features.html#a980eb56727cdbedcf8e43f891f6aceff">area</a> () const</td></tr>
+<tr class="memdesc:a980eb56727cdbedcf8e43f891f6aceff"><td class="mdescLeft">&#160;</td><td class="mdescRight">Computes the total area (in square meters) of the features in this collection.  <br /></td></tr>
+<tr class="separator:a980eb56727cdbedcf8e43f891f6aceff"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr><td colspan="2"><div class="groupHeader">Topological Filters</div></td></tr>
+<tr class="memitem:a27bcfd03f391f7e1d6d8213cd0b680f9" id="r_a27bcfd03f391f7e1d6d8213cd0b680f9"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classgeodesk_1_1_features.html">Features</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgeodesk_1_1_features.html#a27bcfd03f391f7e1d6d8213cd0b680f9">nodesOf</a> (const <a class="el" href="classgeodesk_1_1_feature.html">Feature</a> &amp;feature) const</td></tr>
+<tr class="memdesc:a27bcfd03f391f7e1d6d8213cd0b680f9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Only nodes that belong to the given <a class="el" href="classgeodesk_1_1_way.html" title="A Feature that represents a linestring, linear ring, or a simple polygon.">Way</a>.  <br /></td></tr>
+<tr class="separator:a27bcfd03f391f7e1d6d8213cd0b680f9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a47cb4b9be39825b2a4c31b83769aeac6" id="r_a47cb4b9be39825b2a4c31b83769aeac6"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classgeodesk_1_1_features.html">Features</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgeodesk_1_1_features.html#a47cb4b9be39825b2a4c31b83769aeac6">membersOf</a> (const <a class="el" href="classgeodesk_1_1_feature.html">Feature</a> &amp;feature) const</td></tr>
+<tr class="memdesc:a47cb4b9be39825b2a4c31b83769aeac6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Only features that belong to the given <a class="el" href="classgeodesk_1_1_relation.html" title="A Feature that represents a grouping of related features or a complex polygon.">Relation</a>.  <br /></td></tr>
+<tr class="separator:a47cb4b9be39825b2a4c31b83769aeac6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7d2c19eb9f7e7aa5a1199afff0759101" id="r_a7d2c19eb9f7e7aa5a1199afff0759101"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classgeodesk_1_1_features.html">Features</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgeodesk_1_1_features.html#a7d2c19eb9f7e7aa5a1199afff0759101">parentsOf</a> (const <a class="el" href="classgeodesk_1_1_feature.html">Feature</a> &amp;feature) const</td></tr>
+<tr class="memdesc:a7d2c19eb9f7e7aa5a1199afff0759101"><td class="mdescLeft">&#160;</td><td class="mdescRight">Only features that are parent relations of the given <a class="el" href="classgeodesk_1_1_feature.html" title="A geographic feature.">Feature</a> (or parent ways of the given <a class="el" href="classgeodesk_1_1_node.html" title="A Feature that represents a single point.">Node</a>).  <br /></td></tr>
+<tr class="separator:a7d2c19eb9f7e7aa5a1199afff0759101"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af35409af41ae6cf3591f231cfdec8005" id="r_af35409af41ae6cf3591f231cfdec8005"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classgeodesk_1_1_features.html">Features</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgeodesk_1_1_features.html#af35409af41ae6cf3591f231cfdec8005">connectedTo</a> (const <a class="el" href="classgeodesk_1_1_feature.html">Feature</a> &amp;feature) const</td></tr>
+<tr class="memdesc:af35409af41ae6cf3591f231cfdec8005"><td class="mdescLeft">&#160;</td><td class="mdescRight">Only features that share a common node with the given <a class="el" href="classgeodesk_1_1_feature.html" title="A geographic feature.">Feature</a>.  <br /></td></tr>
+<tr class="separator:af35409af41ae6cf3591f231cfdec8005"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr><td colspan="2"><div class="groupHeader">Filtering with Predicate</div></td></tr>
+<tr class="memitem:a4879c2ca6d240605cca7dcbd37fd58a3" id="r_a4879c2ca6d240605cca7dcbd37fd58a3"><td class="memTemplParams" colspan="2">template&lt;typename Predicate &gt; </td></tr>
+<tr class="memitem:a4879c2ca6d240605cca7dcbd37fd58a3"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="classgeodesk_1_1_features.html">Features</a>&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classgeodesk_1_1_features.html#a4879c2ca6d240605cca7dcbd37fd58a3">filter</a> (Predicate predicate) const</td></tr>
+<tr class="memdesc:a4879c2ca6d240605cca7dcbd37fd58a3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Only features that match the given predicate.  <br /></td></tr>
+<tr class="separator:a4879c2ca6d240605cca7dcbd37fd58a3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr><td colspan="2"><div class="groupHeader">Access to the Low-Level API</div></td></tr>
+<tr class="memitem:a33f7b2e29816af6257061c76d8d5c2e4" id="r_a33f7b2e29816af6257061c76d8d5c2e4"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classgeodesk_1_1_feature_store.html">FeatureStore</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgeodesk_1_1_features.html#a33f7b2e29816af6257061c76d8d5c2e4">store</a> () const noexcept</td></tr>
+<tr class="memdesc:a33f7b2e29816af6257061c76d8d5c2e4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns a pointer to the <a class="el" href="classgeodesk_1_1_feature_store.html" title="A Geographic Object Library.">FeatureStore</a> which contains the features in this collection.  <br /></td></tr>
+<tr class="separator:a33f7b2e29816af6257061c76d8d5c2e4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
-<a id="a0775acfc3d31cdd734ce2bc9a6b90d58" name="a0775acfc3d31cdd734ce2bc9a6b90d58"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a0775acfc3d31cdd734ce2bc9a6b90d58">&#9670;&#160;</a></span>Ways() <span class="overload">[1/4]</span></h2>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><p>A collection containing only <a class="el" href="classgeodesk_1_1_way.html" title="A Feature that represents a linestring, linear ring, or a simple polygon.">Way</a> features. </p>
+</div><h2 class="groupheader">Member Function Documentation</h2>
+<a id="a7188cd581300fd69718d1af7f4a6f770" name="a7188cd581300fd69718d1af7f4a6f770"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7188cd581300fd69718d1af7f4a6f770">&#9670;&#160;</a></span>addTo() <span class="overload">[1/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -140,23 +247,25 @@ Public Member Functions</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">geodesk::Ways::Ways </td>
+          <td class="memname">void geodesk::Features::addTo </td>
           <td>(</td>
-          <td class="paramtype">const FeaturesBase&lt; Feature &gt; &amp;</td>          <td class="paramname"><span class="paramname"><em>other</em></span></td><td>)</td>
-          <td></td>
+          <td class="paramtype">std::vector&lt; <a class="el" href="classgeodesk_1_1_feature.html">Feature</a> &gt; &amp;</td>          <td class="paramname"><span class="paramname"><em>features</em></span></td><td>)</td>
+          <td> const</td>
         </tr>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+<span class="mlabels"><span class="mlabel">inherited</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
 
+<p>Appends the <a class="el" href="classgeodesk_1_1_feature.html" title="A geographic feature.">Feature</a> objects in this collection to the given <code>std::vector</code>. </p>
+
 </div>
 </div>
-<a id="a69b4ab564c2bc89759aefa0618344f9f" name="a69b4ab564c2bc89759aefa0618344f9f"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a69b4ab564c2bc89759aefa0618344f9f">&#9670;&#160;</a></span>Ways() <span class="overload">[2/4]</span></h2>
+<a id="a32c51efe4553b7745feb652906460f4c" name="a32c51efe4553b7745feb652906460f4c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a32c51efe4553b7745feb652906460f4c">&#9670;&#160;</a></span>addTo() <span class="overload">[2/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -165,23 +274,25 @@ Public Member Functions</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">geodesk::Ways::Ways </td>
+          <td class="memname">void geodesk::Features::addTo </td>
           <td>(</td>
-          <td class="paramtype">const FeaturesBase&lt; <a class="el" href="classgeodesk_1_1_node.html">Node</a> &gt; &amp;</td>          <td class="paramname"><span class="paramname"><em>other</em></span></td><td>)</td>
-          <td></td>
+          <td class="paramtype">std::vector&lt; <a class="el" href="classgeodesk_1_1_feature_ptr.html">FeaturePtr</a> &gt; &amp;</td>          <td class="paramname"><span class="paramname"><em>features</em></span></td><td>)</td>
+          <td> const</td>
         </tr>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+<span class="mlabels"><span class="mlabel">inherited</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
 
+<p>Appends the <a class="el" href="classgeodesk_1_1_feature.html" title="A geographic feature.">Feature</a> objects in this collection to the given <code>std::vector</code> as <a class="el" href="classgeodesk_1_1_feature_ptr.html" title="Pointer to a Feature&#39;s data.">FeaturePtr</a> pointers. </p>
+
 </div>
 </div>
-<a id="ab8b56896e923bc6251b621f17084a2b4" name="ab8b56896e923bc6251b621f17084a2b4"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ab8b56896e923bc6251b621f17084a2b4">&#9670;&#160;</a></span>Ways() <span class="overload">[3/4]</span></h2>
+<a id="a980eb56727cdbedcf8e43f891f6aceff" name="a980eb56727cdbedcf8e43f891f6aceff"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a980eb56727cdbedcf8e43f891f6aceff">&#9670;&#160;</a></span>area()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -190,23 +301,31 @@ Public Member Functions</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">geodesk::Ways::Ways </td>
+          <td class="memname">double geodesk::Features::area </td>
           <td>(</td>
-          <td class="paramtype">const FeaturesBase&lt; <a class="el" href="classgeodesk_1_1_way.html">Way</a> &gt; &amp;</td>          <td class="paramname"><span class="paramname"><em>other</em></span></td><td>)</td>
-          <td></td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td> const</td>
         </tr>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+<span class="mlabels"><span class="mlabel">inherited</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
 
+<p>Computes the total area (in square meters) of the features in this collection. </p>
+<dl class="exception"><dt>Exceptions</dt><dd>
+  <table class="exception">
+    <tr><td class="paramname"><a class="el" href="classgeodesk_1_1_query_exception.html" title="Thrown if a query is malformed or cannot be fulfilled.">QueryException</a></td><td>if one or more tiles that contain the geometry of a <a class="el" href="classgeodesk_1_1_relation.html" title="A Feature that represents a grouping of related features or a complex polygon.">Relation</a> are missing </td></tr>
+  </table>
+  </dd>
+</dl>
+
 </div>
 </div>
-<a id="a28de4b8a1ef7f164ccd65e17f38c8948" name="a28de4b8a1ef7f164ccd65e17f38c8948"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a28de4b8a1ef7f164ccd65e17f38c8948">&#9670;&#160;</a></span>Ways() <span class="overload">[4/4]</span></h2>
+<a id="af35409af41ae6cf3591f231cfdec8005" name="af35409af41ae6cf3591f231cfdec8005"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af35409af41ae6cf3591f231cfdec8005">&#9670;&#160;</a></span>connectedTo()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -215,43 +334,992 @@ Public Member Functions</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">geodesk::Ways::Ways </td>
+          <td class="memname"><a class="el" href="classgeodesk_1_1_features.html">Features</a> geodesk::Features::connectedTo </td>
           <td>(</td>
-          <td class="paramtype">const FeaturesBase&lt; <a class="el" href="classgeodesk_1_1_relation.html">Relation</a> &gt; &amp;</td>          <td class="paramname"><span class="paramname"><em>other</em></span></td><td>)</td>
-          <td></td>
+          <td class="paramtype">const <a class="el" href="classgeodesk_1_1_feature.html">Feature</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>feature</em></span></td><td>)</td>
+          <td> const</td>
         </tr>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+<span class="mlabels"><span class="mlabel">inherited</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
 
+<p>Only features that share a common node with the given <a class="el" href="classgeodesk_1_1_feature.html" title="A geographic feature.">Feature</a>. </p>
+
 </div>
 </div>
-<h2 class="groupheader">Member Function Documentation</h2>
-<a id="a0a1bf2fe5531fead917e2bae94dc72dc" name="a0a1bf2fe5531fead917e2bae94dc72dc"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a0a1bf2fe5531fead917e2bae94dc72dc">&#9670;&#160;</a></span>parentsOf()</h2>
+<a id="a20d56f4fc89ca7733b5c2f1b2d05e93d" name="a20d56f4fc89ca7733b5c2f1b2d05e93d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a20d56f4fc89ca7733b5c2f1b2d05e93d">&#9670;&#160;</a></span>containing() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classgeodesk_1_1_features.html">Features</a> geodesk::Features::containing </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="classgeodesk_1_1_feature.html">Feature</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>feature</em></span></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inherited</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Only features whose geometry contains the given <a class="el" href="classgeodesk_1_1_feature.html" title="A geographic feature.">Feature</a>. </p>
+<dl class="exception"><dt>Exceptions</dt><dd>
+  <table class="exception">
+    <tr><td class="paramname"><a class="el" href="classgeodesk_1_1_query_exception.html" title="Thrown if a query is malformed or cannot be fulfilled.">QueryException</a></td><td>if one or more tiles that contain the geometry of a <a class="el" href="classgeodesk_1_1_relation.html" title="A Feature that represents a grouping of related features or a complex polygon.">Relation</a> are missing </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="af75a07d127eb7928fa496991d133272a" name="af75a07d127eb7928fa496991d133272a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af75a07d127eb7928fa496991d133272a">&#9670;&#160;</a></span>containing() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classgeodesk_1_1_features.html">Features</a> geodesk::Features::containing </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classgeodesk_1_1_coordinate.html">Coordinate</a></td>          <td class="paramname"><span class="paramname"><em>xy</em></span></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inherited</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Only features whose geometry contains the given <a class="el" href="classgeodesk_1_1_coordinate.html" title="A pair of Cartesian coordinate values.">Coordinate</a>. </p>
+
+</div>
+</div>
+<a id="a1c7ee655d5a0888e5a70fa512233443f" name="a1c7ee655d5a0888e5a70fa512233443f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1c7ee655d5a0888e5a70fa512233443f">&#9670;&#160;</a></span>containingLonLat()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classgeodesk_1_1_features.html">Features</a> geodesk::Features::containingLonLat </td>
+          <td>(</td>
+          <td class="paramtype">double</td>          <td class="paramname"><span class="paramname"><em>lon</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double</td>          <td class="paramname"><span class="paramname"><em>lat</em></span>&#160;) const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inherited</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Only features whose geometry contains the given location. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">lon</td><td>degrees longitude </td></tr>
+    <tr><td class="paramname">lat</td><td>degrees latitude </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a268ee9e41812c01dcbf0fd0700ae67c1" name="a268ee9e41812c01dcbf0fd0700ae67c1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a268ee9e41812c01dcbf0fd0700ae67c1">&#9670;&#160;</a></span>contains()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool geodesk::Features::contains </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="classgeodesk_1_1_feature.html">Feature</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>feature</em></span></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inherited</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Checks if the specified <a class="el" href="classgeodesk_1_1_feature.html" title="A geographic feature.">Feature</a> exists in this collection. </p>
+
+</div>
+</div>
+<a id="a9e7afddef438b9b30c8639876495bd43" name="a9e7afddef438b9b30c8639876495bd43"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9e7afddef438b9b30c8639876495bd43">&#9670;&#160;</a></span>count()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint64_t geodesk::Features::count </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inherited</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Returns the total number of features in this collection. </p>
+
+</div>
+</div>
+<a id="a406cc0dfbea232d658a347c7fab24215" name="a406cc0dfbea232d658a347c7fab24215"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a406cc0dfbea232d658a347c7fab24215">&#9670;&#160;</a></span>crossing()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classgeodesk_1_1_features.html">Features</a> geodesk::Features::crossing </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="classgeodesk_1_1_feature.html">Feature</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>feature</em></span></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inherited</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Only features whose geometry crosses the given <a class="el" href="classgeodesk_1_1_feature.html" title="A geographic feature.">Feature</a>. </p>
+<dl class="exception"><dt>Exceptions</dt><dd>
+  <table class="exception">
+    <tr><td class="paramname"><a class="el" href="classgeodesk_1_1_query_exception.html" title="Thrown if a query is malformed or cannot be fulfilled.">QueryException</a></td><td>if one or more tiles that contain the geometry of a <a class="el" href="classgeodesk_1_1_relation.html" title="A Feature that represents a grouping of related features or a complex polygon.">Relation</a> are missing </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a4879c2ca6d240605cca7dcbd37fd58a3" name="a4879c2ca6d240605cca7dcbd37fd58a3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4879c2ca6d240605cca7dcbd37fd58a3">&#9670;&#160;</a></span>filter()</h2>
 
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;typename P &gt; </div>
+template&lt;typename Predicate &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="classgeodesk_1_1_ways.html">Ways</a> geodesk::Ways::parentsOf </td>
+          <td class="memname"><a class="el" href="classgeodesk_1_1_features.html">Features</a> geodesk::Features::filter </td>
           <td>(</td>
-          <td class="paramtype">FeatureBase&lt; P &gt;</td>          <td class="paramname"><span class="paramname"><em>feature</em></span></td><td>)</td>
+          <td class="paramtype">Predicate</td>          <td class="paramname"><span class="paramname"><em>predicate</em></span></td><td>)</td>
           <td> const</td>
         </tr>
       </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inherited</span></span>  </td>
+  </tr>
+</table>
 </div><div class="memdoc">
+
+<p>Only features that match the given predicate. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">predicate</td><td>A callable object (e.g., lambda, function pointer, or functor) that defines the filtering logic. The callable must accept a <a class="el" href="classgeodesk_1_1_feature.html" title="A geographic feature.">Feature</a> and return a <code>bool</code>.</td></tr>
+  </table>
+  </dd>
+</dl>
+<p><b>Important:</b> The provided predicate must be thread-safe, as it may be invoked concurrently.</p>
+<div class="fragment"><div class="line"><span class="comment">// Find all parks whose area is at least 1 km²</span></div>
+<div class="line"><span class="comment">// (one million square meters)</span></div>
+<div class="line"> </div>
+<div class="line"><a class="code hl_class" href="classgeodesk_1_1_features.html">Features</a> parks = world(<span class="stringliteral">&quot;a[leisure=park]&quot;</span>);</div>
+<div class="line"><a class="code hl_class" href="classgeodesk_1_1_features.html">Features</a> largeParks = parks.<a class="code hl_function" href="classgeodesk_1_1_features.html#a4879c2ca6d240605cca7dcbd37fd58a3">filter</a>([](<a class="code hl_class" href="classgeodesk_1_1_feature.html">Feature</a> park)</div>
+<div class="line">    { <span class="keywordflow">return</span> park.<a class="code hl_function" href="classgeodesk_1_1_feature.html#aafcfafe2c11e0678f514eb4b1a2ad41d">area</a>() &gt; 1&#39;000&#39;000; });</div>
+<div class="ttc" id="aclassgeodesk_1_1_feature_html"><div class="ttname"><a href="classgeodesk_1_1_feature.html">geodesk::Feature</a></div><div class="ttdoc">A geographic feature.</div><div class="ttdef"><b>Definition</b> Feature.h:27</div></div>
+<div class="ttc" id="aclassgeodesk_1_1_feature_html_aafcfafe2c11e0678f514eb4b1a2ad41d"><div class="ttname"><a href="classgeodesk_1_1_feature.html#aafcfafe2c11e0678f514eb4b1a2ad41d">geodesk::Feature::area</a></div><div class="ttdeci">double area() const</div><div class="ttdoc">Measures the area of this Feature.</div></div>
+<div class="ttc" id="aclassgeodesk_1_1_features_html"><div class="ttname"><a href="classgeodesk_1_1_features.html">geodesk::Features</a></div><div class="ttdoc">A collection of geographic features.</div><div class="ttdef"><b>Definition</b> Features.h:112</div></div>
+<div class="ttc" id="aclassgeodesk_1_1_features_html_a4879c2ca6d240605cca7dcbd37fd58a3"><div class="ttname"><a href="classgeodesk_1_1_features.html#a4879c2ca6d240605cca7dcbd37fd58a3">geodesk::Features::filter</a></div><div class="ttdeci">Features filter(Predicate predicate) const</div><div class="ttdoc">Only features that match the given predicate.</div></div>
+</div><!-- fragment --> 
+</div>
+</div>
+<a id="a8656395f683733e84c43550a06f9f330" name="a8656395f683733e84c43550a06f9f330"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8656395f683733e84c43550a06f9f330">&#9670;&#160;</a></span>first()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::optional&lt; <a class="el" href="classgeodesk_1_1_feature.html">Feature</a> &gt; geodesk::Features::first </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inherited</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Returns the first <a class="el" href="classgeodesk_1_1_feature.html" title="A geographic feature.">Feature</a> in this collection, or <code>std::nullopt</code> if the collection is empty. </p>
+<p>Only <a class="el" href="classgeodesk_1_1_nodes.html" title="A collection containing only Node features.">Nodes</a> of a <a class="el" href="classgeodesk_1_1_way.html" title="A Feature that represents a linestring, linear ring, or a simple polygon.">Way</a> and member <a class="el" href="classgeodesk_1_1_features.html" title="A collection of geographic features.">Features</a> of a <a class="el" href="classgeodesk_1_1_relation.html" title="A Feature that represents a grouping of related features or a complex polygon.">Relation</a> are ordered; for all other collections, <a class="el" href="classgeodesk_1_1_features.html#a8656395f683733e84c43550a06f9f330" title="Returns the first Feature in this collection, or std::nullopt if the collection is empty.">first()</a> returns an arbitrary <a class="el" href="classgeodesk_1_1_feature.html" title="A geographic feature.">Feature</a>.</p>
+<dl class="section return"><dt>Returns</dt><dd>the first <code><a class="el" href="classgeodesk_1_1_feature.html" title="A geographic feature.">Feature</a></code>, or <code>std::nullopt</code> </dd></dl>
+
+</div>
+</div>
+<a id="aa317b5bd3be7f24963a9427474ee6d80" name="aa317b5bd3be7f24963a9427474ee6d80"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa317b5bd3be7f24963a9427474ee6d80">&#9670;&#160;</a></span>intersecting()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classgeodesk_1_1_features.html">Features</a> geodesk::Features::intersecting </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="classgeodesk_1_1_feature.html">Feature</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>feature</em></span></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inherited</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Only features whose geometry intersects with the given <a class="el" href="classgeodesk_1_1_feature.html" title="A geographic feature.">Feature</a>. </p>
+<dl class="exception"><dt>Exceptions</dt><dd>
+  <table class="exception">
+    <tr><td class="paramname"><a class="el" href="classgeodesk_1_1_query_exception.html" title="Thrown if a query is malformed or cannot be fulfilled.">QueryException</a></td><td>if one or more tiles that contain the geometry of a <a class="el" href="classgeodesk_1_1_relation.html" title="A Feature that represents a grouping of related features or a complex polygon.">Relation</a> are missing </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a200cd9550b03e68b7fa3b456fcc0155f" name="a200cd9550b03e68b7fa3b456fcc0155f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a200cd9550b03e68b7fa3b456fcc0155f">&#9670;&#160;</a></span>length()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">double geodesk::Features::length </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inherited</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Computes the total length (in meters) of the features in this collection. </p>
+<dl class="exception"><dt>Exceptions</dt><dd>
+  <table class="exception">
+    <tr><td class="paramname"><a class="el" href="classgeodesk_1_1_query_exception.html" title="Thrown if a query is malformed or cannot be fulfilled.">QueryException</a></td><td>if one or more tiles that contain the geometry of a <a class="el" href="classgeodesk_1_1_relation.html" title="A Feature that represents a grouping of related features or a complex polygon.">Relation</a> are missing </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="adcca0f639bcb6f43d26d5614134bdc95" name="adcca0f639bcb6f43d26d5614134bdc95"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#adcca0f639bcb6f43d26d5614134bdc95">&#9670;&#160;</a></span>maxMetersFrom() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classgeodesk_1_1_features.html">Features</a> geodesk::Features::maxMetersFrom </td>
+          <td>(</td>
+          <td class="paramtype">double</td>          <td class="paramname"><span class="paramname"><em>distance</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="classgeodesk_1_1_coordinate.html">Coordinate</a></td>          <td class="paramname"><span class="paramname"><em>xy</em></span>&#160;) const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inherited</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Only features whose closest point lies within <code>distance</code> meters of <code>xy</code>. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">distance</td><td>the maximum distance (in meters) </td></tr>
+    <tr><td class="paramname">xy</td><td>the center of the search radius </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a22a9d0b75c00e3bed3f4a214e8509ead" name="a22a9d0b75c00e3bed3f4a214e8509ead"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a22a9d0b75c00e3bed3f4a214e8509ead">&#9670;&#160;</a></span>maxMetersFrom() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classgeodesk_1_1_features.html">Features</a> geodesk::Features::maxMetersFrom </td>
+          <td>(</td>
+          <td class="paramtype">double</td>          <td class="paramname"><span class="paramname"><em>distance</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double</td>          <td class="paramname"><span class="paramname"><em>lon</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double</td>          <td class="paramname"><span class="paramname"><em>lat</em></span>&#160;) const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inherited</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Only features whose closest point lies within <code>distance</code> meters of the given location. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">distance</td><td>the maximum distance (in meters) </td></tr>
+    <tr><td class="paramname">lon</td><td>longitude of the search radius center </td></tr>
+    <tr><td class="paramname">lat</td><td>latitude of the search radius center </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a47cb4b9be39825b2a4c31b83769aeac6" name="a47cb4b9be39825b2a4c31b83769aeac6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a47cb4b9be39825b2a4c31b83769aeac6">&#9670;&#160;</a></span>membersOf()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classgeodesk_1_1_features.html">Features</a> geodesk::Features::membersOf </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="classgeodesk_1_1_feature.html">Feature</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>feature</em></span></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inherited</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Only features that belong to the given <a class="el" href="classgeodesk_1_1_relation.html" title="A Feature that represents a grouping of related features or a complex polygon.">Relation</a>. </p>
+
+</div>
+</div>
+<a id="a96933909e58e610afe8f820e3f839ea0" name="a96933909e58e610afe8f820e3f839ea0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a96933909e58e610afe8f820e3f839ea0">&#9670;&#160;</a></span>nodes() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classgeodesk_1_1_nodes.html">Nodes</a> geodesk::Features::nodes </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inherited</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Only nodes. </p>
+
+</div>
+</div>
+<a id="af4ef61a2dd16b28051fadf05e76b995a" name="af4ef61a2dd16b28051fadf05e76b995a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af4ef61a2dd16b28051fadf05e76b995a">&#9670;&#160;</a></span>nodes() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classgeodesk_1_1_nodes.html">Nodes</a> geodesk::Features::nodes </td>
+          <td>(</td>
+          <td class="paramtype">const char *</td>          <td class="paramname"><span class="paramname"><em>query</em></span></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inherited</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Only nodes that match the given query. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">query</td><td>a query in <a href="https://docs.geodesk.com/goql">GOQL</a> format</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="exception"><dt>Exceptions</dt><dd>
+  <table class="exception">
+    <tr><td class="paramname"><a class="el" href="classgeodesk_1_1_query_exception.html" title="Thrown if a query is malformed or cannot be fulfilled.">QueryException</a></td><td>if the query is malformed. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a27bcfd03f391f7e1d6d8213cd0b680f9" name="a27bcfd03f391f7e1d6d8213cd0b680f9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a27bcfd03f391f7e1d6d8213cd0b680f9">&#9670;&#160;</a></span>nodesOf()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classgeodesk_1_1_features.html">Features</a> geodesk::Features::nodesOf </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="classgeodesk_1_1_feature.html">Feature</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>feature</em></span></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inherited</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Only nodes that belong to the given <a class="el" href="classgeodesk_1_1_way.html" title="A Feature that represents a linestring, linear ring, or a simple polygon.">Way</a>. </p>
+
+</div>
+</div>
+<a id="a55d8be2172af6fdd2905ff92e7c42d52" name="a55d8be2172af6fdd2905ff92e7c42d52"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a55d8be2172af6fdd2905ff92e7c42d52">&#9670;&#160;</a></span>one()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classgeodesk_1_1_feature.html">Feature</a> geodesk::Features::one </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inherited</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Returns the one and only <a class="el" href="classgeodesk_1_1_feature.html" title="A geographic feature.">Feature</a> in this collection. </p>
+<dl class="section return"><dt>Returns</dt><dd>the sole <a class="el" href="classgeodesk_1_1_feature.html" title="A geographic feature.">Feature</a></dd></dl>
+<dl class="exception"><dt>Exceptions</dt><dd>
+  <table class="exception">
+    <tr><td class="paramname"><a class="el" href="classgeodesk_1_1_query_exception.html" title="Thrown if a query is malformed or cannot be fulfilled.">QueryException</a></td><td>if this collection is empty or contains more than one <a class="el" href="classgeodesk_1_1_feature.html" title="A geographic feature.">Feature</a> </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="ac1952aafaa056f414b6709ceec591774" name="ac1952aafaa056f414b6709ceec591774"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac1952aafaa056f414b6709ceec591774">&#9670;&#160;</a></span>operator bool()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">geodesk::Features::operator bool </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inherited</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Returns <code>true</code> if this collection contains at least one <a class="el" href="classgeodesk_1_1_feature.html" title="A geographic feature.">Feature</a>. </p>
+
+</div>
+</div>
+<a id="ad27ee44eaf044f777cd937a8b31ed1ec" name="ad27ee44eaf044f777cd937a8b31ed1ec"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad27ee44eaf044f777cd937a8b31ed1ec">&#9670;&#160;</a></span>operator!()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool geodesk::Features::operator! </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inherited</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Returns <code>true</code> if this collection is empty. </p>
+
+</div>
+</div>
+<a id="a9b94f926643cc85072d333a8f0807ac3" name="a9b94f926643cc85072d333a8f0807ac3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9b94f926643cc85072d333a8f0807ac3">&#9670;&#160;</a></span>operator()() <span class="overload">[1/4]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classgeodesk_1_1_features.html">Features</a> geodesk::Features::operator() </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="classgeodesk_1_1_box.html">Box</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>box</em></span></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inherited</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Only features whose bounding box intersects the given bounding box. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">box</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a8cce16eb17c1cd05f4b694754c9c184e" name="a8cce16eb17c1cd05f4b694754c9c184e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8cce16eb17c1cd05f4b694754c9c184e">&#9670;&#160;</a></span>operator()() <span class="overload">[2/4]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classgeodesk_1_1_features.html">Features</a> geodesk::Features::operator() </td>
+          <td>(</td>
+          <td class="paramtype">const char *</td>          <td class="paramname"><span class="paramname"><em>query</em></span></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inherited</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Only features that match the given query. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">query</td><td>a query in <a href="https://docs.geodesk.com/goql">GOQL</a> format</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="exception"><dt>Exceptions</dt><dd>
+  <table class="exception">
+    <tr><td class="paramname"><a class="el" href="classgeodesk_1_1_query_exception.html" title="Thrown if a query is malformed or cannot be fulfilled.">QueryException</a></td><td>if the query is malformed. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="abdd57a918f372b6692ea366ae59b9513" name="abdd57a918f372b6692ea366ae59b9513"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abdd57a918f372b6692ea366ae59b9513">&#9670;&#160;</a></span>operator()() <span class="overload">[3/4]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classgeodesk_1_1_features.html">Features</a> geodesk::Features::operator() </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="classgeodesk_1_1_feature.html">Feature</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>feature</em></span></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inherited</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Only features whose geometry intersects with the given <a class="el" href="classgeodesk_1_1_feature.html" title="A geographic feature.">Feature</a> (short form of <a class="el" href="classgeodesk_1_1_features.html#aa317b5bd3be7f24963a9427474ee6d80" title="Only features whose geometry intersects with the given Feature.">intersecting()</a>) </p>
+
+</div>
+</div>
+<a id="ad6ad165c16d6bd8749b4db4bb75e1abb" name="ad6ad165c16d6bd8749b4db4bb75e1abb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad6ad165c16d6bd8749b4db4bb75e1abb">&#9670;&#160;</a></span>operator()() <span class="overload">[4/4]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classgeodesk_1_1_features.html">Features</a> geodesk::Features::operator() </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classgeodesk_1_1_coordinate.html">Coordinate</a></td>          <td class="paramname"><span class="paramname"><em>xy</em></span></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inherited</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Only features whose bounding box contains the given <a class="el" href="classgeodesk_1_1_coordinate.html" title="A pair of Cartesian coordinate values.">Coordinate</a>. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">xy</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a7d2c19eb9f7e7aa5a1199afff0759101" name="a7d2c19eb9f7e7aa5a1199afff0759101"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7d2c19eb9f7e7aa5a1199afff0759101">&#9670;&#160;</a></span>parentsOf()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classgeodesk_1_1_features.html">Features</a> geodesk::Features::parentsOf </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="classgeodesk_1_1_feature.html">Feature</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>feature</em></span></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inherited</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Only features that are parent relations of the given <a class="el" href="classgeodesk_1_1_feature.html" title="A geographic feature.">Feature</a> (or parent ways of the given <a class="el" href="classgeodesk_1_1_node.html" title="A Feature that represents a single point.">Node</a>). </p>
+
+</div>
+</div>
+<a id="a47f8446a81a5e8683b1d9f97fa2a67ed" name="a47f8446a81a5e8683b1d9f97fa2a67ed"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a47f8446a81a5e8683b1d9f97fa2a67ed">&#9670;&#160;</a></span>relations() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classgeodesk_1_1_relations.html">Relations</a> geodesk::Features::relations </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inherited</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Only relations. </p>
+
+</div>
+</div>
+<a id="a6643f62735824f64e23b38e06f18f7bd" name="a6643f62735824f64e23b38e06f18f7bd"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6643f62735824f64e23b38e06f18f7bd">&#9670;&#160;</a></span>relations() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classgeodesk_1_1_relations.html">Relations</a> geodesk::Features::relations </td>
+          <td>(</td>
+          <td class="paramtype">const char *</td>          <td class="paramname"><span class="paramname"><em>query</em></span></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inherited</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Only relations that match the given query. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">query</td><td>a query in <a href="https://docs.geodesk.com/goql">GOQL</a> format</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="exception"><dt>Exceptions</dt><dd>
+  <table class="exception">
+    <tr><td class="paramname"><a class="el" href="classgeodesk_1_1_query_exception.html" title="Thrown if a query is malformed or cannot be fulfilled.">QueryException</a></td><td>if the query is malformed. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a33f7b2e29816af6257061c76d8d5c2e4" name="a33f7b2e29816af6257061c76d8d5c2e4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a33f7b2e29816af6257061c76d8d5c2e4">&#9670;&#160;</a></span>store()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classgeodesk_1_1_feature_store.html">FeatureStore</a> * geodesk::Features::store </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">noexcept</span><span class="mlabel">inherited</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Returns a pointer to the <a class="el" href="classgeodesk_1_1_feature_store.html" title="A Geographic Object Library.">FeatureStore</a> which contains the features in this collection. </p>
+
+</div>
+</div>
+<a id="a0af5163b7cd07b678b6b2ba35be638d4" name="a0af5163b7cd07b678b6b2ba35be638d4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0af5163b7cd07b678b6b2ba35be638d4">&#9670;&#160;</a></span>ways() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classgeodesk_1_1_ways.html">Ways</a> geodesk::Features::ways </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inherited</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Only ways. </p>
+
+</div>
+</div>
+<a id="a10276c009db48ffb529339a095520587" name="a10276c009db48ffb529339a095520587"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a10276c009db48ffb529339a095520587">&#9670;&#160;</a></span>ways() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classgeodesk_1_1_ways.html">Ways</a> geodesk::Features::ways </td>
+          <td>(</td>
+          <td class="paramtype">const char *</td>          <td class="paramname"><span class="paramname"><em>query</em></span></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inherited</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Only ways that match the given query. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">query</td><td>a query in <a href="https://docs.geodesk.com/goql">GOQL</a> format</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="exception"><dt>Exceptions</dt><dd>
+  <table class="exception">
+    <tr><td class="paramname"><a class="el" href="classgeodesk_1_1_query_exception.html" title="Thrown if a query is malformed or cannot be fulfilled.">QueryException</a></td><td>if the query is malformed. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a64a45b6a444f59c1b4f1f7a1bd01234c" name="a64a45b6a444f59c1b4f1f7a1bd01234c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a64a45b6a444f59c1b4f1f7a1bd01234c">&#9670;&#160;</a></span>within()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classgeodesk_1_1_features.html">Features</a> geodesk::Features::within </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="classgeodesk_1_1_feature.html">Feature</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>feature</em></span></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inherited</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Only features that lie entirely inside the geometry of the given <a class="el" href="classgeodesk_1_1_feature.html" title="A geographic feature.">Feature</a>. </p>
+<dl class="exception"><dt>Exceptions</dt><dd>
+  <table class="exception">
+    <tr><td class="paramname"><a class="el" href="classgeodesk_1_1_query_exception.html" title="Thrown if a query is malformed or cannot be fulfilled.">QueryException</a></td><td>if one or more tiles that contain the geometry of a <a class="el" href="classgeodesk_1_1_relation.html" title="A Feature that represents a grouping of related features or a complex polygon.">Relation</a> are missing </td></tr>
+  </table>
+  </dd>
+</dl>
 
 </div>
 </div>
 <hr/>The documentation for this class was generated from the following file:<ul>
-<li>C:/dev/libgeodesk/include/geodesk/feature/<a class="el" href="_ways_8h_source.html">Ways.h</a></li>
+<li>C:/dev/libgeodesk/include/geodesk/api/<a class="el" href="api_2_features_8h_source.html">Features.h</a></li>
 </ul>
 </div><!-- contents -->
 </div><!-- doc-content -->

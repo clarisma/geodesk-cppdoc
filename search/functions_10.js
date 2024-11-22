@@ -1,17 +1,19 @@
 var searchData=
 [
-  ['scale_0',['scale',['../classgeodesk_1_1_mercator.html#aef382f5c543ced28f110f66db52e2b79',1,'geodesk::Mercator']]],
-  ['setempty_1',['setEmpty',['../classgeodesk_1_1_box.html#a39f513ab52a4cbfef84167c2c329cbbf',1,'geodesk::Box']]],
-  ['setmaxx_2',['setMaxX',['../classgeodesk_1_1_box.html#a42cc1b0e92e11dcdface08c78fff0c80',1,'geodesk::Box']]],
-  ['setmaxy_3',['setMaxY',['../classgeodesk_1_1_box.html#a6e164f237a1959e347f92a0143feccd6',1,'geodesk::Box']]],
-  ['setminx_4',['setMinX',['../classgeodesk_1_1_box.html#a79ee1dbe529074ee743b3b6e24e12abf',1,'geodesk::Box']]],
-  ['setminy_5',['setMinY',['../classgeodesk_1_1_box.html#a25cb940d225cad57697f9a7d665a7c41',1,'geodesk::Box']]],
-  ['simpleintersection_6',['simpleIntersection',['../classgeodesk_1_1_box.html#a73858566a22d9827682d505d9fcb315f',1,'geodesk::Box']]],
-  ['simplesmaller_7',['simpleSmaller',['../classgeodesk_1_1_box.html#a913d2bc25394b6e91153c35e910df3cc',1,'geodesk::Box']]],
-  ['size_8',['size',['../classgeodesk_1_1_string_value.html#a71596a5c4ab93595d5851d5c0f95198d',1,'geodesk::StringValue::size()'],['../classgeodesk_1_1_tags.html#ad2b7544337960e38809e2dd3bcd1adc1',1,'geodesk::Tags::size()']]],
-  ['skipvarints_9',['skipVarints',['../namespaceclarisma.html#a3548afbbdc0537f73858928a704eac3f',1,'clarisma']]],
-  ['skipvarintsbackwardunsafe_10',['skipVarintsBackwardUnsafe',['../namespaceclarisma.html#af0aefce6f097d021fff1af3e23b0d223',1,'clarisma']]],
-  ['startswith_11',['startsWith',['../classgeodesk_1_1_string_value.html#aa0aa2d83e5d9d6a1038a220f9c7d0eea',1,'geodesk::StringValue']]],
-  ['store_12',['store',['../classgeodesk_1_1_features.html#a33f7b2e29816af6257061c76d8d5c2e4',1,'geodesk::Features']]],
-  ['stringvalue_13',['StringValue',['../classgeodesk_1_1_string_value.html#ad23147a75bd90f8a04c7accb7d1ed0db',1,'geodesk::StringValue::StringValue()'],['../classgeodesk_1_1_string_value.html#a213ca14d954f6176b01241488ad65e64',1,'geodesk::StringValue::StringValue(const clarisma::ShortVarString *str)'],['../classgeodesk_1_1_string_value.html#a048ec4638f9f9e80f600918a9a426bf1',1,'geodesk::StringValue::StringValue(const uint8_t *bytes)']]]
+  ['rawbytes_0',['rawBytes',['../classgeodesk_1_1_string_value.html#a6a6618e1c876f3f56ae749909284e54e',1,'geodesk::StringValue']]],
+  ['readsignedvarint32_1',['readSignedVarint32',['../namespaceclarisma.html#aa35c212fae323c0b29ff4f54774f8ef0',1,'clarisma']]],
+  ['readsignedvarint64_2',['readSignedVarint64',['../namespaceclarisma.html#a6d8d00e39a421accf7d034b8cf20781c',1,'clarisma']]],
+  ['readstringview_3',['readStringView',['../namespaceclarisma.html#a42d690f99ab61f18f083b4f6ec4e0e49',1,'clarisma']]],
+  ['readvarint32_4',['readVarint32',['../namespaceclarisma.html#acdbe36ee166538c1dce14f2d1ee88f64',1,'clarisma']]],
+  ['readvarint35_5',['readVarint35',['../namespaceclarisma.html#a342e4c8da95e57489de06bc09ebc6655',1,'clarisma']]],
+  ['readvarint64_6',['readVarint64',['../namespaceclarisma.html#ab2abb37345f9051923e91d625fb0aa2b',1,'clarisma']]],
+  ['refcount_7',['refcount',['../classgeodesk_1_1_feature_store.html#ae42ca15cf45c4a6f0ac29320b25d5764',1,'geodesk::FeatureStore']]],
+  ['relations_8',['relations',['../classgeodesk_1_1_features.html#a47f8446a81a5e8683b1d9f97fa2a67ed',1,'geodesk::Features::relations() const'],['../classgeodesk_1_1_features.html#a6643f62735824f64e23b38e06f18f7bd',1,'geodesk::Features::relations(const char *query) const']]],
+  ['relationtablefast_9',['relationTableFast',['../classgeodesk_1_1_feature_ptr.html#a1818740951cd3836502ee0b7bd6479c8',1,'geodesk::FeaturePtr']]],
+  ['relationtablehandlefast_10',['relationTableHandleFast',['../classgeodesk_1_1_feature_ptr.html#a3fb5081346cef92f77861c6805668fe9',1,'geodesk::FeaturePtr']]],
+  ['release_11',['release',['../classgeodesk_1_1_feature_store.html#abbf5ac45cd6fc3f3d5c56b48c79ac7e1',1,'geodesk::FeatureStore']]],
+  ['role_12',['role',['../classgeodesk_1_1_feature.html#a0d0542770da5289588deae1760173867',1,'geodesk::Feature::role()'],['../classgeodesk_1_1_node.html#a9e4d64e68a3c3a04be9309765de80cdf',1,'geodesk::Node::role()'],['../classgeodesk_1_1_relation.html#acdd0975a48d4c77997599c6af6cd9db5',1,'geodesk::Relation::role()'],['../classgeodesk_1_1_way.html#aa5014d8ddc9276580f69b11003309b2a',1,'geodesk::Way::role()']]],
+  ['roundedlatfromy_13',['roundedLatFromY',['../classgeodesk_1_1_mercator.html#adcaa209b05f22f354750d7f585653775',1,'geodesk::Mercator']]],
+  ['roundedlonfromx_14',['roundedLonFromX',['../classgeodesk_1_1_mercator.html#a386945b6686e70e8dfda4df521dab526',1,'geodesk::Mercator']]],
+  ['roundto100nd_15',['roundTo100nd',['../classgeodesk_1_1_mercator.html#ab3892330968687405bb1e8268e2b73c2',1,'geodesk::Mercator']]]
 ];

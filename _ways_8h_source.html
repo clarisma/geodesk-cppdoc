@@ -112,33 +112,26 @@ $(function(){initNavTree('_ways_8h_source.html',''); initResizable(true); });
 <div class="line"><a id="l00007" name="l00007"></a><span class="lineno">    7</span> </div>
 <div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span><span class="keyword">namespace </span><a class="code hl_namespace" href="namespacegeodesk.html">geodesk</a> {</div>
 <div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span> </div>
-<div class="foldopen" id="foldopen00010" data-start="{" data-end="};">
-<div class="line"><a id="l00010" name="l00010"></a><span class="lineno"><a class="line" href="classgeodesk_1_1_ways.html">   10</a></span><span class="keyword">class </span><a class="code hl_class" href="classgeodesk_1_1_ways.html">Ways</a> : <span class="keyword">public</span> FeaturesBase&lt;Way&gt;</div>
-<div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span>{</div>
-<div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span><span class="keyword">public</span>:</div>
-<div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span>    <span class="keyword">using </span>FeaturesBase::FeaturesBase;</div>
-<div class="foldopen" id="foldopen00014" data-start="{" data-end="}">
-<div class="line"><a id="l00014" name="l00014"></a><span class="lineno"><a class="line" href="classgeodesk_1_1_ways.html#a0775acfc3d31cdd734ce2bc9a6b90d58">   14</a></span>    <a class="code hl_function" href="classgeodesk_1_1_ways.html#a0775acfc3d31cdd734ce2bc9a6b90d58">Ways</a>(<span class="keyword">const</span> FeaturesBase&lt;Feature&gt;&amp; other) :</div>
-<div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span>        FeaturesBase(View(other.view_&amp; FeatureTypes::WAYS)) {}</div>
-</div>
-<div class="line"><a id="l00016" name="l00016"></a><span class="lineno"><a class="line" href="classgeodesk_1_1_ways.html#a69b4ab564c2bc89759aefa0618344f9f">   16</a></span>    <a class="code hl_function" href="classgeodesk_1_1_ways.html#a69b4ab564c2bc89759aefa0618344f9f">Ways</a>(<span class="keyword">const</span> FeaturesBase&lt;Node&gt;&amp; other) : FeaturesBase(empty()) {}</div>
-<div class="line"><a id="l00017" name="l00017"></a><span class="lineno"><a class="line" href="classgeodesk_1_1_ways.html#ab8b56896e923bc6251b621f17084a2b4">   17</a></span>    <a class="code hl_function" href="classgeodesk_1_1_ways.html#ab8b56896e923bc6251b621f17084a2b4">Ways</a>(<span class="keyword">const</span> FeaturesBase&lt;Way&gt;&amp; other) : FeaturesBase(other.view_) {}</div>
-<div class="line"><a id="l00018" name="l00018"></a><span class="lineno"><a class="line" href="classgeodesk_1_1_ways.html#a28de4b8a1ef7f164ccd65e17f38c8948">   18</a></span>    <a class="code hl_function" href="classgeodesk_1_1_ways.html#a28de4b8a1ef7f164ccd65e17f38c8948">Ways</a>(<span class="keyword">const</span> FeaturesBase&lt;Relation&gt;&amp; other) : FeaturesBase(empty()) {}</div>
-<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span> </div>
-<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span>    <span class="keyword">template</span>&lt;<span class="keyword">typename</span> P&gt;</div>
-<div class="line"><a id="l00021" name="l00021"></a><span class="lineno"><a class="line" href="classgeodesk_1_1_ways.html#a0a1bf2fe5531fead917e2bae94dc72dc">   21</a></span>    <a class="code hl_class" href="classgeodesk_1_1_ways.html">Ways</a> <a class="code hl_function" href="classgeodesk_1_1_ways.html#a0a1bf2fe5531fead917e2bae94dc72dc">parentsOf</a>(FeatureBase&lt;P&gt; feature) <span class="keyword">const</span>;</div>
-<div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span>};</div>
-</div>
-<div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span> </div>
-<div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span>} <span class="comment">// namespace geodesk</span></div>
+<div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span><span class="keyword">class </span>Ways : <span class="keyword">public</span> FeaturesBase&lt;Way&gt;</div>
+<div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span>{</div>
+<div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span><span class="keyword">public</span>:</div>
+<div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span>    <span class="keyword">using </span>FeaturesBase::FeaturesBase;</div>
+<div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span>    Ways(<span class="keyword">const</span> FeaturesBase&lt;Feature&gt;&amp; other) :</div>
+<div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span>        FeaturesBase(View(other.view_&amp; FeatureTypes::WAYS)) {}</div>
+<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span>    Ways(<span class="keyword">const</span> FeaturesBase&lt;Node&gt;&amp; other) : FeaturesBase(empty()) {}</div>
+<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span>    Ways(<span class="keyword">const</span> FeaturesBase&lt;Way&gt;&amp; other) : FeaturesBase(other.view_) {}</div>
+<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span>    Ways(<span class="keyword">const</span> FeaturesBase&lt;Relation&gt;&amp; other) : FeaturesBase(empty()) {}</div>
+<div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span> </div>
+<div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span>    <span class="keyword">template</span>&lt;<span class="keyword">typename</span> P&gt;</div>
+<div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span>    Ways <a class="code hl_function" href="classgeodesk_1_1_features.html#a7d2c19eb9f7e7aa5a1199afff0759101">parentsOf</a>(FeatureBase&lt;P&gt; feature) <span class="keyword">const</span>;</div>
+<div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span>};</div>
+<div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span> </div>
+<div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span> </div>
+<div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span>} <span class="comment">// namespace geodesk</span></div>
+<div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span> </div>
 <div class="ttc" id="a_features_base_8h_html"><div class="ttname"><a href="_features_base_8h.html">FeaturesBase.h</a></div></div>
-<div class="ttc" id="aclassgeodesk_1_1_ways_html"><div class="ttname"><a href="classgeodesk_1_1_ways.html">geodesk::Ways</a></div><div class="ttdef"><b>Definition</b> Ways.h:11</div></div>
-<div class="ttc" id="aclassgeodesk_1_1_ways_html_a0775acfc3d31cdd734ce2bc9a6b90d58"><div class="ttname"><a href="classgeodesk_1_1_ways.html#a0775acfc3d31cdd734ce2bc9a6b90d58">geodesk::Ways::Ways</a></div><div class="ttdeci">Ways(const FeaturesBase&lt; Feature &gt; &amp;other)</div><div class="ttdef"><b>Definition</b> Ways.h:14</div></div>
-<div class="ttc" id="aclassgeodesk_1_1_ways_html_a0a1bf2fe5531fead917e2bae94dc72dc"><div class="ttname"><a href="classgeodesk_1_1_ways.html#a0a1bf2fe5531fead917e2bae94dc72dc">geodesk::Ways::parentsOf</a></div><div class="ttdeci">Ways parentsOf(FeatureBase&lt; P &gt; feature) const</div></div>
-<div class="ttc" id="aclassgeodesk_1_1_ways_html_a28de4b8a1ef7f164ccd65e17f38c8948"><div class="ttname"><a href="classgeodesk_1_1_ways.html#a28de4b8a1ef7f164ccd65e17f38c8948">geodesk::Ways::Ways</a></div><div class="ttdeci">Ways(const FeaturesBase&lt; Relation &gt; &amp;other)</div><div class="ttdef"><b>Definition</b> Ways.h:18</div></div>
-<div class="ttc" id="aclassgeodesk_1_1_ways_html_a69b4ab564c2bc89759aefa0618344f9f"><div class="ttname"><a href="classgeodesk_1_1_ways.html#a69b4ab564c2bc89759aefa0618344f9f">geodesk::Ways::Ways</a></div><div class="ttdeci">Ways(const FeaturesBase&lt; Node &gt; &amp;other)</div><div class="ttdef"><b>Definition</b> Ways.h:16</div></div>
-<div class="ttc" id="aclassgeodesk_1_1_ways_html_ab8b56896e923bc6251b621f17084a2b4"><div class="ttname"><a href="classgeodesk_1_1_ways.html#ab8b56896e923bc6251b621f17084a2b4">geodesk::Ways::Ways</a></div><div class="ttdeci">Ways(const FeaturesBase&lt; Way &gt; &amp;other)</div><div class="ttdef"><b>Definition</b> Ways.h:17</div></div>
-<div class="ttc" id="anamespacegeodesk_html"><div class="ttname"><a href="namespacegeodesk.html">geodesk</a></div><div class="ttdef"><b>Definition</b> Features.h:12</div></div>
+<div class="ttc" id="aclassgeodesk_1_1_features_html_a7d2c19eb9f7e7aa5a1199afff0759101"><div class="ttname"><a href="classgeodesk_1_1_features.html#a7d2c19eb9f7e7aa5a1199afff0759101">geodesk::Features::parentsOf</a></div><div class="ttdeci">Features parentsOf(const Feature &amp;feature) const</div><div class="ttdoc">Only features that are parent relations of the given Feature (or parent ways of the given Node).</div></div>
+<div class="ttc" id="anamespacegeodesk_html"><div class="ttname"><a href="namespacegeodesk.html">geodesk</a></div><div class="ttdef"><b>Definition</b> Feature.h:11</div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->

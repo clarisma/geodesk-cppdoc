@@ -139,14 +139,15 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a226a485fd1a8800f6463440d0c504872"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9032f70a190480ac0f59055d3cb15090" id="r_a9032f70a190480ac0f59055d3cb15090"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a9032f70a190480ac0f59055d3cb15090">operator bool</a> () const noexcept</td></tr>
 <tr class="separator:a9032f70a190480ac0f59055d3cb15090"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9354e22c9753b6d65c2884c1069f8c99" id="r_a9354e22c9753b6d65c2884c1069f8c99"><td class="memItemLeft" align="right" valign="top">const uint8_t *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a9354e22c9753b6d65c2884c1069f8c99">rawBytes</a> () const</td></tr>
-<tr class="memdesc:a9354e22c9753b6d65c2884c1069f8c99"><td class="mdescLeft">&#160;</td><td class="mdescRight">Pointer to the raw data representing this string.  <br /></td></tr>
-<tr class="separator:a9354e22c9753b6d65c2884c1069f8c99"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6a6618e1c876f3f56ae749909284e54e" id="r_a6a6618e1c876f3f56ae749909284e54e"><td class="memItemLeft" align="right" valign="top">const uint8_t *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a6a6618e1c876f3f56ae749909284e54e">rawBytes</a> () const noexcept</td></tr>
+<tr class="memdesc:a6a6618e1c876f3f56ae749909284e54e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Pointer to the raw data representing this string.  <br /></td></tr>
+<tr class="separator:a6a6618e1c876f3f56ae749909284e54e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>A string pointer (used for keys, values and roles). </p>
+<p>Character data is encoded as UTF-8.</p>
 <p>Converts implicitly to <code>std::string</code> and <code>std::string_view</code>.</p>
-<p><b>Warning</b>: A <a class="el" href="classgeodesk_1_1_string_value.html" title="A string pointer (used for keys, values and roles).">StringValue</a> object is a lightweight wrapper around a pointer to string data, contained in a FeatureStore. It becomes invalid once that FeatureStore is closed. To use its value beyond the lifetime of its FeatureStore, assign it to a <code>std::string</code> (which allocates its own copy of the string). </p>
+<p><b>Warning</b>: A <a class="el" href="classgeodesk_1_1_string_value.html" title="A string pointer (used for keys, values and roles).">StringValue</a> object is a lightweight wrapper around a pointer to string data, contained in a <a class="el" href="classgeodesk_1_1_feature_store.html" title="A Geographic Object Library.">FeatureStore</a>. It becomes invalid once that <a class="el" href="classgeodesk_1_1_feature_store.html" title="A Geographic Object Library.">FeatureStore</a> is closed. To use its value beyond the lifetime of its <a class="el" href="classgeodesk_1_1_feature_store.html" title="A Geographic Object Library.">FeatureStore</a>, assign it to a <code>std::string</code> (which allocates its own copy of the string). </p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="ad23147a75bd90f8a04c7accb7d1ed0db" name="ad23147a75bd90f8a04c7accb7d1ed0db"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ad23147a75bd90f8a04c7accb7d1ed0db">&#9670;&#160;</a></span>StringValue() <span class="overload">[1/3]</span></h2>
@@ -379,8 +380,8 @@ Public Member Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="a9354e22c9753b6d65c2884c1069f8c99" name="a9354e22c9753b6d65c2884c1069f8c99"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a9354e22c9753b6d65c2884c1069f8c99">&#9670;&#160;</a></span>rawBytes()</h2>
+<a id="a6a6618e1c876f3f56ae749909284e54e" name="a6a6618e1c876f3f56ae749909284e54e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6a6618e1c876f3f56ae749909284e54e">&#9670;&#160;</a></span>rawBytes()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -397,13 +398,13 @@ Public Member Functions</h2></td></tr>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">noexcept</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
 
 <p>Pointer to the raw data representing this string. </p>
-<p><b>Warning:</b> This pointer becomes invalid once the FeatureStore containing its data is closed. </p>
+<p><b>Warning:</b> This pointer becomes invalid once the <a class="el" href="classgeodesk_1_1_feature_store.html" title="A Geographic Object Library.">FeatureStore</a> containing its data is closed. </p>
 
 </div>
 </div>

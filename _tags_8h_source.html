@@ -122,13 +122,13 @@ $(function(){initNavTree('_tags_8h_source.html',''); initResizable(true); });
 <div class="line"><a id="l00048" name="l00048"></a><span class="lineno"><a class="line" href="classgeodesk_1_1_tags.html">   48</a></span><span class="keyword">class </span><a class="code hl_define" href="export_8h.html#ad2aca25975b684c8b6f6edf212ef7007">GEODESK_API</a> <a class="code hl_class" href="classgeodesk_1_1_tags.html">Tags</a></div>
 <div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span>{</div>
 <div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span><span class="keyword">public</span>:</div>
-<div class="line"><a id="l00051" name="l00051"></a><span class="lineno"><a class="line" href="classgeodesk_1_1_tags.html#ad36dac27c8e8fe6440319c40309d1801">   51</a></span>    <span class="keyword">explicit</span> <a class="code hl_function" href="classgeodesk_1_1_tags.html#ad36dac27c8e8fe6440319c40309d1801">Tags</a>(<span class="keyword">const</span> Feature&amp; feature);</div>
+<div class="line"><a id="l00051" name="l00051"></a><span class="lineno"><a class="line" href="classgeodesk_1_1_tags.html#ad36dac27c8e8fe6440319c40309d1801">   51</a></span>    <span class="keyword">explicit</span> <a class="code hl_function" href="classgeodesk_1_1_tags.html#ad36dac27c8e8fe6440319c40309d1801">Tags</a>(<span class="keyword">const</span> <a class="code hl_class" href="classgeodesk_1_1_feature.html">Feature</a>&amp; feature);</div>
 <div class="foldopen" id="foldopen00052" data-start="{" data-end="}">
-<div class="line"><a id="l00052" name="l00052"></a><span class="lineno"><a class="line" href="classgeodesk_1_1_tags.html#a868644164f1c37004363efb1d1d10fac">   52</a></span>    <a class="code hl_function" href="classgeodesk_1_1_tags.html#a868644164f1c37004363efb1d1d10fac">Tags</a>(FeatureStore* store, <a class="code hl_class" href="classgeodesk_1_1_feature_ptr.html">FeaturePtr</a> ptr) :</div>
+<div class="line"><a id="l00052" name="l00052"></a><span class="lineno"><a class="line" href="classgeodesk_1_1_tags.html#a868644164f1c37004363efb1d1d10fac">   52</a></span>    <a class="code hl_function" href="classgeodesk_1_1_tags.html#a868644164f1c37004363efb1d1d10fac">Tags</a>(<a class="code hl_class" href="classgeodesk_1_1_feature_store.html">FeatureStore</a>* store, <a class="code hl_class" href="classgeodesk_1_1_feature_ptr.html">FeaturePtr</a> ptr) :</div>
 <div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span>        store_(store), tags_(ptr.tags()) {}</div>
 </div>
 <div class="foldopen" id="foldopen00054" data-start="{" data-end="}">
-<div class="line"><a id="l00054" name="l00054"></a><span class="lineno"><a class="line" href="classgeodesk_1_1_tags.html#a6356278fe419ecbb1110ad5681166f4b">   54</a></span>    <a class="code hl_function" href="classgeodesk_1_1_tags.html#a6356278fe419ecbb1110ad5681166f4b">Tags</a>(FeatureStore* store, TagTablePtr ptr) :</div>
+<div class="line"><a id="l00054" name="l00054"></a><span class="lineno"><a class="line" href="classgeodesk_1_1_tags.html#a6356278fe419ecbb1110ad5681166f4b">   54</a></span>    <a class="code hl_function" href="classgeodesk_1_1_tags.html#a6356278fe419ecbb1110ad5681166f4b">Tags</a>(<a class="code hl_class" href="classgeodesk_1_1_feature_store.html">FeatureStore</a>* store, TagTablePtr ptr) :</div>
 <div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span>        store_(store), tags_(ptr) {}</div>
 </div>
 <div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span> </div>
@@ -250,7 +250,7 @@ $(function(){initNavTree('_tags_8h_source.html',''); initResizable(true); });
 <div class="line"><a id="l00188" name="l00188"></a><span class="lineno">  188</span>    <span class="comment">// may allocate, hence throw</span></div>
 <div class="line"><a id="l00189" name="l00189"></a><span class="lineno">  189</span> </div>
 <div class="line"><a id="l00190" name="l00190"></a><span class="lineno">  190</span><span class="keyword">private</span>:</div>
-<div class="line"><a id="l00191" name="l00191"></a><span class="lineno">  191</span>    FeatureStore* store_;</div>
+<div class="line"><a id="l00191" name="l00191"></a><span class="lineno">  191</span>    <a class="code hl_class" href="classgeodesk_1_1_feature_store.html">FeatureStore</a>* store_;</div>
 <div class="line"><a id="l00192" name="l00192"></a><span class="lineno">  192</span>    TagTablePtr tags_;</div>
 <div class="line"><a id="l00193" name="l00193"></a><span class="lineno">  193</span>};</div>
 </div>
@@ -259,8 +259,10 @@ $(function(){initNavTree('_tags_8h_source.html',''); initResizable(true); });
 <div class="ttc" id="a_feature_ptr_8h_html"><div class="ttname"><a href="_feature_ptr_8h.html">FeaturePtr.h</a></div></div>
 <div class="ttc" id="a_tag_8h_html"><div class="ttname"><a href="_tag_8h.html">Tag.h</a></div></div>
 <div class="ttc" id="a_tag_iterator_8h_html"><div class="ttname"><a href="_tag_iterator_8h.html">TagIterator.h</a></div></div>
-<div class="ttc" id="aclassgeodesk_1_1_feature_ptr_html"><div class="ttname"><a href="classgeodesk_1_1_feature_ptr.html">geodesk::FeaturePtr</a></div><div class="ttdef"><b>Definition</b> FeaturePtr.h:22</div></div>
-<div class="ttc" id="aclassgeodesk_1_1_string_value_html"><div class="ttname"><a href="classgeodesk_1_1_string_value.html">geodesk::StringValue</a></div><div class="ttdoc">A string pointer (used for keys, values and roles).</div><div class="ttdef"><b>Definition</b> StringValue.h:23</div></div>
+<div class="ttc" id="aclassgeodesk_1_1_feature_html"><div class="ttname"><a href="classgeodesk_1_1_feature.html">geodesk::Feature</a></div><div class="ttdoc">A geographic feature.</div><div class="ttdef"><b>Definition</b> Feature.h:27</div></div>
+<div class="ttc" id="aclassgeodesk_1_1_feature_ptr_html"><div class="ttname"><a href="classgeodesk_1_1_feature_ptr.html">geodesk::FeaturePtr</a></div><div class="ttdoc">Pointer to a Feature's data.</div><div class="ttdef"><b>Definition</b> FeaturePtr.h:26</div></div>
+<div class="ttc" id="aclassgeodesk_1_1_feature_store_html"><div class="ttname"><a href="classgeodesk_1_1_feature_store.html">geodesk::FeatureStore</a></div><div class="ttdoc">A Geographic Object Library.</div><div class="ttdef"><b>Definition</b> FeatureStore.h:35</div></div>
+<div class="ttc" id="aclassgeodesk_1_1_string_value_html"><div class="ttname"><a href="classgeodesk_1_1_string_value.html">geodesk::StringValue</a></div><div class="ttdoc">A string pointer (used for keys, values and roles).</div><div class="ttdef"><b>Definition</b> StringValue.h:24</div></div>
 <div class="ttc" id="aclassgeodesk_1_1_tag_html"><div class="ttname"><a href="classgeodesk_1_1_tag.html">geodesk::Tag</a></div><div class="ttdoc">A key/value pair that describes an attribute of a Feature.</div><div class="ttdef"><b>Definition</b> Tag.h:26</div></div>
 <div class="ttc" id="aclassgeodesk_1_1_tag_html_a2e64130b501d7a281f4642fe6ab4191b"><div class="ttname"><a href="classgeodesk_1_1_tag.html#a2e64130b501d7a281f4642fe6ab4191b">geodesk::Tag::key</a></div><div class="ttdeci">StringValue key() const noexcept</div><div class="ttdoc">The Tag's key.</div><div class="ttdef"><b>Definition</b> Tag.h:57</div></div>
 <div class="ttc" id="aclassgeodesk_1_1_tag_html_a564f8155b6078709329ad07742f73ca1"><div class="ttname"><a href="classgeodesk_1_1_tag.html#a564f8155b6078709329ad07742f73ca1">geodesk::Tag::value</a></div><div class="ttdeci">TagValue value() const noexcept</div><div class="ttdoc">The Tag's value.</div><div class="ttdef"><b>Definition</b> Tag.h:61</div></div>
@@ -285,7 +287,7 @@ $(function(){initNavTree('_tags_8h_source.html',''); initResizable(true); });
 <div class="ttc" id="aclassgeodesk_1_1_tags_html_ad36dac27c8e8fe6440319c40309d1801"><div class="ttname"><a href="classgeodesk_1_1_tags.html#ad36dac27c8e8fe6440319c40309d1801">geodesk::Tags::Tags</a></div><div class="ttdeci">Tags(const Feature &amp;feature)</div></div>
 <div class="ttc" id="aexport_8h_html_ad2aca25975b684c8b6f6edf212ef7007"><div class="ttname"><a href="export_8h.html#ad2aca25975b684c8b6f6edf212ef7007">GEODESK_API</a></div><div class="ttdeci">#define GEODESK_API</div><div class="ttdef"><b>Definition</b> export.h:31</div></div>
 <div class="ttc" id="aforward_8h_html"><div class="ttname"><a href="forward_8h.html">forward.h</a></div></div>
-<div class="ttc" id="anamespacegeodesk_html"><div class="ttname"><a href="namespacegeodesk.html">geodesk</a></div><div class="ttdef"><b>Definition</b> Features.h:12</div></div>
+<div class="ttc" id="anamespacegeodesk_html"><div class="ttname"><a href="namespacegeodesk.html">geodesk</a></div><div class="ttdef"><b>Definition</b> Feature.h:11</div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->

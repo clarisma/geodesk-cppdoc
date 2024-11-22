@@ -3,7 +3,6 @@ var dir_58c3c17247d5f9df7837473544be5703 =
     [ "CompactHashTable.h", "_compact_hash_table_8h.html", null ],
     [ "Deduplicator.h", "_deduplicator_8h.html", null ],
     [ "FixedQueue.h", "_fixed_queue_8h.html", null ],
-    [ "HashMap.h", "_hash_map_8h.html", "_hash_map_8h" ],
     [ "Linked.h", "_linked_8h.html", null ],
     [ "Lookup.h", "_lookup_8h.html", null ],
     [ "LookupBase.h", "_lookup_base_8h.html", null ],

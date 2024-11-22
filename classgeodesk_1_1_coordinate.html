@@ -123,15 +123,20 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a985561d15245b0de25c29c5f0f541fda" id="r_a985561d15245b0de25c29c5f0f541fda"><td class="memItemLeft" align="right" valign="top">constexpr&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a985561d15245b0de25c29c5f0f541fda">Coordinate</a> ()</td></tr>
 <tr class="separator:a985561d15245b0de25c29c5f0f541fda"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a48837762442f8a5291f6dc1830293100" id="r_a48837762442f8a5291f6dc1830293100"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a48837762442f8a5291f6dc1830293100">lon</a> () const noexcept</td></tr>
+<tr class="memdesc:a48837762442f8a5291f6dc1830293100"><td class="mdescLeft">&#160;</td><td class="mdescRight">The X-coordinate, converted to longitude (WGS-84)  <br /></td></tr>
 <tr class="separator:a48837762442f8a5291f6dc1830293100"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9ceaba5bc5199e83020d6034a9275b85" id="r_a9ceaba5bc5199e83020d6034a9275b85"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a9ceaba5bc5199e83020d6034a9275b85">lat</a> () const noexcept</td></tr>
+<tr class="memdesc:a9ceaba5bc5199e83020d6034a9275b85"><td class="mdescLeft">&#160;</td><td class="mdescRight">The Y-coordinate, converted to latitude (WGS-84)  <br /></td></tr>
 <tr class="separator:a9ceaba5bc5199e83020d6034a9275b85"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a13d5d52f4cab86630b1bb3061c4699ed" id="r_a13d5d52f4cab86630b1bb3061c4699ed"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a13d5d52f4cab86630b1bb3061c4699ed">isNull</a> () const noexcept</td></tr>
+<tr class="memdesc:a13d5d52f4cab86630b1bb3061c4699ed"><td class="mdescLeft">&#160;</td><td class="mdescRight">Checks whether both X and Y are <code>0</code>.  <br /></td></tr>
 <tr class="separator:a13d5d52f4cab86630b1bb3061c4699ed"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8995afdcd5eb2826a0e851a2b26d83d4" id="r_a8995afdcd5eb2826a0e851a2b26d83d4"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a8995afdcd5eb2826a0e851a2b26d83d4">operator==</a> (const <a class="el" href="classgeodesk_1_1_coordinate.html">Coordinate</a> &amp;other) const noexcept</td></tr>
 <tr class="separator:a8995afdcd5eb2826a0e851a2b26d83d4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad49abca0b7bde76b8500d0ef670efc79" id="r_ad49abca0b7bde76b8500d0ef670efc79"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ad49abca0b7bde76b8500d0ef670efc79">operator int64_t</a> () const noexcept</td></tr>
 <tr class="separator:ad49abca0b7bde76b8500d0ef670efc79"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab3c3dd40d16be94d1d9ead34f9adb251" id="r_ab3c3dd40d16be94d1d9ead34f9adb251"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ab3c3dd40d16be94d1d9ead34f9adb251">operator!=</a> (const <a class="el" href="classgeodesk_1_1_coordinate.html">Coordinate</a> &amp;other) const noexcept</td></tr>
+<tr class="separator:ab3c3dd40d16be94d1d9ead34f9adb251"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-static-methods" name="pub-static-methods"></a>
 Static Public Member Functions</h2></td></tr>
@@ -145,8 +150,10 @@ Static Public Member Functions</h2></td></tr>
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-attribs" name="pub-attribs"></a>
 Public Attributes</h2></td></tr>
 <tr class="memitem:aab218d584a3f3d77643dbcf9192419d7" id="r_aab218d584a3f3d77643dbcf9192419d7"><td class="memItemLeft" align="right" valign="top">int32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aab218d584a3f3d77643dbcf9192419d7">x</a></td></tr>
+<tr class="memdesc:aab218d584a3f3d77643dbcf9192419d7"><td class="mdescLeft">&#160;</td><td class="mdescRight">X-coordinate (in <a class="el" href="classgeodesk_1_1_mercator.html" title="Methods for working with Mercator-projected coordinates.">Mercator</a> projection)  <br /></td></tr>
 <tr class="separator:aab218d584a3f3d77643dbcf9192419d7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:add16f1263254018d2ba1205ec1c09927" id="r_add16f1263254018d2ba1205ec1c09927"><td class="memItemLeft" align="right" valign="top">int32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#add16f1263254018d2ba1205ec1c09927">y</a></td></tr>
+<tr class="memdesc:add16f1263254018d2ba1205ec1c09927"><td class="mdescLeft">&#160;</td><td class="mdescRight">Y-coordinate (in <a class="el" href="classgeodesk_1_1_mercator.html" title="Methods for working with Mercator-projected coordinates.">Mercator</a> projection)  <br /></td></tr>
 <tr class="separator:add16f1263254018d2ba1205ec1c09927"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
@@ -259,6 +266,8 @@ Public Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
+<p>Checks whether both X and Y are <code>0</code>. </p>
+
 </div>
 </div>
 <a id="a9ceaba5bc5199e83020d6034a9275b85" name="a9ceaba5bc5199e83020d6034a9275b85"></a>
@@ -284,6 +293,8 @@ Public Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
+<p>The Y-coordinate, converted to latitude (WGS-84) </p>
+
 </div>
 </div>
 <a id="a48837762442f8a5291f6dc1830293100" name="a48837762442f8a5291f6dc1830293100"></a>
@@ -308,6 +319,8 @@ Public Attributes</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+
+<p>The X-coordinate, converted to longitude (WGS-84) </p>
 
 </div>
 </div>
@@ -398,6 +411,31 @@ Public Attributes</h2></td></tr>
 
 </div>
 </div>
+<a id="ab3c3dd40d16be94d1d9ead34f9adb251" name="ab3c3dd40d16be94d1d9ead34f9adb251"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab3c3dd40d16be94d1d9ead34f9adb251">&#9670;&#160;</a></span>operator!=()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool geodesk::Coordinate::operator!= </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="classgeodesk_1_1_coordinate.html">Coordinate</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>other</em></span></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">noexcept</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <a id="a8995afdcd5eb2826a0e851a2b26d83d4" name="a8995afdcd5eb2826a0e851a2b26d83d4"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a8995afdcd5eb2826a0e851a2b26d83d4">&#9670;&#160;</a></span>operator==()</h2>
 
@@ -436,6 +474,8 @@ Public Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
+<p>X-coordinate (in <a class="el" href="classgeodesk_1_1_mercator.html" title="Methods for working with Mercator-projected coordinates.">Mercator</a> projection) </p>
+
 </div>
 </div>
 <a id="add16f1263254018d2ba1205ec1c09927" name="add16f1263254018d2ba1205ec1c09927"></a>
@@ -449,6 +489,8 @@ Public Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>Y-coordinate (in <a class="el" href="classgeodesk_1_1_mercator.html" title="Methods for working with Mercator-projected coordinates.">Mercator</a> projection) </p>
 
 </div>
 </div>

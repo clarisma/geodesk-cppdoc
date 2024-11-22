@@ -30,6 +30,8 @@ var classgeodesk_1_1_box =
     [ "minLon", "classgeodesk_1_1_box.html#ac0dd65f90d167ef33859312e39f336b9", null ],
     [ "minX", "classgeodesk_1_1_box.html#a369d744f98c91f691cd978edead334aa", null ],
     [ "minY", "classgeodesk_1_1_box.html#ad1b3dbc9ab279418c22c197be0a2c2a1", null ],
+    [ "normalizedSimple", "classgeodesk_1_1_box.html#a3b9a00a3f24efbed88d825dafa97d56a", null ],
+    [ "ofWorld", "classgeodesk_1_1_box.html#adc25b10ee21b668ea1087819d370b854", null ],
     [ "operator!=", "classgeodesk_1_1_box.html#ac4a6fd3c3aa30472f56daccdaa7b238a", null ],
     [ "operator==", "classgeodesk_1_1_box.html#af99ac4d7b75873e391cb84ed5196c8db", null ],
     [ "operator[]", "classgeodesk_1_1_box.html#a7c3da3fb8ef575ec09b8f4a1f541e8bd", null ],
@@ -39,8 +41,11 @@ var classgeodesk_1_1_box =
     [ "setMaxY", "classgeodesk_1_1_box.html#a6e164f237a1959e347f92a0143feccd6", null ],
     [ "setMinX", "classgeodesk_1_1_box.html#a79ee1dbe529074ee743b3b6e24e12abf", null ],
     [ "setMinY", "classgeodesk_1_1_box.html#a25cb940d225cad57697f9a7d665a7c41", null ],
+    [ "simpleIntersection", "classgeodesk_1_1_box.html#a73858566a22d9827682d505d9fcb315f", null ],
+    [ "simpleSmaller", "classgeodesk_1_1_box.html#a913d2bc25394b6e91153c35e910df3cc", null ],
     [ "topLeft", "classgeodesk_1_1_box.html#afa62d5c6c5142ae8048e0608bc8a7d52", null ],
     [ "topRight", "classgeodesk_1_1_box.html#affe45e39369f99ad27da88577e432c69", null ],
     [ "toString", "classgeodesk_1_1_box.html#a3833135d9ad07e6eaeca7ab2652a5b8d", null ],
+    [ "unitsAroundXY", "classgeodesk_1_1_box.html#a213079052ae8ca82c1590e30be264a23", null ],
     [ "widthSimple", "classgeodesk_1_1_box.html#a826926034182ed175aba51f60baa2508", null ]
 ];

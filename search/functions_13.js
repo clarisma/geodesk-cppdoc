@@ -1,5 +1,5 @@
 var searchData=
 [
-  ['value_0',['value',['../classgeodesk_1_1_tag.html#a564f8155b6078709329ad07742f73ca1',1,'geodesk::Tag']]],
-  ['varintsize_1',['varintSize',['../namespaceclarisma.html#ac980069abd9743165d2d45dcbb900160',1,'clarisma']]]
+  ['unitsaroundxy_0',['unitsAroundXY',['../classgeodesk_1_1_box.html#a213079052ae8ca82c1590e30be264a23',1,'geodesk::Box']]],
+  ['unitsfrommeters_1',['unitsFromMeters',['../classgeodesk_1_1_mercator.html#a22c2344a2fbb689b850f7caac86898cf',1,'geodesk::Mercator']]]
 ];

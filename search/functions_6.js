@@ -1,7 +1,7 @@
 var searchData=
 [
-  ['hash_0',['hash',['../classgeodesk_1_1_feature_ptr.html#ab7c112eb02bd24fcc0b35c66e2a06eb8',1,'geodesk::FeaturePtr']]],
-  ['hastag_1',['hasTag',['../classgeodesk_1_1_tags.html#ad2aef8a69100a70afddd6e275e0c6234',1,'geodesk::Tags::hasTag(std::string_view k) const noexcept'],['../classgeodesk_1_1_tags.html#a3f0c3a048c95b6e00daea3761846f1cf',1,'geodesk::Tags::hasTag(std::string_view k, std::string_view v) const noexcept']]],
-  ['header_2',['header',['../classgeodesk_1_1_feature_ptr.html#a5974c2a0de753bd8136f4b21c99194b6',1,'geodesk::FeaturePtr']]],
-  ['height_3',['height',['../classgeodesk_1_1_box.html#ae2bf07f90d222e45d1ee0c12e36a56c7',1,'geodesk::Box']]]
+  ['getallmatcher_0',['getAllMatcher',['../classgeodesk_1_1_feature_store.html#a33d0250441b38941a2163d137c33aa0e',1,'geodesk::FeatureStore']]],
+  ['getindexcategory_1',['getIndexCategory',['../classgeodesk_1_1_feature_store.html#a8b9d6c1cbe281e26de22eff381ff8411',1,'geodesk::FeatureStore']]],
+  ['getmatcher_2',['getMatcher',['../classgeodesk_1_1_feature_store.html#a894dc2335757edd0aa03d98d64a6fde5',1,'geodesk::FeatureStore']]],
+  ['getpointer_3',['getPointer',['../classgeodesk_1_1_feature_store.html#a39a6846c3bf02b2e91d6f6127f99ffde',1,'geodesk::FeatureStore']]]
 ];

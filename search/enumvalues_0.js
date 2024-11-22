@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['debug_0',['DEBUG',['../namespaceclarisma.html#a72c48f0225521ceb8c1e1e880508c2e2adc30ec20708ef7b0f641ef78b7880a15',1,'clarisma']]]
+  ['node_0',['NODE',['../namespacegeodesk.html#ab4c15802927accc42f5c68cd19e7c828a0cc25b606fe928a0c9a58f7f209c4495',1,'geodesk']]]
 ];

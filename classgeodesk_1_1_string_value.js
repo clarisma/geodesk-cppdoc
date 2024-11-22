@@ -9,7 +9,7 @@ var classgeodesk_1_1_string_value =
     [ "operator bool", "classgeodesk_1_1_string_value.html#a9032f70a190480ac0f59055d3cb15090", null ],
     [ "operator!=", "classgeodesk_1_1_string_value.html#a226a485fd1a8800f6463440d0c504872", null ],
     [ "operator==", "classgeodesk_1_1_string_value.html#aa2312e63aa96e1b7955ad977d78eb9d1", null ],
-    [ "rawBytes", "classgeodesk_1_1_string_value.html#a9354e22c9753b6d65c2884c1069f8c99", null ],
+    [ "rawBytes", "classgeodesk_1_1_string_value.html#a6a6618e1c876f3f56ae749909284e54e", null ],
     [ "size", "classgeodesk_1_1_string_value.html#a71596a5c4ab93595d5851d5c0f95198d", null ],
     [ "startsWith", "classgeodesk_1_1_string_value.html#aa0aa2d83e5d9d6a1038a220f9c7d0eea", null ]
 ];
