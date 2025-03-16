@@ -25,6 +25,7 @@ var hierarchy =
       ] ]
     ] ],
     [ "geodesk::Tags::Iterator", "classgeodesk_1_1_tags_1_1_iterator.html", null ],
+    [ "geodesk::Key", "classgeodesk_1_1_key.html", null ],
     [ "geodesk::LonLat", "classgeodesk_1_1_lon_lat.html", null ],
     [ "geodesk::Mercator", "classgeodesk_1_1_mercator.html", null ],
     [ "geodesk::Polygonizer", "classgeodesk_1_1_polygonizer.html", null ],

@@ -32,6 +32,7 @@ var classgeodesk_1_1_box =
     [ "minY", "classgeodesk_1_1_box.html#ad1b3dbc9ab279418c22c197be0a2c2a1", null ],
     [ "normalizedSimple", "classgeodesk_1_1_box.html#a3b9a00a3f24efbed88d825dafa97d56a", null ],
     [ "ofWorld", "classgeodesk_1_1_box.html#adc25b10ee21b668ea1087819d370b854", null ],
+    [ "ofWSEN", "classgeodesk_1_1_box.html#ac0e4a2bf69edcf99f62f6e0b5905e91c", null ],
     [ "operator!=", "classgeodesk_1_1_box.html#ac4a6fd3c3aa30472f56daccdaa7b238a", null ],
     [ "operator==", "classgeodesk_1_1_box.html#af99ac4d7b75873e391cb84ed5196c8db", null ],
     [ "operator[]", "classgeodesk_1_1_box.html#a7c3da3fb8ef575ec09b8f4a1f541e8bd", null ],

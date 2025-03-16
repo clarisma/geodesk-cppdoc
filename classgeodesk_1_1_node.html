@@ -150,6 +150,12 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a9e4d64e68a3c3a04be9309765de80cdf" id="r_a9e4d64e68a3c3a04be9309765de80cdf"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classgeodesk_1_1_string_value.html">StringValue</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a9e4d64e68a3c3a04be9309765de80cdf">role</a> () const noexcept</td></tr>
 <tr class="memdesc:a9e4d64e68a3c3a04be9309765de80cdf"><td class="mdescLeft">&#160;</td><td class="mdescRight">The <a class="el" href="classgeodesk_1_1_node.html" title="A Feature that represents a single point.">Node</a>'s role in its <a class="el" href="classgeodesk_1_1_relation.html" title="A Feature that represents a grouping of related features or a complex polygon.">Relation</a>, if it was returned via <a class="el" href="classgeodesk_1_1_feature.html#a4ce23a5c77ddb55ddb398abff21becb8" title="The members of this Relation.">members()</a> or <a class="el" href="classgeodesk_1_1_features.html#a47cb4b9be39825b2a4c31b83769aeac6" title="Only features that belong to the given Relation.">Features::membersOf()</a>, otherwise an empty string.  <br /></td></tr>
 <tr class="separator:a9e4d64e68a3c3a04be9309765de80cdf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr><td colspan="2"><div class="groupHeader">Type &amp; Identity</div></td></tr>
+<tr class="memitem:ad7d7d6255ddf30f26df6694bfd8caedc" id="r_ad7d7d6255ddf30f26df6694bfd8caedc"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgeodesk_1_1_feature.html#ad7d7d6255ddf30f26df6694bfd8caedc">operator==</a> (const <a class="el" href="classgeodesk_1_1_feature.html">Feature</a> &amp;other) const noexcept</td></tr>
+<tr class="memdesc:ad7d7d6255ddf30f26df6694bfd8caedc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Tests two features for equality.  <br /></td></tr>
+<tr class="separator:ad7d7d6255ddf30f26df6694bfd8caedc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1f9c3952d823d8c4d839af99d4164162" id="r_a1f9c3952d823d8c4d839af99d4164162"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgeodesk_1_1_feature.html#a1f9c3952d823d8c4d839af99d4164162">operator!=</a> (const <a class="el" href="classgeodesk_1_1_feature.html">Feature</a> &amp;other) const noexcept</td></tr>
+<tr class="separator:a1f9c3952d823d8c4d839af99d4164162"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr><td colspan="2"><div class="groupHeader">Display</div></td></tr>
 <tr class="memitem:a1a721e45d3805aefb5a98e07057c7b3f" id="r_a1a721e45d3805aefb5a98e07057c7b3f"><td class="memItemLeft" align="right" valign="top">const char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgeodesk_1_1_feature.html#a1a721e45d3805aefb5a98e07057c7b3f">typeName</a> () const noexcept</td></tr>
 <tr class="memdesc:a1a721e45d3805aefb5a98e07057c7b3f"><td class="mdescLeft">&#160;</td><td class="mdescRight"><code>"node"</code>, <code>"way"</code> or <code>"relation"</code>  <br /></td></tr>
@@ -167,15 +173,24 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a8350ba55c2bac5035fd0e59a84e4ee36" id="r_a8350ba55c2bac5035fd0e59a84e4ee36"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classgeodesk_1_1_tag_value.html">TagValue</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgeodesk_1_1_feature.html#a8350ba55c2bac5035fd0e59a84e4ee36">operator[]</a> (std::string_view key) const noexcept</td></tr>
 <tr class="memdesc:a8350ba55c2bac5035fd0e59a84e4ee36"><td class="mdescLeft">&#160;</td><td class="mdescRight">Obtains the tag value for the given key.  <br /></td></tr>
 <tr class="separator:a8350ba55c2bac5035fd0e59a84e4ee36"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a635e62b63bfde04b6ad0df856db72f8d" id="r_a635e62b63bfde04b6ad0df856db72f8d"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classgeodesk_1_1_tag_value.html">TagValue</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgeodesk_1_1_feature.html#a635e62b63bfde04b6ad0df856db72f8d">operator[]</a> (<a class="el" href="classgeodesk_1_1_key.html">Key</a> key) const noexcept</td></tr>
+<tr class="memdesc:a635e62b63bfde04b6ad0df856db72f8d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Obtains the tag value for the given key.  <br /></td></tr>
+<tr class="separator:a635e62b63bfde04b6ad0df856db72f8d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa76bfe7e61318c06d24d8a3e2a0fef67" id="r_aa76bfe7e61318c06d24d8a3e2a0fef67"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classgeodesk_1_1_tags.html">Tags</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgeodesk_1_1_feature.html#aa76bfe7e61318c06d24d8a3e2a0fef67">tags</a> () const noexcept</td></tr>
 <tr class="memdesc:aa76bfe7e61318c06d24d8a3e2a0fef67"><td class="mdescLeft">&#160;</td><td class="mdescRight">A collection of the <a class="el" href="classgeodesk_1_1_feature.html" title="A geographic feature.">Feature</a>'s tags.  <br /></td></tr>
 <tr class="separator:aa76bfe7e61318c06d24d8a3e2a0fef67"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae9a75e6415928564cb60edf09ebd2dd8" id="r_ae9a75e6415928564cb60edf09ebd2dd8"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgeodesk_1_1_feature.html#ae9a75e6415928564cb60edf09ebd2dd8">hasTag</a> (std::string_view k) const noexcept</td></tr>
 <tr class="memdesc:ae9a75e6415928564cb60edf09ebd2dd8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Checks if this <a class="el" href="classgeodesk_1_1_feature.html" title="A geographic feature.">Feature</a> has a tag with the given key.  <br /></td></tr>
 <tr class="separator:ae9a75e6415928564cb60edf09ebd2dd8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aab4b6640770dc7aae7fc9d77a42713ce" id="r_aab4b6640770dc7aae7fc9d77a42713ce"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgeodesk_1_1_feature.html#aab4b6640770dc7aae7fc9d77a42713ce">hasTag</a> (<a class="el" href="classgeodesk_1_1_key.html">Key</a> k) const noexcept</td></tr>
+<tr class="memdesc:aab4b6640770dc7aae7fc9d77a42713ce"><td class="mdescLeft">&#160;</td><td class="mdescRight">Checks if this <a class="el" href="classgeodesk_1_1_feature.html" title="A geographic feature.">Feature</a> has a tag with the given key.  <br /></td></tr>
+<tr class="separator:aab4b6640770dc7aae7fc9d77a42713ce"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a23f8b4a52d9261af02dd7f23c5df4289" id="r_a23f8b4a52d9261af02dd7f23c5df4289"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgeodesk_1_1_feature.html#a23f8b4a52d9261af02dd7f23c5df4289">hasTag</a> (std::string_view k, std::string_view v) const noexcept</td></tr>
 <tr class="memdesc:a23f8b4a52d9261af02dd7f23c5df4289"><td class="mdescLeft">&#160;</td><td class="mdescRight">Checks if this <a class="el" href="classgeodesk_1_1_feature.html" title="A geographic feature.">Feature</a> has a tag with the given key and value.  <br /></td></tr>
 <tr class="separator:a23f8b4a52d9261af02dd7f23c5df4289"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aecd0867c7de21957b81ec17117a0b4a5" id="r_aecd0867c7de21957b81ec17117a0b4a5"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgeodesk_1_1_feature.html#aecd0867c7de21957b81ec17117a0b4a5">hasTag</a> (<a class="el" href="classgeodesk_1_1_key.html">Key</a> k, std::string_view v) const noexcept</td></tr>
+<tr class="memdesc:aecd0867c7de21957b81ec17117a0b4a5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Checks if this <a class="el" href="classgeodesk_1_1_feature.html" title="A geographic feature.">Feature</a> has a tag with the given key and value.  <br /></td></tr>
+<tr class="separator:aecd0867c7de21957b81ec17117a0b4a5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr><td colspan="2"><div class="groupHeader">Geometry</div></td></tr>
 <tr class="memitem:a3dc8dd565c1fbd672f5045e848f9e251" id="r_a3dc8dd565c1fbd672f5045e848f9e251"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classgeodesk_1_1_box.html">Box</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgeodesk_1_1_feature.html#a3dc8dd565c1fbd672f5045e848f9e251">bounds</a> () const noexcept</td></tr>
 <tr class="memdesc:a3dc8dd565c1fbd672f5045e848f9e251"><td class="mdescLeft">&#160;</td><td class="mdescRight">The bounding box of this <a class="el" href="classgeodesk_1_1_feature.html" title="A geographic feature.">Feature</a>.  <br /></td></tr>
@@ -396,8 +411,66 @@ Public Member Functions</h2></td></tr>
 
 </div>
 </div>
+<a id="aab4b6640770dc7aae7fc9d77a42713ce" name="aab4b6640770dc7aae7fc9d77a42713ce"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aab4b6640770dc7aae7fc9d77a42713ce">&#9670;&#160;</a></span>hasTag() <span class="overload">[1/4]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool geodesk::Feature::hasTag </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classgeodesk_1_1_key.html">Key</a></td>          <td class="paramname"><span class="paramname"><em>k</em></span></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">noexcept</span><span class="mlabel">inherited</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Checks if this <a class="el" href="classgeodesk_1_1_feature.html" title="A geographic feature.">Feature</a> has a tag with the given key. </p>
+
+</div>
+</div>
+<a id="aecd0867c7de21957b81ec17117a0b4a5" name="aecd0867c7de21957b81ec17117a0b4a5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aecd0867c7de21957b81ec17117a0b4a5">&#9670;&#160;</a></span>hasTag() <span class="overload">[2/4]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool geodesk::Feature::hasTag </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classgeodesk_1_1_key.html">Key</a></td>          <td class="paramname"><span class="paramname"><em>k</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">std::string_view</td>          <td class="paramname"><span class="paramname"><em>v</em></span>&#160;) const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">noexcept</span><span class="mlabel">inherited</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Checks if this <a class="el" href="classgeodesk_1_1_feature.html" title="A geographic feature.">Feature</a> has a tag with the given key and value. </p>
+
+</div>
+</div>
 <a id="ae9a75e6415928564cb60edf09ebd2dd8" name="ae9a75e6415928564cb60edf09ebd2dd8"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ae9a75e6415928564cb60edf09ebd2dd8">&#9670;&#160;</a></span>hasTag() <span class="overload">[1/2]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#ae9a75e6415928564cb60edf09ebd2dd8">&#9670;&#160;</a></span>hasTag() <span class="overload">[3/4]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -424,7 +497,7 @@ Public Member Functions</h2></td></tr>
 </div>
 </div>
 <a id="a23f8b4a52d9261af02dd7f23c5df4289" name="a23f8b4a52d9261af02dd7f23c5df4289"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a23f8b4a52d9261af02dd7f23c5df4289">&#9670;&#160;</a></span>hasTag() <span class="overload">[2/2]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a23f8b4a52d9261af02dd7f23c5df4289">&#9670;&#160;</a></span>hasTag() <span class="overload">[4/4]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -872,8 +945,89 @@ Public Member Functions</h2></td></tr>
 
 </div>
 </div>
+<a id="a1f9c3952d823d8c4d839af99d4164162" name="a1f9c3952d823d8c4d839af99d4164162"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1f9c3952d823d8c4d839af99d4164162">&#9670;&#160;</a></span>operator!=()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool geodesk::Feature::operator!= </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="classgeodesk_1_1_feature.html">Feature</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>other</em></span></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">noexcept</span><span class="mlabel">inherited</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ad7d7d6255ddf30f26df6694bfd8caedc" name="ad7d7d6255ddf30f26df6694bfd8caedc"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad7d7d6255ddf30f26df6694bfd8caedc">&#9670;&#160;</a></span>operator==()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool geodesk::Feature::operator== </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="classgeodesk_1_1_feature.html">Feature</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>other</em></span></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">noexcept</span><span class="mlabel">inherited</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Tests two features for equality. </p>
+<p>Two features are equal if they have the same type and ID. Anonymous nodes are equal if they are coincident. </p>
+
+</div>
+</div>
+<a id="a635e62b63bfde04b6ad0df856db72f8d" name="a635e62b63bfde04b6ad0df856db72f8d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a635e62b63bfde04b6ad0df856db72f8d">&#9670;&#160;</a></span>operator[]() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classgeodesk_1_1_tag_value.html">TagValue</a> geodesk::Feature::operator[] </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classgeodesk_1_1_key.html">Key</a></td>          <td class="paramname"><span class="paramname"><em>key</em></span></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">noexcept</span><span class="mlabel">inherited</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Obtains the tag value for the given key. </p>
+<dl class="section return"><dt>Returns</dt><dd>the tag's value (or an empty string if the feature doesn't have a tag with this key) </dd></dl>
+
+</div>
+</div>
 <a id="a8350ba55c2bac5035fd0e59a84e4ee36" name="a8350ba55c2bac5035fd0e59a84e4ee36"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a8350ba55c2bac5035fd0e59a84e4ee36">&#9670;&#160;</a></span>operator[]()</h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a8350ba55c2bac5035fd0e59a84e4ee36">&#9670;&#160;</a></span>operator[]() <span class="overload">[2/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -896,6 +1050,7 @@ Public Member Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Obtains the tag value for the given key. </p>
+<p><em>Note</em>: To efficiently look up the same tag for multiple features in the same GOL, consider using a <a class="el" href="classgeodesk_1_1_key.html" title="A lightweight wrapper for a key string.">Key</a>.</p>
 <dl class="section return"><dt>Returns</dt><dd>the tag's value (or an empty string if the feature doesn't have a tag with this key) </dd></dl>
 
 </div>

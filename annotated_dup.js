@@ -7,6 +7,7 @@ var annotated_dup =
       [ "FeaturePtr", "classgeodesk_1_1_feature_ptr.html", "classgeodesk_1_1_feature_ptr" ],
       [ "Features", "classgeodesk_1_1_features.html", "classgeodesk_1_1_features" ],
       [ "FeatureStore", "classgeodesk_1_1_feature_store.html", "classgeodesk_1_1_feature_store" ],
+      [ "Key", "classgeodesk_1_1_key.html", "classgeodesk_1_1_key" ],
       [ "LonLat", "classgeodesk_1_1_lon_lat.html", "classgeodesk_1_1_lon_lat" ],
       [ "Mercator", "classgeodesk_1_1_mercator.html", "classgeodesk_1_1_mercator" ],
       [ "Node", "classgeodesk_1_1_node.html", "classgeodesk_1_1_node" ],

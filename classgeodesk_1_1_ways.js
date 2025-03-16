@@ -13,6 +13,7 @@ var classgeodesk_1_1_ways =
     [ "filter", "classgeodesk_1_1_ways.html#a4879c2ca6d240605cca7dcbd37fd58a3", null ],
     [ "first", "classgeodesk_1_1_ways.html#a8656395f683733e84c43550a06f9f330", null ],
     [ "intersecting", "classgeodesk_1_1_ways.html#aa317b5bd3be7f24963a9427474ee6d80", null ],
+    [ "key", "classgeodesk_1_1_ways.html#abcfda83368d0ffdec4b5f9fcb1776419", null ],
     [ "length", "classgeodesk_1_1_ways.html#a200cd9550b03e68b7fa3b456fcc0155f", null ],
     [ "maxMetersFrom", "classgeodesk_1_1_ways.html#adcca0f639bcb6f43d26d5614134bdc95", null ],
     [ "maxMetersFrom", "classgeodesk_1_1_ways.html#a22a9d0b75c00e3bed3f4a214e8509ead", null ],

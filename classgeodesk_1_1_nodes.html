@@ -229,6 +229,10 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a4879c2ca6d240605cca7dcbd37fd58a3"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="classgeodesk_1_1_features.html">Features</a>&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classgeodesk_1_1_features.html#a4879c2ca6d240605cca7dcbd37fd58a3">filter</a> (Predicate predicate) const</td></tr>
 <tr class="memdesc:a4879c2ca6d240605cca7dcbd37fd58a3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Only features that match the given predicate.  <br /></td></tr>
 <tr class="separator:a4879c2ca6d240605cca7dcbd37fd58a3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr><td colspan="2"><div class="groupHeader">Metadata</div></td></tr>
+<tr class="memitem:abcfda83368d0ffdec4b5f9fcb1776419" id="r_abcfda83368d0ffdec4b5f9fcb1776419"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classgeodesk_1_1_key.html">Key</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgeodesk_1_1_features.html#abcfda83368d0ffdec4b5f9fcb1776419">key</a> (std::string_view k) const</td></tr>
+<tr class="memdesc:abcfda83368d0ffdec4b5f9fcb1776419"><td class="mdescLeft">&#160;</td><td class="mdescRight">Obtains a <a class="el" href="classgeodesk_1_1_key.html" title="A lightweight wrapper for a key string.">Key</a> for the given string, which can be used for faster tag-value lookups.  <br /></td></tr>
+<tr class="separator:abcfda83368d0ffdec4b5f9fcb1776419"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr><td colspan="2"><div class="groupHeader">Access to the Low-Level API</div></td></tr>
 <tr class="memitem:a33f7b2e29816af6257061c76d8d5c2e4" id="r_a33f7b2e29816af6257061c76d8d5c2e4"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classgeodesk_1_1_feature_store.html">FeatureStore</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgeodesk_1_1_features.html#a33f7b2e29816af6257061c76d8d5c2e4">store</a> () const noexcept</td></tr>
 <tr class="memdesc:a33f7b2e29816af6257061c76d8d5c2e4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns a pointer to the <a class="el" href="classgeodesk_1_1_feature_store.html" title="A Geographic Object Library.">FeatureStore</a> which contains the features in this collection.  <br /></td></tr>
@@ -641,6 +645,34 @@ template&lt;typename Predicate &gt; </div>
   </table>
   </dd>
 </dl>
+
+</div>
+</div>
+<a id="abcfda83368d0ffdec4b5f9fcb1776419" name="abcfda83368d0ffdec4b5f9fcb1776419"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abcfda83368d0ffdec4b5f9fcb1776419">&#9670;&#160;</a></span>key()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classgeodesk_1_1_key.html">Key</a> geodesk::Features::key </td>
+          <td>(</td>
+          <td class="paramtype">std::string_view</td>          <td class="paramname"><span class="paramname"><em>k</em></span></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inherited</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Obtains a <a class="el" href="classgeodesk_1_1_key.html" title="A lightweight wrapper for a key string.">Key</a> for the given string, which can be used for faster tag-value lookups. </p>
+<p><b>Important:</b> The resulting <a class="el" href="classgeodesk_1_1_key.html" title="A lightweight wrapper for a key string.">Key</a> can only be used for features that are stored in the same GOL. </p>
 
 </div>
 </div>

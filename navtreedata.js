@@ -61,12 +61,12 @@ var NAVTREE =
 var NAVTREEINDEX =
 [
 "_abstract_feature_table_iterator_8h.html",
-"_store_8h.html",
-"classgeodesk_1_1_feature.html#a9ea1666a8f01ab0c48ca632134ef4c28",
-"classgeodesk_1_1_mercator.html#a6ab41e84512b1471f9e793ce9a2be4e5",
-"classgeodesk_1_1_relation.html#ae9de606068d0b59950ac7c0ccd721f99",
-"classgeodesk_1_1_way.html#a8350ba55c2bac5035fd0e59a84e4ee36",
-"namespacestd.html"
+"_span_8h.html#abca763c0c7903a5352159c120d957a5b",
+"classgeodesk_1_1_feature.html#a880f3cb78eb65f1da7c2074777bf7cb4",
+"classgeodesk_1_1_lon_lat.html",
+"classgeodesk_1_1_relation.html#a44b605a29d64837cee159b33d383e581",
+"classgeodesk_1_1_tags.html#a868644164f1c37004363efb1d1d10fac",
+"functions_h.html"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';

@@ -238,6 +238,10 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a4879c2ca6d240605cca7dcbd37fd58a3"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="classgeodesk_1_1_features.html">Features</a>&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="#a4879c2ca6d240605cca7dcbd37fd58a3">filter</a> (Predicate predicate) const</td></tr>
 <tr class="memdesc:a4879c2ca6d240605cca7dcbd37fd58a3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Only features that match the given predicate.  <br /></td></tr>
 <tr class="separator:a4879c2ca6d240605cca7dcbd37fd58a3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr><td colspan="2"><div class="groupHeader">Metadata</div></td></tr>
+<tr class="memitem:abcfda83368d0ffdec4b5f9fcb1776419" id="r_abcfda83368d0ffdec4b5f9fcb1776419"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classgeodesk_1_1_key.html">Key</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#abcfda83368d0ffdec4b5f9fcb1776419">key</a> (std::string_view k) const</td></tr>
+<tr class="memdesc:abcfda83368d0ffdec4b5f9fcb1776419"><td class="mdescLeft">&#160;</td><td class="mdescRight">Obtains a <a class="el" href="classgeodesk_1_1_key.html" title="A lightweight wrapper for a key string.">Key</a> for the given string, which can be used for faster tag-value lookups.  <br /></td></tr>
+<tr class="separator:abcfda83368d0ffdec4b5f9fcb1776419"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr><td colspan="2"><div class="groupHeader">Access to the Low-Level API</div></td></tr>
 <tr class="memitem:a33f7b2e29816af6257061c76d8d5c2e4" id="r_a33f7b2e29816af6257061c76d8d5c2e4"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classgeodesk_1_1_feature_store.html">FeatureStore</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a33f7b2e29816af6257061c76d8d5c2e4">store</a> () const noexcept</td></tr>
 <tr class="memdesc:a33f7b2e29816af6257061c76d8d5c2e4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns a pointer to the <a class="el" href="classgeodesk_1_1_feature_store.html" title="A Geographic Object Library.">FeatureStore</a> which contains the features in this collection.  <br /></td></tr>
@@ -287,8 +291,8 @@ Public Member Functions</h2></td></tr>
 <div class="line"> </div>
 <div class="line"><a class="code hl_class" href="classgeodesk_1_1_nodes.html">Nodes</a> <a class="code hl_function" href="#a96933909e58e610afe8f820e3f839ea0">nodes</a> = busRoutes;               <span class="comment">// empty collection</span></div>
 <div class="ttc" id="aclassgeodesk_1_1_features_html_a96933909e58e610afe8f820e3f839ea0"><div class="ttname"><a href="#a96933909e58e610afe8f820e3f839ea0">geodesk::Features::nodes</a></div><div class="ttdeci">Nodes nodes() const</div><div class="ttdoc">Only nodes.</div></div>
-<div class="ttc" id="aclassgeodesk_1_1_nodes_html"><div class="ttname"><a href="classgeodesk_1_1_nodes.html">geodesk::Nodes</a></div><div class="ttdoc">A collection containing only Node features.</div><div class="ttdef"><b>Definition</b> Features.h:407</div></div>
-<div class="ttc" id="aclassgeodesk_1_1_relations_html"><div class="ttname"><a href="classgeodesk_1_1_relations.html">geodesk::Relations</a></div><div class="ttdoc">A collection containing only Relation features.</div><div class="ttdef"><b>Definition</b> Features.h:419</div></div>
+<div class="ttc" id="aclassgeodesk_1_1_nodes_html"><div class="ttname"><a href="classgeodesk_1_1_nodes.html">geodesk::Nodes</a></div><div class="ttdoc">A collection containing only Node features.</div><div class="ttdef"><b>Definition</b> Features.h:419</div></div>
+<div class="ttc" id="aclassgeodesk_1_1_relations_html"><div class="ttname"><a href="classgeodesk_1_1_relations.html">geodesk::Relations</a></div><div class="ttdoc">A collection containing only Relation features.</div><div class="ttdef"><b>Definition</b> Features.h:431</div></div>
 </div><!-- fragment --><p>When the last <a class="el" href="classgeodesk_1_1_features.html" title="A collection of geographic features.">Features</a> object referring to a <a class="el" href="classgeodesk_1_1_feature_store.html" title="A Geographic Object Library.">FeatureStore</a> is destroyed, the associated Geographic Object Library is automatically closed, and all resources managed by the <a class="el" href="classgeodesk_1_1_feature_store.html" title="A Geographic Object Library.">FeatureStore</a> are released. (This differs from <a href="https://docs.geodesk.com/java/libraries#closing-a-library">GeoDesk for Java</a>, which requires GOLs to be closed explicitly).</p>
 <p><b>Important:</b> After a GOL has been closed, any <a class="el" href="classgeodesk_1_1_feature.html" title="A geographic feature.">Feature</a> objects obtained from it become invalid. Calling their methods results in undefined behavior. This restriction also applies to related types, such as <a class="el" href="classgeodesk_1_1_tags.html" title="An object describing the key/value attributes of a Feature.">Tags</a>, <a class="el" href="classgeodesk_1_1_tag.html" title="A key/value pair that describes an attribute of a Feature.">Tag</a>, <a class="el" href="classgeodesk_1_1_tag_value.html" title="The value of a Tag.">TagValue</a> and <a class="el" href="classgeodesk_1_1_string_value.html" title="A string pointer (used for keys, values and roles).">StringValue</a>. </p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
@@ -635,6 +639,26 @@ template&lt;typename Predicate &gt; </div>
   </table>
   </dd>
 </dl>
+
+</div>
+</div>
+<a id="abcfda83368d0ffdec4b5f9fcb1776419" name="abcfda83368d0ffdec4b5f9fcb1776419"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abcfda83368d0ffdec4b5f9fcb1776419">&#9670;&#160;</a></span>key()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classgeodesk_1_1_key.html">Key</a> geodesk::Features::key </td>
+          <td>(</td>
+          <td class="paramtype">std::string_view</td>          <td class="paramname"><span class="paramname"><em>k</em></span></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Obtains a <a class="el" href="classgeodesk_1_1_key.html" title="A lightweight wrapper for a key string.">Key</a> for the given string, which can be used for faster tag-value lookups. </p>
+<p><b>Important:</b> The resulting <a class="el" href="classgeodesk_1_1_key.html" title="A lightweight wrapper for a key string.">Key</a> can only be used for features that are stored in the same GOL. </p>
 
 </div>
 </div>

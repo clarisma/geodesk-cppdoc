@@ -195,73 +195,96 @@ $(function(){initNavTree('_tags_8h_source.html',''); initResizable(true); });
 <div class="line"><a id="l00108" name="l00108"></a><span class="lineno">  108</span>    }</div>
 </div>
 <div class="line"><a id="l00109" name="l00109"></a><span class="lineno">  109</span> </div>
-<div class="foldopen" id="foldopen00114" data-start="{" data-end="}">
-<div class="line"><a id="l00114" name="l00114"></a><span class="lineno"><a class="line" href="classgeodesk_1_1_tags.html#a6ef5bcf0ee78d1947a38eb5b8e066e10">  114</a></span>    <a class="code hl_class" href="classgeodesk_1_1_tag_value.html">TagValue</a> <a class="code hl_function" href="classgeodesk_1_1_tags.html#a6ef5bcf0ee78d1947a38eb5b8e066e10">operator[]</a>(std::string_view key) <span class="keyword">const</span> <span class="keyword">noexcept</span></div>
-<div class="line"><a id="l00115" name="l00115"></a><span class="lineno">  115</span>    {</div>
-<div class="line"><a id="l00116" name="l00116"></a><span class="lineno">  116</span>        <span class="keyword">const</span> TagBits val = tags_.getKeyValue(key, store_-&gt;strings());</div>
-<div class="line"><a id="l00117" name="l00117"></a><span class="lineno">  117</span>        <span class="keywordflow">return</span> tags_.tagValue(val, store_-&gt;strings());</div>
-<div class="line"><a id="l00118" name="l00118"></a><span class="lineno">  118</span>    }</div>
+<div class="foldopen" id="foldopen00117" data-start="{" data-end="}">
+<div class="line"><a id="l00117" name="l00117"></a><span class="lineno"><a class="line" href="classgeodesk_1_1_tags.html#a6ef5bcf0ee78d1947a38eb5b8e066e10">  117</a></span>    <a class="code hl_class" href="classgeodesk_1_1_tag_value.html">TagValue</a> <a class="code hl_function" href="classgeodesk_1_1_tags.html#a6ef5bcf0ee78d1947a38eb5b8e066e10">operator[]</a>(std::string_view key) <span class="keyword">const</span> <span class="keyword">noexcept</span></div>
+<div class="line"><a id="l00118" name="l00118"></a><span class="lineno">  118</span>    {</div>
+<div class="line"><a id="l00119" name="l00119"></a><span class="lineno">  119</span>        <span class="keyword">const</span> TagBits val = tags_.getKeyValue(key, store_-&gt;strings());</div>
+<div class="line"><a id="l00120" name="l00120"></a><span class="lineno">  120</span>        <span class="keywordflow">return</span> tags_.tagValue(val, store_-&gt;strings());</div>
+<div class="line"><a id="l00121" name="l00121"></a><span class="lineno">  121</span>    }</div>
 </div>
-<div class="line"><a id="l00119" name="l00119"></a><span class="lineno">  119</span> </div>
-<div class="line"><a id="l00123" name="l00123"></a><span class="lineno"><a class="line" href="classgeodesk_1_1_tags.html#ad2aef8a69100a70afddd6e275e0c6234">  123</a></span>    [[nodiscard]] <span class="keywordtype">bool</span> <a class="code hl_function" href="classgeodesk_1_1_tags.html#ad2aef8a69100a70afddd6e275e0c6234">hasTag</a>(std::string_view k) <span class="keyword">const</span> <span class="keyword">noexcept</span>;</div>
-<div class="line"><a id="l00124" name="l00124"></a><span class="lineno">  124</span> </div>
-<div class="line"><a id="l00128" name="l00128"></a><span class="lineno"><a class="line" href="classgeodesk_1_1_tags.html#a3f0c3a048c95b6e00daea3761846f1cf">  128</a></span>    [[nodiscard]] <span class="keywordtype">bool</span> <a class="code hl_function" href="classgeodesk_1_1_tags.html#a3f0c3a048c95b6e00daea3761846f1cf">hasTag</a>(std::string_view k, std::string_view v) <span class="keyword">const</span> <span class="keyword">noexcept</span>;</div>
-<div class="line"><a id="l00129" name="l00129"></a><span class="lineno">  129</span> </div>
-<div class="line"><a id="l00136" name="l00136"></a><span class="lineno">  136</span>    <span class="keyword">template</span>&lt;<span class="keyword">typename</span> K, <span class="keyword">typename</span> V&gt;</div>
-<div class="line"><a id="l00137" name="l00137"></a><span class="lineno">  137</span>    <span class="keyword">operator</span> std::map&lt;K,V&gt;() const <span class="comment">// NOLINT(google-explicit-constructor)</span></div>
-<div class="line"><a id="l00138" name="l00138"></a><span class="lineno">  138</span>    {</div>
-<div class="line"><a id="l00139" name="l00139"></a><span class="lineno">  139</span>        std::map&lt;K,V&gt; map;</div>
-<div class="line"><a id="l00140" name="l00140"></a><span class="lineno">  140</span>        <span class="keywordflow">for</span>(<a class="code hl_class" href="classgeodesk_1_1_tag.html">Tag</a> tag: *<span class="keyword">this</span>)</div>
-<div class="line"><a id="l00141" name="l00141"></a><span class="lineno">  141</span>        {</div>
-<div class="line"><a id="l00142" name="l00142"></a><span class="lineno">  142</span>            map.insert({ tag.<a class="code hl_function" href="classgeodesk_1_1_tag.html#a2e64130b501d7a281f4642fe6ab4191b">key</a>(), tag.<a class="code hl_function" href="classgeodesk_1_1_tag.html#a564f8155b6078709329ad07742f73ca1">value</a>() });</div>
-<div class="line"><a id="l00143" name="l00143"></a><span class="lineno">  143</span>        }</div>
-<div class="line"><a id="l00144" name="l00144"></a><span class="lineno">  144</span>        <span class="keywordflow">return</span> map;</div>
-<div class="line"><a id="l00145" name="l00145"></a><span class="lineno">  145</span>    }</div>
-<div class="line"><a id="l00146" name="l00146"></a><span class="lineno">  146</span> </div>
-<div class="line"><a id="l00152" name="l00152"></a><span class="lineno">  152</span>    <span class="keyword">template</span>&lt;<span class="keyword">typename</span> K, <span class="keyword">typename</span> V&gt;</div>
-<div class="line"><a id="l00153" name="l00153"></a><span class="lineno">  153</span>    <span class="keyword">operator</span> std::unordered_map&lt;K,V&gt;() const <span class="comment">// NOLINT(google-explicit-constructor)</span></div>
-<div class="line"><a id="l00154" name="l00154"></a><span class="lineno">  154</span>    {</div>
-<div class="line"><a id="l00155" name="l00155"></a><span class="lineno">  155</span>        std::unordered_map&lt;K,V&gt; map;</div>
-<div class="line"><a id="l00156" name="l00156"></a><span class="lineno">  156</span>        <span class="keywordflow">for</span>(<a class="code hl_class" href="classgeodesk_1_1_tag.html">Tag</a> tag: *<span class="keyword">this</span>)</div>
-<div class="line"><a id="l00157" name="l00157"></a><span class="lineno">  157</span>        {</div>
-<div class="line"><a id="l00158" name="l00158"></a><span class="lineno">  158</span>            map.insert({ tag.<a class="code hl_function" href="classgeodesk_1_1_tag.html#a2e64130b501d7a281f4642fe6ab4191b">key</a>(), tag.<a class="code hl_function" href="classgeodesk_1_1_tag.html#a564f8155b6078709329ad07742f73ca1">value</a>() });</div>
-<div class="line"><a id="l00159" name="l00159"></a><span class="lineno">  159</span>        }</div>
-<div class="line"><a id="l00160" name="l00160"></a><span class="lineno">  160</span>        <span class="keywordflow">return</span> map;</div>
-<div class="line"><a id="l00161" name="l00161"></a><span class="lineno">  161</span>    }</div>
-<div class="line"><a id="l00162" name="l00162"></a><span class="lineno">  162</span> </div>
-<div class="line"><a id="l00170" name="l00170"></a><span class="lineno">  170</span>    <span class="keyword">template</span>&lt;<span class="keyword">typename</span> T&gt;</div>
-<div class="line"><a id="l00171" name="l00171"></a><span class="lineno">  171</span>    <span class="keyword">operator</span> std::vector&lt;T&gt;() const <span class="comment">// NOLINT(google-explicit-constructor)</span></div>
-<div class="line"><a id="l00172" name="l00172"></a><span class="lineno">  172</span>    {</div>
-<div class="line"><a id="l00173" name="l00173"></a><span class="lineno">  173</span>        std::vector&lt;T&gt; list;</div>
-<div class="line"><a id="l00174" name="l00174"></a><span class="lineno">  174</span>        <span class="keywordflow">for</span>(Tag tag: *<span class="keyword">this</span>)</div>
-<div class="line"><a id="l00175" name="l00175"></a><span class="lineno">  175</span>        {</div>
-<div class="line"><a id="l00176" name="l00176"></a><span class="lineno">  176</span>            list.emplace_back(tag);</div>
-<div class="line"><a id="l00177" name="l00177"></a><span class="lineno">  177</span>        }</div>
-<div class="line"><a id="l00178" name="l00178"></a><span class="lineno">  178</span>        <span class="keywordflow">return</span> list;</div>
-<div class="line"><a id="l00179" name="l00179"></a><span class="lineno">  179</span>    }</div>
-<div class="line"><a id="l00180" name="l00180"></a><span class="lineno">  180</span> </div>
-<div class="line"><a id="l00183" name="l00183"></a><span class="lineno"><a class="line" href="classgeodesk_1_1_tags.html#a6949c3d01eb5d1829d3d6c9d9e6cbba6">  183</a></span>    <span class="keywordtype">bool</span> <a class="code hl_function" href="classgeodesk_1_1_tags.html#a6949c3d01eb5d1829d3d6c9d9e6cbba6">operator==</a>(<span class="keyword">const</span> <a class="code hl_class" href="classgeodesk_1_1_tags.html">Tags</a>&amp; other) <span class="keyword">const</span>;</div>
-<div class="foldopen" id="foldopen00184" data-start="{" data-end="}">
-<div class="line"><a id="l00184" name="l00184"></a><span class="lineno"><a class="line" href="classgeodesk_1_1_tags.html#aac8f6aa308ad8267a7b4cdd8be0668c7">  184</a></span>    <span class="keywordtype">bool</span> <a class="code hl_function" href="classgeodesk_1_1_tags.html#aac8f6aa308ad8267a7b4cdd8be0668c7">operator!=</a>(<span class="keyword">const</span> <a class="code hl_class" href="classgeodesk_1_1_tags.html">Tags</a>&amp; other)<span class="keyword"> const</span></div>
-<div class="line"><a id="l00185" name="l00185"></a><span class="lineno">  185</span><span class="keyword">    </span>{</div>
-<div class="line"><a id="l00186" name="l00186"></a><span class="lineno">  186</span>        <span class="keywordflow">return</span> !(*<span class="keyword">this</span> == other);</div>
-<div class="line"><a id="l00187" name="l00187"></a><span class="lineno">  187</span>    }</div>
+<div class="line"><a id="l00122" name="l00122"></a><span class="lineno">  122</span> </div>
+<div class="foldopen" id="foldopen00127" data-start="{" data-end="}">
+<div class="line"><a id="l00127" name="l00127"></a><span class="lineno"><a class="line" href="classgeodesk_1_1_tags.html#aaf8a0c2f96c923cbd69bacdb73d76ca7">  127</a></span>    <a class="code hl_class" href="classgeodesk_1_1_tag_value.html">TagValue</a> <a class="code hl_function" href="classgeodesk_1_1_tags.html#aaf8a0c2f96c923cbd69bacdb73d76ca7">operator[]</a>(<a class="code hl_class" href="classgeodesk_1_1_key.html">Key</a> key) <span class="keyword">const</span> <span class="keyword">noexcept</span></div>
+<div class="line"><a id="l00128" name="l00128"></a><span class="lineno">  128</span>    {</div>
+<div class="line"><a id="l00129" name="l00129"></a><span class="lineno">  129</span>        <span class="keyword">const</span> TagBits val = tags_.getKeyValue(key);</div>
+<div class="line"><a id="l00130" name="l00130"></a><span class="lineno">  130</span>        <span class="keywordflow">return</span> tags_.tagValue(val, store_-&gt;strings());</div>
+<div class="line"><a id="l00131" name="l00131"></a><span class="lineno">  131</span>    }</div>
 </div>
-<div class="line"><a id="l00188" name="l00188"></a><span class="lineno">  188</span>    <span class="comment">// may allocate, hence throw</span></div>
-<div class="line"><a id="l00189" name="l00189"></a><span class="lineno">  189</span> </div>
-<div class="line"><a id="l00190" name="l00190"></a><span class="lineno">  190</span><span class="keyword">private</span>:</div>
-<div class="line"><a id="l00191" name="l00191"></a><span class="lineno">  191</span>    <a class="code hl_class" href="classgeodesk_1_1_feature_store.html">FeatureStore</a>* store_;</div>
-<div class="line"><a id="l00192" name="l00192"></a><span class="lineno">  192</span>    TagTablePtr tags_;</div>
-<div class="line"><a id="l00193" name="l00193"></a><span class="lineno">  193</span>};</div>
+<div class="line"><a id="l00132" name="l00132"></a><span class="lineno">  132</span> </div>
+<div class="foldopen" id="foldopen00139" data-start="{" data-end="}">
+<div class="line"><a id="l00139" name="l00139"></a><span class="lineno"><a class="line" href="classgeodesk_1_1_tags.html#ad2aef8a69100a70afddd6e275e0c6234">  139</a></span>    [[nodiscard]] <span class="keywordtype">bool</span> <a class="code hl_function" href="classgeodesk_1_1_tags.html#ad2aef8a69100a70afddd6e275e0c6234">hasTag</a>(std::string_view k) <span class="keyword">const</span> <span class="keyword">noexcept</span></div>
+<div class="line"><a id="l00140" name="l00140"></a><span class="lineno">  140</span>    {</div>
+<div class="line"><a id="l00141" name="l00141"></a><span class="lineno">  141</span>        <span class="keywordflow">return</span> tags_.getKeyValue(k, store_-&gt;strings()) != 0;</div>
+<div class="line"><a id="l00142" name="l00142"></a><span class="lineno">  142</span>    }</div>
 </div>
+<div class="line"><a id="l00143" name="l00143"></a><span class="lineno">  143</span> </div>
+<div class="foldopen" id="foldopen00147" data-start="{" data-end="}">
+<div class="line"><a id="l00147" name="l00147"></a><span class="lineno"><a class="line" href="classgeodesk_1_1_tags.html#a1820d7ba51eb8b8755454e2c8cbf8176">  147</a></span>    [[nodiscard]] <span class="keywordtype">bool</span> <a class="code hl_function" href="classgeodesk_1_1_tags.html#a1820d7ba51eb8b8755454e2c8cbf8176">hasTag</a>(<a class="code hl_class" href="classgeodesk_1_1_key.html">Key</a> key) <span class="keyword">const</span> <span class="keyword">noexcept</span></div>
+<div class="line"><a id="l00148" name="l00148"></a><span class="lineno">  148</span>    {</div>
+<div class="line"><a id="l00149" name="l00149"></a><span class="lineno">  149</span>        <span class="keywordflow">return</span> tags_.getKeyValue(key) != 0;</div>
+<div class="line"><a id="l00150" name="l00150"></a><span class="lineno">  150</span>    }</div>
+</div>
+<div class="line"><a id="l00151" name="l00151"></a><span class="lineno">  151</span> </div>
+<div class="line"><a id="l00155" name="l00155"></a><span class="lineno"><a class="line" href="classgeodesk_1_1_tags.html#a3f0c3a048c95b6e00daea3761846f1cf">  155</a></span>    [[nodiscard]] <span class="keywordtype">bool</span> <a class="code hl_function" href="classgeodesk_1_1_tags.html#a3f0c3a048c95b6e00daea3761846f1cf">hasTag</a>(std::string_view k, std::string_view v) <span class="keyword">const</span> <span class="keyword">noexcept</span>;</div>
+<div class="line"><a id="l00156" name="l00156"></a><span class="lineno">  156</span> </div>
+<div class="line"><a id="l00160" name="l00160"></a><span class="lineno"><a class="line" href="classgeodesk_1_1_tags.html#a4f36745e1cb6c05fa8aeca69356da970">  160</a></span>    [[nodiscard]] <span class="keywordtype">bool</span> <a class="code hl_function" href="classgeodesk_1_1_tags.html#a4f36745e1cb6c05fa8aeca69356da970">hasTag</a>(<a class="code hl_class" href="classgeodesk_1_1_key.html">Key</a> k, std::string_view v) <span class="keyword">const</span> <span class="keyword">noexcept</span>;</div>
+<div class="line"><a id="l00161" name="l00161"></a><span class="lineno">  161</span> </div>
+<div class="line"><a id="l00168" name="l00168"></a><span class="lineno">  168</span>    <span class="keyword">template</span>&lt;<span class="keyword">typename</span> K, <span class="keyword">typename</span> V&gt;</div>
+<div class="line"><a id="l00169" name="l00169"></a><span class="lineno">  169</span>    <span class="keyword">operator</span> std::map&lt;K,V&gt;() const <span class="comment">// NOLINT(google-explicit-constructor)</span></div>
+<div class="line"><a id="l00170" name="l00170"></a><span class="lineno">  170</span>    {</div>
+<div class="line"><a id="l00171" name="l00171"></a><span class="lineno">  171</span>        std::map&lt;K,V&gt; map;</div>
+<div class="line"><a id="l00172" name="l00172"></a><span class="lineno">  172</span>        <span class="keywordflow">for</span>(<a class="code hl_class" href="classgeodesk_1_1_tag.html">Tag</a> tag: *<span class="keyword">this</span>)</div>
+<div class="line"><a id="l00173" name="l00173"></a><span class="lineno">  173</span>        {</div>
+<div class="line"><a id="l00174" name="l00174"></a><span class="lineno">  174</span>            map.insert({ tag.<a class="code hl_function" href="classgeodesk_1_1_tag.html#a2e64130b501d7a281f4642fe6ab4191b">key</a>(), tag.<a class="code hl_function" href="classgeodesk_1_1_tag.html#a564f8155b6078709329ad07742f73ca1">value</a>() });</div>
+<div class="line"><a id="l00175" name="l00175"></a><span class="lineno">  175</span>        }</div>
+<div class="line"><a id="l00176" name="l00176"></a><span class="lineno">  176</span>        <span class="keywordflow">return</span> map;</div>
+<div class="line"><a id="l00177" name="l00177"></a><span class="lineno">  177</span>    }</div>
+<div class="line"><a id="l00178" name="l00178"></a><span class="lineno">  178</span> </div>
+<div class="line"><a id="l00184" name="l00184"></a><span class="lineno">  184</span>    <span class="keyword">template</span>&lt;<span class="keyword">typename</span> K, <span class="keyword">typename</span> V&gt;</div>
+<div class="line"><a id="l00185" name="l00185"></a><span class="lineno">  185</span>    <span class="keyword">operator</span> std::unordered_map&lt;K,V&gt;() const <span class="comment">// NOLINT(google-explicit-constructor)</span></div>
+<div class="line"><a id="l00186" name="l00186"></a><span class="lineno">  186</span>    {</div>
+<div class="line"><a id="l00187" name="l00187"></a><span class="lineno">  187</span>        std::unordered_map&lt;K,V&gt; map;</div>
+<div class="line"><a id="l00188" name="l00188"></a><span class="lineno">  188</span>        <span class="keywordflow">for</span>(<a class="code hl_class" href="classgeodesk_1_1_tag.html">Tag</a> tag: *<span class="keyword">this</span>)</div>
+<div class="line"><a id="l00189" name="l00189"></a><span class="lineno">  189</span>        {</div>
+<div class="line"><a id="l00190" name="l00190"></a><span class="lineno">  190</span>            map.insert({ tag.<a class="code hl_function" href="classgeodesk_1_1_tag.html#a2e64130b501d7a281f4642fe6ab4191b">key</a>(), tag.<a class="code hl_function" href="classgeodesk_1_1_tag.html#a564f8155b6078709329ad07742f73ca1">value</a>() });</div>
+<div class="line"><a id="l00191" name="l00191"></a><span class="lineno">  191</span>        }</div>
+<div class="line"><a id="l00192" name="l00192"></a><span class="lineno">  192</span>        <span class="keywordflow">return</span> map;</div>
+<div class="line"><a id="l00193" name="l00193"></a><span class="lineno">  193</span>    }</div>
 <div class="line"><a id="l00194" name="l00194"></a><span class="lineno">  194</span> </div>
-<div class="line"><a id="l00195" name="l00195"></a><span class="lineno">  195</span>} <span class="comment">// namespace geodesk</span></div>
+<div class="line"><a id="l00202" name="l00202"></a><span class="lineno">  202</span>    <span class="keyword">template</span>&lt;<span class="keyword">typename</span> T&gt;</div>
+<div class="line"><a id="l00203" name="l00203"></a><span class="lineno">  203</span>    <span class="keyword">operator</span> std::vector&lt;T&gt;() const <span class="comment">// NOLINT(google-explicit-constructor)</span></div>
+<div class="line"><a id="l00204" name="l00204"></a><span class="lineno">  204</span>    {</div>
+<div class="line"><a id="l00205" name="l00205"></a><span class="lineno">  205</span>        std::vector&lt;T&gt; list;</div>
+<div class="line"><a id="l00206" name="l00206"></a><span class="lineno">  206</span>        <span class="keywordflow">for</span>(Tag tag: *<span class="keyword">this</span>)</div>
+<div class="line"><a id="l00207" name="l00207"></a><span class="lineno">  207</span>        {</div>
+<div class="line"><a id="l00208" name="l00208"></a><span class="lineno">  208</span>            list.emplace_back(tag);</div>
+<div class="line"><a id="l00209" name="l00209"></a><span class="lineno">  209</span>        }</div>
+<div class="line"><a id="l00210" name="l00210"></a><span class="lineno">  210</span>        <span class="keywordflow">return</span> list;</div>
+<div class="line"><a id="l00211" name="l00211"></a><span class="lineno">  211</span>    }</div>
+<div class="line"><a id="l00212" name="l00212"></a><span class="lineno">  212</span> </div>
+<div class="line"><a id="l00215" name="l00215"></a><span class="lineno"><a class="line" href="classgeodesk_1_1_tags.html#a6949c3d01eb5d1829d3d6c9d9e6cbba6">  215</a></span>    <span class="keywordtype">bool</span> <a class="code hl_function" href="classgeodesk_1_1_tags.html#a6949c3d01eb5d1829d3d6c9d9e6cbba6">operator==</a>(<span class="keyword">const</span> <a class="code hl_class" href="classgeodesk_1_1_tags.html">Tags</a>&amp; other) <span class="keyword">const</span>;</div>
+<div class="foldopen" id="foldopen00216" data-start="{" data-end="}">
+<div class="line"><a id="l00216" name="l00216"></a><span class="lineno"><a class="line" href="classgeodesk_1_1_tags.html#aac8f6aa308ad8267a7b4cdd8be0668c7">  216</a></span>    <span class="keywordtype">bool</span> <a class="code hl_function" href="classgeodesk_1_1_tags.html#aac8f6aa308ad8267a7b4cdd8be0668c7">operator!=</a>(<span class="keyword">const</span> <a class="code hl_class" href="classgeodesk_1_1_tags.html">Tags</a>&amp; other)<span class="keyword"> const</span></div>
+<div class="line"><a id="l00217" name="l00217"></a><span class="lineno">  217</span><span class="keyword">    </span>{</div>
+<div class="line"><a id="l00218" name="l00218"></a><span class="lineno">  218</span>        <span class="keywordflow">return</span> !(*<span class="keyword">this</span> == other);</div>
+<div class="line"><a id="l00219" name="l00219"></a><span class="lineno">  219</span>    }</div>
+</div>
+<div class="line"><a id="l00220" name="l00220"></a><span class="lineno">  220</span>    <span class="comment">// may allocate, hence throw</span></div>
+<div class="line"><a id="l00221" name="l00221"></a><span class="lineno">  221</span> </div>
+<div class="line"><a id="l00222" name="l00222"></a><span class="lineno">  222</span><span class="keyword">private</span>:</div>
+<div class="line"><a id="l00223" name="l00223"></a><span class="lineno">  223</span>    <a class="code hl_class" href="classgeodesk_1_1_feature_store.html">FeatureStore</a>* store_;</div>
+<div class="line"><a id="l00224" name="l00224"></a><span class="lineno">  224</span>    TagTablePtr tags_;</div>
+<div class="line"><a id="l00225" name="l00225"></a><span class="lineno">  225</span>};</div>
+</div>
+<div class="line"><a id="l00226" name="l00226"></a><span class="lineno">  226</span> </div>
+<div class="line"><a id="l00227" name="l00227"></a><span class="lineno">  227</span>} <span class="comment">// namespace geodesk</span></div>
 <div class="ttc" id="a_feature_ptr_8h_html"><div class="ttname"><a href="_feature_ptr_8h.html">FeaturePtr.h</a></div></div>
 <div class="ttc" id="a_tag_8h_html"><div class="ttname"><a href="_tag_8h.html">Tag.h</a></div></div>
 <div class="ttc" id="a_tag_iterator_8h_html"><div class="ttname"><a href="_tag_iterator_8h.html">TagIterator.h</a></div></div>
 <div class="ttc" id="aclassgeodesk_1_1_feature_html"><div class="ttname"><a href="classgeodesk_1_1_feature.html">geodesk::Feature</a></div><div class="ttdoc">A geographic feature.</div><div class="ttdef"><b>Definition</b> Feature.h:27</div></div>
 <div class="ttc" id="aclassgeodesk_1_1_feature_ptr_html"><div class="ttname"><a href="classgeodesk_1_1_feature_ptr.html">geodesk::FeaturePtr</a></div><div class="ttdoc">Pointer to a Feature's data.</div><div class="ttdef"><b>Definition</b> FeaturePtr.h:26</div></div>
-<div class="ttc" id="aclassgeodesk_1_1_feature_store_html"><div class="ttname"><a href="classgeodesk_1_1_feature_store.html">geodesk::FeatureStore</a></div><div class="ttdoc">A Geographic Object Library.</div><div class="ttdef"><b>Definition</b> FeatureStore.h:35</div></div>
+<div class="ttc" id="aclassgeodesk_1_1_feature_store_html"><div class="ttname"><a href="classgeodesk_1_1_feature_store.html">geodesk::FeatureStore</a></div><div class="ttdoc">A Geographic Object Library.</div><div class="ttdef"><b>Definition</b> FeatureStore.h:36</div></div>
+<div class="ttc" id="aclassgeodesk_1_1_key_html"><div class="ttname"><a href="classgeodesk_1_1_key.html">geodesk::Key</a></div><div class="ttdoc">A lightweight wrapper for a key string.</div><div class="ttdef"><b>Definition</b> Key.h:42</div></div>
 <div class="ttc" id="aclassgeodesk_1_1_string_value_html"><div class="ttname"><a href="classgeodesk_1_1_string_value.html">geodesk::StringValue</a></div><div class="ttdoc">A string pointer (used for keys, values and roles).</div><div class="ttdef"><b>Definition</b> StringValue.h:24</div></div>
 <div class="ttc" id="aclassgeodesk_1_1_tag_html"><div class="ttname"><a href="classgeodesk_1_1_tag.html">geodesk::Tag</a></div><div class="ttdoc">A key/value pair that describes an attribute of a Feature.</div><div class="ttdef"><b>Definition</b> Tag.h:26</div></div>
 <div class="ttc" id="aclassgeodesk_1_1_tag_html_a2e64130b501d7a281f4642fe6ab4191b"><div class="ttname"><a href="classgeodesk_1_1_tag.html#a2e64130b501d7a281f4642fe6ab4191b">geodesk::Tag::key</a></div><div class="ttdeci">StringValue key() const noexcept</div><div class="ttdoc">The Tag's key.</div><div class="ttdef"><b>Definition</b> Tag.h:57</div></div>
@@ -273,16 +296,19 @@ $(function(){initNavTree('_tags_8h_source.html',''); initResizable(true); });
 <div class="ttc" id="aclassgeodesk_1_1_tags_1_1_iterator_html_a7754345ff3f5d1b9b279ab6e93a1ef80"><div class="ttname"><a href="classgeodesk_1_1_tags_1_1_iterator.html#a7754345ff3f5d1b9b279ab6e93a1ef80">geodesk::Tags::Iterator::Iterator</a></div><div class="ttdeci">Iterator(const Tags &amp;tags)</div><div class="ttdef"><b>Definition</b> Tags.h:65</div></div>
 <div class="ttc" id="aclassgeodesk_1_1_tags_1_1_iterator_html_ab1763a94d4ae02745dcd13055694daf4"><div class="ttname"><a href="classgeodesk_1_1_tags_1_1_iterator.html#ab1763a94d4ae02745dcd13055694daf4">geodesk::Tags::Iterator::operator++</a></div><div class="ttdeci">Iterator &amp; operator++()</div><div class="ttdef"><b>Definition</b> Tags.h:76</div></div>
 <div class="ttc" id="aclassgeodesk_1_1_tags_html"><div class="ttname"><a href="classgeodesk_1_1_tags.html">geodesk::Tags</a></div><div class="ttdoc">An object describing the key/value attributes of a Feature.</div><div class="ttdef"><b>Definition</b> Tags.h:49</div></div>
+<div class="ttc" id="aclassgeodesk_1_1_tags_html_a1820d7ba51eb8b8755454e2c8cbf8176"><div class="ttname"><a href="classgeodesk_1_1_tags.html#a1820d7ba51eb8b8755454e2c8cbf8176">geodesk::Tags::hasTag</a></div><div class="ttdeci">bool hasTag(Key key) const noexcept</div><div class="ttdoc">Checks if this set of tags contains a tag with the given key.</div><div class="ttdef"><b>Definition</b> Tags.h:147</div></div>
 <div class="ttc" id="aclassgeodesk_1_1_tags_html_a3f0c3a048c95b6e00daea3761846f1cf"><div class="ttname"><a href="classgeodesk_1_1_tags.html#a3f0c3a048c95b6e00daea3761846f1cf">geodesk::Tags::hasTag</a></div><div class="ttdeci">bool hasTag(std::string_view k, std::string_view v) const noexcept</div><div class="ttdoc">Checks if this set of tags contains a tag with the given key and value.</div></div>
+<div class="ttc" id="aclassgeodesk_1_1_tags_html_a4f36745e1cb6c05fa8aeca69356da970"><div class="ttname"><a href="classgeodesk_1_1_tags.html#a4f36745e1cb6c05fa8aeca69356da970">geodesk::Tags::hasTag</a></div><div class="ttdeci">bool hasTag(Key k, std::string_view v) const noexcept</div><div class="ttdoc">Checks if this set of tags contains a tag with the given key and value.</div></div>
 <div class="ttc" id="aclassgeodesk_1_1_tags_html_a6356278fe419ecbb1110ad5681166f4b"><div class="ttname"><a href="classgeodesk_1_1_tags.html#a6356278fe419ecbb1110ad5681166f4b">geodesk::Tags::Tags</a></div><div class="ttdeci">Tags(FeatureStore *store, TagTablePtr ptr)</div><div class="ttdef"><b>Definition</b> Tags.h:54</div></div>
 <div class="ttc" id="aclassgeodesk_1_1_tags_html_a6796c766f0dcc78b13872ea87b041858"><div class="ttname"><a href="classgeodesk_1_1_tags.html#a6796c766f0dcc78b13872ea87b041858">geodesk::Tags::end</a></div><div class="ttdeci">static std::nullptr_t end()</div><div class="ttdef"><b>Definition</b> Tags.h:101</div></div>
 <div class="ttc" id="aclassgeodesk_1_1_tags_html_a6949c3d01eb5d1829d3d6c9d9e6cbba6"><div class="ttname"><a href="classgeodesk_1_1_tags.html#a6949c3d01eb5d1829d3d6c9d9e6cbba6">geodesk::Tags::operator==</a></div><div class="ttdeci">bool operator==(const Tags &amp;other) const</div><div class="ttdoc">Checks if both Tags objects contain the same tags.</div></div>
-<div class="ttc" id="aclassgeodesk_1_1_tags_html_a6ef5bcf0ee78d1947a38eb5b8e066e10"><div class="ttname"><a href="classgeodesk_1_1_tags.html#a6ef5bcf0ee78d1947a38eb5b8e066e10">geodesk::Tags::operator[]</a></div><div class="ttdeci">TagValue operator[](std::string_view key) const noexcept</div><div class="ttdoc">Looks up the tag value for the given key.</div><div class="ttdef"><b>Definition</b> Tags.h:114</div></div>
+<div class="ttc" id="aclassgeodesk_1_1_tags_html_a6ef5bcf0ee78d1947a38eb5b8e066e10"><div class="ttname"><a href="classgeodesk_1_1_tags.html#a6ef5bcf0ee78d1947a38eb5b8e066e10">geodesk::Tags::operator[]</a></div><div class="ttdeci">TagValue operator[](std::string_view key) const noexcept</div><div class="ttdoc">Looks up the tag value for the given key.</div><div class="ttdef"><b>Definition</b> Tags.h:117</div></div>
 <div class="ttc" id="aclassgeodesk_1_1_tags_html_a868644164f1c37004363efb1d1d10fac"><div class="ttname"><a href="classgeodesk_1_1_tags.html#a868644164f1c37004363efb1d1d10fac">geodesk::Tags::Tags</a></div><div class="ttdeci">Tags(FeatureStore *store, FeaturePtr ptr)</div><div class="ttdef"><b>Definition</b> Tags.h:52</div></div>
 <div class="ttc" id="aclassgeodesk_1_1_tags_html_a91437a6400a6f583491e0ce8fc0eea53"><div class="ttname"><a href="classgeodesk_1_1_tags.html#a91437a6400a6f583491e0ce8fc0eea53">geodesk::Tags::Tags</a></div><div class="ttdeci">Tags(const Tags &amp;other)=default</div></div>
 <div class="ttc" id="aclassgeodesk_1_1_tags_html_aa202c00951a5f54e6f7344cc0ce06717"><div class="ttname"><a href="classgeodesk_1_1_tags.html#aa202c00951a5f54e6f7344cc0ce06717">geodesk::Tags::begin</a></div><div class="ttdeci">Iterator begin() const</div><div class="ttdef"><b>Definition</b> Tags.h:100</div></div>
-<div class="ttc" id="aclassgeodesk_1_1_tags_html_aac8f6aa308ad8267a7b4cdd8be0668c7"><div class="ttname"><a href="classgeodesk_1_1_tags.html#aac8f6aa308ad8267a7b4cdd8be0668c7">geodesk::Tags::operator!=</a></div><div class="ttdeci">bool operator!=(const Tags &amp;other) const</div><div class="ttdef"><b>Definition</b> Tags.h:184</div></div>
-<div class="ttc" id="aclassgeodesk_1_1_tags_html_ad2aef8a69100a70afddd6e275e0c6234"><div class="ttname"><a href="classgeodesk_1_1_tags.html#ad2aef8a69100a70afddd6e275e0c6234">geodesk::Tags::hasTag</a></div><div class="ttdeci">bool hasTag(std::string_view k) const noexcept</div><div class="ttdoc">Checks if this set of tags contains a tag with the given key.</div></div>
+<div class="ttc" id="aclassgeodesk_1_1_tags_html_aac8f6aa308ad8267a7b4cdd8be0668c7"><div class="ttname"><a href="classgeodesk_1_1_tags.html#aac8f6aa308ad8267a7b4cdd8be0668c7">geodesk::Tags::operator!=</a></div><div class="ttdeci">bool operator!=(const Tags &amp;other) const</div><div class="ttdef"><b>Definition</b> Tags.h:216</div></div>
+<div class="ttc" id="aclassgeodesk_1_1_tags_html_aaf8a0c2f96c923cbd69bacdb73d76ca7"><div class="ttname"><a href="classgeodesk_1_1_tags.html#aaf8a0c2f96c923cbd69bacdb73d76ca7">geodesk::Tags::operator[]</a></div><div class="ttdeci">TagValue operator[](Key key) const noexcept</div><div class="ttdoc">Looks up the tag value for the given key.</div><div class="ttdef"><b>Definition</b> Tags.h:127</div></div>
+<div class="ttc" id="aclassgeodesk_1_1_tags_html_ad2aef8a69100a70afddd6e275e0c6234"><div class="ttname"><a href="classgeodesk_1_1_tags.html#ad2aef8a69100a70afddd6e275e0c6234">geodesk::Tags::hasTag</a></div><div class="ttdeci">bool hasTag(std::string_view k) const noexcept</div><div class="ttdoc">Checks if this set of tags contains a tag with the given key.</div><div class="ttdef"><b>Definition</b> Tags.h:139</div></div>
 <div class="ttc" id="aclassgeodesk_1_1_tags_html_ad2b7544337960e38809e2dd3bcd1adc1"><div class="ttname"><a href="classgeodesk_1_1_tags.html#ad2b7544337960e38809e2dd3bcd1adc1">geodesk::Tags::size</a></div><div class="ttdeci">size_t size() const noexcept</div><div class="ttdoc">Returns the number of tags.</div><div class="ttdef"><b>Definition</b> Tags.h:105</div></div>
 <div class="ttc" id="aclassgeodesk_1_1_tags_html_ad36dac27c8e8fe6440319c40309d1801"><div class="ttname"><a href="classgeodesk_1_1_tags.html#ad36dac27c8e8fe6440319c40309d1801">geodesk::Tags::Tags</a></div><div class="ttdeci">Tags(const Feature &amp;feature)</div></div>
 <div class="ttc" id="aexport_8h_html_ad2aca25975b684c8b6f6edf212ef7007"><div class="ttname"><a href="export_8h.html#ad2aca25975b684c8b6f6edf212ef7007">GEODESK_API</a></div><div class="ttdeci">#define GEODESK_API</div><div class="ttdef"><b>Definition</b> export.h:31</div></div>

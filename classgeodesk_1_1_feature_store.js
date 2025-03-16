@@ -13,6 +13,7 @@ var classgeodesk_1_1_feature_store =
     [ "getPointer", "classgeodesk_1_1_feature_store.html#a39a6846c3bf02b2e91d6f6127f99ffde", null ],
     [ "initialize", "classgeodesk_1_1_feature_store.html#aa93d9e1dfa3bb0c288360333988258b8", null ],
     [ "isAllMatcher", "classgeodesk_1_1_feature_store.html#a06e93af55f95991dceead2b35da80c3b", null ],
+    [ "key", "classgeodesk_1_1_feature_store.html#a2ce05891c7849581b9123ecf3ba30c22", null ],
     [ "keysToCategories", "classgeodesk_1_1_feature_store.html#ad328fd9ed85d0ddd8ecaec3cc0ec206c", null ],
     [ "open", "classgeodesk_1_1_feature_store.html#aa5f6287dd9fe2c86459c9b26a077363b", null ],
     [ "openSingle", "classgeodesk_1_1_feature_store.html#a0449f7451909c560f275040496f21c2b", null ],

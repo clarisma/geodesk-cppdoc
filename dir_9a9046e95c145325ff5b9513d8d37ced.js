@@ -21,6 +21,7 @@ var dir_9a9046e95c145325ff5b9513d8d37ced =
     [ "ForeignFeatureRef.h", "_foreign_feature_ref_8h.html", null ],
     [ "forward.h", "forward_8h.html", null ],
     [ "GlobalTagIterator.h", "_global_tag_iterator_8h.html", null ],
+    [ "Key.h", "_key_8h.html", "_key_8h" ],
     [ "KeyIndexSchema.h", "_key_index_schema_8h.html", null ],
     [ "LocalTagIterator.h", "_local_tag_iterator_8h.html", null ],
     [ "MemberCollection.h", "_member_collection_8h.html", null ],
