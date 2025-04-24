@@ -125,22 +125,24 @@ $(function(){initNavTree('_relations_8h_source.html',''); initResizable(true); }
 <div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span>    <span class="keyword">template</span>&lt;<span class="keyword">typename</span> P&gt;</div>
 <div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span>    Relations <a class="code hl_function" href="classgeodesk_1_1_features.html#a7d2c19eb9f7e7aa5a1199afff0759101">parentsOf</a>(FeatureBase&lt;P&gt; feature)<span class="keyword"> const</span></div>
 <div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span><span class="keyword">    </span>{</div>
-<div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span>        <span class="keywordflow">if</span>(!feature.belongsToRelation()) <span class="keywordflow">return</span> Relations(empty());</div>
-<div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span>        <span class="keywordflow">return</span> Relations(view_.parentRelationsOf(feature.ptr()));</div>
-<div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span>    }</div>
-<div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span> </div>
-<div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span>    <span class="keyword">template</span>&lt;<span class="keyword">typename</span> P&gt;</div>
-<div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span>    Relations <a class="code hl_function" href="classgeodesk_1_1_features.html#a47cb4b9be39825b2a4c31b83769aeac6">membersOf</a>(FeatureBase&lt;P&gt; feature)<span class="keyword"> const</span></div>
-<div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span><span class="keyword">    </span>{</div>
-<div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span>        <span class="comment">// Relations can only be members of other relations</span></div>
-<div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span>        <span class="keywordflow">if</span>(!feature.isRelation()) <span class="keywordflow">return</span> Relations(empty());</div>
-<div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span>        <span class="keywordflow">return</span> Relations(view_.membersOfRelation(feature.ptr()));</div>
-<div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span>    }</div>
-<div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span> </div>
-<div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span>};</div>
+<div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span>        <span class="comment">// if(!feature.belongsToRelation()) return Relations(empty());</span></div>
+<div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span>        <span class="keywordflow">return</span> Relations(view_.parentsOf(feature.ptr()));</div>
+<div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span>        <span class="comment">// TODO: may be able to optimize, this parent view can only</span></div>
+<div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span>        <span class="comment">//  contain relations</span></div>
+<div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span>    }</div>
+<div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span> </div>
+<div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span>    <span class="keyword">template</span>&lt;<span class="keyword">typename</span> P&gt;</div>
+<div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span>    Relations <a class="code hl_function" href="classgeodesk_1_1_features.html#a47cb4b9be39825b2a4c31b83769aeac6">membersOf</a>(FeatureBase&lt;P&gt; feature)<span class="keyword"> const</span></div>
+<div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span><span class="keyword">    </span>{</div>
+<div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span>        <span class="comment">// Relations can only be members of other relations</span></div>
+<div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span>        <span class="keywordflow">if</span>(!feature.isRelation()) <span class="keywordflow">return</span> Relations(empty());</div>
+<div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span>        <span class="keywordflow">return</span> Relations(view_.membersOfRelation(feature.ptr()));</div>
+<div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span>    }</div>
 <div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span> </div>
+<div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span>};</div>
 <div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span> </div>
-<div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span>} <span class="comment">// namespace geodesk</span></div>
+<div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span> </div>
+<div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span>} <span class="comment">// namespace geodesk</span></div>
 <div class="ttc" id="a_features_base_8h_html"><div class="ttname"><a href="_features_base_8h.html">FeaturesBase.h</a></div></div>
 <div class="ttc" id="aclassgeodesk_1_1_features_html_a47cb4b9be39825b2a4c31b83769aeac6"><div class="ttname"><a href="classgeodesk_1_1_features.html#a47cb4b9be39825b2a4c31b83769aeac6">geodesk::Features::membersOf</a></div><div class="ttdeci">Features membersOf(const Feature &amp;feature) const</div><div class="ttdoc">Only features that belong to the given Relation.</div></div>
 <div class="ttc" id="aclassgeodesk_1_1_features_html_a7d2c19eb9f7e7aa5a1199afff0759101"><div class="ttname"><a href="classgeodesk_1_1_features.html#a7d2c19eb9f7e7aa5a1199afff0759101">geodesk::Features::parentsOf</a></div><div class="ttdeci">Features parentsOf(const Feature &amp;feature) const</div><div class="ttdoc">Only features that are parent relations of the given Feature (or parent ways of the given Node).</div></div>

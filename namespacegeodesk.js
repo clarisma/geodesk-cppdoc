@@ -27,6 +27,7 @@ var namespacegeodesk =
       [ "RELATION", "namespacegeodesk.html#ab4c15802927accc42f5c68cd19e7c828a597b1b050c9cf333a3f75f52eea33279", null ]
     ] ],
     [ "operator<<", "namespacegeodesk.html#ae17f5164d4348facf5fbe04a8c81a90f", null ],
+    [ "operator<<", "namespacegeodesk.html#ac7711f09bb1cd18f8bb5b45afecc400f", null ],
     [ "operator<<", "namespacegeodesk.html#a8983e99dc5ba2ffe2a219decb0e18089", null ],
     [ "operator<<", "namespacegeodesk.html#a0ce53def2b638fe3a25196244158e7f5", null ],
     [ "operator<<", "namespacegeodesk.html#ab12ecc044b279310fbecfc7c5c4cc8b2", null ],

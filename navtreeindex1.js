@@ -1,5 +1,6 @@
 var NAVTREEINDEX1 =
 {
+"_span_8h.html":[3,0,0,0,3,7],
 "_span_8h.html#abca763c0c7903a5352159c120d957a5b":[3,0,0,0,3,7,0],
 "_span_8h_source.html":[3,0,0,0,3,7],
 "_store_8h.html":[3,0,0,0,6,5],
@@ -248,6 +249,5 @@ var NAVTREEINDEX1 =
 "classgeodesk_1_1_feature.html#a8340c0795b3f29c48b8ed76e77b6fd42":[1,0,1,2,10],
 "classgeodesk_1_1_feature.html#a8340c0795b3f29c48b8ed76e77b6fd42":[2,0,0,2,10],
 "classgeodesk_1_1_feature.html#a8350ba55c2bac5035fd0e59a84e4ee36":[1,0,1,2,27],
-"classgeodesk_1_1_feature.html#a8350ba55c2bac5035fd0e59a84e4ee36":[2,0,0,2,27],
-"classgeodesk_1_1_feature.html#a880f3cb78eb65f1da7c2074777bf7cb4":[1,0,1,2,21]
+"classgeodesk_1_1_feature.html#a8350ba55c2bac5035fd0e59a84e4ee36":[2,0,0,2,27]
 };

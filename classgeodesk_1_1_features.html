@@ -136,8 +136,11 @@ Public Member Functions</h2></td></tr>
 <tr class="memdesc:ac1952aafaa056f414b6709ceec591774"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns <code>true</code> if this collection contains at least one <a class="el" href="classgeodesk_1_1_feature.html" title="A geographic feature.">Feature</a>.  <br /></td></tr>
 <tr class="separator:ac1952aafaa056f414b6709ceec591774"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad27ee44eaf044f777cd937a8b31ed1ec" id="r_ad27ee44eaf044f777cd937a8b31ed1ec"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ad27ee44eaf044f777cd937a8b31ed1ec">operator!</a> () const</td></tr>
-<tr class="memdesc:ad27ee44eaf044f777cd937a8b31ed1ec"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns <code>true</code> if this collection is empty.  <br /></td></tr>
+<tr class="memdesc:ad27ee44eaf044f777cd937a8b31ed1ec"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns <code>true</code> if this collection contains no features.  <br /></td></tr>
 <tr class="separator:ad27ee44eaf044f777cd937a8b31ed1ec"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aef27a585f61d8435870fe519a5f77a11" id="r_aef27a585f61d8435870fe519a5f77a11"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aef27a585f61d8435870fe519a5f77a11">isEmpty</a> () const</td></tr>
+<tr class="memdesc:aef27a585f61d8435870fe519a5f77a11"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns <code>true</code> if this collection contains no features.  <br /></td></tr>
+<tr class="separator:aef27a585f61d8435870fe519a5f77a11"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a268ee9e41812c01dcbf0fd0700ae67c1" id="r_a268ee9e41812c01dcbf0fd0700ae67c1"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a268ee9e41812c01dcbf0fd0700ae67c1">contains</a> (const <a class="el" href="classgeodesk_1_1_feature.html">Feature</a> &amp;feature) const</td></tr>
 <tr class="memdesc:a268ee9e41812c01dcbf0fd0700ae67c1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Checks if the specified <a class="el" href="classgeodesk_1_1_feature.html" title="A geographic feature.">Feature</a> exists in this collection.  <br /></td></tr>
 <tr class="separator:a268ee9e41812c01dcbf0fd0700ae67c1"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -250,10 +253,10 @@ Public Member Functions</h2></td></tr>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>A collection of geographic features. </p>
 <p>A <a class="el" href="classgeodesk_1_1_features.html" title="A collection of geographic features.">Features</a> object isn't a traditional container; it doesn't actually hold any <a class="el" href="classgeodesk_1_1_feature.html" title="A geographic feature.">Feature</a> objects. Instead, it defines the criteria for retrieving features from a Geographic Object Library. A query is only executed whenever the <a class="el" href="classgeodesk_1_1_features.html" title="A collection of geographic features.">Features</a> object is iterated, assigned to a container, or when one of its scalar functions (such as <a class="el" href="#a9e7afddef438b9b30c8639876495bd43" title="Returns the total number of features in this collection.">count()</a> or <a class="el" href="#a200cd9550b03e68b7fa3b456fcc0155f" title="Computes the total length (in meters) of the features in this collection.">length()</a>) is called. Query results are not cached. For example, calling <a class="el" href="#a9e7afddef438b9b30c8639876495bd43" title="Returns the total number of features in this collection.">count()</a> before iterating over a <a class="el" href="classgeodesk_1_1_features.html" title="A collection of geographic features.">Features</a> object will result in the query being executed twice.</p>
-<p><a class="el" href="classgeodesk_1_1_features.html" title="A collection of geographic features.">Features</a> objects are lightweight, thread-safe, and designed to be passed by value. They can be safely shared across threads. Matchers, filters, and related resources (such as temporary indexes) use reference counting to ensure efficient and safe resource management.</p>
+<p><a class="el" href="classgeodesk_1_1_features.html" title="A collection of geographic features.">Features</a> objects are lightweight, thread-safe (see note below), and designed to be passed by value. They can be safely shared across threads. Matchers, filters, and related resources (such as temporary indexes) use reference counting to ensure efficient and safe resource management.</p>
 <p>To start working with a GOL, simply create a <code><a class="el" href="classgeodesk_1_1_features.html" title="A collection of geographic features.">Features</a></code> object with the path of its file (the <code>.gol</code> extension may be omitted):</p>
 <div class="fragment"><div class="line"><a class="code hl_class" href="classgeodesk_1_1_features.html">Features</a> world(<span class="stringliteral">&quot;path/to/planet.gol&quot;</span>);</div>
-<div class="ttc" id="aclassgeodesk_1_1_features_html"><div class="ttname"><a href="classgeodesk_1_1_features.html">geodesk::Features</a></div><div class="ttdoc">A collection of geographic features.</div><div class="ttdef"><b>Definition</b> Features.h:112</div></div>
+<div class="ttc" id="aclassgeodesk_1_1_features_html"><div class="ttname"><a href="classgeodesk_1_1_features.html">geodesk::Features</a></div><div class="ttdoc">A collection of geographic features.</div><div class="ttdef"><b>Definition</b> Features.h:119</div></div>
 </div><!-- fragment --><p> This creates a <a class="el" href="classgeodesk_1_1_feature_store.html" title="A Geographic Object Library.">FeatureStore</a> that manages access to <code>planet.gol</code>. The <code>world</code> object now represents a collection of all features stored in the GOL (It is legal to create multiple <code><a class="el" href="classgeodesk_1_1_features.html" title="A collection of geographic features.">Features</a></code> objects that refer to the same GOL &ndash; they will share the same <a class="el" href="classgeodesk_1_1_feature_store.html" title="A Geographic Object Library.">FeatureStore</a>).</p>
 <p>To obtain subsets, apply filters using <code>()</code> or by calling a named method &ndash; or intersect multiple <code><a class="el" href="classgeodesk_1_1_features.html" title="A collection of geographic features.">Features</a></code> object with <code>&amp;</code>:</p>
 <div class="fragment"><div class="line"><a class="code hl_class" href="classgeodesk_1_1_features.html">Features</a> hotels = world(<span class="stringliteral">&quot;na[tourism=hotel]&quot;</span>);  <span class="comment">// All hotels</span></div>
@@ -291,10 +294,11 @@ Public Member Functions</h2></td></tr>
 <div class="line"> </div>
 <div class="line"><a class="code hl_class" href="classgeodesk_1_1_nodes.html">Nodes</a> <a class="code hl_function" href="#a96933909e58e610afe8f820e3f839ea0">nodes</a> = busRoutes;               <span class="comment">// empty collection</span></div>
 <div class="ttc" id="aclassgeodesk_1_1_features_html_a96933909e58e610afe8f820e3f839ea0"><div class="ttname"><a href="#a96933909e58e610afe8f820e3f839ea0">geodesk::Features::nodes</a></div><div class="ttdeci">Nodes nodes() const</div><div class="ttdoc">Only nodes.</div></div>
-<div class="ttc" id="aclassgeodesk_1_1_nodes_html"><div class="ttname"><a href="classgeodesk_1_1_nodes.html">geodesk::Nodes</a></div><div class="ttdoc">A collection containing only Node features.</div><div class="ttdef"><b>Definition</b> Features.h:419</div></div>
-<div class="ttc" id="aclassgeodesk_1_1_relations_html"><div class="ttname"><a href="classgeodesk_1_1_relations.html">geodesk::Relations</a></div><div class="ttdoc">A collection containing only Relation features.</div><div class="ttdef"><b>Definition</b> Features.h:431</div></div>
+<div class="ttc" id="aclassgeodesk_1_1_nodes_html"><div class="ttname"><a href="classgeodesk_1_1_nodes.html">geodesk::Nodes</a></div><div class="ttdoc">A collection containing only Node features.</div><div class="ttdef"><b>Definition</b> Features.h:430</div></div>
+<div class="ttc" id="aclassgeodesk_1_1_relations_html"><div class="ttname"><a href="classgeodesk_1_1_relations.html">geodesk::Relations</a></div><div class="ttdoc">A collection containing only Relation features.</div><div class="ttdef"><b>Definition</b> Features.h:442</div></div>
 </div><!-- fragment --><p>When the last <a class="el" href="classgeodesk_1_1_features.html" title="A collection of geographic features.">Features</a> object referring to a <a class="el" href="classgeodesk_1_1_feature_store.html" title="A Geographic Object Library.">FeatureStore</a> is destroyed, the associated Geographic Object Library is automatically closed, and all resources managed by the <a class="el" href="classgeodesk_1_1_feature_store.html" title="A Geographic Object Library.">FeatureStore</a> are released. (This differs from <a href="https://docs.geodesk.com/java/libraries#closing-a-library">GeoDesk for Java</a>, which requires GOLs to be closed explicitly).</p>
-<p><b>Important:</b> After a GOL has been closed, any <a class="el" href="classgeodesk_1_1_feature.html" title="A geographic feature.">Feature</a> objects obtained from it become invalid. Calling their methods results in undefined behavior. This restriction also applies to related types, such as <a class="el" href="classgeodesk_1_1_tags.html" title="An object describing the key/value attributes of a Feature.">Tags</a>, <a class="el" href="classgeodesk_1_1_tag.html" title="A key/value pair that describes an attribute of a Feature.">Tag</a>, <a class="el" href="classgeodesk_1_1_tag_value.html" title="The value of a Tag.">TagValue</a> and <a class="el" href="classgeodesk_1_1_string_value.html" title="A string pointer (used for keys, values and roles).">StringValue</a>. </p>
+<dl class="section warning"><dt>Warning</dt><dd>After a GOL has been closed, any <a class="el" href="classgeodesk_1_1_feature.html" title="A geographic feature.">Feature</a> objects obtained from it become invalid. Calling their methods results in undefined behavior. This restriction also applies to related types, such as <a class="el" href="classgeodesk_1_1_tags.html" title="An object describing the key/value attributes of a Feature.">Tags</a>, <a class="el" href="classgeodesk_1_1_tag.html" title="A key/value pair that describes an attribute of a Feature.">Tag</a>, <a class="el" href="classgeodesk_1_1_tag_value.html" title="The value of a Tag.">TagValue</a> and <a class="el" href="classgeodesk_1_1_string_value.html" title="A string pointer (used for keys, values and roles).">StringValue</a>.</dd></dl>
+<dl class="section note"><dt>Note</dt><dd>To allow multiple threads to share <a class="el" href="classgeodesk_1_1_features.html" title="A collection of geographic features.">Features</a> objects that use the same GOL, GeoDesk must be built with option <code>GEODESK_MULTITHREADED</code> enabled. Leaving this option disabled may improve the performance of single-threaded applications. </dd></dl>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="a077007af6ad4a34838f8fee208ac0cf2" name="a077007af6ad4a34838f8fee208ac0cf2"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a077007af6ad4a34838f8fee208ac0cf2">&#9670;&#160;</a></span>Features() <span class="overload">[1/2]</span></h2>
@@ -642,6 +646,25 @@ template&lt;typename Predicate &gt; </div>
 
 </div>
 </div>
+<a id="aef27a585f61d8435870fe519a5f77a11" name="aef27a585f61d8435870fe519a5f77a11"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aef27a585f61d8435870fe519a5f77a11">&#9670;&#160;</a></span>isEmpty()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool geodesk::Features::isEmpty </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Returns <code>true</code> if this collection contains no features. </p>
+
+</div>
+</div>
 <a id="abcfda83368d0ffdec4b5f9fcb1776419" name="abcfda83368d0ffdec4b5f9fcb1776419"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#abcfda83368d0ffdec4b5f9fcb1776419">&#9670;&#160;</a></span>key()</h2>
 
@@ -901,7 +924,7 @@ template&lt;typename Predicate &gt; </div>
       </table>
 </div><div class="memdoc">
 
-<p>Returns <code>true</code> if this collection is empty. </p>
+<p>Returns <code>true</code> if this collection contains no features. </p>
 
 </div>
 </div>

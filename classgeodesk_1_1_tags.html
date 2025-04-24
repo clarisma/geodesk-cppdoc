@@ -121,6 +121,8 @@ Classes</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
+<tr class="memitem:ab9a3036d7c652d04f25abbf22853eaf8" id="r_ab9a3036d7c652d04f25abbf22853eaf8"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ab9a3036d7c652d04f25abbf22853eaf8">Tags</a> (<a class="el" href="classgeodesk_1_1_feature_store.html">FeatureStore</a> *store)</td></tr>
+<tr class="separator:ab9a3036d7c652d04f25abbf22853eaf8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad36dac27c8e8fe6440319c40309d1801" id="r_ad36dac27c8e8fe6440319c40309d1801"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ad36dac27c8e8fe6440319c40309d1801">Tags</a> (const <a class="el" href="classgeodesk_1_1_feature.html">Feature</a> &amp;feature)</td></tr>
 <tr class="separator:ad36dac27c8e8fe6440319c40309d1801"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a868644164f1c37004363efb1d1d10fac" id="r_a868644164f1c37004363efb1d1d10fac"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a868644164f1c37004363efb1d1d10fac">Tags</a> (<a class="el" href="classgeodesk_1_1_feature_store.html">FeatureStore</a> *store, <a class="el" href="classgeodesk_1_1_feature_ptr.html">FeaturePtr</a> ptr)</td></tr>
@@ -140,6 +142,9 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:aaf8a0c2f96c923cbd69bacdb73d76ca7" id="r_aaf8a0c2f96c923cbd69bacdb73d76ca7"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classgeodesk_1_1_tag_value.html">TagValue</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aaf8a0c2f96c923cbd69bacdb73d76ca7">operator[]</a> (<a class="el" href="classgeodesk_1_1_key.html">Key</a> key) const noexcept</td></tr>
 <tr class="memdesc:aaf8a0c2f96c923cbd69bacdb73d76ca7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Looks up the tag value for the given key.  <br /></td></tr>
 <tr class="separator:aaf8a0c2f96c923cbd69bacdb73d76ca7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a881888d33589f08544472bc5e2fda5d4" id="r_a881888d33589f08544472bc5e2fda5d4"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a881888d33589f08544472bc5e2fda5d4">isEmpty</a> () const noexcept</td></tr>
+<tr class="memdesc:a881888d33589f08544472bc5e2fda5d4"><td class="mdescLeft">&#160;</td><td class="mdescRight"><code>true</code> if this set of tags is empty.  <br /></td></tr>
+<tr class="separator:a881888d33589f08544472bc5e2fda5d4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad2aef8a69100a70afddd6e275e0c6234" id="r_ad2aef8a69100a70afddd6e275e0c6234"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ad2aef8a69100a70afddd6e275e0c6234">hasTag</a> (std::string_view k) const noexcept</td></tr>
 <tr class="memdesc:ad2aef8a69100a70afddd6e275e0c6234"><td class="mdescLeft">&#160;</td><td class="mdescRight">Checks if this set of tags contains a tag with the given key.  <br /></td></tr>
 <tr class="separator:ad2aef8a69100a70afddd6e275e0c6234"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -177,8 +182,33 @@ Static Public Member Functions</h2></td></tr>
 <p><b>Warning</b>: A <a class="el" href="classgeodesk_1_1_tags.html" title="An object describing the key/value attributes of a Feature.">Tags</a> object is a lightweight wrapper around a pointer to a <a class="el" href="classgeodesk_1_1_feature.html" title="A geographic feature.">Feature</a>'s tag data, contained in a <a class="el" href="classgeodesk_1_1_feature_store.html" title="A Geographic Object Library.">FeatureStore</a>. It becomes invalid once that <a class="el" href="classgeodesk_1_1_feature_store.html" title="A Geographic Object Library.">FeatureStore</a> is closed. To use a <a class="el" href="classgeodesk_1_1_feature.html" title="A geographic feature.">Feature</a>'s keys and values beyond the lifetime of the <a class="el" href="classgeodesk_1_1_feature_store.html" title="A Geographic Object Library.">FeatureStore</a>, assign the <a class="el" href="classgeodesk_1_1_tags.html" title="An object describing the key/value attributes of a Feature.">Tags</a> object to a <code>std::vector</code> or <code>std::unordered_map</code> whose types are <code>std::string</code>, which allocate copies of the key/value data.</p>
 <dl class="section see"><dt>See also</dt><dd><a class="el" href="classgeodesk_1_1_tag.html" title="A key/value pair that describes an attribute of a Feature.">Tag</a>, <a class="el" href="classgeodesk_1_1_tag_value.html" title="The value of a Tag.">TagValue</a> </dd></dl>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
+<a id="ab9a3036d7c652d04f25abbf22853eaf8" name="ab9a3036d7c652d04f25abbf22853eaf8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab9a3036d7c652d04f25abbf22853eaf8">&#9670;&#160;</a></span>Tags() <span class="overload">[1/5]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">geodesk::Tags::Tags </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classgeodesk_1_1_feature_store.html">FeatureStore</a> *</td>          <td class="paramname"><span class="paramname"><em>store</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">explicit</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <a id="ad36dac27c8e8fe6440319c40309d1801" name="ad36dac27c8e8fe6440319c40309d1801"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ad36dac27c8e8fe6440319c40309d1801">&#9670;&#160;</a></span>Tags() <span class="overload">[1/4]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#ad36dac27c8e8fe6440319c40309d1801">&#9670;&#160;</a></span>Tags() <span class="overload">[2/5]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -203,7 +233,7 @@ Static Public Member Functions</h2></td></tr>
 </div>
 </div>
 <a id="a868644164f1c37004363efb1d1d10fac" name="a868644164f1c37004363efb1d1d10fac"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a868644164f1c37004363efb1d1d10fac">&#9670;&#160;</a></span>Tags() <span class="overload">[2/4]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a868644164f1c37004363efb1d1d10fac">&#9670;&#160;</a></span>Tags() <span class="overload">[3/5]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -232,7 +262,7 @@ Static Public Member Functions</h2></td></tr>
 </div>
 </div>
 <a id="a6356278fe419ecbb1110ad5681166f4b" name="a6356278fe419ecbb1110ad5681166f4b"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a6356278fe419ecbb1110ad5681166f4b">&#9670;&#160;</a></span>Tags() <span class="overload">[3/4]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a6356278fe419ecbb1110ad5681166f4b">&#9670;&#160;</a></span>Tags() <span class="overload">[4/5]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -261,7 +291,7 @@ Static Public Member Functions</h2></td></tr>
 </div>
 </div>
 <a id="a91437a6400a6f583491e0ce8fc0eea53" name="a91437a6400a6f583491e0ce8fc0eea53"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a91437a6400a6f583491e0ce8fc0eea53">&#9670;&#160;</a></span>Tags() <span class="overload">[4/4]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a91437a6400a6f583491e0ce8fc0eea53">&#9670;&#160;</a></span>Tags() <span class="overload">[5/5]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -450,6 +480,33 @@ Static Public Member Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Checks if this set of tags contains a tag with the given key and value. </p>
+
+</div>
+</div>
+<a id="a881888d33589f08544472bc5e2fda5d4" name="a881888d33589f08544472bc5e2fda5d4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a881888d33589f08544472bc5e2fda5d4">&#9670;&#160;</a></span>isEmpty()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool geodesk::Tags::isEmpty </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">nodiscard</span><span class="mlabel">noexcept</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p><code>true</code> if this set of tags is empty. </p>
 
 </div>
 </div>

@@ -1,5 +1,6 @@
 var classgeodesk_1_1_key =
 [
+    [ "Key", "classgeodesk_1_1_key.html#a4ff4e94297e99130172fc960dafacad3", null ],
     [ "code", "classgeodesk_1_1_key.html#a2cb6aa1520f77a0cabc1f064947f9a8e", null ],
     [ "data", "classgeodesk_1_1_key.html#ae7cdd319c5e72f022cbe2d3e3c4f95f9", null ],
     [ "operator!=", "classgeodesk_1_1_key.html#ae6d84934f349bc22b3e00b77c3e373ab", null ],

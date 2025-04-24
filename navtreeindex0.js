@@ -150,6 +150,7 @@ var NAVTREEINDEX0 =
 "_index_file_8h.html":[3,0,0,0,6,3],
 "_index_file_8h_source.html":[3,0,0,0,6,3],
 "_key_8h.html":[3,0,0,1,1,21],
+"_key_8h.html#ac7711f09bb1cd18f8bb5b45afecc400f":[3,0,0,1,1,21,1],
 "_key_8h_source.html":[3,0,0,1,1,21],
 "_key_index_schema_8h.html":[3,0,0,1,1,22],
 "_key_index_schema_8h_source.html":[3,0,0,1,1,22],
@@ -248,6 +249,5 @@ var NAVTREEINDEX0 =
 "_simple_arena_8h.html":[3,0,0,0,0,6],
 "_simple_arena_8h_source.html":[3,0,0,0,0,6],
 "_simple_linked_list_8h.html":[3,0,0,0,3,6],
-"_simple_linked_list_8h_source.html":[3,0,0,0,3,6],
-"_span_8h.html":[3,0,0,0,3,7]
+"_simple_linked_list_8h_source.html":[3,0,0,0,3,6]
 };

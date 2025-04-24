@@ -149,33 +149,32 @@ $(function(){initNavTree('feature_2_features_8h_source.html',''); initResizable(
 <div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span>        <span class="keywordflow">return</span> Relations(view_.withQuery(query, FeatureTypes::RELATIONS));</div>
 <div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span>    }</div>
 <div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span> </div>
-<div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span>    <span class="keyword">template</span>&lt;<span class="keyword">typename</span> P&gt;</div>
-<div class="line"><a id="l00057" name="l00057"></a><span class="lineno">   57</span>    Nodes <a class="code hl_function" href="classgeodesk_1_1_features.html#a27bcfd03f391f7e1d6d8213cd0b680f9">nodesOf</a>(FeatureBase&lt;P&gt;) <span class="keyword">const</span>;</div>
-<div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span> </div>
-<div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span>    <span class="keyword">template</span>&lt;<span class="keyword">typename</span> P&gt;</div>
-<div class="line"><a id="l00060" name="l00060"></a><span class="lineno">   60</span>    FeaturesBase <a class="code hl_function" href="classgeodesk_1_1_features.html#a7d2c19eb9f7e7aa5a1199afff0759101">parentsOf</a>(FeatureBase&lt;P&gt; feature)<span class="keyword"> const</span></div>
-<div class="line"><a id="l00061" name="l00061"></a><span class="lineno">   61</span><span class="keyword">    </span>{</div>
-<div class="line"><a id="l00062" name="l00062"></a><span class="lineno">   62</span>        <span class="keywordflow">if</span>(view_.types() &amp; (FeatureTypes::WAYS | FeatureTypes::RELATIONS))</div>
-<div class="line"><a id="l00063" name="l00063"></a><span class="lineno">   63</span>        {</div>
-<div class="line"><a id="l00064" name="l00064"></a><span class="lineno">   64</span>            <span class="comment">// TODO</span></div>
-<div class="line"><a id="l00065" name="l00065"></a><span class="lineno">   65</span>        }</div>
-<div class="line"><a id="l00066" name="l00066"></a><span class="lineno">   66</span>        <span class="keywordflow">return</span> FeaturesBase(empty());</div>
-<div class="line"><a id="l00067" name="l00067"></a><span class="lineno">   67</span>    }</div>
-<div class="line"><a id="l00068" name="l00068"></a><span class="lineno">   68</span> </div>
-<div class="line"><a id="l00069" name="l00069"></a><span class="lineno">   69</span>};</div>
-<div class="line"><a id="l00070" name="l00070"></a><span class="lineno">   70</span> </div>
-<div class="line"><a id="l00071" name="l00071"></a><span class="lineno">   71</span>} <span class="comment">// namespace geodesk</span></div>
-<div class="line"><a id="l00072" name="l00072"></a><span class="lineno">   72</span> </div>
-<div class="line"><a id="l00073" name="l00073"></a><span class="lineno">   73</span><span class="preprocessor">#endif</span></div>
+<div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span>    <span class="comment">/*</span></div>
+<div class="line"><a id="l00057" name="l00057"></a><span class="lineno">   57</span><span class="comment">    template&lt;typename P&gt;</span></div>
+<div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span><span class="comment">    Nodes nodesOf(FeatureBase&lt;P&gt;) const;</span></div>
+<div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span><span class="comment"></span> </div>
+<div class="line"><a id="l00060" name="l00060"></a><span class="lineno">   60</span><span class="comment">    template&lt;typename P&gt;</span></div>
+<div class="line"><a id="l00061" name="l00061"></a><span class="lineno">   61</span><span class="comment">    FeaturesBase parentsOf(FeatureBase&lt;P&gt; feature) const</span></div>
+<div class="line"><a id="l00062" name="l00062"></a><span class="lineno">   62</span><span class="comment">    {</span></div>
+<div class="line"><a id="l00063" name="l00063"></a><span class="lineno">   63</span><span class="comment">        if(view_.types() &amp; (FeatureTypes::WAYS | FeatureTypes::RELATIONS))</span></div>
+<div class="line"><a id="l00064" name="l00064"></a><span class="lineno">   64</span><span class="comment">        {</span></div>
+<div class="line"><a id="l00065" name="l00065"></a><span class="lineno">   65</span><span class="comment">            // TODO</span></div>
+<div class="line"><a id="l00066" name="l00066"></a><span class="lineno">   66</span><span class="comment">        }</span></div>
+<div class="line"><a id="l00067" name="l00067"></a><span class="lineno">   67</span><span class="comment">        return FeaturesBase(empty());</span></div>
+<div class="line"><a id="l00068" name="l00068"></a><span class="lineno">   68</span><span class="comment">    }</span></div>
+<div class="line"><a id="l00069" name="l00069"></a><span class="lineno">   69</span><span class="comment">    */</span></div>
+<div class="line"><a id="l00070" name="l00070"></a><span class="lineno">   70</span>};</div>
+<div class="line"><a id="l00071" name="l00071"></a><span class="lineno">   71</span> </div>
+<div class="line"><a id="l00072" name="l00072"></a><span class="lineno">   72</span>} <span class="comment">// namespace geodesk</span></div>
+<div class="line"><a id="l00073" name="l00073"></a><span class="lineno">   73</span> </div>
+<div class="line"><a id="l00074" name="l00074"></a><span class="lineno">   74</span><span class="preprocessor">#endif</span></div>
 <div class="ttc" id="a_features_base_8h_html"><div class="ttname"><a href="_features_base_8h.html">FeaturesBase.h</a></div></div>
 <div class="ttc" id="a_nodes_8h_html"><div class="ttname"><a href="_nodes_8h.html">Nodes.h</a></div></div>
 <div class="ttc" id="a_relations_8h_html"><div class="ttname"><a href="_relations_8h.html">Relations.h</a></div></div>
 <div class="ttc" id="a_ways_8h_html"><div class="ttname"><a href="_ways_8h.html">Ways.h</a></div></div>
 <div class="ttc" id="aclassgeodesk_1_1_features_html_a077007af6ad4a34838f8fee208ac0cf2"><div class="ttname"><a href="classgeodesk_1_1_features.html#a077007af6ad4a34838f8fee208ac0cf2">geodesk::Features::Features</a></div><div class="ttdeci">Features(const char *golFile)</div><div class="ttdoc">Creates a collection that contains all features in the given Geographic Object Library.</div></div>
 <div class="ttc" id="aclassgeodesk_1_1_features_html_a0af5163b7cd07b678b6b2ba35be638d4"><div class="ttname"><a href="classgeodesk_1_1_features.html#a0af5163b7cd07b678b6b2ba35be638d4">geodesk::Features::ways</a></div><div class="ttdeci">Ways ways() const</div><div class="ttdoc">Only ways.</div></div>
-<div class="ttc" id="aclassgeodesk_1_1_features_html_a27bcfd03f391f7e1d6d8213cd0b680f9"><div class="ttname"><a href="classgeodesk_1_1_features.html#a27bcfd03f391f7e1d6d8213cd0b680f9">geodesk::Features::nodesOf</a></div><div class="ttdeci">Features nodesOf(const Feature &amp;feature) const</div><div class="ttdoc">Only nodes that belong to the given Way.</div></div>
 <div class="ttc" id="aclassgeodesk_1_1_features_html_a47f8446a81a5e8683b1d9f97fa2a67ed"><div class="ttname"><a href="classgeodesk_1_1_features.html#a47f8446a81a5e8683b1d9f97fa2a67ed">geodesk::Features::relations</a></div><div class="ttdeci">Relations relations() const</div><div class="ttdoc">Only relations.</div></div>
-<div class="ttc" id="aclassgeodesk_1_1_features_html_a7d2c19eb9f7e7aa5a1199afff0759101"><div class="ttname"><a href="classgeodesk_1_1_features.html#a7d2c19eb9f7e7aa5a1199afff0759101">geodesk::Features::parentsOf</a></div><div class="ttdeci">Features parentsOf(const Feature &amp;feature) const</div><div class="ttdoc">Only features that are parent relations of the given Feature (or parent ways of the given Node).</div></div>
 <div class="ttc" id="aclassgeodesk_1_1_features_html_a96933909e58e610afe8f820e3f839ea0"><div class="ttname"><a href="classgeodesk_1_1_features.html#a96933909e58e610afe8f820e3f839ea0">geodesk::Features::nodes</a></div><div class="ttdeci">Nodes nodes() const</div><div class="ttdoc">Only nodes.</div></div>
 <div class="ttc" id="anamespacegeodesk_html"><div class="ttname"><a href="namespacegeodesk.html">geodesk</a></div><div class="ttdef"><b>Definition</b> Feature.h:11</div></div>
 </div><!-- fragment --></div><!-- contents -->
