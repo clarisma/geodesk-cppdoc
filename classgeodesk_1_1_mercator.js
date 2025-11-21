@@ -1,6 +1,8 @@
 var classgeodesk_1_1_mercator =
 [
+    [ "lat100ndFromY", "classgeodesk_1_1_mercator.html#a3f779b0561babdf8db1d256ba0db4ee9", null ],
     [ "latFromY", "classgeodesk_1_1_mercator.html#a8c9dc5ff770e7f13c22712ed877ff720", null ],
+    [ "lon100ndFromX", "classgeodesk_1_1_mercator.html#ab8e476b55cb76ebfbbecb8d26a1b9fd7", null ],
     [ "lonFromX", "classgeodesk_1_1_mercator.html#aebcc7a2e16b86a46ec66b8b967b9e42b", null ],
     [ "metersPerUnitAtY", "classgeodesk_1_1_mercator.html#a83f43a51085d7822076a35d998a27c37", null ],
     [ "roundedLatFromY", "classgeodesk_1_1_mercator.html#adcaa209b05f22f354750d7f585653775", null ],

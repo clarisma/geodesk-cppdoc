@@ -122,7 +122,7 @@ $(function(){initNavTree('_dynamic_stack_buffer_8h_source.html',''); initResizab
 <div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span>        end_ = buf_ + N;</div>
 <div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span>    }</div>
 <div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span> </div>
-<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span>    ~DynamicStackBuffer()<span class="keyword"> override</span></div>
+<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span>    ~DynamicStackBuffer() noexcept<span class="keyword"> override</span></div>
 <div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span><span class="keyword">    </span>{</div>
 <div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span>        <span class="keywordflow">if</span> (buf_ != stackBuf) <span class="keyword">delete</span>[] buf_;</div>
 <div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span>    }</div>
@@ -142,7 +142,7 @@ $(function(){initNavTree('_dynamic_stack_buffer_8h_source.html',''); initResizab
 <div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span>        <span class="keywordtype">size_t</span> len = length();</div>
 <div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span>        <span class="keywordtype">char</span>* newBuf = <span class="keyword">new</span> <span class="keywordtype">char</span>[newCapacity];</div>
 <div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span>        memcpy(newBuf, buf_, len);</div>
-<div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span>        p_ += newBuf - buf_;</div>
+<div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span>        p_ = newBuf + len;</div>
 <div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span>        <span class="keywordflow">if</span>(buf_ != stackBuf) <span class="keyword">delete</span>[] buf_;</div>
 <div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span>        buf_ = newBuf;</div>
 <div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span>        end_ = newBuf + newCapacity;</div>

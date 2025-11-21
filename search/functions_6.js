@@ -1,7 +1,9 @@
 var searchData=
 [
-  ['getallmatcher_0',['getAllMatcher',['../classgeodesk_1_1_feature_store.html#a33d0250441b38941a2163d137c33aa0e',1,'geodesk::FeatureStore']]],
-  ['getindexcategory_1',['getIndexCategory',['../classgeodesk_1_1_feature_store.html#a8b9d6c1cbe281e26de22eff381ff8411',1,'geodesk::FeatureStore']]],
-  ['getmatcher_2',['getMatcher',['../classgeodesk_1_1_feature_store.html#a894dc2335757edd0aa03d98d64a6fde5',1,'geodesk::FeatureStore']]],
-  ['getpointer_3',['getPointer',['../classgeodesk_1_1_feature_store.html#a39a6846c3bf02b2e91d6f6127f99ffde',1,'geodesk::FeatureStore']]]
+  ['hash_0',['hash',['../classgeodesk_1_1_feature_ptr.html#ab7c112eb02bd24fcc0b35c66e2a06eb8',1,'geodesk::FeaturePtr']]],
+  ['hasnorthwesttwin_1',['hasNorthwestTwin',['../classgeodesk_1_1_feature_ptr.html#af1ed4d3d3d0143507599082a08887ed2',1,'geodesk::FeaturePtr']]],
+  ['hastag_2',['hasTag',['../classgeodesk_1_1_feature.html#ae9a75e6415928564cb60edf09ebd2dd8',1,'geodesk::Feature::hasTag(std::string_view k) const noexcept'],['../classgeodesk_1_1_feature.html#aab4b6640770dc7aae7fc9d77a42713ce',1,'geodesk::Feature::hasTag(Key k) const noexcept'],['../classgeodesk_1_1_feature.html#a23f8b4a52d9261af02dd7f23c5df4289',1,'geodesk::Feature::hasTag(std::string_view k, std::string_view v) const noexcept'],['../classgeodesk_1_1_feature.html#aecd0867c7de21957b81ec17117a0b4a5',1,'geodesk::Feature::hasTag(Key k, std::string_view v) const noexcept'],['../classgeodesk_1_1_tags.html#ad2aef8a69100a70afddd6e275e0c6234',1,'geodesk::Tags::hasTag(std::string_view k) const noexcept'],['../classgeodesk_1_1_tags.html#a1820d7ba51eb8b8755454e2c8cbf8176',1,'geodesk::Tags::hasTag(Key key) const noexcept'],['../classgeodesk_1_1_tags.html#a3f0c3a048c95b6e00daea3761846f1cf',1,'geodesk::Tags::hasTag(std::string_view k, std::string_view v) const noexcept'],['../classgeodesk_1_1_tags.html#a4f36745e1cb6c05fa8aeca69356da970',1,'geodesk::Tags::hasTag(Key k, std::string_view v) const noexcept']]],
+  ['header_3',['header',['../classgeodesk_1_1_feature_ptr.html#a89b82de25619f7f841a2af289c68f83b',1,'geodesk::FeaturePtr::header()'],['../classgeodesk_1_1_feature_store_1_1_transaction.html#a63136aff0faac309ca052726fa10004a',1,'geodesk::FeatureStore::Transaction::header()']]],
+  ['headersize_4',['headerSize',['../class_tile_ptr.html#a6cf9583cca64ce23ec4404301fe0dff9',1,'TilePtr']]],
+  ['height_5',['height',['../classgeodesk_1_1_box.html#ae2bf07f90d222e45d1ee0c12e36a56c7',1,'geodesk::Box']]]
 ];

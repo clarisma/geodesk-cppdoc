@@ -101,12 +101,17 @@ $(function(){initNavTree('_buffer_8h.html',''); initResizable(true); });
 
 <div class="header">
   <div class="summary">
-<a href="#namespaces">Namespaces</a>  </div>
+<a href="#namespaces">Namespaces</a> &#124;
+<a href="#func-members">Functions</a>  </div>
   <div class="headertitle"><div class="title">Buffer.h File Reference</div></div>
 </div><!--header-->
 <div class="contents">
 <div class="textblock"><code>#include &lt;cstdio&gt;</code><br />
+<code>#include &lt;cstring&gt;</code><br />
+<code>#include &lt;string_view&gt;</code><br />
+<code>#include &lt;type_traits&gt;</code><br />
 <code>#include &lt;<a class="el" href="_block_8h_source.html">clarisma/alloc/Block.h</a>&gt;</code><br />
+<code>#include &lt;<a class="el" href="_format_8h_source.html">clarisma/text/Format.h</a>&gt;</code><br />
 </div>
 <p><a href="_buffer_8h_source.html">Go to the source code of this file.</a></p>
 <table class="memberdecls">
@@ -114,6 +119,33 @@ $(function(){initNavTree('_buffer_8h.html',''); initResizable(true); });
 Namespaces</h2></td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">namespace &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceclarisma.html">clarisma</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
+Functions</h2></td></tr>
+<tr class="memitem:a540c000070015bda37131f76d9f58771" id="r_a540c000070015bda37131f76d9f58771"><td class="memItemLeft" align="right" valign="top">Buffer &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceclarisma.html#a540c000070015bda37131f76d9f58771">clarisma::operator&lt;&lt;</a> (Buffer &amp;buf, std::string_view s)</td></tr>
+<tr class="separator:a540c000070015bda37131f76d9f58771"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adc2f49dadc8cad9f733e6960679dc1ae" id="r_adc2f49dadc8cad9f733e6960679dc1ae"><td class="memItemLeft" align="right" valign="top">Buffer &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceclarisma.html#adc2f49dadc8cad9f733e6960679dc1ae">clarisma::operator&lt;&lt;</a> (Buffer &amp;buf, const char *s)</td></tr>
+<tr class="separator:adc2f49dadc8cad9f733e6960679dc1ae"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a32bcee7bb240e9cdfd47a1f6b32684fc" id="r_a32bcee7bb240e9cdfd47a1f6b32684fc"><td class="memItemLeft" align="right" valign="top">Buffer &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceclarisma.html#a32bcee7bb240e9cdfd47a1f6b32684fc">clarisma::operator&lt;&lt;</a> (Buffer &amp;buf, char ch)</td></tr>
+<tr class="separator:a32bcee7bb240e9cdfd47a1f6b32684fc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a28f815c0f41113907c39755aa1bd449f" id="r_a28f815c0f41113907c39755aa1bd449f"><td class="memTemplParams" colspan="2">template&lt;std::signed_integral T&gt; <br />
+requires (!std::is_same_v&lt;T, char&gt; &amp;&amp; !std::is_same_v&lt;T, signed char&gt;)</td></tr>
+<tr class="memitem:a28f815c0f41113907c39755aa1bd449f"><td class="memTemplItemLeft" align="right" valign="top">Buffer &amp;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespaceclarisma.html#a28f815c0f41113907c39755aa1bd449f">clarisma::operator&lt;&lt;</a> (Buffer &amp;buf, T n)</td></tr>
+<tr class="separator:a28f815c0f41113907c39755aa1bd449f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a54016cc2f003195f2218a68bd2b595b9" id="r_a54016cc2f003195f2218a68bd2b595b9"><td class="memTemplParams" colspan="2">template&lt;std::unsigned_integral T&gt; <br />
+requires (!std::is_same_v&lt;T, unsigned char&gt;)</td></tr>
+<tr class="memitem:a54016cc2f003195f2218a68bd2b595b9"><td class="memTemplItemLeft" align="right" valign="top">Buffer &amp;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespaceclarisma.html#a54016cc2f003195f2218a68bd2b595b9">clarisma::operator&lt;&lt;</a> (Buffer &amp;buf, T n)</td></tr>
+<tr class="separator:a54016cc2f003195f2218a68bd2b595b9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2c9cf3e09f0ed7741a8ce735c576ac42" id="r_a2c9cf3e09f0ed7741a8ce735c576ac42"><td class="memItemLeft" align="right" valign="top">Buffer &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceclarisma.html#a2c9cf3e09f0ed7741a8ce735c576ac42">clarisma::operator&lt;&lt;</a> (Buffer &amp;buf, double d)</td></tr>
+<tr class="separator:a2c9cf3e09f0ed7741a8ce735c576ac42"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a248a43467d7bd9fe06f749be6358fd0e" id="r_a248a43467d7bd9fe06f749be6358fd0e"><td class="memTemplParams" colspan="2">template&lt;typename T &gt; <br />
+requires BufferFormattable&lt;T&gt;</td></tr>
+<tr class="memitem:a248a43467d7bd9fe06f749be6358fd0e"><td class="memTemplItemLeft" align="right" valign="top">Buffer &amp;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespaceclarisma.html#a248a43467d7bd9fe06f749be6358fd0e">clarisma::operator&lt;&lt;</a> (Buffer &amp;buf, const T &amp;value)</td></tr>
+<tr class="separator:a248a43467d7bd9fe06f749be6358fd0e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a58d114161d73031922c82e634a27273d" id="r_a58d114161d73031922c82e634a27273d"><td class="memTemplParams" colspan="2">template&lt;typename B , typename T &gt; <br />
+requires (std::is_base_of_v&lt;Buffer, std::remove_reference_t&lt;B&gt;&gt;) &amp;&amp; (!std::is_same_v&lt;std::remove_reference_t&lt;B&gt;, Buffer&gt; &amp;&amp; BufferFormattable&lt;T&gt;)</td></tr>
+<tr class="memitem:a58d114161d73031922c82e634a27273d"><td class="memTemplItemLeft" align="right" valign="top">B &amp;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespaceclarisma.html#a58d114161d73031922c82e634a27273d">clarisma::operator&lt;&lt;</a> (B &amp;b, const T &amp;value)</td></tr>
+<tr class="separator:a58d114161d73031922c82e634a27273d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 </div><!-- contents -->
 </div><!-- doc-content -->

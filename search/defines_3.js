@@ -1,5 +1,5 @@
 var searchData=
 [
-  ['log_0',['LOG',['../log_8h.html#a388edf12256bf73c3a8ee9734c3bd841',1,'log.h']]],
-  ['logs_1',['LOGS',['../log_8h.html#a11b913242029687af09171c20ae788eb',1,'log.h']]]
+  ['geodesk_5fapi_0',['GEODESK_API',['../export_8h.html#ad2aca25975b684c8b6f6edf212ef7007',1,'export.h']]],
+  ['geodesk_5fversion_1',['GEODESK_VERSION',['../version_8h.html#a9eb3b1969898d219d6b3524cddd96834',1,'version.h']]]
 ];

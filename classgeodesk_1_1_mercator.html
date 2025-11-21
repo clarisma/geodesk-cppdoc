@@ -132,12 +132,18 @@ Static Public Member Functions</h2></td></tr>
 <tr class="memitem:aebcc7a2e16b86a46ec66b8b967b9e42b" id="r_aebcc7a2e16b86a46ec66b8b967b9e42b"><td class="memItemLeft" align="right" valign="top">static double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aebcc7a2e16b86a46ec66b8b967b9e42b">lonFromX</a> (double x) noexcept</td></tr>
 <tr class="memdesc:aebcc7a2e16b86a46ec66b8b967b9e42b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Converts a Mercator X-coordinate to longitude (in WGS-84 degrees).  <br /></td></tr>
 <tr class="separator:aebcc7a2e16b86a46ec66b8b967b9e42b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab8e476b55cb76ebfbbecb8d26a1b9fd7" id="r_ab8e476b55cb76ebfbbecb8d26a1b9fd7"><td class="memItemLeft" align="right" valign="top">static int32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ab8e476b55cb76ebfbbecb8d26a1b9fd7">lon100ndFromX</a> (double x) noexcept</td></tr>
+<tr class="memdesc:ab8e476b55cb76ebfbbecb8d26a1b9fd7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Converts a Mercator X-coordinate to longitude (in WGS-84 degrees, 100 nano-degree resolution).  <br /></td></tr>
+<tr class="separator:ab8e476b55cb76ebfbbecb8d26a1b9fd7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a386945b6686e70e8dfda4df521dab526" id="r_a386945b6686e70e8dfda4df521dab526"><td class="memItemLeft" align="right" valign="top">static double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a386945b6686e70e8dfda4df521dab526">roundedLonFromX</a> (double x) noexcept</td></tr>
 <tr class="memdesc:a386945b6686e70e8dfda4df521dab526"><td class="mdescLeft">&#160;</td><td class="mdescRight">Converts a Mercator X-coordinate to longitude (in WGS-84 degrees, rounded to 7 digits of precision).  <br /></td></tr>
 <tr class="separator:a386945b6686e70e8dfda4df521dab526"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8c9dc5ff770e7f13c22712ed877ff720" id="r_a8c9dc5ff770e7f13c22712ed877ff720"><td class="memItemLeft" align="right" valign="top">static double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a8c9dc5ff770e7f13c22712ed877ff720">latFromY</a> (double y) noexcept</td></tr>
 <tr class="memdesc:a8c9dc5ff770e7f13c22712ed877ff720"><td class="mdescLeft">&#160;</td><td class="mdescRight">Converts a Mercator Y-coordinate to latitude (in WGS-84 degrees).  <br /></td></tr>
 <tr class="separator:a8c9dc5ff770e7f13c22712ed877ff720"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3f779b0561babdf8db1d256ba0db4ee9" id="r_a3f779b0561babdf8db1d256ba0db4ee9"><td class="memItemLeft" align="right" valign="top">static int32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a3f779b0561babdf8db1d256ba0db4ee9">lat100ndFromY</a> (double y) noexcept</td></tr>
+<tr class="memdesc:a3f779b0561babdf8db1d256ba0db4ee9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Converts a Mercator Y-coordinate to latitude (in WGS-84 degrees, 100 nano-degree resolution).  <br /></td></tr>
+<tr class="separator:a3f779b0561babdf8db1d256ba0db4ee9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:adcaa209b05f22f354750d7f585653775" id="r_adcaa209b05f22f354750d7f585653775"><td class="memItemLeft" align="right" valign="top">static double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#adcaa209b05f22f354750d7f585653775">roundedLatFromY</a> (double y) noexcept</td></tr>
 <tr class="memdesc:adcaa209b05f22f354750d7f585653775"><td class="mdescLeft">&#160;</td><td class="mdescRight">Converts a Mercator Y-coordinate to latitude (in WGS-84 degrees, rounded to 7 digits of precision).  <br /></td></tr>
 <tr class="separator:adcaa209b05f22f354750d7f585653775"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -177,6 +183,33 @@ Static Public Attributes</h2></td></tr>
 <img src="projection.png" alt="" width="50%"/>
 </div>
  </div><h2 class="groupheader">Member Function Documentation</h2>
+<a id="a3f779b0561babdf8db1d256ba0db4ee9" name="a3f779b0561babdf8db1d256ba0db4ee9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3f779b0561babdf8db1d256ba0db4ee9">&#9670;&#160;</a></span>lat100ndFromY()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static int32_t geodesk::Mercator::lat100ndFromY </td>
+          <td>(</td>
+          <td class="paramtype">double</td>          <td class="paramname"><span class="paramname"><em>y</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span><span class="mlabel">noexcept</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Converts a Mercator Y-coordinate to latitude (in WGS-84 degrees, 100 nano-degree resolution). </p>
+
+</div>
+</div>
 <a id="a8c9dc5ff770e7f13c22712ed877ff720" name="a8c9dc5ff770e7f13c22712ed877ff720"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a8c9dc5ff770e7f13c22712ed877ff720">&#9670;&#160;</a></span>latFromY()</h2>
 
@@ -201,6 +234,33 @@ Static Public Attributes</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Converts a Mercator Y-coordinate to latitude (in WGS-84 degrees). </p>
+
+</div>
+</div>
+<a id="ab8e476b55cb76ebfbbecb8d26a1b9fd7" name="ab8e476b55cb76ebfbbecb8d26a1b9fd7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab8e476b55cb76ebfbbecb8d26a1b9fd7">&#9670;&#160;</a></span>lon100ndFromX()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static int32_t geodesk::Mercator::lon100ndFromX </td>
+          <td>(</td>
+          <td class="paramtype">double</td>          <td class="paramname"><span class="paramname"><em>x</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span><span class="mlabel">noexcept</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Converts a Mercator X-coordinate to longitude (in WGS-84 degrees, 100 nano-degree resolution). </p>
 
 </div>
 </div>

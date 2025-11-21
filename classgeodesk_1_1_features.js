@@ -8,13 +8,16 @@ var classgeodesk_1_1_features =
     [ "connectedTo", "classgeodesk_1_1_features.html#af35409af41ae6cf3591f231cfdec8005", null ],
     [ "containing", "classgeodesk_1_1_features.html#a20d56f4fc89ca7733b5c2f1b2d05e93d", null ],
     [ "containing", "classgeodesk_1_1_features.html#af75a07d127eb7928fa496991d133272a", null ],
+    [ "containing", "classgeodesk_1_1_features.html#a2b785a20c1156b7a64fe369ef40532ff", null ],
     [ "containingLonLat", "classgeodesk_1_1_features.html#a1c7ee655d5a0888e5a70fa512233443f", null ],
     [ "contains", "classgeodesk_1_1_features.html#a268ee9e41812c01dcbf0fd0700ae67c1", null ],
     [ "count", "classgeodesk_1_1_features.html#a9e7afddef438b9b30c8639876495bd43", null ],
     [ "crossing", "classgeodesk_1_1_features.html#a406cc0dfbea232d658a347c7fab24215", null ],
+    [ "crossing", "classgeodesk_1_1_features.html#aa347b710d9f59fbdc1ae85fa91db2e19", null ],
     [ "filter", "classgeodesk_1_1_features.html#a4879c2ca6d240605cca7dcbd37fd58a3", null ],
     [ "first", "classgeodesk_1_1_features.html#a8656395f683733e84c43550a06f9f330", null ],
     [ "intersecting", "classgeodesk_1_1_features.html#aa317b5bd3be7f24963a9427474ee6d80", null ],
+    [ "intersecting", "classgeodesk_1_1_features.html#a0f9f3350a17a98925d0e1322d22596b2", null ],
     [ "isEmpty", "classgeodesk_1_1_features.html#aef27a585f61d8435870fe519a5f77a11", null ],
     [ "key", "classgeodesk_1_1_features.html#abcfda83368d0ffdec4b5f9fcb1776419", null ],
     [ "length", "classgeodesk_1_1_features.html#a200cd9550b03e68b7fa3b456fcc0155f", null ],
@@ -37,5 +40,6 @@ var classgeodesk_1_1_features =
     [ "store", "classgeodesk_1_1_features.html#a33f7b2e29816af6257061c76d8d5c2e4", null ],
     [ "ways", "classgeodesk_1_1_features.html#a0af5163b7cd07b678b6b2ba35be638d4", null ],
     [ "ways", "classgeodesk_1_1_features.html#a10276c009db48ffb529339a095520587", null ],
-    [ "within", "classgeodesk_1_1_features.html#a64a45b6a444f59c1b4f1f7a1bd01234c", null ]
+    [ "within", "classgeodesk_1_1_features.html#a64a45b6a444f59c1b4f1f7a1bd01234c", null ],
+    [ "within", "classgeodesk_1_1_features.html#a688ae06a634509819b2fc8b9b9a243f5", null ]
 ];

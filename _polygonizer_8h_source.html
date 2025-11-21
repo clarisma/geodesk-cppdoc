@@ -114,59 +114,65 @@ $(function(){initNavTree('_polygonizer_8h_source.html',''); initResizable(true);
 <div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span><span class="preprocessor">#ifdef GEODESK_WITH_GEOS</span></div>
 <div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span><span class="preprocessor">#include &lt;geos_c.h&gt;</span></div>
 <div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span><span class="preprocessor">#endif</span></div>
-<div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span> </div>
-<div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span><span class="keyword">namespace </span><a class="code hl_namespace" href="namespacegeodesk.html">geodesk</a> {</div>
-<div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span> </div>
-<div class="foldopen" id="foldopen00021" data-start="{" data-end="};">
-<div class="line"><a id="l00021" name="l00021"></a><span class="lineno"><a class="line" href="classgeodesk_1_1_polygonizer.html">   21</a></span><span class="keyword">class </span><a class="code hl_class" href="classgeodesk_1_1_polygonizer.html">Polygonizer</a></div>
-<div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span>{</div>
-<div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span><span class="keyword">public</span>:</div>
-<div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span>    <span class="keyword">class </span>Ring;</div>
-<div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span> </div>
-<div class="line"><a id="l00027" name="l00027"></a><span class="lineno"><a class="line" href="classgeodesk_1_1_polygonizer.html#afdc408763ce49a0bd2f948e3b1cd251a">   27</a></span>    <a class="code hl_function" href="classgeodesk_1_1_polygonizer.html#afdc408763ce49a0bd2f948e3b1cd251a">Polygonizer</a>();</div>
-<div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span> </div>
-<div class="line"><a id="l00037" name="l00037"></a><span class="lineno"><a class="line" href="classgeodesk_1_1_polygonizer.html#ae7af9addd354ecfcd6217abbc70858ee">   37</a></span>    <span class="keyword">const</span> Ring* <a class="code hl_function" href="classgeodesk_1_1_polygonizer.html#ae7af9addd354ecfcd6217abbc70858ee">outerRings</a>()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> outerRings_; };</div>
-<div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span> </div>
-<div class="line"><a id="l00051" name="l00051"></a><span class="lineno"><a class="line" href="classgeodesk_1_1_polygonizer.html#adaba7efc376b526588d11eb4c23cf452">   51</a></span>    <span class="keyword">const</span> Ring* <a class="code hl_function" href="classgeodesk_1_1_polygonizer.html#adaba7efc376b526588d11eb4c23cf452">innerRings</a>()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> innerRings_; };</div>
-<div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span> </div>
-<div class="line"><a id="l00061" name="l00061"></a><span class="lineno"><a class="line" href="classgeodesk_1_1_polygonizer.html#a1e9d3a4bdb92dd21ed1414d174607bb1">   61</a></span>    <span class="keywordtype">void</span> <a class="code hl_function" href="classgeodesk_1_1_polygonizer.html#a1e9d3a4bdb92dd21ed1414d174607bb1">createRings</a>(<a class="code hl_class" href="classgeodesk_1_1_feature_store.html">FeatureStore</a>* store, RelationPtr relation);</div>
-<div class="line"><a id="l00062" name="l00062"></a><span class="lineno">   62</span> </div>
-<div class="line"><a id="l00067" name="l00067"></a><span class="lineno"><a class="line" href="classgeodesk_1_1_polygonizer.html#a1c0e1f5256ce915bf3177cef105b46cd">   67</a></span>    <span class="keywordtype">void</span> <a class="code hl_function" href="classgeodesk_1_1_polygonizer.html#a1c0e1f5256ce915bf3177cef105b46cd">assignAndMergeHoles</a>();</div>
-<div class="line"><a id="l00068" name="l00068"></a><span class="lineno">   68</span><span class="preprocessor">    #ifdef GEODESK_WITH_GEOS</span></div>
-<div class="line"><a id="l00069" name="l00069"></a><span class="lineno">   69</span>    GEOSGeometry* createPolygonal(GEOSContextHandle_t context);</div>
-<div class="line"><a id="l00070" name="l00070"></a><span class="lineno">   70</span><span class="preprocessor">    #endif</span></div>
-<div class="line"><a id="l00071" name="l00071"></a><span class="lineno">   71</span> </div>
-<div class="line"><a id="l00072" name="l00072"></a><span class="lineno">   72</span><span class="keyword">private</span>:</div>
-<div class="line"><a id="l00073" name="l00073"></a><span class="lineno">   73</span>    <span class="keyword">class </span>Segment;</div>
-<div class="line"><a id="l00074" name="l00074"></a><span class="lineno">   74</span>    <span class="keyword">class </span>RingBuilder;</div>
-<div class="line"><a id="l00075" name="l00075"></a><span class="lineno">   75</span>    <span class="keyword">class </span>RingAssigner;</div>
-<div class="line"><a id="l00076" name="l00076"></a><span class="lineno">   76</span>    <span class="keyword">class </span>RingMerger;</div>
+<div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span><span class="preprocessor">#ifdef GEODESK_WITH_OGR</span></div>
+<div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span><span class="preprocessor">#include &lt;ogr_geometry.h&gt;</span></div>
+<div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span><span class="preprocessor">#endif</span></div>
+<div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span> </div>
+<div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span><span class="keyword">namespace </span><a class="code hl_namespace" href="namespacegeodesk.html">geodesk</a> {</div>
+<div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span> </div>
+<div class="foldopen" id="foldopen00024" data-start="{" data-end="};">
+<div class="line"><a id="l00024" name="l00024"></a><span class="lineno"><a class="line" href="classgeodesk_1_1_polygonizer.html">   24</a></span><span class="keyword">class </span><a class="code hl_class" href="classgeodesk_1_1_polygonizer.html">Polygonizer</a></div>
+<div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span>{</div>
+<div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span><span class="keyword">public</span>:</div>
+<div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span>    <span class="keyword">class </span><a class="code hl_class" href="classgeodesk_1_1_polygonizer_1_1_ring.html">Ring</a>;</div>
+<div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span> </div>
+<div class="line"><a id="l00030" name="l00030"></a><span class="lineno"><a class="line" href="classgeodesk_1_1_polygonizer.html#afdc408763ce49a0bd2f948e3b1cd251a">   30</a></span>    <a class="code hl_function" href="classgeodesk_1_1_polygonizer.html#afdc408763ce49a0bd2f948e3b1cd251a">Polygonizer</a>();</div>
+<div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span> </div>
+<div class="line"><a id="l00040" name="l00040"></a><span class="lineno"><a class="line" href="classgeodesk_1_1_polygonizer.html#ae7af9addd354ecfcd6217abbc70858ee">   40</a></span>    <span class="keyword">const</span> <a class="code hl_class" href="classgeodesk_1_1_polygonizer_1_1_ring.html">Ring</a>* <a class="code hl_function" href="classgeodesk_1_1_polygonizer.html#ae7af9addd354ecfcd6217abbc70858ee">outerRings</a>()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> outerRings_; };</div>
+<div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span> </div>
+<div class="line"><a id="l00054" name="l00054"></a><span class="lineno"><a class="line" href="classgeodesk_1_1_polygonizer.html#adaba7efc376b526588d11eb4c23cf452">   54</a></span>    <span class="keyword">const</span> <a class="code hl_class" href="classgeodesk_1_1_polygonizer_1_1_ring.html">Ring</a>* <a class="code hl_function" href="classgeodesk_1_1_polygonizer.html#adaba7efc376b526588d11eb4c23cf452">innerRings</a>()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> innerRings_; };</div>
+<div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span> </div>
+<div class="line"><a id="l00064" name="l00064"></a><span class="lineno"><a class="line" href="classgeodesk_1_1_polygonizer.html#a1e9d3a4bdb92dd21ed1414d174607bb1">   64</a></span>    <span class="keywordtype">void</span> <a class="code hl_function" href="classgeodesk_1_1_polygonizer.html#a1e9d3a4bdb92dd21ed1414d174607bb1">createRings</a>(FeatureStore* store, RelationPtr relation);</div>
+<div class="line"><a id="l00065" name="l00065"></a><span class="lineno">   65</span> </div>
+<div class="line"><a id="l00070" name="l00070"></a><span class="lineno"><a class="line" href="classgeodesk_1_1_polygonizer.html#a1c0e1f5256ce915bf3177cef105b46cd">   70</a></span>    <span class="keywordtype">void</span> <a class="code hl_function" href="classgeodesk_1_1_polygonizer.html#a1c0e1f5256ce915bf3177cef105b46cd">assignAndMergeHoles</a>();</div>
+<div class="line"><a id="l00071" name="l00071"></a><span class="lineno">   71</span><span class="preprocessor">    #ifdef GEODESK_WITH_GEOS</span></div>
+<div class="line"><a id="l00072" name="l00072"></a><span class="lineno">   72</span>    GEOSGeometry* createPolygonal(GEOSContextHandle_t context);</div>
+<div class="line"><a id="l00073" name="l00073"></a><span class="lineno">   73</span><span class="preprocessor">    #endif</span></div>
+<div class="line"><a id="l00074" name="l00074"></a><span class="lineno">   74</span><span class="preprocessor">    #ifdef GEODESK_WITH_OGR</span></div>
+<div class="line"><a id="l00075" name="l00075"></a><span class="lineno">   75</span>    OGRGeometry* createOgrPolygonal() <span class="keyword">const</span>;</div>
+<div class="line"><a id="l00076" name="l00076"></a><span class="lineno">   76</span><span class="preprocessor">    #endif</span></div>
 <div class="line"><a id="l00077" name="l00077"></a><span class="lineno">   77</span> </div>
-<div class="line"><a id="l00078" name="l00078"></a><span class="lineno">   78</span>    Segment* createSegment(WayPtr way, Segment* next);</div>
-<div class="line"><a id="l00079" name="l00079"></a><span class="lineno">   79</span>    Ring* buildRings(<span class="keywordtype">int</span> segmentCount, Segment* firstSegment);</div>
-<div class="line"><a id="l00080" name="l00080"></a><span class="lineno">   80</span> </div>
-<div class="line"><a id="l00081" name="l00081"></a><span class="lineno">   81</span>    <span class="keyword">static</span> Ring* createRing(<span class="keywordtype">int</span> vertexCount, Segment* firstSegment, </div>
-<div class="line"><a id="l00082" name="l00082"></a><span class="lineno">   82</span>        Ring* next, clarisma::Arena&amp; arena);</div>
-<div class="line"><a id="l00083" name="l00083"></a><span class="lineno">   83</span>    </div>
-<div class="line"><a id="l00084" name="l00084"></a><span class="lineno">   84</span>    clarisma::Arena arena_;</div>
-<div class="line"><a id="l00085" name="l00085"></a><span class="lineno">   85</span>    Ring* outerRings_;</div>
-<div class="line"><a id="l00086" name="l00086"></a><span class="lineno">   86</span>    Ring* innerRings_;</div>
-<div class="line"><a id="l00087" name="l00087"></a><span class="lineno">   87</span> </div>
-<div class="line"><a id="l00088" name="l00088"></a><span class="lineno"><a class="line" href="classgeodesk_1_1_polygonizer.html#af608134f09f963f05062015ad3b18a5c">   88</a></span>    <span class="keyword">friend</span> <span class="keyword">class </span><a class="code hl_friend" href="classgeodesk_1_1_polygonizer.html#af608134f09f963f05062015ad3b18a5c">RingCoordinateIterator</a>;</div>
-<div class="line"><a id="l00089" name="l00089"></a><span class="lineno">   89</span>};</div>
+<div class="line"><a id="l00078" name="l00078"></a><span class="lineno">   78</span><span class="keyword">private</span>:</div>
+<div class="line"><a id="l00079" name="l00079"></a><span class="lineno">   79</span>    <span class="keyword">class </span>Segment;</div>
+<div class="line"><a id="l00080" name="l00080"></a><span class="lineno">   80</span>    <span class="keyword">class </span>RingBuilder;</div>
+<div class="line"><a id="l00081" name="l00081"></a><span class="lineno">   81</span>    <span class="keyword">class </span>RingAssigner;</div>
+<div class="line"><a id="l00082" name="l00082"></a><span class="lineno">   82</span>    <span class="keyword">class </span>RingMerger;</div>
+<div class="line"><a id="l00083" name="l00083"></a><span class="lineno">   83</span> </div>
+<div class="line"><a id="l00084" name="l00084"></a><span class="lineno">   84</span>    Segment* createSegment(WayPtr way, Segment* next);</div>
+<div class="line"><a id="l00085" name="l00085"></a><span class="lineno">   85</span>    <a class="code hl_class" href="classgeodesk_1_1_polygonizer_1_1_ring.html">Ring</a>* buildRings(<span class="keywordtype">int</span> segmentCount, Segment* firstSegment);</div>
+<div class="line"><a id="l00086" name="l00086"></a><span class="lineno">   86</span> </div>
+<div class="line"><a id="l00087" name="l00087"></a><span class="lineno">   87</span>    <span class="keyword">static</span> <a class="code hl_class" href="classgeodesk_1_1_polygonizer_1_1_ring.html">Ring</a>* createRing(<span class="keywordtype">int</span> vertexCount, Segment* firstSegment, </div>
+<div class="line"><a id="l00088" name="l00088"></a><span class="lineno">   88</span>        <a class="code hl_class" href="classgeodesk_1_1_polygonizer_1_1_ring.html">Ring</a>* next, clarisma::Arena&amp; arena);</div>
+<div class="line"><a id="l00089" name="l00089"></a><span class="lineno">   89</span>    </div>
+<div class="line"><a id="l00090" name="l00090"></a><span class="lineno">   90</span>    clarisma::Arena arena_;</div>
+<div class="line"><a id="l00091" name="l00091"></a><span class="lineno">   91</span>    <a class="code hl_class" href="classgeodesk_1_1_polygonizer_1_1_ring.html">Ring</a>* outerRings_;</div>
+<div class="line"><a id="l00092" name="l00092"></a><span class="lineno">   92</span>    <a class="code hl_class" href="classgeodesk_1_1_polygonizer_1_1_ring.html">Ring</a>* innerRings_;</div>
+<div class="line"><a id="l00093" name="l00093"></a><span class="lineno">   93</span> </div>
+<div class="line"><a id="l00094" name="l00094"></a><span class="lineno"><a class="line" href="classgeodesk_1_1_polygonizer.html#af608134f09f963f05062015ad3b18a5c">   94</a></span>    <span class="keyword">friend</span> <span class="keyword">class </span><a class="code hl_friend" href="classgeodesk_1_1_polygonizer.html#af608134f09f963f05062015ad3b18a5c">RingCoordinateIterator</a>;</div>
+<div class="line"><a id="l00095" name="l00095"></a><span class="lineno">   95</span>};</div>
 </div>
-<div class="line"><a id="l00090" name="l00090"></a><span class="lineno">   90</span> </div>
-<div class="line"><a id="l00091" name="l00091"></a><span class="lineno">   91</span>} <span class="comment">// namespace geodesk</span></div>
+<div class="line"><a id="l00096" name="l00096"></a><span class="lineno">   96</span> </div>
+<div class="line"><a id="l00097" name="l00097"></a><span class="lineno">   97</span>} <span class="comment">// namespace geodesk</span></div>
 <div class="ttc" id="a_arena_8h_html"><div class="ttname"><a href="_arena_8h.html">Arena.h</a></div></div>
 <div class="ttc" id="a_relation_ptr_8h_html"><div class="ttname"><a href="_relation_ptr_8h.html">RelationPtr.h</a></div></div>
 <div class="ttc" id="a_way_ptr_8h_html"><div class="ttname"><a href="_way_ptr_8h.html">WayPtr.h</a></div></div>
-<div class="ttc" id="aclassgeodesk_1_1_feature_store_html"><div class="ttname"><a href="classgeodesk_1_1_feature_store.html">geodesk::FeatureStore</a></div><div class="ttdoc">A Geographic Object Library.</div><div class="ttdef"><b>Definition</b> FeatureStore.h:36</div></div>
-<div class="ttc" id="aclassgeodesk_1_1_polygonizer_html"><div class="ttname"><a href="classgeodesk_1_1_polygonizer.html">geodesk::Polygonizer</a></div><div class="ttdoc">Utility class for creating polygon rings from Relation members.</div><div class="ttdef"><b>Definition</b> Polygonizer.h:22</div></div>
+<div class="ttc" id="aclassgeodesk_1_1_polygonizer_1_1_ring_html"><div class="ttname"><a href="classgeodesk_1_1_polygonizer_1_1_ring.html">geodesk::Polygonizer::Ring</a></div><div class="ttdoc">An inner or outer ring produced by the Polygonizer.</div><div class="ttdef"><b>Definition</b> Ring.h:19</div></div>
+<div class="ttc" id="aclassgeodesk_1_1_polygonizer_html"><div class="ttname"><a href="classgeodesk_1_1_polygonizer.html">geodesk::Polygonizer</a></div><div class="ttdoc">Utility class for creating polygon rings from Relation members.</div><div class="ttdef"><b>Definition</b> Polygonizer.h:25</div></div>
 <div class="ttc" id="aclassgeodesk_1_1_polygonizer_html_a1c0e1f5256ce915bf3177cef105b46cd"><div class="ttname"><a href="classgeodesk_1_1_polygonizer.html#a1c0e1f5256ce915bf3177cef105b46cd">geodesk::Polygonizer::assignAndMergeHoles</a></div><div class="ttdeci">void assignAndMergeHoles()</div><div class="ttdoc">Assigns inner rings to outer, and merges any inner rings whose edges touch.</div></div>
 <div class="ttc" id="aclassgeodesk_1_1_polygonizer_html_a1e9d3a4bdb92dd21ed1414d174607bb1"><div class="ttname"><a href="classgeodesk_1_1_polygonizer.html#a1e9d3a4bdb92dd21ed1414d174607bb1">geodesk::Polygonizer::createRings</a></div><div class="ttdeci">void createRings(FeatureStore *store, RelationPtr relation)</div><div class="ttdoc">Creates only the raw outer and inner rings, without assigning the inner rings to outer,...</div></div>
-<div class="ttc" id="aclassgeodesk_1_1_polygonizer_html_adaba7efc376b526588d11eb4c23cf452"><div class="ttname"><a href="classgeodesk_1_1_polygonizer.html#adaba7efc376b526588d11eb4c23cf452">geodesk::Polygonizer::innerRings</a></div><div class="ttdeci">const Ring * innerRings() const</div><div class="ttdoc">Returns the assembled outer rings.</div><div class="ttdef"><b>Definition</b> Polygonizer.h:51</div></div>
-<div class="ttc" id="aclassgeodesk_1_1_polygonizer_html_ae7af9addd354ecfcd6217abbc70858ee"><div class="ttname"><a href="classgeodesk_1_1_polygonizer.html#ae7af9addd354ecfcd6217abbc70858ee">geodesk::Polygonizer::outerRings</a></div><div class="ttdeci">const Ring * outerRings() const</div><div class="ttdoc">Returns the assembled outer rings.</div><div class="ttdef"><b>Definition</b> Polygonizer.h:37</div></div>
-<div class="ttc" id="aclassgeodesk_1_1_polygonizer_html_af608134f09f963f05062015ad3b18a5c"><div class="ttname"><a href="classgeodesk_1_1_polygonizer.html#af608134f09f963f05062015ad3b18a5c">geodesk::Polygonizer::RingCoordinateIterator</a></div><div class="ttdeci">friend class RingCoordinateIterator</div><div class="ttdef"><b>Definition</b> Polygonizer.h:88</div></div>
+<div class="ttc" id="aclassgeodesk_1_1_polygonizer_html_adaba7efc376b526588d11eb4c23cf452"><div class="ttname"><a href="classgeodesk_1_1_polygonizer.html#adaba7efc376b526588d11eb4c23cf452">geodesk::Polygonizer::innerRings</a></div><div class="ttdeci">const Ring * innerRings() const</div><div class="ttdoc">Returns the assembled outer rings.</div><div class="ttdef"><b>Definition</b> Polygonizer.h:54</div></div>
+<div class="ttc" id="aclassgeodesk_1_1_polygonizer_html_ae7af9addd354ecfcd6217abbc70858ee"><div class="ttname"><a href="classgeodesk_1_1_polygonizer.html#ae7af9addd354ecfcd6217abbc70858ee">geodesk::Polygonizer::outerRings</a></div><div class="ttdeci">const Ring * outerRings() const</div><div class="ttdoc">Returns the assembled outer rings.</div><div class="ttdef"><b>Definition</b> Polygonizer.h:40</div></div>
+<div class="ttc" id="aclassgeodesk_1_1_polygonizer_html_af608134f09f963f05062015ad3b18a5c"><div class="ttname"><a href="classgeodesk_1_1_polygonizer.html#af608134f09f963f05062015ad3b18a5c">geodesk::Polygonizer::RingCoordinateIterator</a></div><div class="ttdeci">friend class RingCoordinateIterator</div><div class="ttdef"><b>Definition</b> Polygonizer.h:94</div></div>
 <div class="ttc" id="aclassgeodesk_1_1_polygonizer_html_afdc408763ce49a0bd2f948e3b1cd251a"><div class="ttname"><a href="classgeodesk_1_1_polygonizer.html#afdc408763ce49a0bd2f948e3b1cd251a">geodesk::Polygonizer::Polygonizer</a></div><div class="ttdeci">Polygonizer()</div></div>
 <div class="ttc" id="anamespacegeodesk_html"><div class="ttname"><a href="namespacegeodesk.html">geodesk</a></div><div class="ttdef"><b>Definition</b> Feature.h:11</div></div>
 </div><!-- fragment --></div><!-- contents -->

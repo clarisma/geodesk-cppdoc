@@ -172,6 +172,22 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a9b224215c0de1f7592722d062bc2e33b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a072833b768525986d24a06464bf09993" id="r_a072833b768525986d24a06464bf09993"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a072833b768525986d24a06464bf09993">operator&gt;=</a> (int val) const noexcept</td></tr>
 <tr class="separator:a072833b768525986d24a06464bf09993"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af6a8d392d0b5f63dea8fe30bc254b60e" id="r_af6a8d392d0b5f63dea8fe30bc254b60e"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#af6a8d392d0b5f63dea8fe30bc254b60e">charCount</a> () const noexcept</td></tr>
+<tr class="memdesc:af6a8d392d0b5f63dea8fe30bc254b60e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Counts the number of UTF-8 characters (<em>not</em> bytes) that this <a class="el" href="classgeodesk_1_1_tag_value.html" title="The value of a Tag.">TagValue</a> represents.  <br /></td></tr>
+<tr class="separator:af6a8d392d0b5f63dea8fe30bc254b60e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab2100cef82835b5da1ce173e3876d398" id="r_ab2100cef82835b5da1ce173e3876d398"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ab2100cef82835b5da1ce173e3876d398">isStoredNumeric</a> () const noexcept</td></tr>
+<tr class="memdesc:ab2100cef82835b5da1ce173e3876d398"><td class="mdescLeft">&#160;</td><td class="mdescRight"><code>true</code> if the value's native storage format is numeric.  <br /></td></tr>
+<tr class="separator:ab2100cef82835b5da1ce173e3876d398"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abc476b02c28bced8648e038fb996d341" id="r_abc476b02c28bced8648e038fb996d341"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classgeodesk_1_1_string_value.html">StringValue</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#abc476b02c28bced8648e038fb996d341">storedString</a> () const noexcept</td></tr>
+<tr class="memdesc:abc476b02c28bced8648e038fb996d341"><td class="mdescLeft">&#160;</td><td class="mdescRight">The tag value as a string, if its native storage format is string.  <br /></td></tr>
+<tr class="separator:abc476b02c28bced8648e038fb996d341"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aedfa52f783a2b3b5fef19009c109efcc" id="r_aedfa52f783a2b3b5fef19009c109efcc"><td class="memItemLeft" align="right" valign="top">clarisma::Decimal&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aedfa52f783a2b3b5fef19009c109efcc">storedNumber</a> () const noexcept</td></tr>
+<tr class="memdesc:aedfa52f783a2b3b5fef19009c109efcc"><td class="mdescLeft">&#160;</td><td class="mdescRight">The tag value as a Decimal, if its native storage format is numeric.  <br /></td></tr>
+<tr class="separator:aedfa52f783a2b3b5fef19009c109efcc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a006e722f3a264f34e631c6207d78ddb6" id="r_a006e722f3a264f34e631c6207d78ddb6"><td class="memTemplParams" colspan="2">template&lt;typename Stream &gt; </td></tr>
+<tr class="memitem:a006e722f3a264f34e631c6207d78ddb6"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="#a006e722f3a264f34e631c6207d78ddb6">format</a> (Stream &amp;out) const</td></tr>
+<tr class="memdesc:a006e722f3a264f34e631c6207d78ddb6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Writes the tag value to the given Buffer, XMl/HTML-encoded.  <br /></td></tr>
+<tr class="separator:a006e722f3a264f34e631c6207d78ddb6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>The value of a <a class="el" href="classgeodesk_1_1_tag.html" title="A key/value pair that describes an attribute of a Feature.">Tag</a>. </p>
@@ -181,7 +197,7 @@ Public Member Functions</h2></td></tr>
 <li><code>int</code>: <code>0</code> if the string value does not start with a valid number</li>
 <li><code>bool</code>: <code>true</code> unless empty string, <code>"no"</code>, or a numerical value of <code>0</code></li>
 </ul>
-<p><b>Warning</b>: A <a class="el" href="classgeodesk_1_1_tag_value.html" title="The value of a Tag.">TagValue</a> object is a lightweight wrapper around a pointer to a <a class="el" href="classgeodesk_1_1_feature.html" title="A geographic feature.">Feature</a>'s tag data, contained in a <a class="el" href="classgeodesk_1_1_feature_store.html" title="A Geographic Object Library.">FeatureStore</a>. It becomes invalid once that <a class="el" href="classgeodesk_1_1_feature_store.html" title="A Geographic Object Library.">FeatureStore</a> is closed. To use its value beyond the lifetime of the <a class="el" href="classgeodesk_1_1_feature_store.html" title="A Geographic Object Library.">FeatureStore</a>, convert it to a <code>std::string</code> (which allocates a copy of the tag data), or one of the supported scalar types.</p>
+<p><b>Warning</b>: A <a class="el" href="classgeodesk_1_1_tag_value.html" title="The value of a Tag.">TagValue</a> object is a lightweight wrapper around a pointer to a <a class="el" href="classgeodesk_1_1_feature.html" title="A geographic feature.">Feature</a>'s tag data, contained in a FeatureStore. It becomes invalid once that FeatureStore is closed. To use its value beyond the lifetime of the FeatureStore, convert it to a <code>std::string</code> (which allocates a copy of the tag data), or one of the supported scalar types.</p>
 <dl class="section see"><dt>See also</dt><dd><a class="el" href="classgeodesk_1_1_tag.html" title="A key/value pair that describes an attribute of a Feature.">Tag</a>, <a class="el" href="classgeodesk_1_1_tags.html" title="An object describing the key/value attributes of a Feature.">Tags</a> </dd></dl>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="a3b65cf48d09dd77f04668b23c8113f8f" name="a3b65cf48d09dd77f04668b23c8113f8f"></a>
@@ -264,6 +280,96 @@ Public Member Functions</h2></td></tr>
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
+<a id="af6a8d392d0b5f63dea8fe30bc254b60e" name="af6a8d392d0b5f63dea8fe30bc254b60e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af6a8d392d0b5f63dea8fe30bc254b60e">&#9670;&#160;</a></span>charCount()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int geodesk::TagValue::charCount </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">noexcept</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Counts the number of UTF-8 characters (<em>not</em> bytes) that this <a class="el" href="classgeodesk_1_1_tag_value.html" title="The value of a Tag.">TagValue</a> represents. </p>
+<p>Numeric values are assumed to be formatted in their canonical representation. </p>
+
+</div>
+</div>
+<a id="a006e722f3a264f34e631c6207d78ddb6" name="a006e722f3a264f34e631c6207d78ddb6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a006e722f3a264f34e631c6207d78ddb6">&#9670;&#160;</a></span>format()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename Stream &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void geodesk::TagValue::format </td>
+          <td>(</td>
+          <td class="paramtype">Stream &amp;</td>          <td class="paramname"><span class="paramname"><em>out</em></span></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Writes the tag value to the given Buffer, XMl/HTML-encoded. </p>
+<dl class="tparams"><dt>Template Parameters</dt><dd>
+  <table class="tparams">
+    <tr><td class="paramname">out</td><td>a Buffer </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="ab2100cef82835b5da1ce173e3876d398" name="ab2100cef82835b5da1ce173e3876d398"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab2100cef82835b5da1ce173e3876d398">&#9670;&#160;</a></span>isStoredNumeric()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool geodesk::TagValue::isStoredNumeric </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">noexcept</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p><code>true</code> if the value's native storage format is numeric. </p>
+
+</div>
+</div>
 <a id="a590cef6167e74106f16026930738ff5d" name="a590cef6167e74106f16026930738ff5d"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a590cef6167e74106f16026930738ff5d">&#9670;&#160;</a></span>operator bool()</h2>
 
@@ -911,6 +1017,62 @@ Public Member Functions</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+
+</div>
+</div>
+<a id="aedfa52f783a2b3b5fef19009c109efcc" name="aedfa52f783a2b3b5fef19009c109efcc"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aedfa52f783a2b3b5fef19009c109efcc">&#9670;&#160;</a></span>storedNumber()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">clarisma::Decimal geodesk::TagValue::storedNumber </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">noexcept</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>The tag value as a Decimal, if its native storage format is numeric. </p>
+<p>If the value is stored as a string, returns its global-string code (or 0 for a local string). </p>
+
+</div>
+</div>
+<a id="abc476b02c28bced8648e038fb996d341" name="abc476b02c28bced8648e038fb996d341"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abc476b02c28bced8648e038fb996d341">&#9670;&#160;</a></span>storedString()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classgeodesk_1_1_string_value.html">StringValue</a> geodesk::TagValue::storedString </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">noexcept</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>The tag value as a string, if its native storage format is string. </p>
+<p>If the value is stored as a number, returns an empty string. </p>
 
 </div>
 </div>

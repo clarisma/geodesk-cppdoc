@@ -34,6 +34,7 @@ var classgeodesk_1_1_node =
     [ "store", "classgeodesk_1_1_node.html#a35f507247170b18ea03ff3e20be0aadd", null ],
     [ "tags", "classgeodesk_1_1_node.html#aa76bfe7e61318c06d24d8a3e2a0fef67", null ],
     [ "toGeometry", "classgeodesk_1_1_node.html#a9ea1666a8f01ab0c48ca632134ef4c28", null ],
+    [ "toOgrGeometry", "classgeodesk_1_1_node.html#aa34c5712b53d87b9f901c1ef3de2c104", null ],
     [ "toString", "classgeodesk_1_1_node.html#ae18824c13ad34fee7e996ef05aa345d7", null ],
     [ "type", "classgeodesk_1_1_node.html#ae7f5398a927cb857513f9d6427c22e2a", null ],
     [ "typeName", "classgeodesk_1_1_node.html#a1a721e45d3805aefb5a98e07057c7b3f", null ],

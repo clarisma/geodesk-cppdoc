@@ -1,4 +1,5 @@
 var searchData=
 [
-  ['m_5fpi_0',['M_PI',['../_mercator_8h.html#ae71449b1cc6e6250b91f539153a7a0d3',1,'Mercator.h']]]
+  ['log_0',['LOG',['../log_8h.html#a388edf12256bf73c3a8ee9734c3bd841',1,'log.h']]],
+  ['logs_1',['LOGS',['../log_8h.html#a11b913242029687af09171c20ae788eb',1,'log.h']]]
 ];

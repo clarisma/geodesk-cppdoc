@@ -132,12 +132,12 @@ $(function(){initNavTree('_file_lock_8h_source.html',''); initResizable(true); }
 <div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span>    }</div>
 <div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span> </div>
 <div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span>    <span class="keywordtype">bool</span> isLocked()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> lockLength_ != 0; }</div>
-<div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span>    <span class="keywordtype">void</span> lock(<a class="code hl_typedef" href="namespaceclarisma.html#a22c72aa19507d51de9dd5738e086a587">FileHandle</a> fileHandle, uint64_t offset, uint64_t length, <span class="keywordtype">bool</span> shared);</div>
-<div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span>    <span class="keywordtype">bool</span> tryLock(<a class="code hl_typedef" href="namespaceclarisma.html#a22c72aa19507d51de9dd5738e086a587">FileHandle</a> fileHandle, uint64_t offset, uint64_t length, <span class="keywordtype">bool</span> shared);</div>
+<div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span>    <span class="keywordtype">void</span> lock(FileHandle fileHandle, uint64_t offset, uint64_t length, <span class="keywordtype">bool</span> shared);</div>
+<div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span>    <span class="keywordtype">bool</span> tryLock(FileHandle fileHandle, uint64_t offset, uint64_t length, <span class="keywordtype">bool</span> shared);</div>
 <div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span>    <span class="keywordtype">void</span> release();</div>
 <div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span> </div>
 <div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span><span class="keyword">private</span>:</div>
-<div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span>    <a class="code hl_typedef" href="namespaceclarisma.html#a22c72aa19507d51de9dd5738e086a587">FileHandle</a> fileHandle_;</div>
+<div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span>    FileHandle fileHandle_;</div>
 <div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span><span class="preprocessor">#if defined(_WIN32) || defined(_WIN64)</span></div>
 <div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span>    OVERLAPPED overlapped_;</div>
 <div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span><span class="preprocessor">#else</span></div>
@@ -150,7 +150,6 @@ $(function(){initNavTree('_file_lock_8h_source.html',''); initResizable(true); }
 <div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span>} <span class="comment">// namespace clarisma</span></div>
 <div class="ttc" id="a_file_8h_html"><div class="ttname"><a href="_file_8h.html">File.h</a></div></div>
 <div class="ttc" id="anamespaceclarisma_html"><div class="ttname"><a href="namespaceclarisma.html">clarisma</a></div><div class="ttdef"><b>Definition</b> Arena.h:17</div></div>
-<div class="ttc" id="anamespaceclarisma_html_a22c72aa19507d51de9dd5738e086a587"><div class="ttname"><a href="namespaceclarisma.html#a22c72aa19507d51de9dd5738e086a587">clarisma::FileHandle</a></div><div class="ttdeci">int FileHandle</div><div class="ttdef"><b>Definition</b> File.h:26</div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->

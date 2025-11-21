@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['invalid_5ffile_5fhandle_0',['INVALID_FILE_HANDLE',['../namespaceclarisma.html#af3c3698db3ca6d72735a4031696634b5',1,'clarisma']]]
+  ['basemapurl_0',['basemapUrl',['../structgeodesk_1_1_leaflet_settings.html#a1b44a7666d5eda8c617f2e008edd2aa8',1,'geodesk::LeafletSettings']]]
 ];

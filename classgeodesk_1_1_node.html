@@ -222,6 +222,9 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a9ea1666a8f01ab0c48ca632134ef4c28" id="r_a9ea1666a8f01ab0c48ca632134ef4c28"><td class="memItemLeft" align="right" valign="top">GEOSGeometry *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgeodesk_1_1_feature.html#a9ea1666a8f01ab0c48ca632134ef4c28">toGeometry</a> (GEOSContextHandle_t geosContext) const</td></tr>
 <tr class="memdesc:a9ea1666a8f01ab0c48ca632134ef4c28"><td class="mdescLeft">&#160;</td><td class="mdescRight">Creates a <code>GEOSGeometry</code> based on this <a class="el" href="classgeodesk_1_1_feature.html" title="A geographic feature.">Feature</a>'s geometry.  <br /></td></tr>
 <tr class="separator:a9ea1666a8f01ab0c48ca632134ef4c28"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa34c5712b53d87b9f901c1ef3de2c104" id="r_aa34c5712b53d87b9f901c1ef3de2c104"><td class="memItemLeft" align="right" valign="top">OGRGeometry *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgeodesk_1_1_feature.html#aa34c5712b53d87b9f901c1ef3de2c104">toOgrGeometry</a> () const</td></tr>
+<tr class="memdesc:aa34c5712b53d87b9f901c1ef3de2c104"><td class="mdescLeft">&#160;</td><td class="mdescRight">Creates an <code>OGRGeometry</code> based on this <a class="el" href="classgeodesk_1_1_feature.html" title="A geographic feature.">Feature</a>'s geometry.  <br /></td></tr>
+<tr class="separator:aa34c5712b53d87b9f901c1ef3de2c104"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr><td colspan="2"><div class="groupHeader">Related Features</div></td></tr>
 <tr class="memitem:ac51004a426e59072a185cff1bc0e75fc" id="r_ac51004a426e59072a185cff1bc0e75fc"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classgeodesk_1_1_nodes.html">Nodes</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgeodesk_1_1_feature.html#ac51004a426e59072a185cff1bc0e75fc">nodes</a> () const</td></tr>
 <tr class="memdesc:ac51004a426e59072a185cff1bc0e75fc"><td class="mdescLeft">&#160;</td><td class="mdescRight">The nodes of this <a class="el" href="classgeodesk_1_1_way.html" title="A Feature that represents a linestring, linear ring, or a simple polygon.">Way</a>.  <br /></td></tr>
@@ -245,8 +248,8 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:aa3b94de4d53b36dd36652214558dc189" id="r_aa3b94de4d53b36dd36652214558dc189"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classgeodesk_1_1_feature_ptr.html">FeaturePtr</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgeodesk_1_1_feature.html#aa3b94de4d53b36dd36652214558dc189">ptr</a> () const noexcept</td></tr>
 <tr class="memdesc:aa3b94de4d53b36dd36652214558dc189"><td class="mdescLeft">&#160;</td><td class="mdescRight">Pointer to the stored data of this <a class="el" href="classgeodesk_1_1_feature.html" title="A geographic feature.">Feature</a>.  <br /></td></tr>
 <tr class="separator:aa3b94de4d53b36dd36652214558dc189"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a35f507247170b18ea03ff3e20be0aadd" id="r_a35f507247170b18ea03ff3e20be0aadd"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classgeodesk_1_1_feature_store.html">FeatureStore</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgeodesk_1_1_feature.html#a35f507247170b18ea03ff3e20be0aadd">store</a> () const noexcept</td></tr>
-<tr class="memdesc:a35f507247170b18ea03ff3e20be0aadd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Pointer to the <a class="el" href="classgeodesk_1_1_feature_store.html" title="A Geographic Object Library.">FeatureStore</a> which contains this <a class="el" href="classgeodesk_1_1_feature.html" title="A geographic feature.">Feature</a>.  <br /></td></tr>
+<tr class="memitem:a35f507247170b18ea03ff3e20be0aadd" id="r_a35f507247170b18ea03ff3e20be0aadd"><td class="memItemLeft" align="right" valign="top">FeatureStore *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgeodesk_1_1_feature.html#a35f507247170b18ea03ff3e20be0aadd">store</a> () const noexcept</td></tr>
+<tr class="memdesc:a35f507247170b18ea03ff3e20be0aadd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Pointer to the FeatureStore which contains this <a class="el" href="classgeodesk_1_1_feature.html" title="A geographic feature.">Feature</a>.  <br /></td></tr>
 <tr class="separator:a35f507247170b18ea03ff3e20be0aadd"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
@@ -1189,7 +1192,7 @@ Public Member Functions</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="classgeodesk_1_1_feature_store.html">FeatureStore</a> * geodesk::Feature::store </td>
+          <td class="memname">FeatureStore * geodesk::Feature::store </td>
           <td>(</td>
           <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
           <td> const</td>
@@ -1202,7 +1205,7 @@ Public Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Pointer to the <a class="el" href="classgeodesk_1_1_feature_store.html" title="A Geographic Object Library.">FeatureStore</a> which contains this <a class="el" href="classgeodesk_1_1_feature.html" title="A geographic feature.">Feature</a>. </p>
+<p>Pointer to the FeatureStore which contains this <a class="el" href="classgeodesk_1_1_feature.html" title="A geographic feature.">Feature</a>. </p>
 
 </div>
 </div>
@@ -1266,6 +1269,36 @@ Public Member Functions</h2></td></tr>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>the pointer to the newly-created <code>GEOSGeometry</code> </dd></dl>
+
+</div>
+</div>
+<a id="aa34c5712b53d87b9f901c1ef3de2c104" name="aa34c5712b53d87b9f901c1ef3de2c104"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa34c5712b53d87b9f901c1ef3de2c104">&#9670;&#160;</a></span>toOgrGeometry()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">OGRGeometry * geodesk::Feature::toOgrGeometry </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inherited</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Creates an <code>OGRGeometry</code> based on this <a class="el" href="classgeodesk_1_1_feature.html" title="A geographic feature.">Feature</a>'s geometry. </p>
+<p>Coordinates will be in EPSG:4326 (WGS-84 longitude/latitude). The caller assumes ownership of the newly created <code>OSMGeometry</code> and is responsible for its cleanup.</p>
+<p>This method is only available if build option <code>GEODESK_WITH_OGR</code> is enabled (off by default).</p>
+<dl class="section return"><dt>Returns</dt><dd>the pointer to the newly-created <code>OGRGeometry</code> </dd></dl>
 
 </div>
 </div>

@@ -114,6 +114,8 @@ $(function(){initNavTree('classgeodesk_1_1_tag.html',''); initResizable(true); }
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
+<tr class="memitem:afe9eb5efab96872c6c85f43ab02cc85c" id="r_afe9eb5efab96872c6c85f43ab02cc85c"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#afe9eb5efab96872c6c85f43ab02cc85c">Tag</a> ()=default</td></tr>
+<tr class="separator:afe9eb5efab96872c6c85f43ab02cc85c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a65b5548de41e84b2d210db866bd149d3" id="r_a65b5548de41e84b2d210db866bd149d3"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a65b5548de41e84b2d210db866bd149d3">Tag</a> (<a class="el" href="classgeodesk_1_1_string_value.html">StringValue</a> k, <a class="el" href="classgeodesk_1_1_tag_value.html">TagValue</a> v)</td></tr>
 <tr class="separator:a65b5548de41e84b2d210db866bd149d3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:adfda42ff23d9c25e7be49bb67e468894" id="r_adfda42ff23d9c25e7be49bb67e468894"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#adfda42ff23d9c25e7be49bb67e468894">operator==</a> (const <a class="el" href="classgeodesk_1_1_tag.html">Tag</a> &amp;other) const</td></tr>
@@ -121,6 +123,8 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:adfda42ff23d9c25e7be49bb67e468894"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aea3f2b9a54959a8c79e7a2d9105983a6" id="r_aea3f2b9a54959a8c79e7a2d9105983a6"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aea3f2b9a54959a8c79e7a2d9105983a6">operator!=</a> (const <a class="el" href="classgeodesk_1_1_tag.html">Tag</a> &amp;other) const</td></tr>
 <tr class="separator:aea3f2b9a54959a8c79e7a2d9105983a6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa04480ae11b2fbea4b595f2c582bd720" id="r_aa04480ae11b2fbea4b595f2c582bd720"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aa04480ae11b2fbea4b595f2c582bd720">operator&lt;</a> (const <a class="el" href="classgeodesk_1_1_tag.html">Tag</a> &amp;other) const noexcept</td></tr>
+<tr class="separator:aa04480ae11b2fbea4b595f2c582bd720"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2e64130b501d7a281f4642fe6ab4191b" id="r_a2e64130b501d7a281f4642fe6ab4191b"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classgeodesk_1_1_string_value.html">StringValue</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a2e64130b501d7a281f4642fe6ab4191b">key</a> () const noexcept</td></tr>
 <tr class="memdesc:a2e64130b501d7a281f4642fe6ab4191b"><td class="mdescLeft">&#160;</td><td class="mdescRight">The <a class="el" href="classgeodesk_1_1_tag.html" title="A key/value pair that describes an attribute of a Feature.">Tag</a>'s key.  <br /></td></tr>
 <tr class="separator:a2e64130b501d7a281f4642fe6ab4191b"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -131,11 +135,36 @@ Public Member Functions</h2></td></tr>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>A key/value pair that describes an attribute of a <a class="el" href="classgeodesk_1_1_feature.html" title="A geographic feature.">Feature</a>. </p>
 <p>Converts implicitly to <code>std::pair&lt;K,V&gt;</code>.</p>
-<p><b>Warning</b>: A <a class="el" href="classgeodesk_1_1_tag.html" title="A key/value pair that describes an attribute of a Feature.">Tag</a> object is a lightweight wrapper around a pointer to a <a class="el" href="classgeodesk_1_1_feature.html" title="A geographic feature.">Feature</a>'s tag data, contained in a <a class="el" href="classgeodesk_1_1_feature_store.html" title="A Geographic Object Library.">FeatureStore</a>. It becomes invalid once that <a class="el" href="classgeodesk_1_1_feature_store.html" title="A Geographic Object Library.">FeatureStore</a> is closed. To use a <a class="el" href="classgeodesk_1_1_feature.html" title="A geographic feature.">Feature</a>'s keys and values beyond the lifetime of the <a class="el" href="classgeodesk_1_1_feature_store.html" title="A Geographic Object Library.">FeatureStore</a>, convert them to <code>std::string</code>, which allocates copies.</p>
+<p><b>Warning</b>: A <a class="el" href="classgeodesk_1_1_tag.html" title="A key/value pair that describes an attribute of a Feature.">Tag</a> object is a lightweight wrapper around a pointer to a <a class="el" href="classgeodesk_1_1_feature.html" title="A geographic feature.">Feature</a>'s tag data, contained in a FeatureStore. It becomes invalid once that FeatureStore is closed. To use a <a class="el" href="classgeodesk_1_1_feature.html" title="A geographic feature.">Feature</a>'s keys and values beyond the lifetime of the FeatureStore, convert them to <code>std::string</code>, which allocates copies.</p>
 <dl class="section see"><dt>See also</dt><dd><a class="el" href="classgeodesk_1_1_tags.html" title="An object describing the key/value attributes of a Feature.">Tags</a>, <a class="el" href="classgeodesk_1_1_tag_value.html" title="The value of a Tag.">TagValue</a> </dd></dl>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
+<a id="afe9eb5efab96872c6c85f43ab02cc85c" name="afe9eb5efab96872c6c85f43ab02cc85c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afe9eb5efab96872c6c85f43ab02cc85c">&#9670;&#160;</a></span>Tag() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">geodesk::Tag::Tag </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">default</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <a id="a65b5548de41e84b2d210db866bd149d3" name="a65b5548de41e84b2d210db866bd149d3"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a65b5548de41e84b2d210db866bd149d3">&#9670;&#160;</a></span>Tag()</h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a65b5548de41e84b2d210db866bd149d3">&#9670;&#160;</a></span>Tag() <span class="overload">[2/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -210,6 +239,31 @@ Public Member Functions</h2></td></tr>
   </td>
   <td class="mlabels-right">
 <span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="aa04480ae11b2fbea4b595f2c582bd720" name="aa04480ae11b2fbea4b595f2c582bd720"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa04480ae11b2fbea4b595f2c582bd720">&#9670;&#160;</a></span>operator&lt;()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool geodesk::Tag::operator&lt; </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="classgeodesk_1_1_tag.html">Tag</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>other</em></span></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">noexcept</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">

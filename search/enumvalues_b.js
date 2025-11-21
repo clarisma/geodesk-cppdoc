@@ -1,0 +1,5 @@
+var searchData=
+[
+  ['path_5fnot_5ffound_0',['PATH_NOT_FOUND',['../namespaceclarisma.html#a0271fa8092cc9ba96810d9bcc94d2177a10ea5c18cb2990c51bb9db888917165d',1,'clarisma::PATH_NOT_FOUND'],['../namespaceclarisma.html#a0271fa8092cc9ba96810d9bcc94d2177a10ea5c18cb2990c51bb9db888917165d',1,'clarisma::PATH_NOT_FOUND'],['../namespaceclarisma.html#a0271fa8092cc9ba96810d9bcc94d2177a10ea5c18cb2990c51bb9db888917165d',1,'clarisma::PATH_NOT_FOUND'],['../namespaceclarisma.html#a0271fa8092cc9ba96810d9bcc94d2177a10ea5c18cb2990c51bb9db888917165d',1,'clarisma::PATH_NOT_FOUND']]],
+  ['permission_5fdenied_1',['PERMISSION_DENIED',['../namespaceclarisma.html#a0271fa8092cc9ba96810d9bcc94d2177a255df50c140519133f1489ab44a389d9',1,'clarisma::PERMISSION_DENIED'],['../namespaceclarisma.html#a0271fa8092cc9ba96810d9bcc94d2177a255df50c140519133f1489ab44a389d9',1,'clarisma::PERMISSION_DENIED'],['../namespaceclarisma.html#a0271fa8092cc9ba96810d9bcc94d2177a255df50c140519133f1489ab44a389d9',1,'clarisma::PERMISSION_DENIED'],['../namespaceclarisma.html#a0271fa8092cc9ba96810d9bcc94d2177a255df50c140519133f1489ab44a389d9',1,'clarisma::PERMISSION_DENIED']]]
+];

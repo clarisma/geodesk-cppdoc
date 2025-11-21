@@ -1,0 +1,5 @@
+var searchData=
+[
+  ['file_5fexists_0',['FILE_EXISTS',['../namespaceclarisma.html#a0271fa8092cc9ba96810d9bcc94d2177a8f20045e0839c2e258547ee09fc961a0',1,'clarisma::FILE_EXISTS'],['../namespaceclarisma.html#a0271fa8092cc9ba96810d9bcc94d2177a8f20045e0839c2e258547ee09fc961a0',1,'clarisma::FILE_EXISTS'],['../namespaceclarisma.html#a0271fa8092cc9ba96810d9bcc94d2177a8f20045e0839c2e258547ee09fc961a0',1,'clarisma::FILE_EXISTS'],['../namespaceclarisma.html#a0271fa8092cc9ba96810d9bcc94d2177a8f20045e0839c2e258547ee09fc961a0',1,'clarisma::FILE_EXISTS']]],
+  ['file_5ftoo_5flarge_1',['FILE_TOO_LARGE',['../namespaceclarisma.html#a0271fa8092cc9ba96810d9bcc94d2177ad2ae4315904b03da885839226dff37c4',1,'clarisma::FILE_TOO_LARGE'],['../namespaceclarisma.html#a0271fa8092cc9ba96810d9bcc94d2177ad2ae4315904b03da885839226dff37c4',1,'clarisma::FILE_TOO_LARGE'],['../namespaceclarisma.html#a0271fa8092cc9ba96810d9bcc94d2177ad2ae4315904b03da885839226dff37c4',1,'clarisma::FILE_TOO_LARGE'],['../namespaceclarisma.html#a0271fa8092cc9ba96810d9bcc94d2177ad2ae4315904b03da885839226dff37c4',1,'clarisma::FILE_TOO_LARGE']]]
+];

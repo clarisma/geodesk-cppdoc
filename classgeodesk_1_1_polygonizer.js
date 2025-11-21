@@ -1,5 +1,6 @@
 var classgeodesk_1_1_polygonizer =
 [
+    [ "Ring", "classgeodesk_1_1_polygonizer_1_1_ring.html", "classgeodesk_1_1_polygonizer_1_1_ring" ],
     [ "Polygonizer", "classgeodesk_1_1_polygonizer.html#afdc408763ce49a0bd2f948e3b1cd251a", null ],
     [ "assignAndMergeHoles", "classgeodesk_1_1_polygonizer.html#a1c0e1f5256ce915bf3177cef105b46cd", null ],
     [ "createRings", "classgeodesk_1_1_polygonizer.html#a1e9d3a4bdb92dd21ed1414d174607bb1", null ],

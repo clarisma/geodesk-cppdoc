@@ -1,5 +1,6 @@
 var searchData=
 [
-  ['zoomlevels_0',['zoomLevels',['../classgeodesk_1_1_feature_store.html#abd4cbde3f75fc5a0a303c957e4522e27',1,'geodesk::FeatureStore']]],
-  ['zoomlevels_2eh_1',['ZoomLevels.h',['../_zoom_levels_8h.html',1,'']]]
+  ['y_0',['y',['../classgeodesk_1_1_coordinate.html#add16f1263254018d2ba1205ec1c09927',1,'geodesk::Coordinate::y'],['../classgeodesk_1_1_feature.html#a99a68187774b2bd27dfa0bd6b751e6b3',1,'geodesk::Feature::y()']]],
+  ['yfromlat_1',['yFromLat',['../classgeodesk_1_1_mercator.html#a3819230919ebca3679387ff1e7aafdc5',1,'geodesk::Mercator']]],
+  ['yfromlat100nd_2',['yFromLat100nd',['../classgeodesk_1_1_mercator.html#a29ca50278b85483ba348c116de7c8278',1,'geodesk::Mercator']]]
 ];

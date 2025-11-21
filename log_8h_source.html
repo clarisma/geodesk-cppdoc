@@ -122,9 +122,9 @@ $(function(){initNavTree('log_8h_source.html',''); initResizable(true); });
 <div class="line"><a id="l00017" name="l00017"></a><span class="lineno"><a class="line" href="log_8h.html#a90b15f9299f261207e3395c5c582db82">   17</a></span><span class="preprocessor">#define FORCE_LOG(fmt, ...) printf(fmt &quot;\n&quot;, ##__VA_ARGS__)</span></div>
 <div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span> </div>
 <div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span><span class="preprocessor">#ifndef NDEBUG</span></div>
-<div class="line"><a id="l00020" name="l00020"></a><span class="lineno"><a class="line" href="log_8h.html#a11b913242029687af09171c20ae788eb">   20</a></span><span class="preprocessor">#define LOGS clarisma::ConsoleWriter().timestamp() &lt;&lt; &quot;  &quot;</span></div>
+<div class="line"><a id="l00020" name="l00020"></a><span class="lineno"><a class="line" href="log_8h.html#a11b913242029687af09171c20ae788eb">   20</a></span><span class="preprocessor">#define LOGS clarisma::ConsoleWriter(clarisma::Console::Stream::STDERR).timestamp()</span></div>
 <div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span><span class="preprocessor">#else</span></div>
-<div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span><span class="preprocessor">#define LOGS if(false) ConsoleWriter().timestamp()</span></div>
+<div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span><span class="preprocessor">#define LOGS if(false) clarisma::ConsoleWriter().timestamp()</span></div>
 <div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span><span class="preprocessor">#endif</span></div>
 <div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span> </div>
 <div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span> </div>

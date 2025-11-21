@@ -1,4 +1,5 @@
 var searchData=
 [
-  ['earth_5fcircumference_0',['EARTH_CIRCUMFERENCE',['../classgeodesk_1_1_mercator.html#a6ab41e84512b1471f9e793ce9a2be4e5',1,'geodesk::Mercator']]]
+  ['area_5findex_5fofs_0',['AREA_INDEX_OFS',['../namespace_tile_constants.html#a32a3f6c4f5e37381c8caeeece70a4394',1,'TileConstants']]],
+  ['attribution_1',['attribution',['../structgeodesk_1_1_leaflet_settings.html#a5a9c3e71ad3b4b4c3351a256d0bcea06',1,'geodesk::LeafletSettings']]]
 ];

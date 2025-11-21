@@ -1,21 +1,9 @@
 var searchData=
 [
-  ['label_0',['label',['../classgeodesk_1_1_feature.html#a13e196962da17be1b500554614192137',1,'geodesk::Feature']]],
-  ['lat_1',['lat',['../classgeodesk_1_1_lon_lat.html#a06ac2c16a8416a3304301cc204cded40',1,'geodesk::LonLat::lat'],['../classgeodesk_1_1_feature.html#a634de2ba61ba9b87fb16f469b3e4ddc2',1,'geodesk::Feature::lat()'],['../classgeodesk_1_1_coordinate.html#a9ceaba5bc5199e83020d6034a9275b85',1,'geodesk::Coordinate::lat()']]],
-  ['latfromy_2',['latFromY',['../classgeodesk_1_1_mercator.html#a8c9dc5ff770e7f13c22712ed877ff720',1,'geodesk::Mercator']]],
-  ['length_3',['length',['../classgeodesk_1_1_feature.html#ac5beed8943adb7d5735f2dccda111e89',1,'geodesk::Feature::length()'],['../classgeodesk_1_1_features.html#a200cd9550b03e68b7fa3b456fcc0155f',1,'geodesk::Features::length()']]],
-  ['length_2eh_4',['Length.h',['../_length_8h.html',1,'']]],
-  ['lengthunit_2eh_5',['LengthUnit.h',['../_length_unit_8h.html',1,'']]],
-  ['linesegment_2eh_6',['LineSegment.h',['../_line_segment_8h.html',1,'']]],
-  ['linked_2eh_7',['Linked.h',['../_linked_8h.html',1,'']]],
-  ['localtagiterator_2eh_8',['LocalTagIterator.h',['../_local_tag_iterator_8h.html',1,'']]],
-  ['log_9',['LOG',['../log_8h.html#a388edf12256bf73c3a8ee9734c3bd841',1,'log.h']]],
-  ['log_2eh_10',['log.h',['../log_8h.html',1,'']]],
-  ['logs_11',['LOGS',['../log_8h.html#a11b913242029687af09171c20ae788eb',1,'log.h']]],
-  ['lon_12',['lon',['../classgeodesk_1_1_lon_lat.html#af4e304cd3380c9b88f346094b14b2130',1,'geodesk::LonLat::lon'],['../classgeodesk_1_1_feature.html#a6f0474e59088cec18c3f8ce12e116128',1,'geodesk::Feature::lon()'],['../classgeodesk_1_1_coordinate.html#a48837762442f8a5291f6dc1830293100',1,'geodesk::Coordinate::lon()']]],
-  ['lonfromx_13',['lonFromX',['../classgeodesk_1_1_mercator.html#aebcc7a2e16b86a46ec66b8b967b9e42b',1,'geodesk::Mercator']]],
-  ['lonlat_14',['LonLat',['../classgeodesk_1_1_lon_lat.html',1,'geodesk::LonLat'],['../classgeodesk_1_1_lon_lat.html#a37f0f7b1bc26c23185d58e8125ff09bf',1,'geodesk::LonLat::LonLat()']]],
-  ['lonlat_2eh_15',['LonLat.h',['../_lon_lat_8h.html',1,'']]],
-  ['lookup_2eh_16',['Lookup.h',['../_lookup_8h.html',1,'']]],
-  ['lookupbase_2eh_17',['LookupBase.h',['../_lookup_base_8h.html',1,'']]]
+  ['key_0',['Key',['../classgeodesk_1_1_key.html',1,'geodesk::Key'],['../classgeodesk_1_1_key.html#a4ff4e94297e99130172fc960dafacad3',1,'geodesk::Key::Key()']]],
+  ['key_1',['key',['../classgeodesk_1_1_features.html#abcfda83368d0ffdec4b5f9fcb1776419',1,'geodesk::Features::key()'],['../classgeodesk_1_1_tag.html#a2e64130b501d7a281f4642fe6ab4191b',1,'geodesk::Tag::key()']]],
+  ['key_2eh_2',['Key.h',['../_key_8h.html',1,'']]],
+  ['keyindexschema_2eh_3',['KeyIndexSchema.h',['../_key_index_schema_8h.html',1,'']]],
+  ['keyschema_4',['KeySchema',['../classgeodesk_1_1_key_schema.html',1,'geodesk::KeySchema'],['../classgeodesk_1_1_key_schema.html#acfa5c8bcc1839db285acd1d2958199ff',1,'geodesk::KeySchema::KeySchema(StringTable *strings)'],['../classgeodesk_1_1_key_schema.html#a2ea4b891ce5a186e9d4b043fd4fcdb83',1,'geodesk::KeySchema::KeySchema(StringTable *strings, std::string_view keys)']]],
+  ['keyschema_2eh_5',['KeySchema.h',['../_key_schema_8h.html',1,'']]]
 ];

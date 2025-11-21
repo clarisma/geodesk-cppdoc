@@ -180,19 +180,20 @@ $(function(){initNavTree('_point_in_polygon_8h_source.html',''); initResizable(t
 <div class="line"><a id="l00084" name="l00084"></a><span class="lineno">   84</span>            <span class="comment">// TODO: do we need to check for inner/outer role?</span></div>
 <div class="line"><a id="l00085" name="l00085"></a><span class="lineno">   85</span>            <span class="comment">// Can we establish that area relations must </span></div>
 <div class="line"><a id="l00086" name="l00086"></a><span class="lineno">   86</span>            <span class="comment">// not have non-boundary ways?</span></div>
-<div class="line"><a id="l00087" name="l00087"></a><span class="lineno">   87</span>            <span class="keywordflow">if</span> (testAgainstWay(way)) <span class="keywordflow">return</span> <span class="keyword">true</span>;</div>
-<div class="line"><a id="l00088" name="l00088"></a><span class="lineno">   88</span>        }</div>
-<div class="line"><a id="l00089" name="l00089"></a><span class="lineno">   89</span>        <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
-<div class="line"><a id="l00090" name="l00090"></a><span class="lineno">   90</span>    }</div>
-<div class="line"><a id="l00091" name="l00091"></a><span class="lineno">   91</span> </div>
-<div class="line"><a id="l00092" name="l00092"></a><span class="lineno">   92</span><span class="keyword">private</span>:</div>
-<div class="line"><a id="l00093" name="l00093"></a><span class="lineno">   93</span>    Coordinate point_;</div>
-<div class="line"><a id="l00094" name="l00094"></a><span class="lineno">   94</span>    uint32_t crossingCount_;</div>
-<div class="line"><a id="l00095" name="l00095"></a><span class="lineno">   95</span>};</div>
-<div class="line"><a id="l00096" name="l00096"></a><span class="lineno">   96</span> </div>
-<div class="line"><a id="l00097" name="l00097"></a><span class="lineno">   97</span><span class="comment">// \endcond</span></div>
-<div class="line"><a id="l00098" name="l00098"></a><span class="lineno">   98</span> </div>
-<div class="line"><a id="l00099" name="l00099"></a><span class="lineno">   99</span>} <span class="comment">// namespace geodesk</span></div>
+<div class="line"><a id="l00087" name="l00087"></a><span class="lineno">   87</span>            <span class="comment">// No, admin areas often have sub-areas, which could be ways</span></div>
+<div class="line"><a id="l00088" name="l00088"></a><span class="lineno">   88</span>            <span class="keywordflow">if</span> (testAgainstWay(way)) <span class="keywordflow">return</span> <span class="keyword">true</span>;</div>
+<div class="line"><a id="l00089" name="l00089"></a><span class="lineno">   89</span>        }</div>
+<div class="line"><a id="l00090" name="l00090"></a><span class="lineno">   90</span>        <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
+<div class="line"><a id="l00091" name="l00091"></a><span class="lineno">   91</span>    }</div>
+<div class="line"><a id="l00092" name="l00092"></a><span class="lineno">   92</span> </div>
+<div class="line"><a id="l00093" name="l00093"></a><span class="lineno">   93</span><span class="keyword">private</span>:</div>
+<div class="line"><a id="l00094" name="l00094"></a><span class="lineno">   94</span>    Coordinate point_;</div>
+<div class="line"><a id="l00095" name="l00095"></a><span class="lineno">   95</span>    uint32_t crossingCount_;</div>
+<div class="line"><a id="l00096" name="l00096"></a><span class="lineno">   96</span>};</div>
+<div class="line"><a id="l00097" name="l00097"></a><span class="lineno">   97</span> </div>
+<div class="line"><a id="l00098" name="l00098"></a><span class="lineno">   98</span><span class="comment">// \endcond</span></div>
+<div class="line"><a id="l00099" name="l00099"></a><span class="lineno">   99</span> </div>
+<div class="line"><a id="l00100" name="l00100"></a><span class="lineno">  100</span>} <span class="comment">// namespace geodesk</span></div>
 <div class="ttc" id="a_fast_member_iterator_8h_html"><div class="ttname"><a href="_fast_member_iterator_8h.html">FastMemberIterator.h</a></div></div>
 <div class="ttc" id="a_line_segment_8h_html"><div class="ttname"><a href="_line_segment_8h.html">LineSegment.h</a></div></div>
 <div class="ttc" id="a_way_coordinate_iterator_8h_html"><div class="ttname"><a href="_way_coordinate_iterator_8h.html">WayCoordinateIterator.h</a></div></div>

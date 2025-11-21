@@ -2,10 +2,17 @@ var hierarchy =
 [
     [ "geodesk::Box", "classgeodesk_1_1_box.html", null ],
     [ "geodesk::Coordinate", "classgeodesk_1_1_coordinate.html", null ],
+    [ "geodesk::CoordinateSpanIterator", "classgeodesk_1_1_coordinate_span_iterator.html", null ],
+    [ "clarisma::DataPtr", null, [
+      [ "TilePtr", "class_tile_ptr.html", null ]
+    ] ],
     [ "geodesk::Feature", "classgeodesk_1_1_feature.html", [
       [ "geodesk::Node", "classgeodesk_1_1_node.html", null ],
       [ "geodesk::Relation", "classgeodesk_1_1_relation.html", null ],
       [ "geodesk::Way", "classgeodesk_1_1_way.html", null ]
+    ] ],
+    [ "FeatureFormatter", null, [
+      [ "geodesk::LeafletFormatter", "classgeodesk_1_1_leaflet_formatter.html", null ]
     ] ],
     [ "geodesk::FeaturePtr", "classgeodesk_1_1_feature_ptr.html", null ],
     [ "geodesk::Features", "classgeodesk_1_1_features.html", [
@@ -13,27 +20,31 @@ var hierarchy =
       [ "geodesk::Relations", "classgeodesk_1_1_relations.html", null ],
       [ "geodesk::Ways", "classgeodesk_1_1_ways.html", null ]
     ] ],
-    [ "clarisma::File", null, [
-      [ "clarisma::MappedFile", null, [
-        [ "clarisma::ExpandableMappedFile", null, [
-          [ "clarisma::Store", null, [
-            [ "clarisma::BlobStore", null, [
-              [ "geodesk::FeatureStore", "classgeodesk_1_1_feature_store.html", null ]
-            ] ]
-          ] ]
-        ] ]
-      ] ]
+    [ "geodesk::FixedLonLat", "classgeodesk_1_1_fixed_lon_lat.html", null ],
+    [ "GeometryWriter", null, [
+      [ "geodesk::MapWriter", "classgeodesk_1_1_map_writer.html", null ]
     ] ],
     [ "geodesk::Tags::Iterator", "classgeodesk_1_1_tags_1_1_iterator.html", null ],
     [ "geodesk::Key", "classgeodesk_1_1_key.html", null ],
+    [ "geodesk::KeySchema", "classgeodesk_1_1_key_schema.html", null ],
+    [ "geodesk::LeafletSettings", "structgeodesk_1_1_leaflet_settings.html", null ],
     [ "geodesk::LonLat", "classgeodesk_1_1_lon_lat.html", null ],
     [ "geodesk::Mercator", "classgeodesk_1_1_mercator.html", null ],
+    [ "geodesk::FeatureStore::Metadata", "structgeodesk_1_1_feature_store_1_1_metadata.html", null ],
     [ "geodesk::Polygonizer", "classgeodesk_1_1_polygonizer.html", null ],
+    [ "geodesk::Polygonizer::Ring", "classgeodesk_1_1_polygonizer_1_1_ring.html", null ],
     [ "std::runtime_error", null, [
       [ "geodesk::QueryException", "classgeodesk_1_1_query_exception.html", null ]
     ] ],
+    [ "clarisma::SmallArray< StringHolder, 32 >", null, [
+      [ "FeatureRow", "class_feature_row.html", null ]
+    ] ],
+    [ "geodesk::StringHolder", "classgeodesk_1_1_string_holder.html", null ],
     [ "geodesk::StringValue", "classgeodesk_1_1_string_value.html", null ],
     [ "geodesk::Tag", "classgeodesk_1_1_tag.html", null ],
     [ "geodesk::Tags", "classgeodesk_1_1_tags.html", null ],
-    [ "geodesk::TagValue", "classgeodesk_1_1_tag_value.html", null ]
+    [ "geodesk::TagValue", "classgeodesk_1_1_tag_value.html", null ],
+    [ "FreeStore::Transaction", null, [
+      [ "geodesk::FeatureStore::Transaction", "classgeodesk_1_1_feature_store_1_1_transaction.html", null ]
+    ] ]
 ];

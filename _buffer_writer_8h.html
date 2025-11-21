@@ -101,7 +101,8 @@ $(function(){initNavTree('_buffer_writer_8h.html',''); initResizable(true); });
 
 <div class="header">
   <div class="summary">
-<a href="#namespaces">Namespaces</a>  </div>
+<a href="#namespaces">Namespaces</a> &#124;
+<a href="#func-members">Functions</a>  </div>
   <div class="headertitle"><div class="title">BufferWriter.h File Reference</div></div>
 </div><!--header-->
 <div class="contents">
@@ -119,6 +120,17 @@ $(function(){initNavTree('_buffer_writer_8h.html',''); initResizable(true); });
 Namespaces</h2></td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">namespace &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceclarisma.html">clarisma</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
+Functions</h2></td></tr>
+<tr class="memitem:a4d52c5c7ce5183fd8e2725d9643eea2c" id="r_a4d52c5c7ce5183fd8e2725d9643eea2c"><td class="memTemplParams" colspan="2">template&lt;typename T &gt; <br />
+requires BufferWriterFormattable&lt;T&gt;</td></tr>
+<tr class="memitem:a4d52c5c7ce5183fd8e2725d9643eea2c"><td class="memTemplItemLeft" align="right" valign="top">BufferWriter &amp;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespaceclarisma.html#a4d52c5c7ce5183fd8e2725d9643eea2c">clarisma::operator&lt;&lt;</a> (BufferWriter &amp;buf, const T &amp;value)</td></tr>
+<tr class="separator:a4d52c5c7ce5183fd8e2725d9643eea2c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abd8dd89f04735b9eaaa8a5715a958f52" id="r_abd8dd89f04735b9eaaa8a5715a958f52"><td class="memTemplParams" colspan="2">template&lt;typename B , typename T &gt; <br />
+requires (std::is_base_of_v&lt;BufferWriter, std::remove_reference_t&lt;B&gt;&gt;) &amp;&amp; (!std::is_same_v&lt;std::remove_reference_t&lt;B&gt;, BufferWriter&gt; &amp;&amp; BufferWriterFormattable&lt;T&gt;)</td></tr>
+<tr class="memitem:abd8dd89f04735b9eaaa8a5715a958f52"><td class="memTemplItemLeft" align="right" valign="top">B &amp;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespaceclarisma.html#abd8dd89f04735b9eaaa8a5715a958f52">clarisma::operator&lt;&lt;</a> (B &amp;b, const T &amp;value)</td></tr>
+<tr class="separator:abd8dd89f04735b9eaaa8a5715a958f52"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 </div><!-- contents -->
 </div><!-- doc-content -->

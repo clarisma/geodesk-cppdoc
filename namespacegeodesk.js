@@ -2,12 +2,17 @@ var namespacegeodesk =
 [
     [ "Box", "classgeodesk_1_1_box.html", "classgeodesk_1_1_box" ],
     [ "Coordinate", "classgeodesk_1_1_coordinate.html", "classgeodesk_1_1_coordinate" ],
+    [ "CoordinateSpanIterator", "classgeodesk_1_1_coordinate_span_iterator.html", "classgeodesk_1_1_coordinate_span_iterator" ],
     [ "Feature", "classgeodesk_1_1_feature.html", "classgeodesk_1_1_feature" ],
     [ "FeaturePtr", "classgeodesk_1_1_feature_ptr.html", "classgeodesk_1_1_feature_ptr" ],
     [ "Features", "classgeodesk_1_1_features.html", "classgeodesk_1_1_features" ],
-    [ "FeatureStore", "classgeodesk_1_1_feature_store.html", "classgeodesk_1_1_feature_store" ],
+    [ "FixedLonLat", "classgeodesk_1_1_fixed_lon_lat.html", "classgeodesk_1_1_fixed_lon_lat" ],
     [ "Key", "classgeodesk_1_1_key.html", "classgeodesk_1_1_key" ],
+    [ "KeySchema", "classgeodesk_1_1_key_schema.html", "classgeodesk_1_1_key_schema" ],
+    [ "LeafletFormatter", "classgeodesk_1_1_leaflet_formatter.html", "classgeodesk_1_1_leaflet_formatter" ],
+    [ "LeafletSettings", "structgeodesk_1_1_leaflet_settings.html", "structgeodesk_1_1_leaflet_settings" ],
     [ "LonLat", "classgeodesk_1_1_lon_lat.html", "classgeodesk_1_1_lon_lat" ],
+    [ "MapWriter", "classgeodesk_1_1_map_writer.html", "classgeodesk_1_1_map_writer" ],
     [ "Mercator", "classgeodesk_1_1_mercator.html", "classgeodesk_1_1_mercator" ],
     [ "Node", "classgeodesk_1_1_node.html", "classgeodesk_1_1_node" ],
     [ "Nodes", "classgeodesk_1_1_nodes.html", "classgeodesk_1_1_nodes" ],
@@ -15,6 +20,7 @@ var namespacegeodesk =
     [ "QueryException", "classgeodesk_1_1_query_exception.html", "classgeodesk_1_1_query_exception" ],
     [ "Relation", "classgeodesk_1_1_relation.html", "classgeodesk_1_1_relation" ],
     [ "Relations", "classgeodesk_1_1_relations.html", "classgeodesk_1_1_relations" ],
+    [ "StringHolder", "classgeodesk_1_1_string_holder.html", "classgeodesk_1_1_string_holder" ],
     [ "StringValue", "classgeodesk_1_1_string_value.html", "classgeodesk_1_1_string_value" ],
     [ "Tag", "classgeodesk_1_1_tag.html", "classgeodesk_1_1_tag" ],
     [ "Tags", "classgeodesk_1_1_tags.html", "classgeodesk_1_1_tags" ],
@@ -26,10 +32,6 @@ var namespacegeodesk =
       [ "WAY", "namespacegeodesk.html#ab4c15802927accc42f5c68cd19e7c828abeb410f25fbf2fdde0e664a4b6cb6f42", null ],
       [ "RELATION", "namespacegeodesk.html#ab4c15802927accc42f5c68cd19e7c828a597b1b050c9cf333a3f75f52eea33279", null ]
     ] ],
-    [ "operator<<", "namespacegeodesk.html#ae17f5164d4348facf5fbe04a8c81a90f", null ],
-    [ "operator<<", "namespacegeodesk.html#ac7711f09bb1cd18f8bb5b45afecc400f", null ],
-    [ "operator<<", "namespacegeodesk.html#a8983e99dc5ba2ffe2a219decb0e18089", null ],
-    [ "operator<<", "namespacegeodesk.html#a0ce53def2b638fe3a25196244158e7f5", null ],
-    [ "operator<<", "namespacegeodesk.html#ab12ecc044b279310fbecfc7c5c4cc8b2", null ],
+    [ "operator<<", "namespacegeodesk.html#adb91e057956b77a3eac7b25d89290739", null ],
     [ "typeName", "namespacegeodesk.html#ab86124bb3ebef6047b94353477a49143", null ]
 ];

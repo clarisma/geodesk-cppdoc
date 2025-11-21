@@ -130,6 +130,9 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a7ff6b20f9490bf4e4f0d83490e276948"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae6d84934f349bc22b3e00b77c3e373ab" id="r_ae6d84934f349bc22b3e00b77c3e373ab"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ae6d84934f349bc22b3e00b77c3e373ab">operator!=</a> (const <a class="el" href="classgeodesk_1_1_key.html">Key</a> &amp;) const =default</td></tr>
 <tr class="separator:ae6d84934f349bc22b3e00b77c3e373ab"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9f73bfc69f43e873ed30bf4c4e304a27" id="r_a9f73bfc69f43e873ed30bf4c4e304a27"><td class="memTemplParams" colspan="2">template&lt;typename Stream &gt; </td></tr>
+<tr class="memitem:a9f73bfc69f43e873ed30bf4c4e304a27"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="#a9f73bfc69f43e873ed30bf4c4e304a27">format</a> (Stream &amp;out) const</td></tr>
+<tr class="separator:a9f73bfc69f43e873ed30bf4c4e304a27"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>A lightweight wrapper for a key string. </p>
@@ -142,9 +145,9 @@ Public Member Functions</h2></td></tr>
 <div class="line">    <span class="comment">// This is faster than:</span></div>
 <div class="line">    <a class="code hl_class" href="classgeodesk_1_1_tag_value.html">TagValue</a> hnSlow = building[<span class="stringliteral">&quot;addr:housenumber&quot;</span>];</div>
 <div class="line">}</div>
-<div class="ttc" id="aclassgeodesk_1_1_feature_html"><div class="ttname"><a href="classgeodesk_1_1_feature.html">geodesk::Feature</a></div><div class="ttdoc">A geographic feature.</div><div class="ttdef"><b>Definition</b> Feature.h:27</div></div>
-<div class="ttc" id="aclassgeodesk_1_1_key_html"><div class="ttname"><a href="classgeodesk_1_1_key.html">geodesk::Key</a></div><div class="ttdoc">A lightweight wrapper for a key string.</div><div class="ttdef"><b>Definition</b> Key.h:42</div></div>
-<div class="ttc" id="aclassgeodesk_1_1_tag_value_html"><div class="ttname"><a href="classgeodesk_1_1_tag_value.html">geodesk::TagValue</a></div><div class="ttdoc">The value of a Tag.</div><div class="ttdef"><b>Definition</b> TagValue.h:34</div></div>
+<div class="ttc" id="aclassgeodesk_1_1_feature_html"><div class="ttname"><a href="classgeodesk_1_1_feature.html">geodesk::Feature</a></div><div class="ttdoc">A geographic feature.</div><div class="ttdef"><b>Definition</b> Feature.h:28</div></div>
+<div class="ttc" id="aclassgeodesk_1_1_key_html"><div class="ttname"><a href="classgeodesk_1_1_key.html">geodesk::Key</a></div><div class="ttdoc">A lightweight wrapper for a key string.</div><div class="ttdef"><b>Definition</b> Key.h:44</div></div>
+<div class="ttc" id="aclassgeodesk_1_1_tag_value_html"><div class="ttname"><a href="classgeodesk_1_1_tag_value.html">geodesk::TagValue</a></div><div class="ttdoc">The value of a Tag.</div><div class="ttdef"><b>Definition</b> TagValue.h:36</div></div>
 </div><!-- fragment --><p><a class="el" href="classgeodesk_1_1_key.html" title="A lightweight wrapper for a key string.">Key</a> converts implicitly to <code>std::string_view</code>.</p>
 <dl class="section warning"><dt>Warning</dt><dd>The memory backing the <code>std::string_view</code> used to create this <a class="el" href="classgeodesk_1_1_key.html" title="A lightweight wrapper for a key string.">Key</a> must remain unchanged and valid for the <a class="el" href="classgeodesk_1_1_key.html" title="A lightweight wrapper for a key string.">Key</a>'s entire lifetime to avoid undefined behavior.</dd></dl>
 <dl class="section see"><dt>See also</dt><dd><a class="el" href="classgeodesk_1_1_tags.html" title="An object describing the key/value attributes of a Feature.">Tags</a>, <a class="el" href="classgeodesk_1_1_feature.html" title="A geographic feature.">Feature</a> </dd></dl>
@@ -230,6 +233,33 @@ Public Member Functions</h2></td></tr>
 
 <p>The character data of the key string. </p>
 <p><b>Note:</b> The string is <em>not</em> guaranteed to 0-terminated. </p>
+
+</div>
+</div>
+<a id="a9f73bfc69f43e873ed30bf4c4e304a27" name="a9f73bfc69f43e873ed30bf4c4e304a27"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9f73bfc69f43e873ed30bf4c4e304a27">&#9670;&#160;</a></span>format()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename Stream &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void geodesk::Key::format </td>
+          <td>(</td>
+          <td class="paramtype">Stream &amp;</td>          <td class="paramname"><span class="paramname"><em>out</em></span></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
 
 </div>
 </div>

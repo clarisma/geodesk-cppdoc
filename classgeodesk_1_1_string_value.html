@@ -137,17 +137,22 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:aa2312e63aa96e1b7955ad977d78eb9d1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a226a485fd1a8800f6463440d0c504872" id="r_a226a485fd1a8800f6463440d0c504872"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a226a485fd1a8800f6463440d0c504872">operator!=</a> (const std::string_view sv) const noexcept</td></tr>
 <tr class="separator:a226a485fd1a8800f6463440d0c504872"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a32436083994eef0ca3cc363b92e75940" id="r_a32436083994eef0ca3cc363b92e75940"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a32436083994eef0ca3cc363b92e75940">operator&lt;</a> (const <a class="el" href="classgeodesk_1_1_string_value.html">StringValue</a> &amp;other) const noexcept</td></tr>
+<tr class="separator:a32436083994eef0ca3cc363b92e75940"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9032f70a190480ac0f59055d3cb15090" id="r_a9032f70a190480ac0f59055d3cb15090"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a9032f70a190480ac0f59055d3cb15090">operator bool</a> () const noexcept</td></tr>
 <tr class="separator:a9032f70a190480ac0f59055d3cb15090"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6a6618e1c876f3f56ae749909284e54e" id="r_a6a6618e1c876f3f56ae749909284e54e"><td class="memItemLeft" align="right" valign="top">const uint8_t *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a6a6618e1c876f3f56ae749909284e54e">rawBytes</a> () const noexcept</td></tr>
 <tr class="memdesc:a6a6618e1c876f3f56ae749909284e54e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Pointer to the raw data representing this string.  <br /></td></tr>
 <tr class="separator:a6a6618e1c876f3f56ae749909284e54e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1254a0e6187cce85a06a73e66e9184ed" id="r_a1254a0e6187cce85a06a73e66e9184ed"><td class="memTemplParams" colspan="2">template&lt;typename Stream &gt; </td></tr>
+<tr class="memitem:a1254a0e6187cce85a06a73e66e9184ed"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="#a1254a0e6187cce85a06a73e66e9184ed">format</a> (Stream &amp;out) const</td></tr>
+<tr class="separator:a1254a0e6187cce85a06a73e66e9184ed"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>A string pointer (used for keys, values and roles). </p>
 <p>Character data is encoded as UTF-8.</p>
 <p>Converts implicitly to <code>std::string</code> and <code>std::string_view</code>.</p>
-<p><b>Warning</b>: A <a class="el" href="classgeodesk_1_1_string_value.html" title="A string pointer (used for keys, values and roles).">StringValue</a> object is a lightweight wrapper around a pointer to string data, contained in a <a class="el" href="classgeodesk_1_1_feature_store.html" title="A Geographic Object Library.">FeatureStore</a>. It becomes invalid once that <a class="el" href="classgeodesk_1_1_feature_store.html" title="A Geographic Object Library.">FeatureStore</a> is closed. To use its value beyond the lifetime of its <a class="el" href="classgeodesk_1_1_feature_store.html" title="A Geographic Object Library.">FeatureStore</a>, assign it to a <code>std::string</code> (which allocates its own copy of the string). </p>
+<p><b>Warning</b>: A <a class="el" href="classgeodesk_1_1_string_value.html" title="A string pointer (used for keys, values and roles).">StringValue</a> object is a lightweight wrapper around a pointer to string data, contained in a FeatureStore. It becomes invalid once that FeatureStore is closed. To use its value beyond the lifetime of its FeatureStore, assign it to a <code>std::string</code> (which allocates its own copy of the string). </p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="ad23147a75bd90f8a04c7accb7d1ed0db" name="ad23147a75bd90f8a04c7accb7d1ed0db"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ad23147a75bd90f8a04c7accb7d1ed0db">&#9670;&#160;</a></span>StringValue() <span class="overload">[1/3]</span></h2>
@@ -278,6 +283,33 @@ Public Member Functions</h2></td></tr>
 
 </div>
 </div>
+<a id="a1254a0e6187cce85a06a73e66e9184ed" name="a1254a0e6187cce85a06a73e66e9184ed"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1254a0e6187cce85a06a73e66e9184ed">&#9670;&#160;</a></span>format()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename Stream &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void geodesk::StringValue::format </td>
+          <td>(</td>
+          <td class="paramtype">Stream &amp;</td>          <td class="paramname"><span class="paramname"><em>out</em></span></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <a id="aea2d590cfc08c2f4a6a5afe0da6c0175" name="aea2d590cfc08c2f4a6a5afe0da6c0175"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#aea2d590cfc08c2f4a6a5afe0da6c0175">&#9670;&#160;</a></span>isEmpty()</h2>
 
@@ -355,6 +387,31 @@ Public Member Functions</h2></td></tr>
 
 </div>
 </div>
+<a id="a32436083994eef0ca3cc363b92e75940" name="a32436083994eef0ca3cc363b92e75940"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a32436083994eef0ca3cc363b92e75940">&#9670;&#160;</a></span>operator&lt;()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool geodesk::StringValue::operator&lt; </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="classgeodesk_1_1_string_value.html">StringValue</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>other</em></span></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">noexcept</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <a id="aa2312e63aa96e1b7955ad977d78eb9d1" name="aa2312e63aa96e1b7955ad977d78eb9d1"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#aa2312e63aa96e1b7955ad977d78eb9d1">&#9670;&#160;</a></span>operator==()</h2>
 
@@ -404,7 +461,7 @@ Public Member Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Pointer to the raw data representing this string. </p>
-<p><b>Warning:</b> This pointer becomes invalid once the <a class="el" href="classgeodesk_1_1_feature_store.html" title="A Geographic Object Library.">FeatureStore</a> containing its data is closed. </p>
+<p><b>Warning:</b> This pointer becomes invalid once the FeatureStore containing its data is closed. </p>
 
 </div>
 </div>

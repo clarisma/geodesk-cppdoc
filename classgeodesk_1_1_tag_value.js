@@ -3,6 +3,9 @@ var classgeodesk_1_1_tag_value =
     [ "TagValue", "classgeodesk_1_1_tag_value.html#a3b65cf48d09dd77f04668b23c8113f8f", null ],
     [ "TagValue", "classgeodesk_1_1_tag_value.html#ade3a6422914d633f444cea6d8cdc206b", null ],
     [ "TagValue", "classgeodesk_1_1_tag_value.html#a48740de51c674194de6f9f9493d14bda", null ],
+    [ "charCount", "classgeodesk_1_1_tag_value.html#af6a8d392d0b5f63dea8fe30bc254b60e", null ],
+    [ "format", "classgeodesk_1_1_tag_value.html#a006e722f3a264f34e631c6207d78ddb6", null ],
+    [ "isStoredNumeric", "classgeodesk_1_1_tag_value.html#ab2100cef82835b5da1ce173e3876d398", null ],
     [ "operator bool", "classgeodesk_1_1_tag_value.html#a590cef6167e74106f16026930738ff5d", null ],
     [ "operator double", "classgeodesk_1_1_tag_value.html#a8471be19fd68f7ba965c07a22d9a7f17", null ],
     [ "operator int", "classgeodesk_1_1_tag_value.html#ab0cbabd04887a513b8f78f2ab9caea82", null ],
@@ -29,5 +32,6 @@ var classgeodesk_1_1_tag_value =
     [ "operator>=", "classgeodesk_1_1_tag_value.html#a4969cbf61dfcebd5ae64fbe7ee70377a", null ],
     [ "operator>=", "classgeodesk_1_1_tag_value.html#a072833b768525986d24a06464bf09993", null ],
     [ "operator>=", "classgeodesk_1_1_tag_value.html#a839def4d1828e4ad2880b85b5048b79a", null ],
-    [ "operator<<", "classgeodesk_1_1_tag_value.html#a7b38d9f7b20bb91224e513890466b743", null ]
+    [ "storedNumber", "classgeodesk_1_1_tag_value.html#aedfa52f783a2b3b5fef19009c109efcc", null ],
+    [ "storedString", "classgeodesk_1_1_tag_value.html#abc476b02c28bced8648e038fb996d341", null ]
 ];

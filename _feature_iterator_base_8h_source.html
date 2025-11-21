@@ -111,7 +111,7 @@ $(function(){initNavTree('_feature_iterator_base_8h_source.html',''); initResiza
 <div class="line"><a id="l00006" name="l00006"></a><span class="lineno">    6</span><span class="preprocessor">#include &lt;<a class="code" href="_feature_base_8h.html">geodesk/feature/FeatureBase.h</a>&gt;</span></div>
 <div class="line"><a id="l00007" name="l00007"></a><span class="lineno">    7</span><span class="preprocessor">#include &lt;<a class="code" href="_member_iterator_8h.html">geodesk/feature/MemberIterator.h</a>&gt;</span></div>
 <div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span><span class="preprocessor">#include &lt;<a class="code" href="_feature_node_iterator_8h.html">geodesk/feature/FeatureNodeIterator.h</a>&gt;</span></div>
-<div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span><span class="preprocessor">#include &lt;<a class="code" href="_way_coordinate_iterator_8h.html">geodesk/feature/WayCoordinateIterator.h</a>&gt;</span></div>
+<div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span><span class="preprocessor">#include &lt;<a class="code" href="_way_node_cursor_8h.html">geodesk/feature/WayNodeCursor.h</a>&gt;</span></div>
 <div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span><span class="preprocessor">#include &lt;geodesk/filter/FeatureNodeFilter.h&gt;</span></div>
 <div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span><span class="preprocessor">#include &lt;geodesk/filter/WayNodeFilter.h&gt;</span></div>
 <div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span><span class="preprocessor">#include &lt;geodesk/query/Query.h&gt;</span></div>
@@ -150,7 +150,7 @@ $(function(){initNavTree('_feature_iterator_base_8h_source.html',''); initResiza
 <div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span>        MemberIterator members;</div>
 <div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span>        <span class="keyword">struct</span></div>
 <div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span>        {</div>
-<div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span>            WayCoordinateIterator coords;</div>
+<div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span>            WayNodeCursor cursor;</div>
 <div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span>            FeatureNodeIterator featureNodes;</div>
 <div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span>            NodePtr nextFeatureNode;</div>
 <div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span>        } nodes;</div>
@@ -197,7 +197,7 @@ $(function(){initNavTree('_feature_iterator_base_8h_source.html',''); initResiza
 <div class="ttc" id="a_feature_node_iterator_8h_html"><div class="ttname"><a href="_feature_node_iterator_8h.html">FeatureNodeIterator.h</a></div></div>
 <div class="ttc" id="a_member_iterator_8h_html"><div class="ttname"><a href="_member_iterator_8h.html">MemberIterator.h</a></div></div>
 <div class="ttc" id="a_parent_relation_iterator_8h_html"><div class="ttname"><a href="_parent_relation_iterator_8h.html">ParentRelationIterator.h</a></div></div>
-<div class="ttc" id="a_way_coordinate_iterator_8h_html"><div class="ttname"><a href="_way_coordinate_iterator_8h.html">WayCoordinateIterator.h</a></div></div>
+<div class="ttc" id="a_way_node_cursor_8h_html"><div class="ttname"><a href="_way_node_cursor_8h.html">WayNodeCursor.h</a></div></div>
 <div class="ttc" id="aexport_8h_html_ad2aca25975b684c8b6f6edf212ef7007"><div class="ttname"><a href="export_8h.html#ad2aca25975b684c8b6f6edf212ef7007">GEODESK_API</a></div><div class="ttdeci">#define GEODESK_API</div><div class="ttdef"><b>Definition</b> export.h:31</div></div>
 <div class="ttc" id="anamespacegeodesk_html"><div class="ttname"><a href="namespacegeodesk.html">geodesk</a></div><div class="ttdef"><b>Definition</b> Feature.h:11</div></div>
 </div><!-- fragment --></div><!-- contents -->

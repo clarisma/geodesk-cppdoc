@@ -18,6 +18,7 @@ var classgeodesk_1_1_box =
     [ "expandToIncludeSimple", "classgeodesk_1_1_box.html#adbc2b1f63f56a75409ac99fc1cb30bc6", null ],
     [ "expandToIncludeX", "classgeodesk_1_1_box.html#a592266a591bfb54a41c6ba850d57efd1", null ],
     [ "format", "classgeodesk_1_1_box.html#ad85d8cf40f7d1ba815c29dbb98ebeb54", null ],
+    [ "format", "classgeodesk_1_1_box.html#a29f22d1398d2e5ac579a3b49f89f95bf", null ],
     [ "height", "classgeodesk_1_1_box.html#ae2bf07f90d222e45d1ee0c12e36a56c7", null ],
     [ "intersects", "classgeodesk_1_1_box.html#a11b9013d53290ac79671e5d9d18e2c95", null ],
     [ "isEmpty", "classgeodesk_1_1_box.html#a997628f1ce5b2d4593e720340b27b6cd", null ],

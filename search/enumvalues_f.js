@@ -1,0 +1,6 @@
+var searchData=
+[
+  ['tags_0',['TAGS',['../classgeodesk_1_1_key_schema.html#a75ebf9605b88ea854d36ad4d1dd09394a52adb89406e1a77936f4bef7263424b1',1,'geodesk::KeySchema']]],
+  ['text_5ffile_5fbusy_1',['TEXT_FILE_BUSY',['../namespaceclarisma.html#a0271fa8092cc9ba96810d9bcc94d2177a3502db485de8eaae1ed199c4c6420876',1,'clarisma::TEXT_FILE_BUSY'],['../namespaceclarisma.html#a0271fa8092cc9ba96810d9bcc94d2177a3502db485de8eaae1ed199c4c6420876',1,'clarisma::TEXT_FILE_BUSY'],['../namespaceclarisma.html#a0271fa8092cc9ba96810d9bcc94d2177a3502db485de8eaae1ed199c4c6420876',1,'clarisma::TEXT_FILE_BUSY'],['../namespaceclarisma.html#a0271fa8092cc9ba96810d9bcc94d2177a3502db485de8eaae1ed199c4c6420876',1,'clarisma::TEXT_FILE_BUSY']]],
+  ['timed_5fout_2',['TIMED_OUT',['../namespaceclarisma.html#a0271fa8092cc9ba96810d9bcc94d2177adbe2cbac46ffa8283747010d8e1e6396',1,'clarisma::TIMED_OUT'],['../namespaceclarisma.html#a0271fa8092cc9ba96810d9bcc94d2177adbe2cbac46ffa8283747010d8e1e6396',1,'clarisma::TIMED_OUT'],['../namespaceclarisma.html#a0271fa8092cc9ba96810d9bcc94d2177adbe2cbac46ffa8283747010d8e1e6396',1,'clarisma::TIMED_OUT'],['../namespaceclarisma.html#a0271fa8092cc9ba96810d9bcc94d2177adbe2cbac46ffa8283747010d8e1e6396',1,'clarisma::TIMED_OUT']]]
+];

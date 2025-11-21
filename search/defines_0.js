@@ -1,5 +1,6 @@
 var searchData=
 [
-  ['declare_5fexception_0',['DECLARE_EXCEPTION',['../exception_8h.html#aeafe56c0a85c2beea3ec1508cfb04116',1,'exception.h']]],
-  ['declare_5fexception_5fwith_5fbase_1',['DECLARE_EXCEPTION_WITH_BASE',['../exception_8h.html#a40c3b84c4f0ff8337bea88e51443a40d',1,'exception.h']]]
+  ['clarisma_5fenum_5fflags_0',['CLARISMA_ENUM_FLAGS',['../enum_8h.html#a0ad948cb4a882bbb60d51b6a62427d36',1,'enum.h']]],
+  ['clarisma_5ftarget_5farm_5fcrc_1',['CLARISMA_TARGET_ARM_CRC',['../_crc32_c_8h.html#ad85b9804483694ede33869c7f092f753',1,'Crc32C.h']]],
+  ['clarisma_5ftarget_5fsse42_2',['CLARISMA_TARGET_SSE42',['../_crc32_c_8h.html#acfeb5c917463a3d068396ccaff5072b2',1,'Crc32C.h']]]
 ];
