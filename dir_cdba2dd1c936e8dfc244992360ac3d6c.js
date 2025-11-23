@@ -6,7 +6,7 @@ var dir_cdba2dd1c936e8dfc244992360ac3d6c =
     [ "Box.h", "_box_8h.html", "_box_8h" ],
     [ "Centroid.h", "_centroid_8h.html", null ],
     [ "Coordinate.h", "_coordinate_8h.html", "_coordinate_8h" ],
-    [ "CoordinateSpanIterator.h", "_coordinate_span_iterator_8h.html", "_coordinate_span_iterator_8h" ],
+    [ "CoordinateSpanIterator.h", "_coordinate_span_iterator_8h.html", null ],
     [ "Distance.h", "_distance_8h.html", null ],
     [ "FixedLonLat.h", "_fixed_lon_lat_8h.html", "_fixed_lon_lat_8h" ],
     [ "GeometryBuilder.h", "_geometry_builder_8h.html", null ],

@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['specialkey_0',['SpecialKey',['../classgeodesk_1_1_key_schema.html#a75ebf9605b88ea854d36ad4d1dd09394',1,'geodesk::KeySchema']]]
+  ['urlscheme_0',['UrlScheme',['../namespaceclarisma.html#ab0e1aeafc3519d91303d850c11caeeb9',1,'clarisma']]]
 ];

@@ -1,6 +1,5 @@
 var searchData=
 [
-  ['mapwriter_0',['MapWriter',['../classgeodesk_1_1_map_writer.html',1,'geodesk']]],
-  ['mercator_1',['Mercator',['../classgeodesk_1_1_mercator.html',1,'geodesk']]],
-  ['metadata_2',['Metadata',['../structgeodesk_1_1_feature_store_1_1_metadata.html',1,'geodesk::FeatureStore']]]
+  ['node_0',['Node',['../classgeodesk_1_1_node.html',1,'geodesk']]],
+  ['nodes_1',['Nodes',['../classgeodesk_1_1_nodes.html',1,'geodesk']]]
 ];

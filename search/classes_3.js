@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['iterator_0',['Iterator',['../classgeodesk_1_1_tags_1_1_iterator.html',1,'geodesk::Tags']]]
+  ['key_0',['Key',['../classgeodesk_1_1_key.html',1,'geodesk']]]
 ];

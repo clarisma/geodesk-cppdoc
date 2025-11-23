@@ -139,18 +139,17 @@ Public Member Functions</h2></td></tr>
 <p>A <a class="el" href="classgeodesk_1_1_key.html" title="A lightweight wrapper for a key string.">Key</a> is constructed from a <code>std::string_view</code> via <a class="el" href="classgeodesk_1_1_features.html#abcfda83368d0ffdec4b5f9fcb1776419" title="Obtains a Key for the given string, which can be used for faster tag-value lookups.">Features::key()</a> and is valid for all features within the same GOL. A <a class="el" href="classgeodesk_1_1_key.html" title="A lightweight wrapper for a key string.">Key</a> created for one GOL cannot be used for lookups in another.</p>
 <p>A <a class="el" href="classgeodesk_1_1_key.html" title="A lightweight wrapper for a key string.">Key</a> object is useful in scenarios requiring lookups of the same tag across multiple features. It avoids the overhead of resolving the tag's global-string code on every lookup, leading to a performance boost of about 2x to 4x.</p>
 <div class="fragment"><div class="line"><a class="code hl_class" href="classgeodesk_1_1_key.html">Key</a> houseNumber = buildings.key(<span class="stringliteral">&quot;addr:housenumber&quot;</span>);</div>
-<div class="line"><span class="keywordflow">for</span>(<a class="code hl_class" href="classgeodesk_1_1_feature.html">Feature</a> building: buildings)</div>
+<div class="line"><span class="keywordflow">for</span>(Feature building: buildings)</div>
 <div class="line">{</div>
 <div class="line">    <a class="code hl_class" href="classgeodesk_1_1_tag_value.html">TagValue</a> hn = building[houseNumber];</div>
 <div class="line">    <span class="comment">// This is faster than:</span></div>
 <div class="line">    <a class="code hl_class" href="classgeodesk_1_1_tag_value.html">TagValue</a> hnSlow = building[<span class="stringliteral">&quot;addr:housenumber&quot;</span>];</div>
 <div class="line">}</div>
-<div class="ttc" id="aclassgeodesk_1_1_feature_html"><div class="ttname"><a href="classgeodesk_1_1_feature.html">geodesk::Feature</a></div><div class="ttdoc">A geographic feature.</div><div class="ttdef"><b>Definition</b> Feature.h:28</div></div>
 <div class="ttc" id="aclassgeodesk_1_1_key_html"><div class="ttname"><a href="classgeodesk_1_1_key.html">geodesk::Key</a></div><div class="ttdoc">A lightweight wrapper for a key string.</div><div class="ttdef"><b>Definition</b> Key.h:44</div></div>
 <div class="ttc" id="aclassgeodesk_1_1_tag_value_html"><div class="ttname"><a href="classgeodesk_1_1_tag_value.html">geodesk::TagValue</a></div><div class="ttdoc">The value of a Tag.</div><div class="ttdef"><b>Definition</b> TagValue.h:36</div></div>
 </div><!-- fragment --><p><a class="el" href="classgeodesk_1_1_key.html" title="A lightweight wrapper for a key string.">Key</a> converts implicitly to <code>std::string_view</code>.</p>
 <dl class="section warning"><dt>Warning</dt><dd>The memory backing the <code>std::string_view</code> used to create this <a class="el" href="classgeodesk_1_1_key.html" title="A lightweight wrapper for a key string.">Key</a> must remain unchanged and valid for the <a class="el" href="classgeodesk_1_1_key.html" title="A lightweight wrapper for a key string.">Key</a>'s entire lifetime to avoid undefined behavior.</dd></dl>
-<dl class="section see"><dt>See also</dt><dd><a class="el" href="classgeodesk_1_1_tags.html" title="An object describing the key/value attributes of a Feature.">Tags</a>, <a class="el" href="classgeodesk_1_1_feature.html" title="A geographic feature.">Feature</a> </dd></dl>
+<dl class="section see"><dt>See also</dt><dd><a class="el" href="classgeodesk_1_1_tags.html" title="An object describing the key/value attributes of a Feature.">Tags</a>, Feature </dd></dl>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="a4ff4e94297e99130172fc960dafacad3" name="a4ff4e94297e99130172fc960dafacad3"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a4ff4e94297e99130172fc960dafacad3">&#9670;&#160;</a></span>Key()</h2>

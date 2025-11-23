@@ -4,6 +4,5 @@ var searchData=
   ['key_1',['key',['../classgeodesk_1_1_features.html#abcfda83368d0ffdec4b5f9fcb1776419',1,'geodesk::Features::key()'],['../classgeodesk_1_1_tag.html#a2e64130b501d7a281f4642fe6ab4191b',1,'geodesk::Tag::key()']]],
   ['key_2eh_2',['Key.h',['../_key_8h.html',1,'']]],
   ['keyindexschema_2eh_3',['KeyIndexSchema.h',['../_key_index_schema_8h.html',1,'']]],
-  ['keyschema_4',['KeySchema',['../classgeodesk_1_1_key_schema.html',1,'geodesk::KeySchema'],['../classgeodesk_1_1_key_schema.html#acfa5c8bcc1839db285acd1d2958199ff',1,'geodesk::KeySchema::KeySchema(StringTable *strings)'],['../classgeodesk_1_1_key_schema.html#a2ea4b891ce5a186e9d4b043fd4fcdb83',1,'geodesk::KeySchema::KeySchema(StringTable *strings, std::string_view keys)']]],
-  ['keyschema_2eh_5',['KeySchema.h',['../_key_schema_8h.html',1,'']]]
+  ['keyschema_2eh_4',['KeySchema.h',['../_key_schema_8h.html',1,'']]]
 ];

@@ -11,6 +11,5 @@ var searchData=
   ['geos_2eh_8',['Geos.h',['../_geos_8h.html',1,'']]],
   ['geoscoordinateiterator_2eh_9',['GeosCoordinateIterator.h',['../_geos_coordinate_iterator_8h.html',1,'']]],
   ['globalstrings_2eh_10',['GlobalStrings.h',['../_global_strings_8h.html',1,'']]],
-  ['globaltagiterator_2eh_11',['GlobalTagIterator.h',['../_global_tag_iterator_8h.html',1,'']]],
-  ['guid_12',['guid',['../structgeodesk_1_1_feature_store_1_1_metadata.html#a5bcb6baefd5e5de6ca93e1ac545f6004',1,'geodesk::FeatureStore::Metadata']]]
+  ['globaltagiterator_2eh_11',['GlobalTagIterator.h',['../_global_tag_iterator_8h.html',1,'']]]
 ];

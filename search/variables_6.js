@@ -1,5 +1,5 @@
 var searchData=
 [
-  ['indexedkeys_0',['indexedKeys',['../structgeodesk_1_1_feature_store_1_1_metadata.html#a63300043967b8ca12ac14ee4b1699d8a',1,'geodesk::FeatureStore::Metadata']]],
-  ['inlined_1',['inlined',['../classgeodesk_1_1_string_holder.html#a18e599e6601cce4ddf7f21aa990ec234',1,'geodesk::StringHolder']]]
+  ['relation_5findex_5fofs_0',['RELATION_INDEX_OFS',['../namespace_tile_constants.html#ab77c722761f037c19d673c385bf7bda1',1,'TileConstants']]],
+  ['revision_5fofs_1',['REVISION_OFS',['../namespace_tile_constants.html#a6345469bcbb57d69618c261a39196f6f',1,'TileConstants']]]
 ];

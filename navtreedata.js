@@ -43,9 +43,7 @@ var NAVTREE =
       [ "Class Members", "functions.html", [
         [ "All", "functions.html", "functions_dup" ],
         [ "Functions", "functions_func.html", "functions_func" ],
-        [ "Variables", "functions_vars.html", null ],
-        [ "Enumerations", "functions_enum.html", null ],
-        [ "Enumerator", "functions_eval.html", null ]
+        [ "Variables", "functions_vars.html", null ]
       ] ]
     ] ],
     [ "Files", "files.html", [
@@ -63,13 +61,11 @@ var NAVTREEINDEX =
 "_abstract_feature_table_iterator_8h.html",
 "_file_error__win_8inl.html#a0271fa8092cc9ba96810d9bcc94d2177a3580755cad8dea8644748e6f3c6e35d4",
 "_small_vector_8h.html",
-"classgeodesk_1_1_coordinate.html#a48837762442f8a5291f6dc1830293100",
-"classgeodesk_1_1_features.html#a6643f62735824f64e23b38e06f18f7bd",
-"classgeodesk_1_1_node.html#a634de2ba61ba9b87fb16f469b3e4ddc2",
-"classgeodesk_1_1_relation.html#acdd0975a48d4c77997599c6af6cd9db5",
-"classgeodesk_1_1_tag_value.html#af992346f42e021ce7f6c0d5270dd4bf2",
-"feature_2_features_8h.html",
-"namespaceclarisma.html#af0aefce6f097d021fff1af3e23b0d223"
+"classgeodesk_1_1_coordinate.html#a9fc593963c6868ed6991bb3c3f83db17",
+"classgeodesk_1_1_mercator.html#a29ca50278b85483ba348c116de7c8278",
+"classgeodesk_1_1_relations.html#a7d2c19eb9f7e7aa5a1199afff0759101",
+"classgeodesk_1_1_ways.html#a688ae06a634509819b2fc8b9b9a243f5",
+"namespaceclarisma.html#a0271fa8092cc9ba96810d9bcc94d2177ab5fbe72a52e64ed04bc1f8289aeb44cf"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';

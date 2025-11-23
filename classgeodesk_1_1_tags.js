@@ -1,6 +1,5 @@
 var classgeodesk_1_1_tags =
 [
-    [ "Iterator", "classgeodesk_1_1_tags_1_1_iterator.html", "classgeodesk_1_1_tags_1_1_iterator" ],
     [ "Tags", "classgeodesk_1_1_tags.html#ab9a3036d7c652d04f25abbf22853eaf8", null ],
     [ "Tags", "classgeodesk_1_1_tags.html#ad36dac27c8e8fe6440319c40309d1801", null ],
     [ "Tags", "classgeodesk_1_1_tags.html#a868644164f1c37004363efb1d1d10fac", null ],

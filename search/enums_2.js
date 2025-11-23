@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['urlscheme_0',['UrlScheme',['../namespaceclarisma.html#ab0e1aeafc3519d91303d850c11caeeb9',1,'clarisma']]]
+  ['verbositylevel_0',['VerbosityLevel',['../namespaceclarisma.html#a72c48f0225521ceb8c1e1e880508c2e2',1,'clarisma']]]
 ];

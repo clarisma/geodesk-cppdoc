@@ -1,6 +1,6 @@
 var searchData=
 [
-  ['data_0',['data',['../classgeodesk_1_1_string_holder.html#a9d6b8194e8eef027efb60c327f7ec8d8',1,'geodesk::StringHolder::data'],['../classgeodesk_1_1_key.html#ae7cdd319c5e72f022cbe2d3e3c4f95f9',1,'geodesk::Key::data()'],['../classgeodesk_1_1_string_value.html#ac518ae585353e3ca560b8caef34845f6',1,'geodesk::StringValue::data()'],['../classgeodesk_1_1_string_holder.html#a6c145dc9eecf9471698aea8d7050a2e5',1,'geodesk::StringHolder::data()']]],
+  ['data_0',['data',['../classgeodesk_1_1_key.html#ae7cdd319c5e72f022cbe2d3e3c4f95f9',1,'geodesk::Key::data()'],['../classgeodesk_1_1_string_value.html#ac518ae585353e3ca560b8caef34845f6',1,'geodesk::StringValue::data()']]],
   ['dataptr_2eh_1',['DataPtr.h',['../_data_ptr_8h.html',1,'']]],
   ['datetime_2eh_2',['DateTime.h',['../_date_time_8h.html',1,'']]],
   ['debug_3',['DEBUG',['../namespaceclarisma.html#a72c48f0225521ceb8c1e1e880508c2e2adc30ec20708ef7b0f641ef78b7880a15',1,'clarisma']]],
