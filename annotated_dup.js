@@ -3,6 +3,7 @@ var annotated_dup =
     [ "geodesk", "namespacegeodesk.html", [
       [ "Box", "classgeodesk_1_1_box.html", "classgeodesk_1_1_box" ],
       [ "Coordinate", "classgeodesk_1_1_coordinate.html", "classgeodesk_1_1_coordinate" ],
+      [ "Feature", "classgeodesk_1_1_feature.html", "classgeodesk_1_1_feature" ],
       [ "FeaturePtr", "classgeodesk_1_1_feature_ptr.html", "classgeodesk_1_1_feature_ptr" ],
       [ "Features", "classgeodesk_1_1_features.html", "classgeodesk_1_1_features" ],
       [ "FixedLonLat", "classgeodesk_1_1_fixed_lon_lat.html", "classgeodesk_1_1_fixed_lon_lat" ],

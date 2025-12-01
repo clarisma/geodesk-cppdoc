@@ -17,7 +17,7 @@ var searchData=
   ['skipvarints_14',['skipVarints',['../namespaceclarisma.html#a3548afbbdc0537f73858928a704eac3f',1,'clarisma']]],
   ['skipvarintsbackwardunsafe_15',['skipVarintsBackwardUnsafe',['../namespaceclarisma.html#af0aefce6f097d021fff1af3e23b0d223',1,'clarisma']]],
   ['startswith_16',['startsWith',['../classgeodesk_1_1_string_value.html#aa0aa2d83e5d9d6a1038a220f9c7d0eea',1,'geodesk::StringValue']]],
-  ['store_17',['store',['../classgeodesk_1_1_features.html#a33f7b2e29816af6257061c76d8d5c2e4',1,'geodesk::Features']]],
+  ['store_17',['store',['../classgeodesk_1_1_feature.html#a35f507247170b18ea03ff3e20be0aadd',1,'geodesk::Feature::store()'],['../classgeodesk_1_1_features.html#a33f7b2e29816af6257061c76d8d5c2e4',1,'geodesk::Features::store()']]],
   ['storednumber_18',['storedNumber',['../classgeodesk_1_1_tag_value.html#aedfa52f783a2b3b5fef19009c109efcc',1,'geodesk::TagValue']]],
   ['storedstring_19',['storedString',['../classgeodesk_1_1_tag_value.html#abc476b02c28bced8648e038fb996d341',1,'geodesk::TagValue']]],
   ['stringvalue_20',['StringValue',['../classgeodesk_1_1_string_value.html#ad23147a75bd90f8a04c7accb7d1ed0db',1,'geodesk::StringValue::StringValue()'],['../classgeodesk_1_1_string_value.html#a213ca14d954f6176b01241488ad65e64',1,'geodesk::StringValue::StringValue(const clarisma::ShortVarString *str)'],['../classgeodesk_1_1_string_value.html#a048ec4638f9f9e80f600918a9a426bf1',1,'geodesk::StringValue::StringValue(const uint8_t *bytes)']]]

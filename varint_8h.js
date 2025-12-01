@@ -4,6 +4,7 @@ var varint_8h =
     [ "fromZigzag", "varint_8h.html#a0ec752cf6ee1dc13b2d310e6bdfaea08", null ],
     [ "fromZigzag", "varint_8h.html#abaaa75adca803854fd916a3eb441be86", null ],
     [ "readSignedVarint32", "varint_8h.html#aa35c212fae323c0b29ff4f54774f8ef0", null ],
+    [ "readSignedVarint35", "varint_8h.html#acc575857b907147184ce15a33f6d05e6", null ],
     [ "readSignedVarint64", "varint_8h.html#a6d8d00e39a421accf7d034b8cf20781c", null ],
     [ "readStringView", "varint_8h.html#a42d690f99ab61f18f083b4f6ec4e0e49", null ],
     [ "readVarint32", "varint_8h.html#acdbe36ee166538c1dce14f2d1ee88f64", null ],

@@ -161,6 +161,7 @@ var namespaces_dup =
       [ "operator<<", "namespaceclarisma.html#a4d52c5c7ce5183fd8e2725d9643eea2c", null ],
       [ "operator<<", "namespaceclarisma.html#aae8ab45f02a06a0837e5f27bdcb71780", null ],
       [ "readSignedVarint32", "namespaceclarisma.html#aa35c212fae323c0b29ff4f54774f8ef0", null ],
+      [ "readSignedVarint35", "namespaceclarisma.html#acc575857b907147184ce15a33f6d05e6", null ],
       [ "readSignedVarint64", "namespaceclarisma.html#a6d8d00e39a421accf7d034b8cf20781c", null ],
       [ "readStringView", "namespaceclarisma.html#a42d690f99ab61f18f083b4f6ec4e0e49", null ],
       [ "readVarint32", "namespaceclarisma.html#acdbe36ee166538c1dce14f2d1ee88f64", null ],

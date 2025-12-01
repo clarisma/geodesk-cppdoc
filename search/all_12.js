@@ -28,7 +28,7 @@ var searchData=
   ['span_2eh_25',['Span.h',['../_span_8h.html',1,'']]],
   ['startswith_26',['startsWith',['../classgeodesk_1_1_string_value.html#aa0aa2d83e5d9d6a1038a220f9c7d0eea',1,'geodesk::StringValue']]],
   ['std_27',['std',['../namespacestd.html',1,'']]],
-  ['store_28',['store',['../classgeodesk_1_1_features.html#a33f7b2e29816af6257061c76d8d5c2e4',1,'geodesk::Features']]],
+  ['store_28',['store',['../classgeodesk_1_1_feature.html#a35f507247170b18ea03ff3e20be0aadd',1,'geodesk::Feature::store()'],['../classgeodesk_1_1_features.html#a33f7b2e29816af6257061c76d8d5c2e4',1,'geodesk::Features::store()']]],
   ['storednumber_29',['storedNumber',['../classgeodesk_1_1_tag_value.html#aedfa52f783a2b3b5fef19009c109efcc',1,'geodesk::TagValue']]],
   ['storedstring_30',['storedString',['../classgeodesk_1_1_tag_value.html#abc476b02c28bced8648e038fb996d341',1,'geodesk::TagValue']]],
   ['streamable_2eh_31',['streamable.h',['../streamable_8h.html',1,'']]],

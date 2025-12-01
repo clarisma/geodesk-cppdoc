@@ -2,7 +2,7 @@ var hierarchy =
 [
     [ "geodesk::Box", "classgeodesk_1_1_box.html", null ],
     [ "geodesk::Coordinate", "classgeodesk_1_1_coordinate.html", null ],
-    [ "Feature", null, [
+    [ "geodesk::Feature", "classgeodesk_1_1_feature.html", [
       [ "geodesk::Node", "classgeodesk_1_1_node.html", null ],
       [ "geodesk::Relation", "classgeodesk_1_1_relation.html", null ],
       [ "geodesk::Way", "classgeodesk_1_1_way.html", null ]

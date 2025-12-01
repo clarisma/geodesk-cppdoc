@@ -197,7 +197,7 @@ Public Member Functions</h2></td></tr>
 <li><code>int</code>: <code>0</code> if the string value does not start with a valid number</li>
 <li><code>bool</code>: <code>true</code> unless empty string, <code>"no"</code>, or a numerical value of <code>0</code></li>
 </ul>
-<p><b>Warning</b>: A <a class="el" href="classgeodesk_1_1_tag_value.html" title="The value of a Tag.">TagValue</a> object is a lightweight wrapper around a pointer to a Feature's tag data, contained in a FeatureStore. It becomes invalid once that FeatureStore is closed. To use its value beyond the lifetime of the FeatureStore, convert it to a <code>std::string</code> (which allocates a copy of the tag data), or one of the supported scalar types.</p>
+<p><b>Warning</b>: A <a class="el" href="classgeodesk_1_1_tag_value.html" title="The value of a Tag.">TagValue</a> object is a lightweight wrapper around a pointer to a <a class="el" href="classgeodesk_1_1_feature.html" title="A geographic feature.">Feature</a>'s tag data, contained in a FeatureStore. It becomes invalid once that FeatureStore is closed. To use its value beyond the lifetime of the FeatureStore, convert it to a <code>std::string</code> (which allocates a copy of the tag data), or one of the supported scalar types.</p>
 <dl class="section see"><dt>See also</dt><dd><a class="el" href="classgeodesk_1_1_tag.html" title="A key/value pair that describes an attribute of a Feature.">Tag</a>, <a class="el" href="classgeodesk_1_1_tags.html" title="An object describing the key/value attributes of a Feature.">Tags</a> </dd></dl>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="a3b65cf48d09dd77f04668b23c8113f8f" name="a3b65cf48d09dd77f04668b23c8113f8f"></a>

@@ -9,7 +9,7 @@ var searchData=
   ['node_5findex_5fofs_6',['NODE_INDEX_OFS',['../namespace_tile_constants.html#a7792ac9d5dde4a220b6e36cfd0c009f4',1,'TileConstants']]],
   ['nodeptr_2eh_7',['NodePtr.h',['../_node_ptr_8h.html',1,'']]],
   ['nodes_8',['Nodes',['../classgeodesk_1_1_nodes.html',1,'geodesk']]],
-  ['nodes_9',['nodes',['../classgeodesk_1_1_features.html#a96933909e58e610afe8f820e3f839ea0',1,'geodesk::Features::nodes() const'],['../classgeodesk_1_1_features.html#af4ef61a2dd16b28051fadf05e76b995a',1,'geodesk::Features::nodes(const char *query) const']]],
+  ['nodes_9',['nodes',['../classgeodesk_1_1_feature.html#ac51004a426e59072a185cff1bc0e75fc',1,'geodesk::Feature::nodes() const'],['../classgeodesk_1_1_feature.html#a5e627d84c9284fbd658ca34a2b32cee7',1,'geodesk::Feature::nodes(const char *query) const'],['../classgeodesk_1_1_features.html#a96933909e58e610afe8f820e3f839ea0',1,'geodesk::Features::nodes() const'],['../classgeodesk_1_1_features.html#af4ef61a2dd16b28051fadf05e76b995a',1,'geodesk::Features::nodes(const char *query) const']]],
   ['nodes_2eh_10',['Nodes.h',['../_nodes_8h.html',1,'']]],
   ['nodesof_11',['nodesOf',['../classgeodesk_1_1_features.html#a27bcfd03f391f7e1d6d8213cd0b680f9',1,'geodesk::Features']]],
   ['nodetableiterator_2eh_12',['NodeTableIterator.h',['../_node_table_iterator_8h.html',1,'']]],

@@ -4,8 +4,6 @@ var dir_9a9046e95c145325ff5b9513d8d37ced =
     [ "AbstractTagIterator.h", "_abstract_tag_iterator_8h.html", null ],
     [ "AreaMemberIterator.h", "_area_member_iterator_8h.html", null ],
     [ "FastMemberIterator.h", "_fast_member_iterator_8h.html", null ],
-    [ "FeatureBase.h", "_feature_base_8h.html", null ],
-    [ "FeatureBase_impl.h", "_feature_base__impl_8h.html", null ],
     [ "FeatureHeader.h", "_feature_header_8h.html", null ],
     [ "FeatureIterator.h", "_feature_iterator_8h.html", null ],
     [ "FeatureIteratorBase.h", "_feature_iterator_base_8h.html", null ],
